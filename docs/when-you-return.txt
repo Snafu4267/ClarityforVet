@@ -1,0 +1,9 @@
+When you’re back — quick perks check
+=====================================
+
+1. Run the app (however you usually preview the site).
+2. Open the Veteran perks & programs page (/perks).
+3. Pick a state you care about (including D.C. if you want).
+4. Scroll the list and click a few source links — make sure the offers and URLs look right.
+
+Optional: Texas will be a long page (many rows); note if you want search, filters, or shorter cards later.

@@ -1,0 +1,760 @@
+{
+  "metadata": {
+    "generated_from": "veteran-state-perks (TS) via scripts/generate-perks-offers-json.ts",
+    "generated_at": "2026-04-13",
+    "schema_version": 1,
+    "disclaimer": "Quick notes only. Clarity4Vets does not run these programs. Confirm every perk with the official agency or business.",
+    "states_count": 51,
+    "state_offer_rows": 56,
+    "national_offer_rows": 7
+  },
+  "by_state": {
+    "AL": [
+      {
+        "id": "al-state-portal",
+        "business_or_program": "Alabama Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://va.alabama.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "AK": [
+      {
+        "id": "ak-state-portal",
+        "business_or_program": "Alaska Office of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.alaska.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "AZ": [
+      {
+        "id": "az-state-portal",
+        "business_or_program": "Arizona Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://dvs.az.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "AR": [
+      {
+        "id": "ar-state-portal",
+        "business_or_program": "Arkansas Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.veterans.arkansas.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "CA": [
+      {
+        "id": "ca-state-portal",
+        "business_or_program": "California Department of Veterans Affairs (CalVet)",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.calvet.ca.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "CO": [
+      {
+        "id": "co-state-portal",
+        "business_or_program": "Colorado Division of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.colorado.gov/vets",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "CT": [
+      {
+        "id": "ct-state-portal",
+        "business_or_program": "Connecticut Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://portal.ct.gov/DVA/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "DE": [
+      {
+        "id": "de-state-portal",
+        "business_or_program": "Delaware Office of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veteransaffairs.delaware.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "DC": [
+      {
+        "id": "dc-state-portal",
+        "business_or_program": "District of Columbia Office of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://ovs.dc.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "FL": [
+      {
+        "id": "fl-state-portal",
+        "business_or_program": "Florida Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.floridavets.org/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "GA": [
+      {
+        "id": "ga-state-portal",
+        "business_or_program": "Georgia Department of Veterans Service",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.georgia.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "HI": [
+      {
+        "id": "hi-state-portal",
+        "business_or_program": "Hawaii Office of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://dod.hawaii.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "ID": [
+      {
+        "id": "id-state-portal",
+        "business_or_program": "Idaho Division of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.veterans.idaho.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "IL": [
+      {
+        "id": "il-state-portal",
+        "business_or_program": "Illinois Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.illinois.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "IN": [
+      {
+        "id": "in-state-portal",
+        "business_or_program": "Indiana Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.in.gov/dva/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "IA": [
+      {
+        "id": "ia-state-portal",
+        "business_or_program": "Iowa Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://va.iowa.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "KS": [
+      {
+        "id": "ks-state-portal",
+        "business_or_program": "Kansas Commission on Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://kcva.ks.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "KY": [
+      {
+        "id": "ky-state-portal",
+        "business_or_program": "Kentucky Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.ky.gov/Pages/default.aspx",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "LA": [
+      {
+        "id": "la-state-portal",
+        "business_or_program": "Louisiana Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.vetaffairs.la.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "ME": [
+      {
+        "id": "me-state-portal",
+        "business_or_program": "Maine Bureau of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.maine.gov/veterans/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MD": [
+      {
+        "id": "md-state-portal",
+        "business_or_program": "Maryland Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.maryland.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MA": [
+      {
+        "id": "ma-state-portal",
+        "business_or_program": "Massachusetts Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.mass.gov/orgs/massachusetts-department-of-veterans-services",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MI": [
+      {
+        "id": "mi-state-portal",
+        "business_or_program": "Michigan Veterans Affairs Agency",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.michigan.gov/mvaa",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MN": [
+      {
+        "id": "mn-state-portal",
+        "business_or_program": "Minnesota Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://mn.gov/mdva/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MS": [
+      {
+        "id": "ms-state-portal",
+        "business_or_program": "Mississippi Veterans Affairs Board",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.msva.ms.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MO": [
+      {
+        "id": "mo-state-portal",
+        "business_or_program": "Missouri Veterans Commission",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://mvc.dps.mo.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "MT": [
+      {
+        "id": "mt-state-portal",
+        "business_or_program": "Montana Veterans Affairs (DMA)",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://dma.mt.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NE": [
+      {
+        "id": "ne-state-portal",
+        "business_or_program": "Nebraska Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.nebraska.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NV": [
+      {
+        "id": "nv-state-portal",
+        "business_or_program": "Nevada Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.nv.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NH": [
+      {
+        "id": "nh-state-portal",
+        "business_or_program": "New Hampshire Office of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.dmavs.nh.gov/veterans-services",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NJ": [
+      {
+        "id": "nj-state-portal",
+        "business_or_program": "New Jersey Department of Military and Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.nj.gov/military/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NM": [
+      {
+        "id": "nm-state-portal",
+        "business_or_program": "New Mexico Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.nmdvs.org/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NY": [
+      {
+        "id": "ny-state-portal",
+        "business_or_program": "New York State Division of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.ny.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "NC": [
+      {
+        "id": "nc-state-portal",
+        "business_or_program": "North Carolina Department of Military and Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.milvets.nc.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "ND": [
+      {
+        "id": "nd-state-portal",
+        "business_or_program": "North Dakota Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.nd.gov/veterans/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "OH": [
+      {
+        "id": "oh-state-portal",
+        "business_or_program": "Ohio Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://dvs.ohio.gov/wps/portal/gov/dvs/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "OK": [
+      {
+        "id": "ok-state-portal",
+        "business_or_program": "Oklahoma Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://oklahoma.gov/veterans.html",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "OR": [
+      {
+        "id": "or-state-portal",
+        "business_or_program": "Oregon Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.oregon.gov/odva/Pages/default.aspx",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "PA": [
+      {
+        "id": "pa-state-portal",
+        "business_or_program": "Pennsylvania Department of Military and Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.dmva.pa.gov/Pages/default.aspx",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "RI": [
+      {
+        "id": "ri-state-portal",
+        "business_or_program": "Rhode Island Office of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.vets.ri.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "SC": [
+      {
+        "id": "sc-state-portal",
+        "business_or_program": "South Carolina Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://scdva.sc.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "SD": [
+      {
+        "id": "sd-state-portal",
+        "business_or_program": "South Dakota Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://vetaffairs.sd.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "TN": [
+      {
+        "id": "tn-state-portal",
+        "business_or_program": "Tennessee Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.tn.gov/veteran/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "TX": [
+      {
+        "id": "tx-state-portal",
+        "business_or_program": "Texas Veterans Commission",
+        "category": "portal_reference",
+        "discount_offer": "Gateway to Texas programs for veterans and families (claims help, employment, education, mental health navigation, and pointers to other agencies).",
+        "notes": "Listed as the Texas veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.tvc.texas.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on Texas law, military service, discharge characterization, and other factors."
+      },
+      {
+        "id": "tx-property-tax-homestead-100",
+        "business_or_program": "Residence homestead exemption — totally disabled veterans (and certain surviving spouses)",
+        "category": "property_tax",
+        "discount_offer": "Total property tax exemption on a qualifying homestead when you meet Texas’s totally disabled veteran rules (often tied to 100% or qualifying IU).",
+        "notes": "File with your county appraisal district. Deadlines and forms (e.g., Form 50-114) matter—confirm on the comptroller and district sites.",
+        "source_url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php",
+        "offer_kind": "program",
+        "eligibility_band": "100_percent",
+        "description": "Texas law provides a total property tax exemption on a qualifying residence homestead for some veterans with a service-connected disability and for certain surviving spouses. Amounts and partial exemptions for other ratings are also addressed in statute and comptroller guidance.",
+        "eligibility": "May apply if you meet statutory definitions (including VA rating or individual unemployability, surviving spouse rules, and homestead requirements). Your county appraisal district makes the determination on your application.",
+        "disability_rating_note": "Often discussed in terms of 100% P&T or individual unemployability; other partial exemptions may apply at lower ratings—see official charts.",
+        "perk_family_id": "homestead_property_tax_total_disability"
+      },
+      {
+        "id": "tx-property-tax-tvc-summary",
+        "business_or_program": "Property tax exemptions — disability rating overview (educational summary)",
+        "category": "property_tax",
+        "discount_offer": "Chart-style overview of how exemptions may line up with VA ratings—confirm with your appraisal district.",
+        "notes": "Cross-check any summary with the Texas Comptroller and your county chief appraiser.",
+        "source_url": "https://tvc.texas.gov/news/property-tax-exemptions-available-to-veterans-per-disability-rating/",
+        "offer_kind": "program",
+        "eligibility_band": "general",
+        "description": "TVC publishes a plain-language overview of how Texas residence homestead exemptions may align with VA disability ratings. It is a guide, not a binding determination.",
+        "eligibility": "Eligibility depends on your rating, homestead status, and Texas Tax Code. Confirm with your appraisal district.",
+        "disability_rating_note": "References multiple rating bands; verify against current law and your award letter."
+      },
+      {
+        "id": "tx-driver-license-fee",
+        "business_or_program": "Driver license and ID fee exemptions (certain disabled veterans)",
+        "category": "vehicle_registration",
+        "discount_offer": "Waived driver license / ID fees when you meet DPS disability and discharge rules (rating threshold on the official page).",
+        "notes": "Bring VA documentation as described by DPS. This is separate from vehicle registration and specialty plate rules.",
+        "source_url": "https://www.dps.texas.gov/section/driver-license/veteran-services",
+        "offer_kind": "program",
+        "eligibility_band": "disabled_other",
+        "description": "Texas DPS describes fee exemptions for qualifying veterans with a service-related disability at or above a threshold stated in their materials, with honorable discharge and other conditions.",
+        "eligibility": "May apply if you meet DPS requirements (disability compensation, rating threshold, discharge status, and other criteria). CDLs may be excluded.",
+        "disability_rating_note": "DPS materials reference a service-related disability percentage threshold—verify on the current DPS veteran services page.",
+        "perk_family_id": "driver_license_fee_waiver_disabled_veteran"
+      },
+      {
+        "id": "tx-parklands-passport",
+        "business_or_program": "Texas Parklands Passport — free entry to state parks (veterans passport)",
+        "category": "state_parks",
+        "discount_offer": "No daily entrance fee at Texas state parks for honorably discharged veterans who qualify under TPWD’s ID list.",
+        "notes": "Pass covers the cardholder per TPWD rules. Disabled veteran and other passport types may differ—read TPWD’s table.",
+        "source_url": "https://tpwd.texas.gov/state-parks/park-information/passes/texas-parklands-passports",
+        "offer_kind": "program",
+        "eligibility_band": "any_veteran",
+        "description": "TPWD issues no-cost Parklands Passports so honorably discharged veterans can enter Texas state parks without paying the daily entrance fee, subject to program rules.",
+        "eligibility": "Generally requires honorable discharge and proof from the list TPWD publishes (e.g., veteran ID, driver license with veteran designation, DD214, or VHIC). Eligibility details are defined by TPWD.",
+        "perk_family_id": "state_parks_pass_veteran"
+      },
+      {
+        "id": "tx-disabled-veteran-super-combo-license",
+        "business_or_program": "Disabled Veteran Super Combo — hunting and all-water fishing package",
+        "category": "hunting_fishing",
+        "discount_offer": "Discounted all-in hunting and fishing package for qualifying disabled veterans (rating or loss-of-use rules on TPWD’s page).",
+        "notes": "Not available online; documentation must meet TPWD recency rules.",
+        "source_url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/combination-hunting-fishing/disabled-veteran-super-combo-hunting-and-all-water-fishing-package",
+        "offer_kind": "program",
+        "eligibility_band": "disabled_other",
+        "description": "TPWD offers a combination hunting and fishing license package for qualifying disabled veterans when statutory conditions are met. Federal stamps (such as duck stamp) may still be required separately.",
+        "eligibility": "May apply if you meet TPWD’s disabled veteran definition (including VA disability rating or loss-of-use criteria and receiving compensation). Available in person at license retailers per TPWD.",
+        "disability_rating_note": "TPWD states a minimum VA disability rating or specific loss-of-use criteria—confirm on the official license page.",
+        "perk_family_id": "hunting_fishing_super_combo_disabled_veteran"
+      }
+    ],
+    "UT": [
+      {
+        "id": "ut-state-portal",
+        "business_or_program": "Utah Department of Veterans and Military Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.utah.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "VT": [
+      {
+        "id": "vt-state-portal",
+        "business_or_program": "Vermont Office of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.vermont.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "VA": [
+      {
+        "id": "va-state-portal",
+        "business_or_program": "Virginia Department of Veterans Services",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.dvs.virginia.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "WA": [
+      {
+        "id": "wa-state-portal",
+        "business_or_program": "Washington State Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.dva.wa.gov/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "WV": [
+      {
+        "id": "wv-state-portal",
+        "business_or_program": "West Virginia Department of Veterans Assistance",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://veterans.wv.gov/Pages/default.aspx",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "WI": [
+      {
+        "id": "wi-state-portal",
+        "business_or_program": "Wisconsin Department of Veterans Affairs",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://dva.wi.gov/Pages/Home.aspx",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ],
+    "WY": [
+      {
+        "id": "wy-state-portal",
+        "business_or_program": "Wyoming Veterans Commission",
+        "category": "portal_reference",
+        "discount_offer": "Official starting point for this state’s veteran programs. Detailed perks (property tax, tuition, licenses, parks, employment preference) depend on state law and local offices and are not exhaustively listed here unless separately curated.",
+        "notes": "Listed as this state’s veterans affairs website in the NASDVA Resources directory (https://nasdva.us/resources/).",
+        "source_url": "https://www.wyomilitary.wyo.gov/veterans/",
+        "offer_kind": "program",
+        "eligibility": "Varies by program. Eligibility depends on state statutes, residency, discharge status, disability findings, and other factors."
+      }
+    ]
+  },
+  "national_offers": [
+    {
+      "id": "nat-vets-day-verify-locally",
+      "brand_or_program": "Veterans Day retail and restaurant offers — verify each year",
+      "category": "veterans_day_offer",
+      "discount_offer": "Chains often run one-day meals or discounts—rules change every year; confirm with the store you plan to visit.",
+      "notes": "No government site lists every private Veterans Day deal. Call the location or read the company’s own announcement before you go.",
+      "source_url": "https://www.militaryonesource.mil/financial-legal/personal-finance/money-saving-tips-for-military-families/",
+      "source_link_label": "Military OneSource: saving money & everyday discounts (verify each business) →",
+      "offer_kind": "guidance"
+    },
+    {
+      "id": "nat-dol-vets",
+      "brand_or_program": "U.S. Department of Labor — Veterans’ Employment and Training Service (VETS)",
+      "category": "employment",
+      "discount_offer": "Federal hub for job help, transition programs, and employment rights—not a discount list.",
+      "notes": "Use for career and USERRA information rather than restaurant or theme-park deals.",
+      "source_url": "https://www.dol.gov/agencies/vets",
+      "offer_kind": "program"
+    },
+    {
+      "id": "nat-verify-at-point-of-sale",
+      "brand_or_program": "National brand military / veteran discounts — verify at the business",
+      "category": "retail_discount",
+      "discount_offer": "Some brands offer everyday military/veteran pricing—policy is set by the business, not VA.",
+      "notes": "Ask at checkout or read the company’s published policy. Clarity4Vets does not guarantee any private discount.",
+      "source_url": "https://www.militaryonesource.mil/benefits/benefits-finder/?filter-benefit-type=discounts-perks",
+      "source_link_label": "Military OneSource: browse discounts & perks (still confirm with the business) →",
+      "offer_kind": "brand"
+    },
+    {
+      "id": "nat-military-wildlife-licenses",
+      "brand_or_program": "U.S. Fish & Wildlife Service — military and veterans fishing and hunting access",
+      "category": "hunting_fishing",
+      "discount_offer": "Some federal wildlife/refuge rules have military or veteran fee breaks—check the specific refuge or program.",
+      "notes": "Complements—not replaces—your state fish and game agency rules.",
+      "source_url": "https://www.fws.gov/initiative/military-veterans",
+      "offer_kind": "program"
+    },
+    {
+      "id": "nat-nasdva-directory",
+      "brand_or_program": "NASDVA — state veterans affairs directory",
+      "category": "state_programs",
+      "discount_offer": "Member-maintained links to state and territory veterans departments—use to find each state’s official hub.",
+      "notes": "Clarity4Vets is not NASDVA; confirm every link on the destination site.",
+      "source_url": "https://nasdva.us/resources/",
+      "offer_kind": "program"
+    },
+    {
+      "id": "nat-va-state-offices-locator",
+      "brand_or_program": "U.S. Department of Veterans Affairs — state / territory offices locator",
+      "category": "state_programs",
+      "discount_offer": "Federal locator for state departments of veterans affairs and related offices—cross-check with your state’s .gov site.",
+      "notes": "Use together with your state portal row on this site.",
+      "source_url": "https://department.va.gov/about/state-departments-of-veterans-affairs-office-locations/",
+      "offer_kind": "program"
+    },
+    {
+      "id": "nat-veteran-exchange-shopping",
+      "brand_or_program": "Military OneSource — veterans online exchange shopping benefit",
+      "category": "retail_discount",
+      "discount_offer": "Official overview of how qualifying veterans can shop select military exchanges online—rules and eligibility on the source.",
+      "notes": "Separate from private-store military discounts; read exclusions on the official page.",
+      "source_url": "https://www.militaryonesource.mil/veteran-shopping-benefit",
+      "offer_kind": "program"
+    }
+  ]
+}

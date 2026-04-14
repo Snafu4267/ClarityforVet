@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "title": "Nevada — VA health facilities (map & list)",
+    "region": "Nevada",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Nevada. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1020 New River Parkway",
+      "city": "Fallon",
+      "state": "NV",
+      "zip": "89406-7811",
+      "lat": 39.46539947,
+      "lng": -118.76223167,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Nevada",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-654qb-reno",
+      "name": "Capitol Hill VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "350 Capitol Hill Avenue",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502-2923",
+      "phoneMain": "775-324-6600",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/capitol-hill-va-clinic/",
+      "lat": 39.51049649,
+      "lng": -119.802438,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/capitol-hill-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654gb-gardnerville",
+      "name": "Carson Valley VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1330 Waterloo Lane",
+      "city": "Gardnerville",
+      "state": "NV",
+      "zip": "89410-5587",
+      "phoneMain": "775-782-5265",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/carson-valley-va-clinic/",
+      "lat": 38.93497474,
+      "lng": -119.74070777,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/carson-valley-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-660gk-elko",
+      "name": "Elko VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2719 Argent Avenue",
+      "city": "Elko",
+      "state": "NV",
+      "zip": "89801-8443",
+      "phoneMain": "775-738-0188",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/salt-lake-city-health-care/locations/elko-va-clinic/",
+      "lat": 40.84001686,
+      "lng": -115.79034121,
+      "website": "https://www.va.gov/salt-lake-city-health-care/locations/elko-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0886mvc-henderson",
+      "name": "Henderson Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "400 North Stephanie",
+      "city": "Henderson",
+      "state": "NV",
+      "zip": "89014",
+      "phoneMain": "702-791-9100",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/henderson-vet-center/locations/#henderson-mobile-vet-center",
+      "lat": 36.057393,
+      "lng": -115.044066,
+      "website": "https://www.va.gov/henderson-vet-center/locations/#henderson-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0534v-henderson",
+      "name": "Henderson Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "400 North Stephanie Street",
+      "city": "Henderson",
+      "state": "NV",
+      "zip": "89014",
+      "phoneMain": "702-791-9100",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/henderson-vet-center/",
+      "lat": 36.057393,
+      "lng": -115.044066,
+      "website": "https://www.va.gov/henderson-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654-reno",
+      "name": "Ioannis A. Lougaris Veterans' Administration Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "975 Kirman Avenue",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502-0993",
+      "phoneMain": "775-786-7200",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/ioannis-a-lougaris-veterans-administration-medical-center/",
+      "lat": 39.516318,
+      "lng": -119.799522,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/ioannis-a-lougaris-veterans-administration-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654qa-reno",
+      "name": "Kietzke VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2295 Kietzke Lane",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502-3604",
+      "phoneMain": "775-328-1773",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/kietzke-va-clinic/",
+      "lat": 39.50191487,
+      "lng": -119.78913396,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/kietzke-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654gc-fallon",
+      "name": "Lahontan Valley VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1020 New River Parkway",
+      "city": "Fallon",
+      "state": "NV",
+      "zip": "89406-7811",
+      "phoneMain": "775-829-5685",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/lahontan-valley-va-clinic/",
+      "lat": 39.46539947,
+      "lng": -118.76223167,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/lahontan-valley-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0505v-las-vegas",
+      "name": "Las Vegas Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "7455 W. Washington Ave.",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89128",
+      "phoneMain": "702-791-9170",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/las-vegas-vet-center/",
+      "lat": 36.1791,
+      "lng": -115.256043,
+      "website": "https://www.va.gov/las-vegas-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593gh-laughlin",
+      "name": "Master Chief Petty Officer Jesse Dean VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3650 South Pointe Circle",
+      "city": "Laughlin",
+      "state": "NV",
+      "zip": "89029-0423",
+      "phoneMain": "702-298-1100",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/master-chief-petty-officer-jesse-dean-va-clinic/",
+      "lat": 35.131626,
+      "lng": -114.626979,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/master-chief-petty-officer-jesse-dean-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593-north-las-vegas",
+      "name": "North Las Vegas VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "6900 North Pecos Road",
+      "city": "North Las Vegas",
+      "state": "NV",
+      "zip": "89086-4400",
+      "phoneMain": "702-791-9000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/north-las-vegas-va-medical-center/",
+      "lat": 36.285084,
+      "lng": -115.094142,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/north-las-vegas-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654gf-reno",
+      "name": "North Reno VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1140 Selmi Drive",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89512-4780",
+      "phoneMain": "775-786-7200",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/north-reno-va-clinic/",
+      "lat": 39.55763568,
+      "lng": -119.80018363,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/north-reno-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593gg-las-vegas",
+      "name": "Northeast Las Vegas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4461 East Charleston Boulevard",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89104-5537",
+      "phoneMain": "702-791-9050",
+      "hoursSummary": "monday: 700AM-530PM · tuesday: 700AM-530PM · wednesday: 700AM-530PM · thursday: 700AM-530PM · friday: 700AM-530PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/northeast-las-vegas-va-clinic/",
+      "lat": 36.157815,
+      "lng": -115.0765155,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/northeast-las-vegas-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593gd-las-vegas",
+      "name": "Northwest Las Vegas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3968 North Rancho Drive",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89130-3412",
+      "phoneMain": "702-791-9020",
+      "hoursSummary": "monday: 700AM-600PM · tuesday: 700AM-600PM · wednesday: 700AM-600PM · thursday: 700AM-600PM · friday: 700AM-600PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/northwest-las-vegas-va-clinic/",
+      "lat": 36.23047662,
+      "lng": -115.22406599,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/northwest-las-vegas-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593gc-pahrump",
+      "name": "Pahrump VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "220 South Lola Lane",
+      "city": "Pahrump",
+      "state": "NV",
+      "zip": "89048-0835",
+      "phoneMain": "775-727-7535",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/pahrump-va-clinic/",
+      "lat": 36.21569016,
+      "lng": -116.02340188,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/pahrump-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654ge-reno",
+      "name": "Reno East VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1201 Corporate Boulevard",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502-7162",
+      "phoneMain": "775-786-7200",
+      "hoursSummary": "monday: 700AM-500PM · tuesday: 700AM-500PM · wednesday: 700AM-500PM · thursday: 700AM-500PM · friday: 700AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/reno-east-va-clinic/",
+      "lat": 39.51015564,
+      "lng": -119.75064083,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/reno-east-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0867mvc-reno",
+      "name": "Reno Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "5580 Mill Street",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502",
+      "phoneMain": "775-323-1294",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/reno-vet-center/locations/#reno-mobile-vet-center",
+      "lat": 39.51178031,
+      "lng": -119.74528274,
+      "website": "https://www.va.gov/reno-vet-center/locations/#reno-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0506v-reno",
+      "name": "Reno Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "5580 Mill Street",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502",
+      "phoneMain": "775-323-1294",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/reno-vet-center/",
+      "lat": 39.51178031,
+      "lng": -119.74528274,
+      "website": "https://www.va.gov/reno-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593ge-henderson",
+      "name": "Southeast Las Vegas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1020 South Boulder Highway",
+      "city": "Henderson",
+      "state": "NV",
+      "zip": "89015-8533",
+      "phoneMain": "702-791-9030",
+      "hoursSummary": "monday: 700AM-530PM · tuesday: 700AM-530PM · wednesday: 700AM-530PM · thursday: 700AM-530PM · friday: 700AM-530PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/southeast-las-vegas-va-clinic/",
+      "lat": 36.019296,
+      "lng": -114.957234,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/southeast-las-vegas-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593gf-las-vegas",
+      "name": "Southwest Las Vegas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "7235 South Buffalo Drive",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89113-4040",
+      "phoneMain": "702-791-9040",
+      "hoursSummary": "monday: 700AM-530PM · tuesday: 700AM-530PM · wednesday: 700AM-530PM · thursday: 700AM-530PM · friday: 700AM-530PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/southwest-las-vegas-va-clinic/",
+      "lat": 36.05659907,
+      "lng": -115.26107313,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/southwest-las-vegas-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654qd-reno",
+      "name": "Virginia Street VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3674 South Virginia Street",
+      "city": "Reno",
+      "state": "NV",
+      "zip": "89502-6017",
+      "phoneMain": "775-326-2995",
+      "hoursSummary": "monday: 730AM-500PM · tuesday: 730AM-500PM · wednesday: 730AM-500PM · thursday: 730AM-500PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/virginia-street-va-clinic/",
+      "lat": 39.48891778,
+      "lng": -119.7949322,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/virginia-street-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-593qc-north-las-vegas",
+      "name": "West Cheyenne VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3525 West Cheyenne Avenue",
+      "city": "North Las Vegas",
+      "state": "NV",
+      "zip": "89032-8212",
+      "phoneMain": "702-791-9060",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-nevada-health-care/locations/west-cheyenne-va-clinic/",
+      "lat": 36.2174538,
+      "lng": -115.18670413,
+      "website": "https://www.va.gov/southern-nevada-health-care/locations/west-cheyenne-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-654qc-winnemucca",
+      "name": "Winnemucca VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3298 Traders Way",
+      "city": "Winnemucca",
+      "state": "NV",
+      "zip": "89445-3654",
+      "phoneMain": "775-623-9575",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: Closed · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sierra-nevada-health-care/locations/winnemucca-va-clinic/",
+      "lat": 40.95717242,
+      "lng": -117.74265207,
+      "website": "https://www.va.gov/sierra-nevada-health-care/locations/winnemucca-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

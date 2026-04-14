@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "title": "South Dakota — VA health facilities (map & list)",
+    "region": "South Dakota",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in South Dakota. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1615 North Harrison",
+      "city": "Pierre",
+      "state": "SD",
+      "zip": "57501-2383",
+      "lat": 44.37801306,
+      "lng": -100.31708071,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — South Dakota",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-438gd-aberdeen",
+      "name": "Aberdeen VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3307 10th Avenue Southeast",
+      "city": "Aberdeen",
+      "state": "SD",
+      "zip": "57401-8027",
+      "phoneMain": "605-229-3500",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/aberdeen-va-clinic/",
+      "lat": 45.45519877,
+      "lng": -98.44104793,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/aberdeen-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568hk-eagle-butte",
+      "name": "Cheyenne River VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "220 East Prairie Road",
+      "city": "Eagle Butte",
+      "state": "SD",
+      "zip": "57625-0000",
+      "phoneMain": "605-964-8389",
+      "hoursSummary": "monday: 900AM-300PM · tuesday: 900AM-300PM · wednesday: 900AM-300PM · thursday: 900AM-300PM · friday: 900AM-300PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/mclaughlin-va-clinic/",
+      "lat": 44.993592,
+      "lng": -101.2338315,
+      "website": "https://www.va.gov/black-hills-health-care/locations/mclaughlin-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568-fort-meade",
+      "name": "Fort Meade VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "113 Comanche Road",
+      "city": "Fort Meade",
+      "state": "SD",
+      "zip": "57741-1002",
+      "phoneMain": "605-347-2511",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/fort-meade-va-medical-center/",
+      "lat": 44.41252355,
+      "lng": -103.47486404,
+      "website": "https://www.va.gov/black-hills-health-care/locations/fort-meade-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568a4-hot-springs",
+      "name": "Hot Springs VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "500 North Fifth Street",
+      "city": "Hot Springs",
+      "state": "SD",
+      "zip": "57747-1480",
+      "phoneMain": "605-745-2000",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/hot-springs-va-medical-center/",
+      "lat": 43.43748086,
+      "lng": -103.47485972,
+      "website": "https://www.va.gov/black-hills-health-care/locations/hot-springs-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568gb-pierre",
+      "name": "Pierre VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1615 North Harrison",
+      "city": "Pierre",
+      "state": "SD",
+      "zip": "57501-2383",
+      "phoneMain": "605-945-1710",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/pierre-va-clinic/",
+      "lat": 44.37801306,
+      "lng": -100.31708071,
+      "website": "https://www.va.gov/black-hills-health-care/locations/pierre-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568hf-pine-ridge",
+      "name": "Pine Ridge VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "Hospital Road-Pine Ridge Indian Reservation",
+      "city": "Pine Ridge",
+      "state": "SD",
+      "zip": "57770-0000",
+      "phoneMain": "605-867-2393",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: 800AM-330PM · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/pine-ridge-va-clinic/",
+      "lat": 43.104985,
+      "lng": -102.60915,
+      "website": "https://www.va.gov/black-hills-health-care/locations/pine-ridge-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568pc-pine-ridge",
+      "name": "Pine Ridge VA Compensated Work Therapy/Transitional Residence",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "Pine Ridge Indian Reservation",
+      "city": "Pine Ridge",
+      "state": "SD",
+      "zip": "57770-0000",
+      "phoneMain": "605-867-2393",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_568PC",
+      "lat": 43.0224438,
+      "lng": -102.5400424,
+      "website": "https://www.va.gov/find-locations/facility/vha_568PC",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568pd-rapid-city",
+      "name": "Rapid City Compensated Work Therapy/Transitional Residence",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "4117 Woodbine Place",
+      "city": "Rapid City",
+      "state": "SD",
+      "zip": "57701-3234",
+      "phoneMain": "605-721-4340",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_568PD",
+      "lat": 44.06439078,
+      "lng": -103.28807205,
+      "website": "https://www.va.gov/find-locations/facility/vha_568PD",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0823mvc-rapid-city",
+      "name": "Rapid City Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "21 East Omaha Street",
+      "city": "Rapid City",
+      "state": "SD",
+      "zip": "57701",
+      "phoneMain": "605-348-0077",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/rapid-city-vet-center/locations/#rapid-city-mobile-vet-center",
+      "lat": 44.08140054,
+      "lng": -103.213584,
+      "website": "https://www.va.gov/rapid-city-vet-center/locations/#rapid-city-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568ga-rapid-city",
+      "name": "Rapid City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3625 5th Street",
+      "city": "Rapid City",
+      "state": "SD",
+      "zip": "57701-6008",
+      "phoneMain": "605-718-1095",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/rapid-city-va-clinic/",
+      "lat": 44.05041,
+      "lng": -103.2250185,
+      "website": "https://www.va.gov/black-hills-health-care/locations/rapid-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0423v-rapid-city",
+      "name": "Rapid City Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "21 East Omaha Street",
+      "city": "Rapid City",
+      "state": "SD",
+      "zip": "57701",
+      "phoneMain": "605-348-0077",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/rapid-city-vet-center/",
+      "lat": 44.08140054,
+      "lng": -103.213584,
+      "website": "https://www.va.gov/rapid-city-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-438-sioux-falls",
+      "name": "Royal C. Johnson Veterans' Memorial Hospital",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2501 West 22nd Street",
+      "city": "Sioux Falls",
+      "state": "SD",
+      "zip": "57105-5046",
+      "phoneMain": "605-336-3230",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/royal-c-johnson-veterans-memorial-hospital/",
+      "lat": 43.531236,
+      "lng": -96.757623,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/royal-c-johnson-veterans-memorial-hospital/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-438gc-dakota-dunes",
+      "name": "Sioux City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "380 West Anchor Drive",
+      "city": "Dakota Dunes",
+      "state": "SD",
+      "zip": "57049-5273",
+      "phoneMain": "605-232-2800",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/sioux-city-va-clinic/",
+      "lat": 42.50511713,
+      "lng": -96.50015849,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/sioux-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0425v-sioux-falls",
+      "name": "Sioux Falls Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "5020 S. Broadband Lane",
+      "city": "Sioux Falls",
+      "state": "SD",
+      "zip": "57108",
+      "phoneMain": "605-330-4552",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/sioux-falls-vet-center/",
+      "lat": 43.49835,
+      "lng": -96.7837545,
+      "website": "https://www.va.gov/sioux-falls-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568pb-sturgis",
+      "name": "Sturgis VA Compensated Work Therapy/Transitional Residence",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "1215 Junction Avenue",
+      "city": "Sturgis",
+      "state": "SD",
+      "zip": "57785-1909",
+      "phoneMain": "605-720-4729",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_568PB",
+      "lat": 44.412327,
+      "lng": -103.5090565,
+      "website": "https://www.va.gov/find-locations/facility/vha_568PB",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-438ge-wagner",
+      "name": "Wagner VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "400 West South Dakota Highway 46",
+      "city": "Wagner",
+      "state": "SD",
+      "zip": "57380-9369",
+      "phoneMain": "605-384-2340",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/wagner-va-clinic/",
+      "lat": 43.08175598,
+      "lng": -98.2988536,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/wagner-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-438gf-watertown",
+      "name": "Watertown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4 19th Street Northeast",
+      "city": "Watertown",
+      "state": "SD",
+      "zip": "57201-3936",
+      "phoneMain": "605-884-2420",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/watertown-va-clinic/",
+      "lat": 44.89483836,
+      "lng": -97.08619365,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/watertown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568hp-winner",
+      "name": "Winner VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "660 West 2nd Street",
+      "city": "Winner",
+      "state": "SD",
+      "zip": "57580-1218",
+      "phoneMain": "605-842-2443",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/winner-va-clinic/",
+      "lat": 43.37664983,
+      "lng": -99.86539935,
+      "website": "https://www.va.gov/black-hills-health-care/locations/winner-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

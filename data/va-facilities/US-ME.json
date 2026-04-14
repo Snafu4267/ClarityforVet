@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "Maine — VA health facilities (map & list)",
+    "region": "Maine",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Maine. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "615 Oldin Road",
+      "city": "Bangor",
+      "state": "ME",
+      "zip": "04401",
+      "lat": 44.78125494,
+      "lng": -68.81975286,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Maine",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-402hb-bangor",
+      "name": "Bangor VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "35 State Hospital Drive",
+      "city": "Bangor",
+      "state": "ME",
+      "zip": "04401-8816",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 700AM-500PM · tuesday: 700AM-500PM · wednesday: 700AM-500PM · thursday: 700AM-500PM · friday: 700AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/bangor-va-clinic/",
+      "lat": 44.81340143,
+      "lng": -68.74112085,
+      "website": "https://www.va.gov/maine-health-care/locations/bangor-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0121v-bangor",
+      "name": "Bangor Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "615 Oldin Road",
+      "city": "Bangor",
+      "state": "ME",
+      "zip": "04401",
+      "phoneMain": "207-947-3391",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/bangor-vet-center/",
+      "lat": 44.78125494,
+      "lng": -68.81975286,
+      "website": "https://www.va.gov/bangor-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402gb-calais",
+      "name": "Calais VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "50 Union Street",
+      "city": "Calais",
+      "state": "ME",
+      "zip": "04619-1839",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/calais-va-clinic/",
+      "lat": 45.18945455,
+      "lng": -67.28073026,
+      "website": "https://www.va.gov/maine-health-care/locations/calais-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402ga-caribou",
+      "name": "Caribou VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "163 Van Buren Road",
+      "city": "Caribou",
+      "state": "ME",
+      "zip": "04736-3567",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 700AM-400PM · tuesday: 700AM-400PM · wednesday: 700AM-400PM · thursday: 700AM-400PM · friday: 700AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/presque-isle-va-clinic/",
+      "lat": 46.87808589,
+      "lng": -68.00941449,
+      "website": "https://www.va.gov/maine-health-care/locations/presque-isle-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402qa-fort-kent",
+      "name": "Fort Kent VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "197 East Main Street",
+      "city": "Fort Kent",
+      "state": "ME",
+      "zip": "04743-1409",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: Closed · thursday: 900AM-230PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/fort-kent-va-clinic/",
+      "lat": 47.26561322,
+      "lng": -68.59126288,
+      "website": "https://www.va.gov/maine-health-care/locations/fort-kent-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402qb-houlton",
+      "name": "Houlton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "20 Hartford Street",
+      "city": "Houlton",
+      "state": "ME",
+      "zip": "04730-1891",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: 930AM-300PM · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/houlton-va-clinic/",
+      "lat": 46.13316994,
+      "lng": -67.84254698,
+      "website": "https://www.va.gov/maine-health-care/locations/houlton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0804mvc-lewiston",
+      "name": "Lewiston Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "35 Westminster Street",
+      "city": "Lewiston",
+      "state": "ME",
+      "zip": "04240-3531",
+      "phoneMain": "207-783-0068",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/lewiston-vet-center/locations/#lewiston-mobile-vet-center",
+      "lat": 44.075655,
+      "lng": -70.174692,
+      "website": "https://www.va.gov/lewiston-vet-center/locations/#lewiston-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402ge-lewiston",
+      "name": "Lewiston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "15 Challenger Drive",
+      "city": "Lewiston",
+      "state": "ME",
+      "zip": "04240-1041",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/lewiston-va-clinic/",
+      "lat": 44.07025478,
+      "lng": -70.19023411,
+      "website": "https://www.va.gov/maine-health-care/locations/lewiston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0129v-lewiston",
+      "name": "Lewiston Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "35 Westminster Street",
+      "city": "Lewiston",
+      "state": "ME",
+      "zip": "04240",
+      "phoneMain": "207-783-0068",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/lewiston-vet-center/",
+      "lat": 44.075655,
+      "lng": -70.174692,
+      "website": "https://www.va.gov/lewiston-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402gf-lincoln",
+      "name": "Lincoln VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "99 River Road",
+      "city": "Lincoln",
+      "state": "ME",
+      "zip": "04457-4012",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/lincoln-va-clinic/",
+      "lat": 45.35716924,
+      "lng": -68.54049377,
+      "website": "https://www.va.gov/maine-health-care/locations/lincoln-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0119v-caribou",
+      "name": "Northern Maine Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "456 York Street",
+      "city": "Caribou",
+      "state": "ME",
+      "zip": "04736-4135",
+      "phoneMain": "207-496-3900",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/northern-maine-vet-center/",
+      "lat": 46.84455171,
+      "lng": -68.04996219,
+      "website": "https://www.va.gov/northern-maine-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402hc-portland",
+      "name": "Portland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "141 West Commercial Street",
+      "city": "Portland",
+      "state": "ME",
+      "zip": "04102-3905",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 700AM-500PM · tuesday: 700AM-500PM · wednesday: 700AM-500PM · thursday: 700AM-500PM · friday: 700AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/portland-va-clinic/",
+      "lat": 43.64398058,
+      "lng": -70.26936354,
+      "website": "https://www.va.gov/maine-health-care/locations/portland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0115v-portland",
+      "name": "Portland, ME Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "475 Stevens Avenue",
+      "city": "Portland",
+      "state": "ME",
+      "zip": "04103-2635",
+      "phoneMain": "207-780-3584",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/portland-me-vet-center/",
+      "lat": 43.674813,
+      "lng": -70.2947475,
+      "website": "https://www.va.gov/portland-me-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402gc-rumford",
+      "name": "Rumford VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "431 Franklin Street",
+      "city": "Rumford",
+      "state": "ME",
+      "zip": "04276-2100",
+      "phoneMain": "877-421-8263",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/rumford-va-clinic/",
+      "lat": 44.55185674,
+      "lng": -70.55746671,
+      "website": "https://www.va.gov/maine-health-care/locations/rumford-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0130v-springvale",
+      "name": "Sanford Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "628 Main Street",
+      "city": "Springvale",
+      "state": "ME",
+      "zip": "04083-1728",
+      "phoneMain": "207-490-1513",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/sanford-vet-center/",
+      "lat": 43.455546,
+      "lng": -70.789275,
+      "website": "https://www.va.gov/sanford-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-402-augusta",
+      "name": "Togus VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1 VA Center",
+      "city": "Augusta",
+      "state": "ME",
+      "zip": "04330-6796",
+      "phoneMain": "207-623-8411",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/maine-health-care/locations/togus-va-medical-center/",
+      "lat": 44.28015112,
+      "lng": -69.70422198,
+      "website": "https://www.va.gov/maine-health-care/locations/togus-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

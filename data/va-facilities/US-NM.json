@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "title": "New Mexico — VA health facilities (map & list)",
+    "region": "New Mexico",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in New Mexico. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1501 San Pedro Drive, Southeast",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87108-5153",
+      "lat": 35.051742,
+      "lng": -106.583526,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — New Mexico",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-501gi-alamogordo",
+      "name": "Alamogordo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3199 North White Sands Boulevard",
+      "city": "Alamogordo",
+      "state": "NM",
+      "zip": "88310-6151",
+      "phoneMain": "575-437-9195",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/alamogordo-va-clinic/",
+      "lat": 32.92999852,
+      "lng": -105.96229178,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/alamogordo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0515v-albuquerque",
+      "name": "Albuquerque Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2001 Mountain Road, Northwest",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87104",
+      "phoneMain": "505-346-6562",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/albuquerque-vet-center/",
+      "lat": 35.09843298,
+      "lng": -106.66821233,
+      "website": "https://www.va.gov/albuquerque-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501ga-artesia",
+      "name": "Artesia VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2410 West Main Street",
+      "city": "Artesia",
+      "state": "NM",
+      "zip": "88210-3716",
+      "phoneMain": "575-746-3531",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/artesia-va-clinic/",
+      "lat": 32.84265046,
+      "lng": -104.42747153,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/artesia-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-504bz-clovis",
+      "name": "Clovis VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "921 East Llano Estacado Boulevard",
+      "city": "Clovis",
+      "state": "NM",
+      "zip": "88101-3807",
+      "phoneMain": "575-763-4335",
+      "hoursSummary": "monday: 700AM-330PM · tuesday: 700AM-330PM · wednesday: 700AM-330PM · thursday: 700AM-330PM · friday: 700AM-330PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/amarillo-health-care/locations/clovis-va-clinic/",
+      "lat": 34.43346,
+      "lng": -103.1944635,
+      "website": "https://www.va.gov/amarillo-health-care/locations/clovis-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501ge-espanola",
+      "name": "Espanola VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "105 South Coronado Avenue",
+      "city": "Espanola",
+      "state": "NM",
+      "zip": "87532-2862",
+      "phoneMain": "505-367-4213",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/espanola-va-clinic/",
+      "lat": 35.98974441,
+      "lng": -106.08519402,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/espanola-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gb-farmington",
+      "name": "Farmington VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3605 English Road",
+      "city": "Farmington",
+      "state": "NM",
+      "zip": "87402-8303",
+      "phoneMain": "505-326-4383",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/farmington-va-clinic/",
+      "lat": 36.76235599,
+      "lng": -108.14840578,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/farmington-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0516v-farmington",
+      "name": "Farmington Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4251 East Main Street",
+      "city": "Farmington",
+      "state": "NM",
+      "zip": "87402",
+      "phoneMain": "505-327-9684",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/farmington-vet-center/",
+      "lat": 36.76046462,
+      "lng": -108.15554467,
+      "website": "https://www.va.gov/farmington-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gd-gallup",
+      "name": "Gallup VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2075 South NM Hwy 602",
+      "city": "Gallup",
+      "state": "NM",
+      "zip": "87301-0000",
+      "phoneMain": "505-722-7234",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/gallup-va-clinic/",
+      "lat": 35.52634034,
+      "lng": -108.75971817,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/gallup-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-519gb-hobbs",
+      "name": "Hobbs VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1301 North Turner Street",
+      "city": "Hobbs",
+      "state": "NM",
+      "zip": "88240-8446",
+      "phoneMain": "575-391-0354",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/west-texas-health-care/locations/hobbs-va-clinic/",
+      "lat": 32.71213758,
+      "lng": -103.13638371,
+      "website": "https://www.va.gov/west-texas-health-care/locations/hobbs-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-756ga-las-cruces",
+      "name": "Las Cruces VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3401 Del Rey Boulevard",
+      "city": "Las Cruces",
+      "state": "NM",
+      "zip": "88012-8041",
+      "phoneMain": "575-522-1241",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 900AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/el-paso-health-care/locations/las-cruces-va-clinic/",
+      "lat": 32.35492081,
+      "lng": -106.76861815,
+      "website": "https://www.va.gov/el-paso-health-care/locations/las-cruces-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0530v-las-cruces",
+      "name": "Las Cruces Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1120 Commerce Drive",
+      "city": "Las Cruces",
+      "state": "NM",
+      "zip": "88011",
+      "phoneMain": "575-523-9826",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/las-cruces-vet-center/",
+      "lat": 32.34704499,
+      "lng": -106.76421894,
+      "website": "https://www.va.gov/las-cruces-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501g2-las-vegas",
+      "name": "Las Vegas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "624 University Avenue",
+      "city": "Las Vegas",
+      "state": "NM",
+      "zip": "87701-4252",
+      "phoneMain": "505-425-1910",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/las-vegas-va-clinic/",
+      "lat": 35.59560681,
+      "lng": -105.21653132,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/las-vegas-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-5161os-gallup",
+      "name": "Navajo Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1616 NM-264",
+      "city": "Gallup",
+      "state": "NM",
+      "zip": "87305",
+      "phoneMain": "505-327-9684",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/farmington-vet-center/locations/#navajo-vet-center-outstation",
+      "lat": 35.5235572,
+      "lng": -108.7512041,
+      "website": "https://www.va.gov/farmington-vet-center/locations/#navajo-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gm-rio-rancho",
+      "name": "Northwest Metro VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1760 Grande Boulevard, Southeast",
+      "city": "Rio Rancho",
+      "state": "NM",
+      "zip": "87124-1726",
+      "phoneMain": "505-896-7200",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/northwest-metro-va-clinic/",
+      "lat": 35.227386,
+      "lng": -106.661304,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/northwest-metro-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501hb-raton",
+      "name": "Raton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1493 Whittier Street",
+      "city": "Raton",
+      "state": "NM",
+      "zip": "87740-2234",
+      "phoneMain": "575-445-2391",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/raton-va-clinic/",
+      "lat": 36.87188676,
+      "lng": -104.4385617,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/raton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501-albuquerque",
+      "name": "Raymond G. Murphy Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1501 San Pedro Drive, Southeast",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87108-5153",
+      "phoneMain": "505-265-1711",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/raymond-g-murphy-department-of-veterans-affairs-medical-center/",
+      "lat": 35.051742,
+      "lng": -106.583526,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/raymond-g-murphy-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0835mvc-santa-fe",
+      "name": "Santa Fe Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "2209 Brothers Road",
+      "city": "Santa Fe",
+      "state": "NM",
+      "zip": "87505",
+      "phoneMain": "505-988-6562",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/santa-fe-vet-center/locations/#santa-fe-mobile-vet-center",
+      "lat": 35.6506367,
+      "lng": -105.9525122,
+      "website": "https://www.va.gov/santa-fe-vet-center/locations/#santa-fe-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gk-sante-fe",
+      "name": "Santa Fe VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5152 Beckner Road",
+      "city": "Sante Fe",
+      "state": "NM",
+      "zip": "87505-3197",
+      "phoneMain": "505-986-8645",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/santa-fe-va-clinic/",
+      "lat": 35.61439556,
+      "lng": -106.02472755,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/santa-fe-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0520v-sante-fe",
+      "name": "Santa Fe Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2209 Brothers Road",
+      "city": "Sante Fe",
+      "state": "NM",
+      "zip": "87505",
+      "phoneMain": "505-988-6562",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/santa-fe-vet-center/",
+      "lat": 35.6506367,
+      "lng": -105.9525122,
+      "website": "https://www.va.gov/santa-fe-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gc-silver-city",
+      "name": "Silver City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2950 Leslie Road",
+      "city": "Silver City",
+      "state": "NM",
+      "zip": "88061-7212",
+      "phoneMain": "575-538-2921",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/silver-city-va-clinic/",
+      "lat": 32.79401395,
+      "lng": -108.26308597,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/silver-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gn-taos",
+      "name": "Taos VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1353 Paseo Del Pueblo Sur",
+      "city": "Taos",
+      "state": "NM",
+      "zip": "87571-5801",
+      "phoneMain": "575-751-0328",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/taos-va-clinic/",
+      "lat": 36.3741591,
+      "lng": -105.59362358,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/taos-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-501gh-truth-or-consequences",
+      "name": "Truth or Consequences VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1960 North Date Street",
+      "city": "Truth or Consequences",
+      "state": "NM",
+      "zip": "87901-3701",
+      "phoneMain": "575-894-8311",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-mexico-health-care/locations/truth-or-consequences-va-clinic/",
+      "lat": 33.15171684,
+      "lng": -107.24619023,
+      "website": "https://www.va.gov/new-mexico-health-care/locations/truth-or-consequences-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

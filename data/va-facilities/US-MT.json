@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "title": "Montana — VA health facilities (map & list)",
+    "region": "Montana",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Montana. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1400 29th Street South",
+      "city": "Great Falls",
+      "state": "MT",
+      "zip": "59405-5315",
+      "lat": 47.49046166,
+      "lng": -111.25737168,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Montana",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-436gh-billings",
+      "name": "Benjamin Charles Steele VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · Health care center",
+      "address": "1766 Majestic Lane",
+      "city": "Billings",
+      "state": "MT",
+      "zip": "59102-6759",
+      "phoneMain": "406-373-3500",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/benjamin-charles-steele-va-clinic/",
+      "lat": 45.73690147,
+      "lng": -108.60357892,
+      "website": "https://www.va.gov/montana-health-care/locations/benjamin-charles-steele-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0829mvc-billings",
+      "name": "Billings Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "2795 Enterprise Avenue",
+      "city": "Billings",
+      "state": "MT",
+      "zip": "59102",
+      "phoneMain": "406-657-6071",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/billings-vet-center/locations/#billings-mobile-vet-center",
+      "lat": 45.75022718,
+      "lng": -108.58544855,
+      "website": "https://www.va.gov/billings-vet-center/locations/#billings-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0509v-billings",
+      "name": "Billings Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2795 Enterprise Avenue",
+      "city": "Billings",
+      "state": "MT",
+      "zip": "59102-7479",
+      "phoneMain": "406-657-6071",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/billings-vet-center/",
+      "lat": 45.75022718,
+      "lng": -108.58544855,
+      "website": "https://www.va.gov/billings-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436qd-browning",
+      "name": "Browning VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "5535 Haul Road",
+      "city": "Browning",
+      "state": "MT",
+      "zip": "59417-5412",
+      "phoneMain": "406-873-9047",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/browning-va-clinic/",
+      "lat": 48.57235992,
+      "lng": -113.02619154,
+      "website": "https://www.va.gov/montana-health-care/locations/browning-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436go-butte",
+      "name": "Butte VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "40 Three Bears Drive",
+      "city": "Butte",
+      "state": "MT",
+      "zip": "59701-7171",
+      "phoneMain": "406-496-3000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/charlie-dowd-va-clinic/",
+      "lat": 45.96202922,
+      "lng": -112.47622669,
+      "website": "https://www.va.gov/montana-health-care/locations/charlie-dowd-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gl-cut-bank",
+      "name": "Cut Bank VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "8 Second Avenue Southeast",
+      "city": "Cut Bank",
+      "state": "MT",
+      "zip": "59427-2909",
+      "phoneMain": "406-873-9047",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/cut-bank-va-clinic/",
+      "lat": 48.63472034,
+      "lng": -112.33027799,
+      "website": "https://www.va.gov/montana-health-care/locations/cut-bank-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gc-missoula",
+      "name": "David J. Thatcher VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3885 West Broadway Street",
+      "city": "Missoula",
+      "state": "MT",
+      "zip": "59808-0000",
+      "phoneMain": "406-215-0100",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/david-j-thatcher-va-clinic/",
+      "lat": 46.9087426,
+      "lng": -114.05860706,
+      "website": "https://www.va.gov/montana-health-care/locations/david-j-thatcher-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gn-billings",
+      "name": "Dr. Joseph Medicine Crow VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1775 Spring Creek Lane",
+      "city": "Billings",
+      "state": "MT",
+      "zip": "59102-6754",
+      "phoneMain": "406-373-3500",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/dr-joseph-medicine-crow-va-clinic/",
+      "lat": 45.73739956,
+      "lng": -108.60616584,
+      "website": "https://www.va.gov/montana-health-care/locations/dr-joseph-medicine-crow-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436-fort-harrison",
+      "name": "Fort Harrison VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "3687 Veterans Drive",
+      "city": "Fort Harrison",
+      "state": "MT",
+      "zip": "59636-9703",
+      "phoneMain": "406-442-6410",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/fort-harrison-va-medical-center/",
+      "lat": 46.61764177,
+      "lng": -112.10185031,
+      "website": "https://www.va.gov/montana-health-care/locations/fort-harrison-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gi-glasgow",
+      "name": "Glasgow VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "630 2nd Avenue South",
+      "city": "Glasgow",
+      "state": "MT",
+      "zip": "59230-2304",
+      "phoneMain": "406-228-4101",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/glasgow-va-clinic/",
+      "lat": 48.19486283,
+      "lng": -106.63914282,
+      "website": "https://www.va.gov/montana-health-care/locations/glasgow-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gk-glendive",
+      "name": "Glendive VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2000 Montana Avenue",
+      "city": "Glendive",
+      "state": "MT",
+      "zip": "59330-3700",
+      "phoneMain": "406-377-4755",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/glendive-va-clinic/",
+      "lat": 47.12718984,
+      "lng": -104.6892798,
+      "website": "https://www.va.gov/montana-health-care/locations/glendive-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gb-great-falls",
+      "name": "Great Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1400 29th Street South",
+      "city": "Great Falls",
+      "state": "MT",
+      "zip": "59405-5315",
+      "phoneMain": "406-771-5800",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/great-falls-va-clinic/",
+      "lat": 47.49046166,
+      "lng": -111.25737168,
+      "website": "https://www.va.gov/montana-health-care/locations/great-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0538v-great-falls",
+      "name": "Great Falls Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "615 2nd Avenue North",
+      "city": "Great Falls",
+      "state": "MT",
+      "zip": "59401",
+      "phoneMain": "406-452-9048",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/great-falls-vet-center/",
+      "lat": 47.50751851,
+      "lng": -111.29642975,
+      "website": "https://www.va.gov/great-falls-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436qa-hamilton",
+      "name": "Hamilton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "299 Fairgrounds Road",
+      "city": "Hamilton",
+      "state": "MT",
+      "zip": "59840-3199",
+      "phoneMain": "406-363-3352",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/hamilton-va-clinic/",
+      "lat": 46.25498454,
+      "lng": -114.1441785,
+      "website": "https://www.va.gov/montana-health-care/locations/hamilton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-5381os-helena",
+      "name": "Helena Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1301 Elm Street",
+      "city": "Helena",
+      "state": "MT",
+      "zip": "59601",
+      "phoneMain": "406-457-8060",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/great-falls-vet-center/locations/#helena-vet-center-outstation",
+      "lat": 46.607454,
+      "lng": -112.018473,
+      "website": "https://www.va.gov/great-falls-vet-center/locations/#helena-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436qc-helena",
+      "name": "Helena VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2271 Deerfield Lane",
+      "city": "Helena",
+      "state": "MT",
+      "zip": "59601-8643",
+      "phoneMain": "406-447-7443",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/helena-va-clinic/",
+      "lat": 46.56974275,
+      "lng": -111.97147889,
+      "website": "https://www.va.gov/montana-health-care/locations/helena-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gf-kalispell",
+      "name": "Kalispell VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "31 Three Mile Drive",
+      "city": "Kalispell",
+      "state": "MT",
+      "zip": "59901-1400",
+      "phoneMain": "406-758-2700",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/kalispell-va-clinic/",
+      "lat": 48.21143953,
+      "lng": -114.33079859,
+      "website": "https://www.va.gov/montana-health-care/locations/kalispell-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0539v-kalispell",
+      "name": "Kalispell Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "690 North Meridian Road",
+      "city": "Kalispell",
+      "state": "MT",
+      "zip": "59901",
+      "phoneMain": "406-257-7308",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/kalispell-vet-center/",
+      "lat": 48.20589841,
+      "lng": -114.33034971,
+      "website": "https://www.va.gov/kalispell-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gm-lewistown",
+      "name": "Lewistown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "629 Northeast Main Street",
+      "city": "Lewistown",
+      "state": "MT",
+      "zip": "59457-2082",
+      "phoneMain": "406-535-4790",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/lewistown-va-clinic/",
+      "lat": 47.07012248,
+      "lng": -109.40856286,
+      "website": "https://www.va.gov/montana-health-care/locations/lewistown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-668qb-libby",
+      "name": "Libby VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "211 East 2nd Street",
+      "city": "Libby",
+      "state": "MT",
+      "zip": "59923-2047",
+      "phoneMain": "406-293-8711",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/spokane-health-care/locations/libby-va-clinic/",
+      "lat": 48.39322213,
+      "lng": -115.54850941,
+      "website": "https://www.va.gov/spokane-health-care/locations/libby-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436hc-havre",
+      "name": "Merril Lundman Department of Veterans Affairs Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1753 US Highway 2 Northwest",
+      "city": "Havre",
+      "state": "MT",
+      "zip": "59501-3464",
+      "phoneMain": "406-265-4304",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/merril-lundman-department-of-veterans-affairs-outpatient-clinic/",
+      "lat": 48.55688507,
+      "lng": -109.71246614,
+      "website": "https://www.va.gov/montana-health-care/locations/merril-lundman-department-of-veterans-affairs-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436qe-miles-city",
+      "name": "Miles City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "316 South Haynes Avenue",
+      "city": "Miles City",
+      "state": "MT",
+      "zip": "59301-4764",
+      "phoneMain": "406-874-5600",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/miles-city-va-clinic/",
+      "lat": 46.40498975,
+      "lng": -105.82258015,
+      "website": "https://www.va.gov/montana-health-care/locations/miles-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436a4-miles-city",
+      "name": "Miles City VA Community Living Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "210 South Winchester Avenue",
+      "city": "Miles City",
+      "state": "MT",
+      "zip": "59301-4798",
+      "phoneMain": "406-874-5800",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/miles-city-va-community-living-center/",
+      "lat": 46.40603425,
+      "lng": -105.83049169,
+      "website": "https://www.va.gov/montana-health-care/locations/miles-city-va-community-living-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0837mvc-missoula",
+      "name": "Missoula Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "910 Brooks St.",
+      "city": "Missoula",
+      "state": "MT",
+      "zip": "59801",
+      "phoneMain": "406-721-4918",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/missoula-vet-center/locations/#missoula-mobile-vet-center",
+      "lat": 46.85562296,
+      "lng": -114.0077443,
+      "website": "https://www.va.gov/missoula-vet-center/locations/#missoula-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0528v-missoula",
+      "name": "Missoula Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "910 Brooks St.",
+      "city": "Missoula",
+      "state": "MT",
+      "zip": "59801",
+      "phoneMain": "406-721-4918",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/missoula-vet-center/",
+      "lat": 46.85562296,
+      "lng": -114.0077443,
+      "website": "https://www.va.gov/missoula-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436qb-plentywood",
+      "name": "Plentywood VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "440 West Laurel Avenue",
+      "city": "Plentywood",
+      "state": "MT",
+      "zip": "59254-1526",
+      "phoneMain": "406-765-3719",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/plentywood-va-clinic/",
+      "lat": 48.7787115,
+      "lng": -104.56325156,
+      "website": "https://www.va.gov/montana-health-care/locations/plentywood-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-436gd-bozeman",
+      "name": "Travis W. Atkins Department of Veterans Affairs Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1101 East Main Street",
+      "city": "Bozeman",
+      "state": "MT",
+      "zip": "59715-3956",
+      "phoneMain": "406-582-5300",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/montana-health-care/locations/travis-w-atkins-department-of-veterans-affairs-clinic/",
+      "lat": 45.67909751,
+      "lng": -111.02036382,
+      "website": "https://www.va.gov/montana-health-care/locations/travis-w-atkins-department-of-veterans-affairs-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

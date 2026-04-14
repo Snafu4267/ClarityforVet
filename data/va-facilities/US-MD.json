@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "title": "Maryland — VA health facilities (map & list)",
+    "region": "Maryland",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Maryland. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "808 Landmark Drive",
+      "city": "Glen Burnie",
+      "state": "MD",
+      "zip": "21061-4983",
+      "lat": 39.14822906,
+      "lng": -76.64263946,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Maryland",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-2092os-aberdeen",
+      "name": "Aberdeen Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "223 West Bel Air Ave on Law Street",
+      "city": "Aberdeen",
+      "state": "MD",
+      "zip": "21001",
+      "phoneMain": "410-272-6771",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/elkton-vet-center/locations/#aberdeen-vet-center-outstation",
+      "lat": 39.51098605,
+      "lng": -76.16802379,
+      "website": "https://www.va.gov/elkton-vet-center/locations/#aberdeen-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0235v-annapolis",
+      "name": "Annapolis Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "100 Annapolis Street",
+      "city": "Annapolis",
+      "state": "MD",
+      "zip": "21401",
+      "phoneMain": "410-605-7826",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/annapolis-vet-center/",
+      "lat": 38.99017644,
+      "lng": -76.50227774,
+      "website": "https://www.va.gov/annapolis-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0858mvc-baltimore",
+      "name": "Baltimore Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1777 Reisterstown Road",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21208",
+      "phoneMain": "410-764-9400",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/jacksonville-nc-vet-center/locations/#jacksonville-nc-mobile-vet-cen",
+      "lat": 39.387411,
+      "lng": -76.7329785,
+      "website": "https://www.va.gov/jacksonville-nc-vet-center/locations/#jacksonville-nc-mobile-vet-cen",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512qa-baltimore",
+      "name": "Baltimore VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "209 West Fayette Street",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21201-3403",
+      "phoneMain": "410-605-7000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/baltimore-va-clinic/",
+      "lat": 39.290193,
+      "lng": -76.6184445,
+      "website": "https://www.va.gov/maryland-health-care/locations/baltimore-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512-baltimore",
+      "name": "Baltimore VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "10 North Greene Street",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21201-1524",
+      "phoneMain": "410-605-7000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/baltimore-va-medical-center/",
+      "lat": 39.289743,
+      "lng": -76.6244745,
+      "website": "https://www.va.gov/maryland-health-care/locations/baltimore-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0201v-baltimore",
+      "name": "Baltimore Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1777 Reisterstown Road",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21208",
+      "phoneMain": "410-764-9400",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/baltimore-vet-center/",
+      "lat": 39.387411,
+      "lng": -76.7329785,
+      "website": "https://www.va.gov/baltimore-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512ga-cambridge",
+      "name": "Cambridge VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "830 Chesapeake Drive",
+      "city": "Cambridge",
+      "state": "MD",
+      "zip": "21613-9408",
+      "phoneMain": "410-228-6243",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/cambridge-va-clinic/",
+      "lat": 38.55080039,
+      "lng": -76.05350795,
+      "website": "https://www.va.gov/maryland-health-care/locations/cambridge-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-688gd-charlotte-hall",
+      "name": "Charlotte Hall VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "29640 Three Notch Road",
+      "city": "Charlotte Hall",
+      "state": "MD",
+      "zip": "20622-3244",
+      "phoneMain": "301-884-7102",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/washington-dc-health-care/locations/charlotte-hall-va-clinic/",
+      "lat": 38.48311657,
+      "lng": -76.77509546,
+      "website": "https://www.va.gov/washington-dc-health-care/locations/charlotte-hall-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613ga-cumberland",
+      "name": "Cumberland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "200 Glen Street",
+      "city": "Cumberland",
+      "state": "MD",
+      "zip": "21502-2573",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/cumberland-va-clinic/",
+      "lat": 39.65367896,
+      "lng": -78.75857247,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/cumberland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0236v-dundalk",
+      "name": "Dundalk Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1553 Merritt Boulevard",
+      "city": "Dundalk",
+      "state": "MD",
+      "zip": "21222",
+      "phoneMain": "410-282-6144",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/dundalk-vet-center/",
+      "lat": 39.27375672,
+      "lng": -76.50287791,
+      "website": "https://www.va.gov/dundalk-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512gf-rosedale",
+      "name": "Eastern Baltimore County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5235 King Avenue",
+      "city": "Rosedale",
+      "state": "MD",
+      "zip": "21237-4068",
+      "phoneMain": "443-730-2020",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/eastern-baltimore-county-va-clinic/",
+      "lat": 39.35782227,
+      "lng": -76.47052255,
+      "website": "https://www.va.gov/maryland-health-care/locations/eastern-baltimore-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0209v-elkton",
+      "name": "Elkton Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "103 Chesapeake Boulevard",
+      "city": "Elkton",
+      "state": "MD",
+      "zip": "21921",
+      "phoneMain": "410-392-4485",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/elkton-vet-center/",
+      "lat": 39.60410246,
+      "lng": -75.78677377,
+      "website": "https://www.va.gov/elkton-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613gg-frederick",
+      "name": "Fort Detrick VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1433 Porter Street",
+      "city": "Frederick",
+      "state": "MD",
+      "zip": "21702-9211",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/fort-detrick-va-clinic/",
+      "lat": 39.43774202,
+      "lng": -77.4223681,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/fort-detrick-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512gg-fort-meade",
+      "name": "Fort Meade VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "2479 5th Street",
+      "city": "Fort Meade",
+      "state": "MD",
+      "zip": "20755-0000",
+      "phoneMain": "410-305-5300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/fort-meade-va-clinic/",
+      "lat": 39.09661679,
+      "lng": -76.72880548,
+      "website": "https://www.va.gov/maryland-health-care/locations/fort-meade-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512gc-glen-burnie",
+      "name": "Glen Burnie VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "808 Landmark Drive",
+      "city": "Glen Burnie",
+      "state": "MD",
+      "zip": "21061-4983",
+      "phoneMain": "410-590-4140",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/glen-burnie-va-clinic/",
+      "lat": 39.14822906,
+      "lng": -76.64263946,
+      "website": "https://www.va.gov/maryland-health-care/locations/glen-burnie-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613gb-hagerstown",
+      "name": "Hagerstown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1101 Opal Court",
+      "city": "Hagerstown",
+      "state": "MD",
+      "zip": "21740-5941",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/hagerstown-va-clinic/",
+      "lat": 39.636258,
+      "lng": -77.69658564,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/hagerstown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-688gg-lexington-park",
+      "name": "Lexington Park VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "45870 East Run Drive",
+      "city": "Lexington Park",
+      "state": "MD",
+      "zip": "20653-2383",
+      "phoneMain": "240-237-1625",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/washington-dc-health-care/locations/lexington-park-va-clinic/",
+      "lat": 38.259315,
+      "lng": -76.4050095,
+      "website": "https://www.va.gov/washington-dc-health-care/locations/lexington-park-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512gd-baltimore",
+      "name": "Loch Raven VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "3901 The Alameda",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21218-2100",
+      "phoneMain": "410-605-7650",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/loch-raven-va-medical-center/",
+      "lat": 39.33617627,
+      "lng": -76.59749567,
+      "website": "https://www.va.gov/maryland-health-care/locations/loch-raven-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-688gf-gaithersburg",
+      "name": "Montgomery County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "15810 Gaither Drive",
+      "city": "Gaithersburg",
+      "state": "MD",
+      "zip": "20877-1429",
+      "phoneMain": "301-591-5858",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/washington-dc-health-care/locations/montgomery-county-va-clinic/",
+      "lat": 39.115062,
+      "lng": -77.1908805,
+      "website": "https://www.va.gov/washington-dc-health-care/locations/montgomery-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512a5-perry-point",
+      "name": "Perry Point VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "361 Boiler House Road",
+      "city": "Perry Point",
+      "state": "MD",
+      "zip": "21902-1103",
+      "phoneMain": "410-642-2411",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/perry-point-va-medical-center/",
+      "lat": 39.55124523,
+      "lng": -76.06603678,
+      "website": "https://www.va.gov/maryland-health-care/locations/perry-point-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-512ge-pocomoke-city",
+      "name": "Pocomoke City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1701 Market Place",
+      "city": "Pocomoke City",
+      "state": "MD",
+      "zip": "21851-1738",
+      "phoneMain": "410-957-6718",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/maryland-health-care/locations/pocomoke-city-va-clinic/",
+      "lat": 38.06169422,
+      "lng": -75.54891254,
+      "website": "https://www.va.gov/maryland-health-care/locations/pocomoke-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0237v-clinton",
+      "name": "Prince George's County Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "7905 Malcolm Road",
+      "city": "Clinton",
+      "state": "MD",
+      "zip": "20735-1734",
+      "phoneMain": "301-856-7173",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/prince-georges-county-vet-center/",
+      "lat": 38.780937,
+      "lng": -76.8898935,
+      "website": "https://www.va.gov/prince-georges-county-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-2091os-salisbury",
+      "name": "Salisbury Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "926 Snow Hill Road",
+      "city": "Salisbury",
+      "state": "MD",
+      "zip": "21804",
+      "phoneMain": "410-912-7262",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/elkton-vet-center/locations/#salisbury-vet-center-outstatio",
+      "lat": 38.34733239,
+      "lng": -75.58189688,
+      "website": "https://www.va.gov/elkton-vet-center/locations/#salisbury-vet-center-outstatio",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0213v-silver-spring",
+      "name": "Silver Spring Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2900 Linden Lane",
+      "city": "Silver Spring",
+      "state": "MD",
+      "zip": "20910",
+      "phoneMain": "301-589-1073",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/silver-spring-vet-center/",
+      "lat": 39.014919,
+      "lng": -77.057478,
+      "website": "https://www.va.gov/silver-spring-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-688ge-camp-springs",
+      "name": "Southern Prince George's County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5801 Allentown Road",
+      "city": "Camp Springs",
+      "state": "MD",
+      "zip": "20746-4563",
+      "phoneMain": "301-423-3700",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/washington-dc-health-care/locations/southern-prince-georges-county-va-clinic/",
+      "lat": 38.808405,
+      "lng": -76.899096,
+      "website": "https://www.va.gov/washington-dc-health-care/locations/southern-prince-georges-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

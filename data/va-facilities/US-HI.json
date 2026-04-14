@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "Hawaii — VA health facilities (map & list)",
+    "region": "Hawaii",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Hawaii. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "604 Mauna Loa Highway",
+      "city": "Kaunakakai",
+      "state": "HI",
+      "zip": "96748-0000",
+      "lat": 21.09624899,
+      "lng": -157.03532113,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Hawaii",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-459gb-hilo",
+      "name": "Hilo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "45 Mohouli Street",
+      "city": "Hilo",
+      "state": "HI",
+      "zip": "96720-7210",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/hilo-va-clinic/",
+      "lat": 19.71301886,
+      "lng": -155.07827448,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/hilo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0635v-hilo",
+      "name": "Hilo Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "70 Lanihuli Street",
+      "city": "Hilo",
+      "state": "HI",
+      "zip": "96720",
+      "phoneMain": "808-969-3833",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/hilo-vet-center/",
+      "lat": 19.71101494,
+      "lng": -155.07885281,
+      "website": "https://www.va.gov/hilo-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0609v-honolulu",
+      "name": "Honolulu Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1680 Kapiolani Boulevard",
+      "city": "Honolulu",
+      "state": "HI",
+      "zip": "96814-3700",
+      "phoneMain": "808-973-8387",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/honolulu-vet-center/",
+      "lat": 21.29133992,
+      "lng": -157.83851203,
+      "website": "https://www.va.gov/honolulu-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459gc-kailua-kona",
+      "name": "Kailua-Kona VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "75-377 Hualalai Road",
+      "city": "Kailua-Kona",
+      "state": "HI",
+      "zip": "96740-9724",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/kailua-kona-va-clinic/",
+      "lat": 19.63130231,
+      "lng": -155.97715025,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/kailua-kona-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0633v-lihue",
+      "name": "Kauai Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4485 Pahe'e Street",
+      "city": "Lihue",
+      "state": "HI",
+      "zip": "96765",
+      "phoneMain": "808-246-1163",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/kauai-vet-center/",
+      "lat": 21.97028419,
+      "lng": -159.38272854,
+      "website": "https://www.va.gov/kauai-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0636v-kailua-kona",
+      "name": "Kona Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "Hale Ku'i Plaza, 73-4976 Kamanu Street",
+      "city": "Kailua-Kona",
+      "state": "HI",
+      "zip": "96740",
+      "phoneMain": "808-329-0574",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/kona-vet-center/",
+      "lat": 19.69094694,
+      "lng": -156.01673098,
+      "website": "https://www.va.gov/kona-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459qa-lanai-city",
+      "name": "Lanai VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "628-B Seventh Street",
+      "city": "Lanai City",
+      "state": "HI",
+      "zip": "96763-0000",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: Closed · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/lanai-va-clinic/",
+      "lat": 20.82694254,
+      "lng": -156.91728739,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/lanai-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459gg-ewa-beach",
+      "name": "Leeward Oahu VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "91-2135 Fort Weaver Road",
+      "city": "Ewa Beach",
+      "state": "HI",
+      "zip": "96706-1929",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/daniel-kahikina-akaka-va-clinic/",
+      "lat": 21.37117021,
+      "lng": -158.02607068,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/daniel-kahikina-akaka-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459gd-lihue",
+      "name": "Lihue VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4485 Pahe'e Street",
+      "city": "Lihue",
+      "state": "HI",
+      "zip": "96766-2018",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/lihue-va-clinic/",
+      "lat": 21.97028419,
+      "lng": -159.38272854,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/lihue-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459ga-kahului",
+      "name": "Maui VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "203 Ho'ohana Street",
+      "city": "Kahului",
+      "state": "HI",
+      "zip": "96732-2476",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/maui-va-clinic/",
+      "lat": 20.88709675,
+      "lng": -156.46340901,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/maui-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0634v-kahului",
+      "name": "Maui Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "157 Ma'a Street",
+      "city": "Kahului",
+      "state": "HI",
+      "zip": "96732",
+      "phoneMain": "808-242-8557",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/maui-vet-center/",
+      "lat": 20.86712966,
+      "lng": -156.49573855,
+      "website": "https://www.va.gov/maui-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459qb-kaunakakai",
+      "name": "Molokai VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "604 Mauna Loa Highway",
+      "city": "Kaunakakai",
+      "state": "HI",
+      "zip": "96748-0000",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/molokai-va-clinic/",
+      "lat": 21.09624899,
+      "lng": -157.03532113,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/molokai-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459-honolulu",
+      "name": "Spark M. Matsunaga Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "459 Patterson Road",
+      "city": "Honolulu",
+      "state": "HI",
+      "zip": "96819-1522",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/spark-m-matsunaga-department-of-veterans-affairs-medical-center/",
+      "lat": 21.36125048,
+      "lng": -157.88887764,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/spark-m-matsunaga-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0870mvc-kapolei",
+      "name": "Western Oahu Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "885 Kamokila Boulevard",
+      "city": "Kapolei",
+      "state": "HI",
+      "zip": "96707",
+      "phoneMain": "808-674-2414",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/west-oahu-vet-center/locations/#western-oahu-mobile-vet-center",
+      "lat": 21.3327,
+      "lng": -158.082543,
+      "website": "https://www.va.gov/west-oahu-vet-center/locations/#western-oahu-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0621v-kapolei",
+      "name": "Western Oahu Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "885 Kamokila Boulevard",
+      "city": "Kapolei",
+      "state": "HI",
+      "zip": "96707",
+      "phoneMain": "808-458-5084",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/western-oahu-vet-center/",
+      "lat": 21.3327,
+      "lng": -158.082543,
+      "website": "https://www.va.gov/western-oahu-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-459qc-kaneohe",
+      "name": "Windward VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "46-001 Kamehameha Highway",
+      "city": "Kaneohe",
+      "state": "HI",
+      "zip": "96744-3711",
+      "phoneMain": "800-214-1306",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/pacific-islands-health-care/locations/windward-va-clinic/",
+      "lat": 21.41867631,
+      "lng": -157.80223026,
+      "website": "https://www.va.gov/pacific-islands-health-care/locations/windward-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

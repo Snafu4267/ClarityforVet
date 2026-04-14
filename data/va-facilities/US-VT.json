@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "title": "Vermont — VA health facilities (map & list)",
+    "region": "Vermont",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Vermont. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "232 West Street",
+      "city": "Rutland",
+      "state": "VT",
+      "zip": "05701-2850",
+      "lat": 43.60711681,
+      "lng": -72.98562437,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Vermont",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-405ga-bennington",
+      "name": "Bennington VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "186 North Street",
+      "city": "Bennington",
+      "state": "VT",
+      "zip": "05201-1874",
+      "phoneMain": "802-440-3300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 700AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/bennington-va-clinic/",
+      "lat": 42.88040153,
+      "lng": -73.19706542,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/bennington-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405gc-brattleboro",
+      "name": "Brattleboro VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "71 GSP Drive",
+      "city": "Brattleboro",
+      "state": "VT",
+      "zip": "05301-4452",
+      "phoneMain": "802-251-2200",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/brattleboro-va-clinic/",
+      "lat": 42.83032368,
+      "lng": -72.56765629,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/brattleboro-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405ha-burlington",
+      "name": "Burlington Lakeside VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "128 Lakeside Avenue",
+      "city": "Burlington",
+      "state": "VT",
+      "zip": "05401-5911",
+      "phoneMain": "802-657-7000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/burlington-lakeside-va-clinic/",
+      "lat": 44.46153,
+      "lng": -73.21752,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/burlington-lakeside-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405qb-newport",
+      "name": "Newport VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1734 Crawford Farm Road",
+      "city": "Newport",
+      "state": "VT",
+      "zip": "05855-4509",
+      "phoneMain": "802-624-2400",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 700AM-330PM · thursday: 800AM-430PM · friday: 700AM-330PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/newport-va-clinic/",
+      "lat": 44.93220871,
+      "lng": -72.18091902,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/newport-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405hf-rutland",
+      "name": "Rutland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "232 West Street",
+      "city": "Rutland",
+      "state": "VT",
+      "zip": "05701-2850",
+      "phoneMain": "802-772-2300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-530PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/rutland-va-clinic/",
+      "lat": 43.60711681,
+      "lng": -72.98562437,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/rutland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0118v-south-burlington",
+      "name": "South Burlington Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "19 Gregory Dr.",
+      "city": "South Burlington",
+      "state": "VT",
+      "zip": "05403",
+      "phoneMain": "802-862-1806",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/south-burlington-vet-center/",
+      "lat": 44.455059,
+      "lng": -73.1417265,
+      "website": "https://www.va.gov/south-burlington-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0803mvc-white-river-junction",
+      "name": "White River Junction Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "118 Prospect St",
+      "city": "White River Junction",
+      "state": "VT",
+      "zip": "05001-0000",
+      "phoneMain": "802-295-2908",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/white-river-junction-vet-center/locations/#white-river-junction-mobile-ve",
+      "lat": 43.653906,
+      "lng": -72.315063,
+      "website": "https://www.va.gov/white-river-junction-vet-center/locations/#white-river-junction-mobile-ve",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405-white-river-junction",
+      "name": "White River Junction VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "163 Veterans Drive",
+      "city": "White River Junction",
+      "state": "VT",
+      "zip": "05001-0000",
+      "phoneMain": "802-295-9363",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/white-river-junction-va-medical-center/",
+      "lat": 43.64790103,
+      "lng": -72.34237298,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/white-river-junction-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0122v-white-river-junction",
+      "name": "White River Junction Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "118 Prospect Street",
+      "city": "White River Junction",
+      "state": "VT",
+      "zip": "05001",
+      "phoneMain": "802-295-2908",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/white-river-junction-vet-center/",
+      "lat": 43.653906,
+      "lng": -72.315063,
+      "website": "https://www.va.gov/white-river-junction-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

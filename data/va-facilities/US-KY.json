@@ -1,0 +1,659 @@
+{
+  "meta": {
+    "title": "Kentucky — VA health facilities (map & list)",
+    "region": "Kentucky",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Kentucky. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "9208 Taylorsville Road",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40299-0000",
+      "lat": 38.21159599,
+      "lng": -85.58692888,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Kentucky",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-539ga-bellevue",
+      "name": "Bellevue VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "103 Landmark Drive",
+      "city": "Bellevue",
+      "state": "KY",
+      "zip": "41073-1399",
+      "phoneMain": "859-392-3840",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/cincinnati-health-care/locations/bellevue-va-clinic/",
+      "lat": 39.100959,
+      "lng": -84.484638,
+      "website": "https://www.va.gov/cincinnati-health-care/locations/bellevue-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596gd-berea",
+      "name": "Berea VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "209 Pauline Drive",
+      "city": "Berea",
+      "state": "KY",
+      "zip": "40403-8889",
+      "phoneMain": "859-986-1259",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/berea-va-clinic/",
+      "lat": 37.597437,
+      "lng": -84.32304421,
+      "website": "https://www.va.gov/lexington-health-care/locations/berea-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-626gc-bowling-green",
+      "name": "Bowling Green VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "600 US 31 West Bypass",
+      "city": "Bowling Green",
+      "state": "KY",
+      "zip": "42101-4905",
+      "phoneMain": "270-782-0120",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tennessee-valley-health-care/locations/bowling-green-va-clinic/",
+      "lat": 36.990471,
+      "lng": -86.428268,
+      "website": "https://www.va.gov/tennessee-valley-health-care/locations/bowling-green-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603gh-carrollton",
+      "name": "Carrollton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1911 Highway 227",
+      "city": "Carrollton",
+      "state": "KY",
+      "zip": "41008-8037",
+      "phoneMain": "502-287-6060",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/carrollton-va-clinic/",
+      "lat": 38.6636339,
+      "lng": -85.14099213,
+      "website": "https://www.va.gov/louisville-health-care/locations/carrollton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-539a4-fort-thomas",
+      "name": "Cincinnati VA Medical Center-Fort Thomas",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "1000 South Fort Thomas Avenue",
+      "city": "Fort Thomas",
+      "state": "KY",
+      "zip": "41075-2305",
+      "phoneMain": "859-572-6202",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/cincinnati-health-care/locations/cincinnati-va-medical-center-fort-thomas/",
+      "lat": 39.06459,
+      "lng": -84.4456095,
+      "website": "https://www.va.gov/cincinnati-health-care/locations/cincinnati-va-medical-center-fort-thomas/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-539gd-florence",
+      "name": "Florence VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "7310 Turfway Road",
+      "city": "Florence",
+      "state": "KY",
+      "zip": "41042-1385",
+      "phoneMain": "859-282-4480",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/cincinnati-health-care/locations/florence-va-clinic/",
+      "lat": 39.013029,
+      "lng": -84.6271035,
+      "website": "https://www.va.gov/cincinnati-health-care/locations/florence-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603ga-fort-knox",
+      "name": "Fort Knox VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "282 Brule Street",
+      "city": "Fort Knox",
+      "state": "KY",
+      "zip": "40121-6103",
+      "phoneMain": "502-287-6481",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/fort-knox-va-clinic/",
+      "lat": 37.9020354,
+      "lng": -85.93615572,
+      "website": "https://www.va.gov/louisville-health-care/locations/fort-knox-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596-lexington",
+      "name": "Franklin R. Sousley Campus",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2250 Leestown Road",
+      "city": "Lexington",
+      "state": "KY",
+      "zip": "40511-1052",
+      "phoneMain": "859-233-4511",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/franklin-r-sousley-campus/",
+      "lat": 38.071692,
+      "lng": -84.5414505,
+      "website": "https://www.va.gov/lexington-health-care/locations/franklin-r-sousley-campus/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603gf-clarkson",
+      "name": "Grayson County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "619 West Main Street",
+      "city": "Clarkson",
+      "state": "KY",
+      "zip": "42726-7044",
+      "phoneMain": "866-653-8232",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/grayson-county-va-clinic/",
+      "lat": 37.49556537,
+      "lng": -86.23391119,
+      "website": "https://www.va.gov/louisville-health-care/locations/grayson-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603gc-louisville",
+      "name": "Greenwood VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "7410 Dixie Highway",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40258-1406",
+      "phoneMain": "502-287-6000",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/greenwood-va-clinic/",
+      "lat": 38.14193815,
+      "lng": -85.84035268,
+      "website": "https://www.va.gov/louisville-health-care/locations/greenwood-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596gc-hazard",
+      "name": "Hazard VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "210 Black Gold Boulevard",
+      "city": "Hazard",
+      "state": "KY",
+      "zip": "41701-2620",
+      "phoneMain": "606-436-2350",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/hazard-va-clinic/",
+      "lat": 37.25456567,
+      "lng": -83.19991816,
+      "website": "https://www.va.gov/lexington-health-care/locations/hazard-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-626gj-hopkinsville",
+      "name": "Hopkinsville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4000 Fort Campbell Boulevard",
+      "city": "Hopkinsville",
+      "state": "KY",
+      "zip": "42240-3579",
+      "phoneMain": "270-885-2106",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tennessee-valley-health-care/locations/hopkinsville-va-clinic/",
+      "lat": 36.83364345,
+      "lng": -87.47373646,
+      "website": "https://www.va.gov/tennessee-valley-health-care/locations/hopkinsville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0806mvc-lexington",
+      "name": "Lexington Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1500 Leestown Road",
+      "city": "Lexington",
+      "state": "KY",
+      "zip": "40511",
+      "phoneMain": "859-253-0717",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/lexington-vet-center/locations/#lexington-mobile-vet-center",
+      "lat": 38.06608098,
+      "lng": -84.52415443,
+      "website": "https://www.va.gov/lexington-vet-center/locations/#lexington-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0203v-lexington",
+      "name": "Lexington Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1500 Leestown Road",
+      "city": "Lexington",
+      "state": "KY",
+      "zip": "40511",
+      "phoneMain": "859-253-0717",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/lexington-vet-center/",
+      "lat": 38.06608098,
+      "lng": -84.52415443,
+      "website": "https://www.va.gov/lexington-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0202v-louisville",
+      "name": "Louisville Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1347 South Third Street",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40208",
+      "phoneMain": "502-287-6710",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/louisville-vet-center/",
+      "lat": 38.2306535,
+      "lng": -85.75938208,
+      "website": "https://www.va.gov/louisville-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-657go-madisonville",
+      "name": "Madisonville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "99 Stagecoach Road",
+      "city": "Madisonville",
+      "state": "KY",
+      "zip": "42431-8009",
+      "phoneMain": "270-326-3600",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/marion-health-care/locations/madisonville-va-clinic/",
+      "lat": 37.36476464,
+      "lng": -87.49645581,
+      "website": "https://www.va.gov/marion-health-care/locations/madisonville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-657gr-mayfield",
+      "name": "Mayfield VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1253 Paris Road",
+      "city": "Mayfield",
+      "state": "KY",
+      "zip": "42066-4989",
+      "phoneMain": "270-247-2455",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/marion-health-care/locations/mayfield-va-clinic/",
+      "lat": 36.72111133,
+      "lng": -88.6265641,
+      "website": "https://www.va.gov/marion-health-care/locations/mayfield-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596gb-morehead",
+      "name": "Morehead VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "333 Beacon Hill Road",
+      "city": "Morehead",
+      "state": "KY",
+      "zip": "40351-6182",
+      "phoneMain": "606-784-3004",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/morehead-va-clinic/",
+      "lat": 38.18652821,
+      "lng": -83.48046831,
+      "website": "https://www.va.gov/lexington-health-care/locations/morehead-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603ge-louisville",
+      "name": "Newburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3430 Newburg Road",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40218-3483",
+      "phoneMain": "502-287-6223",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/newburg-va-clinic/",
+      "lat": 38.19525149,
+      "lng": -85.67910065,
+      "website": "https://www.va.gov/louisville-health-care/locations/newburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-657gp-owensboro",
+      "name": "Owensboro VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3400 New Hartford Road",
+      "city": "Owensboro",
+      "state": "KY",
+      "zip": "42303-1705",
+      "phoneMain": "270-684-5034",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/marion-health-care/locations/owensboro-va-clinic/",
+      "lat": 37.73701731,
+      "lng": -87.09145526,
+      "website": "https://www.va.gov/marion-health-care/locations/owensboro-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-657gl-paducah",
+      "name": "Paducah VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2620 Perkins Creek Drive",
+      "city": "Paducah",
+      "state": "KY",
+      "zip": "42001-7494",
+      "phoneMain": "270-444-8465",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/marion-health-care/locations/paducah-va-clinic/",
+      "lat": 37.06695936,
+      "lng": -88.6864051,
+      "website": "https://www.va.gov/marion-health-care/locations/paducah-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581ga-prestonsburg",
+      "name": "Prestonsburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5230 KY Route 321",
+      "city": "Prestonsburg",
+      "state": "KY",
+      "zip": "41653-9169",
+      "phoneMain": "606-886-1970",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/prestonsburg-va-clinic/",
+      "lat": 37.72894355,
+      "lng": -82.76288474,
+      "website": "https://www.va.gov/huntington-health-care/locations/prestonsburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603-louisville",
+      "name": "Robley Rex Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "800 Zorn Avenue",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40206-1433",
+      "phoneMain": "502-287-4000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/robley-rex-department-of-veterans-affairs-medical-center/",
+      "lat": 38.270628,
+      "lng": -85.6973205,
+      "website": "https://www.va.gov/louisville-health-care/locations/robley-rex-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596ga-somerset",
+      "name": "Somerset VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "300 Medpark Drive",
+      "city": "Somerset",
+      "state": "KY",
+      "zip": "42503-2816",
+      "phoneMain": "606-676-0786",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/somerset-va-clinic/",
+      "lat": 37.08318756,
+      "lng": -84.62951976,
+      "website": "https://www.va.gov/lexington-health-care/locations/somerset-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-603gd-louisville",
+      "name": "Stonybrook VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "9208 Taylorsville Road",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40299-0000",
+      "phoneMain": "502-287-6986",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/louisville-health-care/locations/stonybrook-va-clinic/",
+      "lat": 38.21159599,
+      "lng": -85.58692888,
+      "website": "https://www.va.gov/louisville-health-care/locations/stonybrook-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-596a4-lexington",
+      "name": "Troy Bowling Campus",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1101 Veterans Drive",
+      "city": "Lexington",
+      "state": "KY",
+      "zip": "40502-2235",
+      "phoneMain": "859-233-4511",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/lexington-health-care/locations/troy-bowling-campus/",
+      "lat": 38.029293,
+      "lng": -84.506679,
+      "website": "https://www.va.gov/lexington-health-care/locations/troy-bowling-campus/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

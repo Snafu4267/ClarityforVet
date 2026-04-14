@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Alaska — VA health facilities (map & list)",
+    "region": "Alaska",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Alaska. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "865 North Seward Meridian Parkway",
+      "city": "Wasilla",
+      "state": "AK",
+      "zip": "99654-7241",
+      "lat": 61.58997377,
+      "lng": -149.35985117,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Alaska",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-463-anchorage",
+      "name": "Anchorage VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1201 North Muldoon Road",
+      "city": "Anchorage",
+      "state": "AK",
+      "zip": "99504-6104",
+      "phoneMain": "888-353-7574",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/colonel-mary-louise-rasmuson-campus-of-the-alaska-va-healthcare-system/",
+      "lat": 61.23134107,
+      "lng": -149.74442494,
+      "website": "https://www.va.gov/alaska-health-care/locations/colonel-mary-louise-rasmuson-campus-of-the-alaska-va-healthcare-system/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0502v-anchorage",
+      "name": "Anchorage Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4400 Business Park Boulevard",
+      "city": "Anchorage",
+      "state": "AK",
+      "zip": "99503",
+      "phoneMain": "907-563-6966",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/anchorage-vet-center/",
+      "lat": 61.179786,
+      "lng": -149.889834,
+      "website": "https://www.va.gov/anchorage-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463qa-joint-base-elmendorf-richardson",
+      "name": "Elmendorf-Richardson VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "5955 Zeamer Avenue",
+      "city": "Joint Base Elmendorf-Richardson",
+      "state": "AK",
+      "zip": "99506-3702",
+      "phoneMain": "907-257-4700",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/joint-base-elmendorf-richardson-va-medical-center/",
+      "lat": 61.23712984,
+      "lng": -149.74869546,
+      "website": "https://www.va.gov/alaska-health-care/locations/joint-base-elmendorf-richardson-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463ga-fort-wainwright",
+      "name": "Fairbanks VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4076 Neeley Road",
+      "city": "Fort Wainwright",
+      "state": "AK",
+      "zip": "99703-1110",
+      "phoneMain": "907-328-1750",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/fairbanks-va-clinic/",
+      "lat": 64.82923611,
+      "lng": -147.66264244,
+      "website": "https://www.va.gov/alaska-health-care/locations/fairbanks-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0511v-fairbanks",
+      "name": "Fairbanks Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "540 4th Avenue",
+      "city": "Fairbanks",
+      "state": "AK",
+      "zip": "99701",
+      "phoneMain": "907-456-4238",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/fairbanks-vet-center/",
+      "lat": 64.84232534,
+      "lng": -147.71959639,
+      "website": "https://www.va.gov/fairbanks-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463gd-homer",
+      "name": "Homer VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "4141 Pennock Street",
+      "city": "Homer",
+      "state": "AK",
+      "zip": "99603-7223",
+      "phoneMain": "888-353-7574",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/homer-va-clinic/",
+      "lat": 59.65013535,
+      "lng": -151.51804456,
+      "website": "https://www.va.gov/alaska-health-care/locations/homer-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463ge-juneau",
+      "name": "Juneau VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "709 West 9th Street",
+      "city": "Juneau",
+      "state": "AK",
+      "zip": "99801-1807",
+      "phoneMain": "888-353-7574",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/juneau-va-clinic/",
+      "lat": 58.30170195,
+      "lng": -134.42073896,
+      "website": "https://www.va.gov/alaska-health-care/locations/juneau-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-5021os-soldotna",
+      "name": "Kenai Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "43299 Kalifornsky Beach Road",
+      "city": "Soldotna",
+      "state": "AK",
+      "zip": "99669",
+      "phoneMain": "907-260-7640",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/anchorage-vet-center/locations/#kenai-vet-center-outstation",
+      "lat": 60.49406363,
+      "lng": -151.15939531,
+      "website": "https://www.va.gov/anchorage-vet-center/locations/#kenai-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463gc-wasilla",
+      "name": "Mat-Su VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "865 North Seward Meridian Parkway",
+      "city": "Wasilla",
+      "state": "AK",
+      "zip": "99654-7241",
+      "phoneMain": "888-353-7574",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/mat-su-va-clinic/",
+      "lat": 61.58997377,
+      "lng": -149.35985117,
+      "website": "https://www.va.gov/alaska-health-care/locations/mat-su-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-463gb-soldotna",
+      "name": "Soldotna VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "237 West Rockwell Avenue",
+      "city": "Soldotna",
+      "state": "AK",
+      "zip": "99669-7412",
+      "phoneMain": "888-353-7574",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alaska-health-care/locations/soldotna-va-clinic/",
+      "lat": 60.49317164,
+      "lng": -151.08223134,
+      "website": "https://www.va.gov/alaska-health-care/locations/soldotna-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0512v-wasilla",
+      "name": "Wasilla Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "851 East West Point Drive",
+      "city": "Wasilla",
+      "state": "AK",
+      "zip": "99654",
+      "phoneMain": "907-376-4318",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/wasilla-vet-center/",
+      "lat": 61.582419,
+      "lng": -149.4276705,
+      "website": "https://www.va.gov/wasilla-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

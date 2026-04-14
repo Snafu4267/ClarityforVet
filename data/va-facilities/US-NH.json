@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "New Hampshire — VA health facilities (map & list)",
+    "region": "New Hampshire",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in New Hampshire. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "630 West Main Street",
+      "city": "Tilton",
+      "state": "NH",
+      "zip": "03276-5047",
+      "lat": 43.4471986,
+      "lng": -71.62006877,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — New Hampshire",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-0134v-gorham",
+      "name": "Berlin Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "515 Main Street",
+      "city": "Gorham",
+      "state": "NH",
+      "zip": "03581",
+      "phoneMain": "603-752-2571",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/berlin-vet-center/",
+      "lat": 44.42086558,
+      "lng": -71.19455899,
+      "website": "https://www.va.gov/berlin-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-608gd-conway",
+      "name": "Conway VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "71 Hobbs Street",
+      "city": "Conway",
+      "state": "NH",
+      "zip": "03818-8109",
+      "phoneMain": "800-892-8384 x3199",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/manchester-health-care/locations/conway-va-clinic/",
+      "lat": 43.97434874,
+      "lng": -71.12936119,
+      "website": "https://www.va.gov/manchester-health-care/locations/conway-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-1221os-keene",
+      "name": "Keene Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "640 Marlboro Rd",
+      "city": "Keene",
+      "state": "NH",
+      "zip": "03431",
+      "phoneMain": "603-358-4950",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/white-river-junction-vet-center/locations/#keene-vet-center-outstation",
+      "lat": 42.91532514,
+      "lng": -72.24983736,
+      "website": "https://www.va.gov/white-river-junction-vet-center/locations/#keene-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405he-keene",
+      "name": "Keene VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "640 Marlboro Street",
+      "city": "Keene",
+      "state": "NH",
+      "zip": "03431-4049",
+      "phoneMain": "603-358-4900",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/keene-va-clinic/",
+      "lat": 42.91532514,
+      "lng": -72.24983736,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/keene-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-405hc-littleton",
+      "name": "Littleton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "264 Cottage Street",
+      "city": "Littleton",
+      "state": "NH",
+      "zip": "03561-9998",
+      "phoneMain": "603-575-6700",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/white-river-junction-health-care/locations/littleton-va-clinic/",
+      "lat": 44.2990238,
+      "lng": -71.76870552,
+      "website": "https://www.va.gov/white-river-junction-health-care/locations/littleton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-608-manchester",
+      "name": "Manchester VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "718 Smyth Road",
+      "city": "Manchester",
+      "state": "NH",
+      "zip": "03104-7007",
+      "phoneMain": "603-624-4366",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: 800AM-430PM · sunday: 800AM-430PM",
+      "sourceUrl": "https://www.va.gov/manchester-health-care/locations/manchester-va-medical-center/",
+      "lat": 43.01139338,
+      "lng": -71.44003365,
+      "website": "https://www.va.gov/manchester-health-care/locations/manchester-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0108v-hooksett",
+      "name": "Manchester Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1461 Hooksett Road",
+      "city": "Hooksett",
+      "state": "NH",
+      "zip": "03106-1882",
+      "phoneMain": "603-668-7060",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/manchester-vet-center/",
+      "lat": 43.07012233,
+      "lng": -71.45009351,
+      "website": "https://www.va.gov/manchester-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-1081os-portsmouth",
+      "name": "Newington Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "801 McGee Drive",
+      "city": "Portsmouth",
+      "state": "NH",
+      "zip": "03801",
+      "phoneMain": "603-668-7060",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/manchester-vet-center/locations/#newington-vet-center-outstatio",
+      "lat": 43.08378043,
+      "lng": -70.78008934,
+      "website": "https://www.va.gov/manchester-vet-center/locations/#newington-vet-center-outstatio",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-608ga-portsmouth",
+      "name": "Portsmouth VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "302 Newmarket Street",
+      "city": "Portsmouth",
+      "state": "NH",
+      "zip": "03803-0157",
+      "phoneMain": "603-624-4366 x3199",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/manchester-health-care/locations/portsmouth-va-clinic/",
+      "lat": 43.0896476,
+      "lng": -70.81805746,
+      "website": "https://www.va.gov/manchester-health-care/locations/portsmouth-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-608gc-somersworth",
+      "name": "Somersworth VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5 Terrascape Parkway",
+      "city": "Somersworth",
+      "state": "NH",
+      "zip": "03878-1115",
+      "phoneMain": "603-624-4366 x3199",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/manchester-health-care/locations/somersworth-va-clinic/",
+      "lat": 43.24323403,
+      "lng": -70.89841431,
+      "website": "https://www.va.gov/manchester-health-care/locations/somersworth-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-608ha-tilton",
+      "name": "Tilton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "630 West Main Street",
+      "city": "Tilton",
+      "state": "NH",
+      "zip": "03276-5047",
+      "phoneMain": "603-624-4366 x3199",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/manchester-health-care/locations/tilton-va-clinic/",
+      "lat": 43.4471986,
+      "lng": -71.62006877,
+      "website": "https://www.va.gov/manchester-health-care/locations/tilton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

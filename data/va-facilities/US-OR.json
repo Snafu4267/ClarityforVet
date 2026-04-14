@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "title": "Oregon — VA health facilities (map & list)",
+    "region": "Oregon",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Oregon. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "3355 Chad Drive",
+      "city": "Eugene",
+      "state": "OR",
+      "zip": "97408-7426",
+      "lat": 44.088462,
+      "lng": -123.052518,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Oregon",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-653gb-brookings",
+      "name": "Brookings VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "840 Railroad Street",
+      "city": "Brookings",
+      "state": "OR",
+      "zip": "97415-9702",
+      "phoneMain": "541-412-1152",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/roseburg-health-care/locations/brookings-va-clinic/",
+      "lat": 42.05213263,
+      "lng": -124.28829849,
+      "website": "https://www.va.gov/roseburg-health-care/locations/brookings-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0622v-bend",
+      "name": "Central Oregon Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1645 NE Forbes Road",
+      "city": "Bend",
+      "state": "OR",
+      "zip": "97701",
+      "phoneMain": "541-749-2112",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/central-oregon-vet-center/",
+      "lat": 44.05608555,
+      "lng": -121.28163174,
+      "website": "https://www.va.gov/central-oregon-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-653qa-eugene",
+      "name": "Downtown Eugene VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "211 East 7th Avenue",
+      "city": "Eugene",
+      "state": "OR",
+      "zip": "97401-2722",
+      "phoneMain": "541-242-0440",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/roseburg-health-care/locations/downtown-eugene-va-clinic/",
+      "lat": 44.05248,
+      "lng": -123.089373,
+      "website": "https://www.va.gov/roseburg-health-care/locations/downtown-eugene-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531gh-hines",
+      "name": "Eastern Oregon VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "635 Highway 20 North",
+      "city": "Hines",
+      "state": "OR",
+      "zip": "97738-9462",
+      "phoneMain": "541-573-3339",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/eastern-oregon-va-clinic/",
+      "lat": 43.57331459,
+      "lng": -119.07462483,
+      "website": "https://www.va.gov/boise-health-care/locations/eastern-oregon-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-653by-eugene",
+      "name": "Eugene VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · Health care center",
+      "address": "3355 Chad Drive",
+      "city": "Eugene",
+      "state": "OR",
+      "zip": "97408-7426",
+      "phoneMain": "541-607-0897",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/roseburg-health-care/locations/eugene-va-clinic/",
+      "lat": 44.088462,
+      "lng": -123.052518,
+      "website": "https://www.va.gov/roseburg-health-care/locations/eugene-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0626v-eugene",
+      "name": "Eugene Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "190 East 11th Avenue",
+      "city": "Eugene",
+      "state": "OR",
+      "zip": "97401",
+      "phoneMain": "541-465-6918",
+      "hoursSummary": "monday: 800AM-630PM · tuesday: 800AM-630PM · wednesday: 800AM-630PM · thursday: 800AM-630PM · friday: 800AM-630PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/eugene-vet-center/",
+      "lat": 44.047521,
+      "lng": -123.089949,
+      "website": "https://www.va.gov/eugene-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648ge-fairview",
+      "name": "Fairview VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1800 Northeast Market Drive",
+      "city": "Fairview",
+      "state": "OR",
+      "zip": "97024-7000",
+      "phoneMain": "503-660-0600",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/fairview-va-clinic/",
+      "lat": 45.53351337,
+      "lng": -122.44201864,
+      "website": "https://www.va.gov/portland-health-care/locations/fairview-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0871mvc-grants-pass",
+      "name": "Grants Pass Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "135 N.E. Steiger Street",
+      "city": "Grants Pass",
+      "state": "OR",
+      "zip": "97526-3214",
+      "phoneMain": "541-479-6912",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/grants-pass-vet-center/locations/#grants-pass-mobile-vet-center",
+      "lat": 42.452532,
+      "lng": -123.32097,
+      "website": "https://www.va.gov/grants-pass-vet-center/locations/#grants-pass-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-692gb-grants-pass",
+      "name": "Grants Pass VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1877 Williams Highway",
+      "city": "Grants Pass",
+      "state": "OR",
+      "zip": "97527-5802",
+      "phoneMain": "541-955-5551",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-oregon-health-care/locations/grants-pass-va-clinic/",
+      "lat": 42.416559,
+      "lng": -123.3377055,
+      "website": "https://www.va.gov/southern-oregon-health-care/locations/grants-pass-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0645v-grants-pass",
+      "name": "Grants Pass Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "135 N.E. Steiger Street",
+      "city": "Grants Pass",
+      "state": "OR",
+      "zip": "97526-3214",
+      "phoneMain": "541-479-6912",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/grants-pass-vet-center/",
+      "lat": 42.452532,
+      "lng": -123.32097,
+      "website": "https://www.va.gov/grants-pass-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gf-hillsboro",
+      "name": "Hillsboro VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1925 North East Stucki Avenue",
+      "city": "Hillsboro",
+      "state": "OR",
+      "zip": "97006-6945",
+      "phoneMain": "503-906-5000",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/hillsboro-va-clinic/",
+      "lat": 45.534465,
+      "lng": -122.879619,
+      "website": "https://www.va.gov/portland-health-care/locations/hillsboro-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-692ga-klamath-falls",
+      "name": "Klamath Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2225 North Eldorado Boulevard",
+      "city": "Klamath Falls",
+      "state": "OR",
+      "zip": "97601-6417",
+      "phoneMain": "541-273-6206",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southern-oregon-health-care/locations/klamath-falls-va-clinic/",
+      "lat": 42.2481744,
+      "lng": -121.78707109,
+      "website": "https://www.va.gov/southern-oregon-health-care/locations/klamath-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-687gc-la-grande",
+      "name": "La Grande VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "202 12th Street",
+      "city": "La Grande",
+      "state": "OR",
+      "zip": "97850-2879",
+      "phoneMain": "541-963-0627",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/walla-walla-health-care/locations/la-grande-va-clinic/",
+      "lat": 45.3139126,
+      "lng": -118.08637105,
+      "website": "https://www.va.gov/walla-walla-health-care/locations/la-grande-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gk-lincoln-city",
+      "name": "Lincoln City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "4422 Northeast Devils Lake Boulevard",
+      "city": "Lincoln City",
+      "state": "OR",
+      "zip": "97367-5000",
+      "phoneMain": "541-265-0547",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: Closed · thursday: Closed · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/lincoln-city-va-clinic/",
+      "lat": 44.99801817,
+      "lng": -123.99686065,
+      "website": "https://www.va.gov/portland-health-care/locations/lincoln-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gj-the-dalles",
+      "name": "Loren R. Kaufman VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "704 Veterans Drive",
+      "city": "The Dalles",
+      "state": "OR",
+      "zip": "97058-9998",
+      "phoneMain": "541-296-3937",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/loren-r-kaufman-va-clinic/",
+      "lat": 45.60036501,
+      "lng": -121.12559413,
+      "website": "https://www.va.gov/portland-health-care/locations/loren-r-kaufman-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-687qb-boardman",
+      "name": "Morrow County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2 Marine Drive",
+      "city": "Boardman",
+      "state": "OR",
+      "zip": "97818-0000",
+      "phoneMain": "541-481-2255",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/walla-walla-health-care/locations/morrow-county-va-clinic/",
+      "lat": 45.84775042,
+      "lng": -119.69359143,
+      "website": "https://www.va.gov/walla-walla-health-care/locations/morrow-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gh-newport",
+      "name": "Newport VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1010 Southwest Coast Highway",
+      "city": "Newport",
+      "state": "OR",
+      "zip": "97365-5215",
+      "phoneMain": "541-265-4182",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/newport-va-clinic/",
+      "lat": 44.62720613,
+      "lng": -124.06144179,
+      "website": "https://www.va.gov/portland-health-care/locations/newport-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-653ga-north-bend",
+      "name": "North Bend VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2191 Marion Street",
+      "city": "North Bend",
+      "state": "OR",
+      "zip": "97459-2314",
+      "phoneMain": "541-756-8002",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 900AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/roseburg-health-care/locations/north-bend-va-clinic/",
+      "lat": 43.404291,
+      "lng": -124.2360045,
+      "website": "https://www.va.gov/roseburg-health-care/locations/north-bend-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gd-warrenton",
+      "name": "North Coast VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "91400 Neacoxie Street",
+      "city": "Warrenton",
+      "state": "OR",
+      "zip": "97146-7267",
+      "phoneMain": "503-220-8262 x52593",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/north-coast-va-clinic/",
+      "lat": 46.12075229,
+      "lng": -123.93524586,
+      "website": "https://www.va.gov/portland-health-care/locations/north-coast-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gi-portland",
+      "name": "Portland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "308 Southwest 1st Avenue",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97204-3432",
+      "phoneMain": "503-808-1256",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 1000AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/portland-va-clinic/",
+      "lat": 45.52023504,
+      "lng": -122.6721943,
+      "website": "https://www.va.gov/portland-health-care/locations/portland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648-portland",
+      "name": "Portland VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "3710 Southwest US Veterans Hospital Road",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97239-2964",
+      "phoneMain": "503-220-8262",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/portland-va-medical-center/",
+      "lat": 45.49690116,
+      "lng": -122.68331024,
+      "website": "https://www.va.gov/portland-health-care/locations/portland-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0617v-portland",
+      "name": "Portland, OR Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1505 NE 122nd Avenue",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97230",
+      "phoneMain": "503-688-5361",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/portland-or-vet-center/",
+      "lat": 45.534159,
+      "lng": -122.53765748,
+      "website": "https://www.va.gov/portland-or-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648ga-bend",
+      "name": "Robert D. Maxwell Department of Veterans Affairs Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "2650 Northeast Courtney Drive",
+      "city": "Bend",
+      "state": "OR",
+      "zip": "97701-7639",
+      "phoneMain": "541-647-5200",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/robert-d-maxwell-department-of-veterans-affairs-clinic/",
+      "lat": 44.0720333,
+      "lng": -121.26477494,
+      "website": "https://www.va.gov/portland-health-care/locations/robert-d-maxwell-department-of-veterans-affairs-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-653-roseburg",
+      "name": "Roseburg VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "913 Northwest Garden Valley Boulevard",
+      "city": "Roseburg",
+      "state": "OR",
+      "zip": "97471-6523",
+      "phoneMain": "541-440-1000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/roseburg-health-care/locations/roseburg-va-medical-center/",
+      "lat": 43.22859108,
+      "lng": -123.36708767,
+      "website": "https://www.va.gov/roseburg-health-care/locations/roseburg-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0840mvc-salem",
+      "name": "Salem Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "2645 Portland Road, NE",
+      "city": "Salem",
+      "state": "OR",
+      "zip": "97301",
+      "phoneMain": "503-362-9911",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/salem-vet-center/locations/#salem-mobile-vet-center",
+      "lat": 44.96139,
+      "lng": -123.014871,
+      "website": "https://www.va.gov/salem-vet-center/locations/#salem-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gb-salem",
+      "name": "Salem VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1750 McGilchrist Street Southeast",
+      "city": "Salem",
+      "state": "OR",
+      "zip": "97302-1691",
+      "phoneMain": "971-304-2200",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/salem-va-clinic/",
+      "lat": 44.91603,
+      "lng": -123.0243885,
+      "website": "https://www.va.gov/portland-health-care/locations/salem-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0640v-salem",
+      "name": "Salem Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2645 Portland Road, NE",
+      "city": "Salem",
+      "state": "OR",
+      "zip": "97301",
+      "phoneMain": "503-362-9911",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/salem-vet-center/",
+      "lat": 44.96139,
+      "lng": -123.014871,
+      "website": "https://www.va.gov/salem-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-687qc-enterprise",
+      "name": "Wallowa County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "401 Northeast 1st Street",
+      "city": "Enterprise",
+      "state": "OR",
+      "zip": "97828-1186",
+      "phoneMain": "541-963-0627",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/walla-walla-health-care/locations/la-grande-va-clinic/",
+      "lat": 45.42874256,
+      "lng": -117.27623287,
+      "website": "https://www.va.gov/walla-walla-health-care/locations/la-grande-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-648gg-west-linn",
+      "name": "West Linn VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1750 Southwest Blankenship Road",
+      "city": "West Linn",
+      "state": "OR",
+      "zip": "97068-5100",
+      "phoneMain": "503-210-4900",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/portland-health-care/locations/west-linn-va-clinic/",
+      "lat": 45.35109548,
+      "lng": -122.65617644,
+      "website": "https://www.va.gov/portland-health-care/locations/west-linn-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-692-white-city",
+      "name": "White City VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "8495 Crater Lake Highway",
+      "city": "White City",
+      "state": "OR",
+      "zip": "97503-3011",
+      "phoneMain": "541-826-2111",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/southern-oregon-health-care/locations/white-city-va-medical-center/",
+      "lat": 42.43994933,
+      "lng": -122.83629732,
+      "website": "https://www.va.gov/southern-oregon-health-care/locations/white-city-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

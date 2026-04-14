@@ -1,0 +1,55 @@
+{
+  "intro": "National-scope pointers compiled for education only. Confirm every number, address, and rule on official VA and government sites before you rely on them.",
+  "phoneDirectory": [
+    {
+      "label": "VA Benefits (disability, pension, education, etc.)",
+      "phone": "800-827-1000",
+      "note": "Listed on VA.gov contact pages; hours may vary."
+    },
+    {
+      "label": "GI Bill / VA education benefits",
+      "phone": "888-442-4551",
+      "note": "VA education call center (verify on VA education pages)."
+    },
+    {
+      "label": "VA Health (general)",
+      "phone": "877-222-8387",
+      "note": "National VA health information line—use for general questions, not emergencies."
+    },
+    {
+      "label": "VA Debt Management Center",
+      "phone": "800-827-0648",
+      "note": "If VA correspondence references debt or overpayment—confirm on official VA debt pages."
+    }
+  ],
+  "primaryActions": [
+    {
+      "title": "Find a VA location",
+      "description": "Search VA facilities and in-network community providers using VA’s official locator.",
+      "url": "https://www.va.gov/find-locations",
+      "cta": "Open VA facility locator"
+    },
+    {
+      "title": "VA.gov hub",
+      "description": "Central entry for benefits, health care, records, and account tools.",
+      "url": "https://www.va.gov/",
+      "cta": "Go to VA.gov"
+    },
+    {
+      "title": "Accredited representatives (claims help)",
+      "description": "VA maintains information about accreditation—use official VA resources to find accredited assistance.",
+      "url": "https://www.va.gov/get-help-from-accredited-representative/",
+      "cta": "VA: accredited representatives"
+    }
+  ],
+  "organizationsNote": "VSO and VFW posts change by location. VA’s accredited representative resources and local veteran service directories are safer starting points than unverified third-party lists.",
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "You can also text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This is not a substitute for emergency services or professional crisis care."
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "title": "Nebraska — VA health facilities (map & list)",
+    "region": "Nebraska",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Nebraska. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "2201 North Broadwell Avenue",
+      "city": "Grand Island",
+      "state": "NE",
+      "zip": "68803-2153",
+      "lat": 40.94238566,
+      "lng": -98.3588131,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Nebraska",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-636gl-bellevue",
+      "name": "Bellevue VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2206 Longo Drive",
+      "city": "Bellevue",
+      "state": "NE",
+      "zip": "68005-2977",
+      "phoneMain": "402-591-4500",
+      "hoursSummary": "monday: 700AM-500PM · tuesday: 700AM-500PM · wednesday: 700AM-500PM · thursday: 700AM-500PM · friday: 700AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/sarpy-county-va-clinic/",
+      "lat": 41.156883,
+      "lng": -95.9226975,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/sarpy-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568hb-gordon",
+      "name": "Gordon VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "300 East 8th Street",
+      "city": "Gordon",
+      "state": "NE",
+      "zip": "69343-1123",
+      "phoneMain": "605-745-2000 x22549",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: Closed · thursday: Closed · friday: 900AM-300PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/gordon-va-clinic/",
+      "lat": 42.81186952,
+      "lng": -102.1996485,
+      "website": "https://www.va.gov/black-hills-health-care/locations/gordon-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636a4-grand-island",
+      "name": "Grand Island VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2201 North Broadwell Avenue",
+      "city": "Grand Island",
+      "state": "NE",
+      "zip": "68803-2153",
+      "phoneMain": "308-382-3660",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/grand-island-va-medical-center/",
+      "lat": 40.94238566,
+      "lng": -98.3588131,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/grand-island-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gq-holdrege",
+      "name": "Holdrege VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1118 Burlington Street",
+      "city": "Holdrege",
+      "state": "NE",
+      "zip": "68949-1705",
+      "phoneMain": "308-995-3760",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/holdrege-va-clinic/",
+      "lat": 40.44544113,
+      "lng": -99.379594,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/holdrege-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0825mvc-lincoln",
+      "name": "Lincoln Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "211 South 84th Street",
+      "city": "Lincoln",
+      "state": "NE",
+      "zip": "68510",
+      "phoneMain": "402-327-9727",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/lincoln-vet-center/locations/#lincoln-mobile-vet-center",
+      "lat": 40.81219143,
+      "lng": -96.605997,
+      "website": "https://www.va.gov/lincoln-vet-center/locations/#lincoln-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636a5-lincoln",
+      "name": "Lincoln VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "420 Victory Park Drive",
+      "city": "Lincoln",
+      "state": "NE",
+      "zip": "68510-2484",
+      "phoneMain": "402-489-3802",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/lincoln-va-clinic/",
+      "lat": 40.80963019,
+      "lng": -96.62292468,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/lincoln-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0427v-lincoln",
+      "name": "Lincoln Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "211 South 84th Street",
+      "city": "Lincoln",
+      "state": "NE",
+      "zip": "68510",
+      "phoneMain": "402-327-9727",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/lincoln-vet-center/",
+      "lat": 40.81219143,
+      "lng": -96.605997,
+      "website": "https://www.va.gov/lincoln-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636ga-norfolk",
+      "name": "Norfolk VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3204 Raasch Drive",
+      "city": "Norfolk",
+      "state": "NE",
+      "zip": "68701-3455",
+      "phoneMain": "402-370-4570",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/norfolk-va-clinic/",
+      "lat": 42.03348146,
+      "lng": -97.45857114,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/norfolk-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gb-north-platte",
+      "name": "North Platte VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "300 East 3rd Street",
+      "city": "North Platte",
+      "state": "NE",
+      "zip": "69101-4000",
+      "phoneMain": "308-532-6906",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/north-platte-va-clinic/",
+      "lat": 41.13514408,
+      "lng": -100.76097412,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/north-platte-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qa-omaha",
+      "name": "Omaha VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "825 Dorcas Street",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68108-1160",
+      "phoneMain": "402-977-4444",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-clinic/",
+      "lat": 41.23940655,
+      "lng": -95.927652,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636-omaha",
+      "name": "Omaha VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "4101 Woolworth Avenue",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68105-1850",
+      "phoneMain": "402-346-8800",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-med-center/",
+      "lat": 41.24512648,
+      "lng": -95.97525954,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/omaha-va-med-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0424v-omaha",
+      "name": "Omaha Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3047 South 72nd Street",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68124",
+      "phoneMain": "402-346-6735",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/omaha-vet-center/",
+      "lat": 41.230872,
+      "lng": -96.023574,
+      "website": "https://www.va.gov/omaha-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-6369ba-papillion",
+      "name": "Papillion VA Community Living Center",
+      "kind": "CBOC",
+      "system": "VHA · CLC",
+      "address": "11111 South 84th Street",
+      "city": "Papillion",
+      "state": "NE",
+      "zip": "68046-4122",
+      "phoneMain": "402-995-6600",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_6369BA",
+      "lat": 41.135958,
+      "lng": -96.040035,
+      "website": "https://www.va.gov/find-locations/facility/vha_6369BA",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568hh-scottsbluff",
+      "name": "Scottsbluff VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "601 5th Avenue",
+      "city": "Scottsbluff",
+      "state": "NE",
+      "zip": "69361-3581",
+      "phoneMain": "308-225-5330",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/scottsbluff-va-clinic/",
+      "lat": 41.85340981,
+      "lng": -103.65582158,
+      "website": "https://www.va.gov/black-hills-health-care/locations/scottsbluff-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442gb-sidney",
+      "name": "Sidney VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1116 10th Avenue",
+      "city": "Sidney",
+      "state": "NE",
+      "zip": "69162-2001",
+      "phoneMain": "308-254-6085",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: Closed · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/sidney-va-clinic/",
+      "lat": 41.14246447,
+      "lng": -102.97668841,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/sidney-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

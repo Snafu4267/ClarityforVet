@@ -1,0 +1,567 @@
+{
+  "meta": {
+    "title": "Minnesota — VA health facilities (map & list)",
+    "region": "Minnesota",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Minnesota. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "7545 Veterans Drive",
+      "city": "Ramsey",
+      "state": "MN",
+      "zip": "55303-7500",
+      "lat": 45.23140596,
+      "lng": -93.45867912,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Minnesota",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-618gk-albert-lea",
+      "name": "Albert Lea VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2115 East Main Street",
+      "city": "Albert Lea",
+      "state": "MN",
+      "zip": "56007-3920",
+      "phoneMain": "507-379-5530",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/albert-lea-va-clinic/",
+      "lat": 43.65461945,
+      "lng": -93.3404926,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/albert-lea-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0439v-anoka",
+      "name": "Anoka Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "700 East Main Street",
+      "city": "Anoka",
+      "state": "MN",
+      "zip": "55303",
+      "phoneMain": "763-503-2220",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/anoka-vet-center/",
+      "lat": 45.19768453,
+      "lng": -93.37814758,
+      "website": "https://www.va.gov/anoka-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437ge-bemidji",
+      "name": "Bemidji VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1217 Anne Street NW",
+      "city": "Bemidji",
+      "state": "MN",
+      "zip": "56601-5113",
+      "phoneMain": "218-755-6360",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/bemidji-va-clinic/",
+      "lat": 47.50505751,
+      "lng": -94.896333,
+      "website": "https://www.va.gov/fargo-health-care/locations/bemidji-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-656ga-brainerd",
+      "name": "Brainerd VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "722 Northwest 7th Street",
+      "city": "Brainerd",
+      "state": "MN",
+      "zip": "56401-2912",
+      "phoneMain": "218-855-1115",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/st-cloud-health-care/locations/brainerd-va-clinic/",
+      "lat": 46.35940375,
+      "lng": -94.22232906,
+      "website": "https://www.va.gov/st-cloud-health-care/locations/brainerd-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0821mvc-duluth",
+      "name": "Duluth Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "4402 Haines Road",
+      "city": "Duluth",
+      "state": "MN",
+      "zip": "55811",
+      "phoneMain": "218-722-8654",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/duluth-vet-center/locations/#duluth-mobile-vet-center",
+      "lat": 46.82964454,
+      "lng": -92.1748112,
+      "website": "https://www.va.gov/duluth-vet-center/locations/#duluth-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0429v-duluth",
+      "name": "Duluth Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4402 Haines Road",
+      "city": "Duluth",
+      "state": "MN",
+      "zip": "55811",
+      "phoneMain": "218-722-8654",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/duluth-vet-center/",
+      "lat": 46.829637,
+      "lng": -92.1739275,
+      "website": "https://www.va.gov/duluth-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618qb-ely",
+      "name": "Ely VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "720 East Miners Drive",
+      "city": "Ely",
+      "state": "MN",
+      "zip": "55731-1400",
+      "phoneMain": "218-365-0001",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: Closed · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/ely-va-clinic/",
+      "lat": 47.90708916,
+      "lng": -91.85620814,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/ely-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gc-fergus-falls",
+      "name": "Fergus Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1839 North Park Street",
+      "city": "Fergus Falls",
+      "state": "MN",
+      "zip": "56537-1247",
+      "phoneMain": "218-739-1400",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/fergus-falls-va-clinic/",
+      "lat": 46.302552,
+      "lng": -96.07622075,
+      "website": "https://www.va.gov/fargo-health-care/locations/fergus-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618qa-fort-snelling",
+      "name": "Fort Snelling VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1 Federal Drive",
+      "city": "Fort Snelling",
+      "state": "MN",
+      "zip": "55111-4080",
+      "phoneMain": "612-467-7910",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/fort-snelling-va-clinic/",
+      "lat": 44.89327599,
+      "lng": -93.19433807,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/fort-snelling-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gb-hibbing",
+      "name": "Hibbing VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "990 West 41st Street",
+      "city": "Hibbing",
+      "state": "MN",
+      "zip": "55746-3045",
+      "phoneMain": "218-263-1400",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/hibbing-va-clinic/",
+      "lat": 47.39823,
+      "lng": -92.9561355,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/hibbing-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gn-mankato",
+      "name": "Lyle C. Pearson Community Based Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1961 Premier Drive",
+      "city": "Mankato",
+      "state": "MN",
+      "zip": "56001-6494",
+      "phoneMain": "507-387-2939",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/lyle-c-pearson-community-based-outpatient-clinic/",
+      "lat": 44.18000764,
+      "lng": -93.94504104,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/lyle-c-pearson-community-based-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gd-maplewood",
+      "name": "Maplewood VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1725 Legacy Parkway",
+      "city": "Maplewood",
+      "state": "MN",
+      "zip": "55109-5434",
+      "phoneMain": "651-225-5420",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/maplewood-va-clinic/",
+      "lat": 45.03326089,
+      "lng": -93.02847895,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/maplewood-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-656gc-alexandria",
+      "name": "Max J. Beilke Department of Veterans Affairs Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "515 22nd Avenue East",
+      "city": "Alexandria",
+      "state": "MN",
+      "zip": "56308-4652",
+      "phoneMain": "320-759-2640",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/st-cloud-health-care/locations/max-j-beilke-department-of-veterans-affairs-outpatient-clinic/",
+      "lat": 45.86633105,
+      "lng": -95.37051502,
+      "website": "https://www.va.gov/st-cloud-health-care/locations/max-j-beilke-department-of-veterans-affairs-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gl-minneapolis",
+      "name": "Minneapolis VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1201 Harmon Place",
+      "city": "Minneapolis",
+      "state": "MN",
+      "zip": "55403-2043",
+      "phoneMain": "612-313-3240",
+      "hoursSummary": "monday: 700AM-500PM · tuesday: 700AM-500PM · wednesday: 700AM-500PM · thursday: 700AM-500PM · friday: 700AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-clinic/",
+      "lat": 44.973405,
+      "lng": -93.279699,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618-minneapolis",
+      "name": "Minneapolis VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "One Veterans Drive",
+      "city": "Minneapolis",
+      "state": "MN",
+      "zip": "55417-2309",
+      "phoneMain": "612-725-2000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-medical-center/",
+      "lat": 44.90196204,
+      "lng": -93.2043285,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/minneapolis-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-656gb-montevideo",
+      "name": "Montevideo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1025 North 13th Street",
+      "city": "Montevideo",
+      "state": "MN",
+      "zip": "56265-1653",
+      "phoneMain": "320-269-2222",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/st-cloud-health-care/locations/montevideo-va-clinic/",
+      "lat": 44.95566681,
+      "lng": -95.71124047,
+      "website": "https://www.va.gov/st-cloud-health-care/locations/montevideo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gi-ramsey",
+      "name": "Northwest Metro VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "7545 Veterans Drive",
+      "city": "Ramsey",
+      "state": "MN",
+      "zip": "55303-7500",
+      "phoneMain": "612-467-1100",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/northwest-metro-va-clinic/",
+      "lat": 45.23140596,
+      "lng": -93.45867912,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/northwest-metro-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gg-rochester",
+      "name": "Rochester VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3551 Commercial Drive South West",
+      "city": "Rochester",
+      "state": "MN",
+      "zip": "55902-2876",
+      "phoneMain": "507-252-0885",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/rochester-va-clinic/",
+      "lat": 43.97001459,
+      "lng": -92.463816,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/rochester-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gj-shakopee",
+      "name": "Shakopee VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1555 Lusitano Street",
+      "city": "Shakopee",
+      "state": "MN",
+      "zip": "55379-4661",
+      "phoneMain": "612-629-7109",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/shakopee-va-clinic/",
+      "lat": 44.77211718,
+      "lng": -93.53733024,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/shakopee-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-656-st-cloud",
+      "name": "St. Cloud VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "4801 Veterans Drive",
+      "city": "St. Cloud",
+      "state": "MN",
+      "zip": "56303-2015",
+      "phoneMain": "320-252-1670",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/st-cloud-health-care/locations/st-cloud-va-medical-center/",
+      "lat": 45.572589,
+      "lng": -94.216221,
+      "website": "https://www.va.gov/st-cloud-health-care/locations/st-cloud-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618ga-st-james",
+      "name": "St. James VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1212 Heckman Court",
+      "city": "St. James",
+      "state": "MN",
+      "zip": "56081-8702",
+      "phoneMain": "888-304-1243",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/st-james-va-clinic/",
+      "lat": 43.97067311,
+      "lng": -94.61814462,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/st-james-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0416v-saint-paul",
+      "name": "St. Paul Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "101 5th Street East",
+      "city": "Saint Paul",
+      "state": "MN",
+      "zip": "55101",
+      "phoneMain": "612-243-7920",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/st-paul-vet-center/",
+      "lat": 44.94714335,
+      "lng": -93.09150553,
+      "website": "https://www.va.gov/st-paul-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

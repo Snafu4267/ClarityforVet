@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "title": "Delaware — VA health facilities (map & list)",
+    "region": "Delaware",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Delaware. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "655 South Bay Road",
+      "city": "Dover",
+      "state": "DE",
+      "zip": "19901-4659",
+      "lat": 39.153636,
+      "lng": -75.503592,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Delaware",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-460gc-dover",
+      "name": "Kent County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "655 South Bay Road",
+      "city": "Dover",
+      "state": "DE",
+      "zip": "19901-4659",
+      "phoneMain": "800-461-8262 x32400",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/kent-county-va-clinic/",
+      "lat": 39.153636,
+      "lng": -75.503592,
+      "website": "https://www.va.gov/wilmington-health-care/locations/kent-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0874mvc-millsboro",
+      "name": "Sussex County Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "Veterans Cemetery Millsboro",
+      "city": "Millsboro",
+      "state": "DE",
+      "zip": "19947",
+      "phoneMain": "302-225-9110",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/sussex-county-vet-center/locations/#sussex-county-mobile-vet-cente",
+      "lat": 38.68955,
+      "lng": -75.386475,
+      "website": "https://www.va.gov/sussex-county-vet-center/locations/#sussex-county-mobile-vet-cente",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-460ga-georgetown",
+      "name": "Sussex County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "21748 Roth Avenue",
+      "city": "Georgetown",
+      "state": "DE",
+      "zip": "19947-2300",
+      "phoneMain": "800-461-8262 x32300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/sussex-county-va-clinic/",
+      "lat": 38.69901093,
+      "lng": -75.40354285,
+      "website": "https://www.va.gov/wilmington-health-care/locations/sussex-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0243v-georgetown",
+      "name": "Sussex County Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "20653 DuPont Boulevard",
+      "city": "Georgetown",
+      "state": "DE",
+      "zip": "19947",
+      "phoneMain": "302-225-9110",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/sussex-county-vet-center/",
+      "lat": 38.69682818,
+      "lng": -75.40001551,
+      "website": "https://www.va.gov/sussex-county-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-460-wilmington",
+      "name": "Wilmington VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1601 Kirkwood Highway",
+      "city": "Wilmington",
+      "state": "DE",
+      "zip": "19805-4917",
+      "phoneMain": "800-461-8262",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/wilmington-va-medical-center/",
+      "lat": 39.73865046,
+      "lng": -75.60654475,
+      "website": "https://www.va.gov/wilmington-health-care/locations/wilmington-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-460hk-wilmington",
+      "name": "Wilmington VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1601 Kirkwood Highway",
+      "city": "Wilmington",
+      "state": "DE",
+      "zip": "19805-4917",
+      "phoneMain": "302-994-2511",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/wilmington-va-mobile-medical-unit/",
+      "lat": 39.73865046,
+      "lng": -75.60654475,
+      "website": "https://www.va.gov/wilmington-health-care/locations/wilmington-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0215v-wilmington",
+      "name": "Wilmington Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2710 Centerville Road",
+      "city": "Wilmington",
+      "state": "DE",
+      "zip": "19808",
+      "phoneMain": "302-994-1660",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/wilmington-vet-center/",
+      "lat": 39.75435,
+      "lng": -75.6239625,
+      "website": "https://www.va.gov/wilmington-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

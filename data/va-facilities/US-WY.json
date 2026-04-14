@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "title": "Wyoming — VA health facilities (map & list)",
+    "region": "Wyoming",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Wyoming. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1030 North Poplar Street",
+      "city": "Casper",
+      "state": "WY",
+      "zip": "82601",
+      "lat": 42.86152988,
+      "lng": -106.33266969,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Wyoming",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-666qa-afton",
+      "name": "Afton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "125 South Washington Street",
+      "city": "Afton",
+      "state": "WY",
+      "zip": "83110-0000",
+      "phoneMain": "877-309-8931",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/afton-va-clinic/",
+      "lat": 42.73130541,
+      "lng": -110.93320467,
+      "website": "https://www.va.gov/sheridan-health-care/locations/afton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666gb-casper",
+      "name": "Casper VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "6000 East 2nd Street",
+      "city": "Casper",
+      "state": "WY",
+      "zip": "82609-4336",
+      "phoneMain": "866-338-5168",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/casper-va-clinic/",
+      "lat": 42.84315,
+      "lng": -106.2358875,
+      "website": "https://www.va.gov/sheridan-health-care/locations/casper-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0519v-casper",
+      "name": "Casper Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1030 North Poplar Street",
+      "city": "Casper",
+      "state": "WY",
+      "zip": "82601",
+      "phoneMain": "307-261-5355",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/casper-vet-center/",
+      "lat": 42.86152988,
+      "lng": -106.33266969,
+      "website": "https://www.va.gov/casper-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442-cheyenne",
+      "name": "Cheyenne VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2360 East Pershing Boulevard",
+      "city": "Cheyenne",
+      "state": "WY",
+      "zip": "82001-5356",
+      "phoneMain": "307-778-7550",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "lat": 41.148027,
+      "lng": -104.7862575,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442qf-cheyenne",
+      "name": "Cheyenne VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2360 East Pershing Boulevard",
+      "city": "Cheyenne",
+      "state": "WY",
+      "zip": "82001-5356",
+      "phoneMain": "307-778-7550",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "lat": 41.148027,
+      "lng": -104.7862575,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0501v-cheyenne",
+      "name": "Cheyenne Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2617 E. Lincolnway",
+      "city": "Cheyenne",
+      "state": "WY",
+      "zip": "82001-5769",
+      "phoneMain": "307-778-7370",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/cheyenne-vet-center/",
+      "lat": 41.13838489,
+      "lng": -104.78468566,
+      "website": "https://www.va.gov/cheyenne-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666gd-cody",
+      "name": "Cody VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1432 Rumsey Avenue",
+      "city": "Cody",
+      "state": "WY",
+      "zip": "82414-3715",
+      "phoneMain": "307-587-4015",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/cody-va-clinic/",
+      "lat": 44.52714851,
+      "lng": -109.0588815,
+      "website": "https://www.va.gov/sheridan-health-care/locations/cody-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666qb-evanston",
+      "name": "Evanston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1565 South Highway 150",
+      "city": "Evanston",
+      "state": "WY",
+      "zip": "82930-5361",
+      "phoneMain": "877-733-6128",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-230PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/evanston-va-clinic/",
+      "lat": 41.25221466,
+      "lng": -110.94146349,
+      "website": "https://www.va.gov/sheridan-health-care/locations/evanston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666ge-gillette",
+      "name": "Gillette VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "604 Express Drive",
+      "city": "Gillette",
+      "state": "WY",
+      "zip": "82718-4112",
+      "phoneMain": "866-621-1887",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/gillette-va-clinic/",
+      "lat": 44.24598598,
+      "lng": -105.51111758,
+      "website": "https://www.va.gov/sheridan-health-care/locations/gillette-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442qd-laramie",
+      "name": "Laramie VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2901 Armory Road",
+      "city": "Laramie",
+      "state": "WY",
+      "zip": "82070-2937",
+      "phoneMain": "307-778-7550 x13816",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/laramie-va-mobile-medical-unit/",
+      "lat": 41.31717852,
+      "lng": -105.55892911,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/laramie-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-568ha-newcastle",
+      "name": "Newcastle VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1124 Washington Boulevard",
+      "city": "Newcastle",
+      "state": "WY",
+      "zip": "82701-2972",
+      "phoneMain": "605-745-2000 x22797",
+      "hoursSummary": "monday: Closed · tuesday: 900AM-230PM · wednesday: Closed · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/black-hills-health-care/locations/newcastle-va-clinic/",
+      "lat": 43.84882548,
+      "lng": -104.18883903,
+      "website": "https://www.va.gov/black-hills-health-care/locations/newcastle-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442qa-rawlins",
+      "name": "Rawlins VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1809 East Daley Street",
+      "city": "Rawlins",
+      "state": "WY",
+      "zip": "82301-5911",
+      "phoneMain": "307-324-5578",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/rawlins-va-clinic/",
+      "lat": 41.79619439,
+      "lng": -107.21781692,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/rawlins-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666gc-riverton",
+      "name": "Riverton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2300 Rose Lane",
+      "city": "Riverton",
+      "state": "WY",
+      "zip": "82501-2257",
+      "phoneMain": "866-338-2609",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/riverton-va-clinic/",
+      "lat": 43.03564452,
+      "lng": -108.42109192,
+      "website": "https://www.va.gov/sheridan-health-care/locations/riverton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666gf-rock-springs",
+      "name": "Rock Springs VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1401 Gateway Boulevard",
+      "city": "Rock Springs",
+      "state": "WY",
+      "zip": "82901-6727",
+      "phoneMain": "866-381-2830",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/rock-springs-va-clinic/",
+      "lat": 41.59237335,
+      "lng": -109.24309536,
+      "website": "https://www.va.gov/sheridan-health-care/locations/rock-springs-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666-sheridan",
+      "name": "Sheridan VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1898 Fort Road",
+      "city": "Sheridan",
+      "state": "WY",
+      "zip": "82801-8320",
+      "phoneMain": "307-672-3473",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/sheridan-va-medical-center/",
+      "lat": 44.82696789,
+      "lng": -106.98492156,
+      "website": "https://www.va.gov/sheridan-health-care/locations/sheridan-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442qb-torrington",
+      "name": "Torrington VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "908 West 25th Avenue",
+      "city": "Torrington",
+      "state": "WY",
+      "zip": "82240-0000",
+      "phoneMain": "307-778-7550",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "lat": 42.06904995,
+      "lng": -104.19576941,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/cheyenne-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-442hk-wheatland",
+      "name": "Wheatland VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "759 East Cole Street",
+      "city": "Wheatland",
+      "state": "WY",
+      "zip": "82201-8953",
+      "phoneMain": "307-778-7550 x13816",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/cheyenne-health-care/locations/laramie-va-mobile-medical-unit/",
+      "lat": 42.04504008,
+      "lng": -104.95078876,
+      "website": "https://www.va.gov/cheyenne-health-care/locations/laramie-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-666qc-worland",
+      "name": "Worland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "510 South 15th Street",
+      "city": "Worland",
+      "state": "WY",
+      "zip": "82401-3538",
+      "phoneMain": "877-483-0370",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-230PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sheridan-health-care/locations/worland-va-clinic/",
+      "lat": 44.01250153,
+      "lng": -107.94843668,
+      "website": "https://www.va.gov/sheridan-health-care/locations/worland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

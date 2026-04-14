@@ -1,0 +1,728 @@
+{
+  "meta": {
+    "title": "Wisconsin — VA health facilities (map & list)",
+    "region": "Wisconsin",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Wisconsin. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "700 Hale Street",
+      "city": "Wisconsin Rapids",
+      "state": "WI",
+      "zip": "54495-2780",
+      "lat": 44.3929666,
+      "lng": -89.83231176,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Wisconsin",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-607gd-baraboo",
+      "name": "Baraboo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1670 South Boulevard",
+      "city": "Baraboo",
+      "state": "WI",
+      "zip": "53913-2937",
+      "phoneMain": "608-356-9318",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/madison-health-care/locations/baraboo-va-clinic/",
+      "lat": 43.46011345,
+      "lng": -89.7741855,
+      "website": "https://www.va.gov/madison-health-care/locations/baraboo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-607ge-beaver-dam",
+      "name": "Beaver Dam VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "215 Corporate Drive",
+      "city": "Beaver Dam",
+      "state": "WI",
+      "zip": "53916-3124",
+      "phoneMain": "920-356-9415",
+      "hoursSummary": "monday: 700AM-445PM · tuesday: 700AM-445PM · wednesday: 700AM-445PM · thursday: 700AM-445PM · friday: 700AM-445PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/madison-health-care/locations/beaver-dam-va-clinic/",
+      "lat": 43.48024798,
+      "lng": -88.81149983,
+      "website": "https://www.va.gov/madison-health-care/locations/beaver-dam-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618ge-chippewa-falls",
+      "name": "Chippewa Valley VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "475 Chippewa Mall Drive",
+      "city": "Chippewa Falls",
+      "state": "WI",
+      "zip": "54729-5047",
+      "phoneMain": "715-720-3780",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/chippewa-valley-va-clinic/",
+      "lat": 44.92521165,
+      "lng": -91.38206385,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/chippewa-valley-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676ge-owen",
+      "name": "Clark County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "8 Johnson Street",
+      "city": "Owen",
+      "state": "WI",
+      "zip": "54460-9534",
+      "phoneMain": "715-229-4701",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tomah-health-care/locations/clark-county-va-clinic/",
+      "lat": 44.94588209,
+      "lng": -90.54787784,
+      "website": "https://www.va.gov/tomah-health-care/locations/clark-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695-milwaukee",
+      "name": "Clement J. Zablocki Veterans' Administration Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "5000 West National Avenue",
+      "city": "Milwaukee",
+      "state": "WI",
+      "zip": "53295-1000",
+      "phoneMain": "414-384-2000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/clement-j-zablocki-veterans-administration-medical-center/",
+      "lat": 43.023168,
+      "lng": -87.972183,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/clement-j-zablocki-veterans-administration-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695gc-cleveland",
+      "name": "Cleveland VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1205 North Avenue",
+      "city": "Cleveland",
+      "state": "WI",
+      "zip": "53015-1413",
+      "phoneMain": "920-693-5600",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/cleveland-va-clinic/",
+      "lat": 43.92124391,
+      "lng": -87.75184718,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/cleveland-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0856mvc-green-bay",
+      "name": "Green Bay Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1600 South Ashland Avenue",
+      "city": "Green Bay",
+      "state": "WI",
+      "zip": "54304",
+      "phoneMain": "920-435-5650",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/green-bay-vet-center/locations/#green-bay-mobile-vet-center",
+      "lat": 44.500671,
+      "lng": -88.039521,
+      "website": "https://www.va.gov/green-bay-vet-center/locations/#green-bay-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0441v-green-bay",
+      "name": "Green Bay Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1600 South Ashland Avenue",
+      "city": "Green Bay",
+      "state": "WI",
+      "zip": "54304",
+      "phoneMain": "920-435-5650",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/green-bay-vet-center/",
+      "lat": 44.500671,
+      "lng": -88.039521,
+      "website": "https://www.va.gov/green-bay-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gh-hayward",
+      "name": "Hayward VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "10369 State Highway 27",
+      "city": "Hayward",
+      "state": "WI",
+      "zip": "54843-2530",
+      "phoneMain": "715-934-5454",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: Closed · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/hayward-va-clinic/",
+      "lat": 46.00702058,
+      "lng": -91.48143691,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/hayward-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-607gc-janesville",
+      "name": "Janesville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1141 Black Bridge Road",
+      "city": "Janesville",
+      "state": "WI",
+      "zip": "53545-1092",
+      "phoneMain": "608-758-9300",
+      "hoursSummary": "monday: 700AM-445PM · tuesday: 700AM-445PM · wednesday: 700AM-445PM · thursday: 700AM-445PM · friday: 700AM-445PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/madison-health-care/locations/janesville-va-clinic/",
+      "lat": 42.705504,
+      "lng": -89.0089695,
+      "website": "https://www.va.gov/madison-health-care/locations/janesville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695by-appleton",
+      "name": "John H. Bradley Department of Veterans Affairs Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "10 Tri-Park Way",
+      "city": "Appleton",
+      "state": "WI",
+      "zip": "54914-1658",
+      "phoneMain": "920-831-0070",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/john-h-bradley-department-of-veterans-affairs-outpatient-clinic/",
+      "lat": 44.28053791,
+      "lng": -88.45271151,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/john-h-bradley-department-of-veterans-affairs-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-556gd-kenosha",
+      "name": "Kenosha VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "8207 22nd Avenue",
+      "city": "Kenosha",
+      "state": "WI",
+      "zip": "53143-6206",
+      "phoneMain": "262-653-9286",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/lovell-federal-health-care-va/",
+      "lat": 42.555366,
+      "lng": -87.8343705,
+      "website": "https://www.va.gov/lovell-federal-health-care-va/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676gc-la-crosse",
+      "name": "La Crosse VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4000 State Road 16",
+      "city": "La Crosse",
+      "state": "WI",
+      "zip": "54601-1809",
+      "phoneMain": "608-784-3886",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tomah-health-care/locations/la-crosse-va-clinic/",
+      "lat": 43.867818,
+      "lng": -91.195578,
+      "website": "https://www.va.gov/tomah-health-care/locations/la-crosse-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676pa-la-crosse",
+      "name": "La Crosse VA Compensated Work Therapy/Transitional Residence",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "3120 Farnam Street",
+      "city": "La Crosse",
+      "state": "WI",
+      "zip": "54601-6143",
+      "phoneMain": "608-372-3971",
+      "hoursSummary": "monday: 24/7 · tuesday: 24/7 · wednesday: 24/7 · thursday: 24/7 · friday: 24/7 · saturday: 24/7 · sunday: 24/7",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_676PA",
+      "lat": 43.79795653,
+      "lng": -91.2102705,
+      "website": "https://www.va.gov/find-locations/facility/vha_676PA",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0442v-la-crosse",
+      "name": "La Crosse Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "20 Copeland Avenue",
+      "city": "La Crosse",
+      "state": "WI",
+      "zip": "54603",
+      "phoneMain": "608-782-4403",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/la-crosse-vet-center/",
+      "lat": 43.82150529,
+      "lng": -91.24911865,
+      "website": "https://www.va.gov/la-crosse-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0419v-madison",
+      "name": "Madison Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1291 North Sherman Ave",
+      "city": "Madison",
+      "state": "WI",
+      "zip": "53704",
+      "phoneMain": "608-264-5342",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/madison-vet-center/",
+      "lat": 43.113879,
+      "lng": -89.3630025,
+      "website": "https://www.va.gov/madison-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-607gg-madison",
+      "name": "Madison West VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1 Science Court",
+      "city": "Madison",
+      "state": "WI",
+      "zip": "53711-1055",
+      "phoneMain": "608-284-6360",
+      "hoursSummary": "monday: 700AM-445PM · tuesday: 700AM-445PM · wednesday: 700AM-445PM · thursday: 700AM-445PM · friday: 700AM-445PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/madison-health-care/locations/madison-west-va-clinic/",
+      "lat": 43.05950311,
+      "lng": -89.46797923,
+      "website": "https://www.va.gov/madison-health-care/locations/madison-west-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695gd-green-bay",
+      "name": "Milo C. Huempfner Department of Veterans Affairs Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · Health care center",
+      "address": "2851 University Avenue",
+      "city": "Green Bay",
+      "state": "WI",
+      "zip": "54311-5855",
+      "phoneMain": "920-431-2500",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/milo-c-huempfner-department-of-veterans-affairs-outpatient-clinic/",
+      "lat": 44.523648,
+      "lng": -87.943788,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/milo-c-huempfner-department-of-veterans-affairs-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695qa-milwaukee",
+      "name": "Milwaukee VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1818 North Martin Luther King Drive",
+      "city": "Milwaukee",
+      "state": "WI",
+      "zip": "53212-3640",
+      "phoneMain": "414-263-7673",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/milwaukee-va-clinic/",
+      "lat": 43.054308,
+      "lng": -87.913836,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/milwaukee-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0415v-milwaukee",
+      "name": "Milwaukee Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "7910 North 76th Street",
+      "city": "Milwaukee",
+      "state": "WI",
+      "zip": "53223-3916",
+      "phoneMain": "414-902-5561",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/milwaukee-vet-center/",
+      "lat": 43.16165798,
+      "lng": -88.00461047,
+      "website": "https://www.va.gov/milwaukee-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-585gb-rhinelander",
+      "name": "Rhinelander VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "639 West Kemp Street",
+      "city": "Rhinelander",
+      "state": "WI",
+      "zip": "54501-3879",
+      "phoneMain": "800-215-8262",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iron-mountain-health-care/locations/rhinelander-va-clinic/",
+      "lat": 45.63213345,
+      "lng": -89.43135663,
+      "website": "https://www.va.gov/iron-mountain-health-care/locations/rhinelander-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618gm-rice-lake",
+      "name": "Rice Lake VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "320 South Access Road",
+      "city": "Rice Lake",
+      "state": "WI",
+      "zip": "54868-8572",
+      "phoneMain": "715-236-3355",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/rice-lake-va-clinic/",
+      "lat": 45.47283973,
+      "lng": -91.74261507,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/rice-lake-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676-tomah",
+      "name": "Tomah VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "500 East Veterans Street",
+      "city": "Tomah",
+      "state": "WI",
+      "zip": "54660-3105",
+      "phoneMain": "608-372-3971",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/tomah-health-care/locations/tomah-va-medical-center/",
+      "lat": 44.00110847,
+      "lng": -90.49391066,
+      "website": "https://www.va.gov/tomah-health-care/locations/tomah-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-618by-superior",
+      "name": "Twin Ports VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3520 Tower Avenue",
+      "city": "Superior",
+      "state": "WI",
+      "zip": "54880-5335",
+      "phoneMain": "715-398-2400",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/minneapolis-health-care/locations/twin-ports-va-clinic/",
+      "lat": 46.69725873,
+      "lng": -92.10404467,
+      "website": "https://www.va.gov/minneapolis-health-care/locations/twin-ports-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-695ga-union-grove",
+      "name": "Union Grove VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "21425 Spring Street",
+      "city": "Union Grove",
+      "state": "WI",
+      "zip": "53182-9707",
+      "phoneMain": "262-878-7000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/milwaukee-health-care/locations/union-grove-va-clinic/",
+      "lat": 42.693273,
+      "lng": -88.0785585,
+      "website": "https://www.va.gov/milwaukee-health-care/locations/union-grove-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-4421os-wausau",
+      "name": "Wausau Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "605 S. 24th Ave",
+      "city": "Wausau",
+      "state": "WI",
+      "zip": "54401",
+      "phoneMain": "715-842-1724",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/la-crosse-vet-center/locations/#wausau-vet-center-outstation",
+      "lat": 44.95646764,
+      "lng": -89.66579317,
+      "website": "https://www.va.gov/la-crosse-vet-center/locations/#wausau-vet-center-outstation",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676ga-rothschild",
+      "name": "Wausau VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1105 East Grand Avenue",
+      "city": "Rothschild",
+      "state": "WI",
+      "zip": "54474-1024",
+      "phoneMain": "715-842-2834",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tomah-health-care/locations/wausau-va-clinic/",
+      "lat": 44.897049,
+      "lng": -89.610255,
+      "website": "https://www.va.gov/tomah-health-care/locations/wausau-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-607-madison",
+      "name": "William S. Middleton Memorial Veterans' Hospital",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2500 Overlook Terrace",
+      "city": "Madison",
+      "state": "WI",
+      "zip": "53705-2254",
+      "phoneMain": "608-256-1901",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/madison-health-care/locations/william-s-middleton-memorial-veterans-hospital/",
+      "lat": 43.07514468,
+      "lng": -89.43107348,
+      "website": "https://www.va.gov/madison-health-care/locations/william-s-middleton-memorial-veterans-hospital/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-676gd-wisconsin-rapids",
+      "name": "Wisconsin Rapids VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "700 Hale Street",
+      "city": "Wisconsin Rapids",
+      "state": "WI",
+      "zip": "54495-2780",
+      "phoneMain": "715-424-4682",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/tomah-health-care/locations/wisconsin-rapids-va-clinic/",
+      "lat": 44.3929666,
+      "lng": -89.83231176,
+      "website": "https://www.va.gov/tomah-health-care/locations/wisconsin-rapids-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

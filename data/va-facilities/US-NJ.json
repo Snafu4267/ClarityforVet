@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "title": "New Jersey — VA health facilities (map & list)",
+    "region": "New Jersey",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in New Jersey. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "3635 Quakerbridge Road",
+      "city": "Hamilton",
+      "state": "NJ",
+      "zip": "08619-1247",
+      "lat": 40.25956909,
+      "lng": -74.67751858,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — New Jersey",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-460he-northfield",
+      "name": "Atlantic County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1909 New Road",
+      "city": "Northfield",
+      "state": "NJ",
+      "zip": "08225-1537",
+      "phoneMain": "800-461-8262 x32800",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/atlantic-county-va-clinic/",
+      "lat": 39.36866039,
+      "lng": -74.56054647,
+      "website": "https://www.va.gov/wilmington-health-care/locations/atlantic-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0112v-bloomfield",
+      "name": "Bloomfield Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2 Broad Street",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "zip": "07003-2551",
+      "phoneMain": "973-748-0980",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/bloomfield-vet-center/",
+      "lat": 40.793913,
+      "lng": -74.1978405,
+      "website": "https://www.va.gov/bloomfield-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-642ga-marlton",
+      "name": "Burlington County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3000 Lincoln Drive",
+      "city": "Marlton",
+      "state": "NJ",
+      "zip": "08053-1500",
+      "phoneMain": "844-441-5499",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/philadelphia-health-care/locations/burlington-county-va-clinic/",
+      "lat": 39.91130443,
+      "lng": -74.93873645,
+      "website": "https://www.va.gov/philadelphia-health-care/locations/burlington-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-642gf-camden",
+      "name": "Camden VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "300 South Broadway",
+      "city": "Camden",
+      "state": "NJ",
+      "zip": "08103-1210",
+      "phoneMain": "215-823-5240",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/philadelphia-health-care/locations/camden-va-clinic/",
+      "lat": 39.94120797,
+      "lng": -75.11924315,
+      "website": "https://www.va.gov/philadelphia-health-care/locations/camden-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-460gd-rio-grande",
+      "name": "Cape May County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3801 Route 9 South",
+      "city": "Rio Grande",
+      "state": "NJ",
+      "zip": "08242-1915",
+      "phoneMain": "800-461-8262 x32850",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/cape-may-county-va-clinic/",
+      "lat": 39.01282241,
+      "lng": -74.87759402,
+      "website": "https://www.va.gov/wilmington-health-care/locations/cape-may-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-460hg-vineland",
+      "name": "Cumberland County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "79 West Landis Avenue",
+      "city": "Vineland",
+      "state": "NJ",
+      "zip": "08360-8122",
+      "phoneMain": "800-461-8262 x36500",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wilmington-health-care/locations/cumberland-county-va-clinic/",
+      "lat": 39.48663051,
+      "lng": -75.03609075,
+      "website": "https://www.va.gov/wilmington-health-care/locations/cumberland-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561-east-orange",
+      "name": "East Orange VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "385 Tremont Avenue",
+      "city": "East Orange",
+      "state": "NJ",
+      "zip": "07018-1023",
+      "phoneMain": "973-676-1000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/east-orange-va-medical-center/",
+      "lat": 40.75380161,
+      "lng": -74.23432989,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/east-orange-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-642gd-sewell",
+      "name": "Gloucester County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "211 County House Road",
+      "city": "Sewell",
+      "state": "NJ",
+      "zip": "08080-2525",
+      "phoneMain": "877-823-5230",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/philadelphia-health-care/locations/gloucester-county-va-clinic/",
+      "lat": 39.77857943,
+      "lng": -75.1006651,
+      "website": "https://www.va.gov/philadelphia-health-care/locations/gloucester-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gd-hackensack",
+      "name": "Hackensack VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "385 Prospect Avenue",
+      "city": "Hackensack",
+      "state": "NJ",
+      "zip": "07601-2570",
+      "phoneMain": "201-342-4536",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/hackensack-va-clinic/",
+      "lat": 40.89563983,
+      "lng": -74.0521066,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/hackensack-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561ga-hamilton",
+      "name": "Hamilton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3635 Quakerbridge Road",
+      "city": "Hamilton",
+      "state": "NJ",
+      "zip": "08619-1247",
+      "phoneMain": "609-570-6600",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/hamilton-va-clinic/",
+      "lat": 40.25956909,
+      "lng": -74.67751858,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/hamilton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561bz-brick",
+      "name": "James J. Howard Veterans' Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "970 Route 70",
+      "city": "Brick",
+      "state": "NJ",
+      "zip": "08724-3502",
+      "phoneMain": "732-206-8900",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/toms-river-va-clinic/",
+      "lat": 40.074678,
+      "lng": -74.12886,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/toms-river-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561ge-jersey-city",
+      "name": "Jersey City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "115 Christopher Columbus Drive",
+      "city": "Jersey City",
+      "state": "NJ",
+      "zip": "07302-3551",
+      "phoneMain": "201-435-3055",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/jersey-city-va-clinic/",
+      "lat": 40.71982227,
+      "lng": -74.04397858,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/jersey-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0141v-lakewood",
+      "name": "Lakewood Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1255 Route 70W",
+      "city": "Lakewood",
+      "state": "NJ",
+      "zip": "08701-5900",
+      "phoneMain": "732-905-0327",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/lakewood-vet-center/",
+      "lat": 40.05318462,
+      "lng": -74.17806351,
+      "website": "https://www.va.gov/lakewood-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561a4-lyons",
+      "name": "Lyons VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "151 Knollcroft Road",
+      "city": "Lyons",
+      "state": "NJ",
+      "zip": "07939-5001",
+      "phoneMain": "908-647-0180",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/lyons-va-medical-center/",
+      "lat": 40.66583734,
+      "lng": -74.55435245,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/lyons-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gh-morristown",
+      "name": "Morristown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "540 West Hanover Avenue",
+      "city": "Morristown",
+      "state": "NJ",
+      "zip": "07960-2500",
+      "phoneMain": "973-539-9791",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/morristown-va-clinic/",
+      "lat": 40.83241685,
+      "lng": -74.52139004,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/morristown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gj-paterson",
+      "name": "Paterson VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "11 Getty Avenue",
+      "city": "Paterson",
+      "state": "NJ",
+      "zip": "07503-2650",
+      "phoneMain": "973-247-1666",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/paterson-va-clinic/",
+      "lat": 40.90490066,
+      "lng": -74.16587658,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/paterson-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gf-piscataway",
+      "name": "Piscataway VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "14 Wills Way",
+      "city": "Piscataway",
+      "state": "NJ",
+      "zip": "08854-3770",
+      "phoneMain": "732-981-8193 x295481",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/piscataway-va-clinic/",
+      "lat": 40.55441727,
+      "lng": -74.47656215,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/piscataway-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0857mvc-teaneck",
+      "name": "Secaucus Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1799 Teaneck Road",
+      "city": "Teaneck",
+      "state": "NJ",
+      "zip": "07666-2302",
+      "phoneMain": "201-223-7787",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/secaucus-vet-center/locations/#secaucus-mobile-vet-center",
+      "lat": 40.91131465,
+      "lng": -73.99790926,
+      "website": "https://www.va.gov/secaucus-vet-center/locations/#secaucus-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0102v-secaucus",
+      "name": "Secaucus Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "110A Meadowlands Parkway",
+      "city": "Secaucus",
+      "state": "NJ",
+      "zip": "07094-2302",
+      "phoneMain": "201-223-7787",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/secaucus-vet-center/",
+      "lat": 40.78911661,
+      "lng": -74.07389209,
+      "website": "https://www.va.gov/secaucus-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0230v-egg-harbor-township",
+      "name": "South Jersey Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2900 Fire Road",
+      "city": "Egg Harbor Township",
+      "state": "NJ",
+      "zip": "08234",
+      "phoneMain": "609-487-8387",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/south-jersey-vet-center/",
+      "lat": 39.39867382,
+      "lng": -74.55394248,
+      "website": "https://www.va.gov/south-jersey-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gk-newton",
+      "name": "Sussex VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "222 High Street",
+      "city": "Newton",
+      "state": "NJ",
+      "zip": "07860-9604",
+      "phoneMain": "973-756-1504",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/sussex-va-clinic/",
+      "lat": 41.05386939,
+      "lng": -74.76832183,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/sussex-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-561gi-tinton-falls",
+      "name": "Tinton Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "55 North Gilbert Street",
+      "city": "Tinton Falls",
+      "state": "NJ",
+      "zip": "07701-4961",
+      "phoneMain": "732-842-4751",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/new-jersey-health-care/locations/tinton-falls-va-clinic/",
+      "lat": 40.32659945,
+      "lng": -74.07592881,
+      "website": "https://www.va.gov/new-jersey-health-care/locations/tinton-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0114v-ewing",
+      "name": "Trenton Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "934 Parkway Avenue",
+      "city": "Ewing",
+      "state": "NJ",
+      "zip": "08618-2308",
+      "phoneMain": "609-882-5744",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/trenton-vet-center/",
+      "lat": 40.25514549,
+      "lng": -74.79228333,
+      "website": "https://www.va.gov/trenton-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "title": "Massachusetts — VA health facilities (map & list)",
+    "region": "Massachusetts",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Massachusetts. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "61 Lincoln Street",
+      "city": "Framingham",
+      "state": "MA",
+      "zip": "01702-8264",
+      "lat": 42.28301175,
+      "lng": -71.41777479,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Massachusetts",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-0101v-boston",
+      "name": "Boston Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "7 Drydock Avenue",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02210-2303",
+      "phoneMain": "857-203-6461",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/boston-vet-center/",
+      "lat": 42.34459497,
+      "lng": -71.03613513,
+      "website": "https://www.va.gov/boston-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523a5-brockton",
+      "name": "Brockton VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "940 Belmont Street",
+      "city": "Brockton",
+      "state": "MA",
+      "zip": "02301-5596",
+      "phoneMain": "508-583-4500",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/brockton-va-medical-center/",
+      "lat": 42.060906,
+      "lng": -71.051868,
+      "website": "https://www.va.gov/boston-health-care/locations/brockton-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0104v-brockton",
+      "name": "Brockton Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1 Pearl St. Suite 2300",
+      "city": "Brockton",
+      "state": "MA",
+      "zip": "02301-5400",
+      "phoneMain": "508-580-2730",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/brockton-vet-center/",
+      "lat": 42.088608,
+      "lng": -71.0654625,
+      "website": "https://www.va.gov/brockton-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0136v-hyannis",
+      "name": "Cape Cod Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "474 West Main Street",
+      "city": "Hyannis",
+      "state": "MA",
+      "zip": "02601-3653",
+      "phoneMain": "508-778-0124",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/cape-cod-vet-center/",
+      "lat": 41.65023265,
+      "lng": -70.31336644,
+      "website": "https://www.va.gov/cape-cod-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523bz-boston",
+      "name": "Causeway VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "251 Causeway Street",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02114-2104",
+      "phoneMain": "617-232-9500",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/jamaica-plain-va-medical-center/",
+      "lat": 42.36659056,
+      "lng": -71.05901821,
+      "website": "https://www.va.gov/boston-health-care/locations/jamaica-plain-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-518-bedford",
+      "name": "Edith Nourse Rogers Memorial Veterans' Hospital",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "200 Springs Road",
+      "city": "Bedford",
+      "state": "MA",
+      "zip": "01730-1114",
+      "phoneMain": "781-687-2000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/bedford-health-care/locations/edith-nourse-rogers-memorial-veterans-hospital/",
+      "lat": 42.50367478,
+      "lng": -71.2726766,
+      "website": "https://www.va.gov/bedford-health-care/locations/edith-nourse-rogers-memorial-veterans-hospital/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631-leeds",
+      "name": "Edward P. Boland Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "421 North Main Street",
+      "city": "Leeds",
+      "state": "MA",
+      "zip": "01053-9764",
+      "phoneMain": "413-584-4040",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/edward-p-boland-department-of-veterans-affairs-medical-center/",
+      "lat": 42.3495,
+      "lng": -72.682407,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/edward-p-boland-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631gf-fitchburg",
+      "name": "Fitchburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "881 Main Street",
+      "city": "Fitchburg",
+      "state": "MA",
+      "zip": "01420-3008",
+      "phoneMain": "978-342-9781",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/fitchburg-va-clinic/",
+      "lat": 42.586272,
+      "lng": -71.804394,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/fitchburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523ga-framingham",
+      "name": "Framingham VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "61 Lincoln Street",
+      "city": "Framingham",
+      "state": "MA",
+      "zip": "01702-8264",
+      "phoneMain": "800-865-3384",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/framingham-va-clinic/",
+      "lat": 42.28301175,
+      "lng": -71.41777479,
+      "website": "https://www.va.gov/boston-health-care/locations/framingham-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-518ge-gloucester",
+      "name": "Gloucester VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "199 Main Street",
+      "city": "Gloucester",
+      "state": "MA",
+      "zip": "01930-6029",
+      "phoneMain": "800-838-6331",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/bedford-health-care/locations/gloucester-va-clinic/",
+      "lat": 42.61311041,
+      "lng": -70.66075311,
+      "website": "https://www.va.gov/bedford-health-care/locations/gloucester-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631gd-greenfield",
+      "name": "Greenfield VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "143 Munson Street",
+      "city": "Greenfield",
+      "state": "MA",
+      "zip": "01301-9694",
+      "phoneMain": "413-773-8428",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/greenfield-va-clinic/",
+      "lat": 42.57570167,
+      "lng": -72.62435941,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/greenfield-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-518gb-haverhill",
+      "name": "Haverhill VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "209 Summer Street",
+      "city": "Haverhill",
+      "state": "MA",
+      "zip": "01830-6315",
+      "phoneMain": "800-838-6331",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/bedford-health-care/locations/haverhill-va-clinic/",
+      "lat": 42.776001,
+      "lng": -71.0679465,
+      "website": "https://www.va.gov/bedford-health-care/locations/haverhill-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-650gb-hyannis",
+      "name": "Hyannis VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "233 Stevens Street",
+      "city": "Hyannis",
+      "state": "MA",
+      "zip": "02601-3766",
+      "phoneMain": "508-771-3190",
+      "hoursSummary": "monday: 700AM-400PM · tuesday: 700AM-400PM · wednesday: 700AM-400PM · thursday: 700AM-400PM · friday: 700AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/hyannis-va-clinic/",
+      "lat": 41.6515538,
+      "lng": -70.2941667,
+      "website": "https://www.va.gov/providence-health-care/locations/hyannis-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523-boston",
+      "name": "Jamaica Plain VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "150 South Huntington Avenue",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02130-4817",
+      "phoneMain": "617-232-9500",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/jamaica-plain-va-medical-center/",
+      "lat": 42.32714719,
+      "lng": -71.1110553,
+      "website": "https://www.va.gov/boston-health-care/locations/jamaica-plain-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523by-lowell",
+      "name": "Lowell VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "130 Marshall Road",
+      "city": "Lowell",
+      "state": "MA",
+      "zip": "01852-5130",
+      "phoneMain": "800-865-3384",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/lowell-va-clinic/",
+      "lat": 42.61937432,
+      "lng": -71.31536985,
+      "website": "https://www.va.gov/boston-health-care/locations/lowell-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0125v-lowell",
+      "name": "Lowell Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "10 George Street",
+      "city": "Lowell",
+      "state": "MA",
+      "zip": "01852-2241",
+      "phoneMain": "978-453-1151",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/lowell-vet-center/",
+      "lat": 42.64209,
+      "lng": -71.3056815,
+      "website": "https://www.va.gov/lowell-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-518ga-lynn",
+      "name": "Lynn VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "225 Boston Street",
+      "city": "Lynn",
+      "state": "MA",
+      "zip": "01904-3123",
+      "phoneMain": "800-838-6331",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/bedford-health-care/locations/lynn-va-clinic/",
+      "lat": 42.470514,
+      "lng": -70.960023,
+      "website": "https://www.va.gov/bedford-health-care/locations/lynn-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-650ga-new-bedford",
+      "name": "New Bedford VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "175 Elm Street",
+      "city": "New Bedford",
+      "state": "MA",
+      "zip": "02740-6006",
+      "phoneMain": "508-994-0217",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/new-bedford-va-clinic/",
+      "lat": 41.636268,
+      "lng": -70.9296255,
+      "website": "https://www.va.gov/providence-health-care/locations/new-bedford-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0128v-fairhaven",
+      "name": "New Bedford Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "73 Huttleston Avenue",
+      "city": "Fairhaven",
+      "state": "MA",
+      "zip": "02719-3156",
+      "phoneMain": "508-999-6920",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/new-bedford-vet-center/",
+      "lat": 41.64406881,
+      "lng": -70.89949477,
+      "website": "https://www.va.gov/new-bedford-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631gc-pittsfield",
+      "name": "Pittsfield VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "78 Center Street",
+      "city": "Pittsfield",
+      "state": "MA",
+      "zip": "01201-5692",
+      "phoneMain": "413-499-2672",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/pittsfield-va-clinic/",
+      "lat": 42.452118,
+      "lng": -73.2553965,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/pittsfield-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631qa-worcester",
+      "name": "Plantation Street VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "377 Plantation Street",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01605-2300",
+      "phoneMain": "413-584-4040 x6500",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/plantation-street-va-clinic/",
+      "lat": 42.2799516,
+      "lng": -71.76438496,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/plantation-street-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523gd-plymouth",
+      "name": "Plymouth VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "116 Long Pond Road",
+      "city": "Plymouth",
+      "state": "MA",
+      "zip": "02360-2663",
+      "phoneMain": "800-865-3384",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/plymouth-va-clinic/",
+      "lat": 41.923754,
+      "lng": -70.65677635,
+      "website": "https://www.va.gov/boston-health-care/locations/plymouth-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523gc-quincy",
+      "name": "Quincy VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "110 West Squantam Street",
+      "city": "Quincy",
+      "state": "MA",
+      "zip": "02171-2122",
+      "phoneMain": "800-865-3384",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/quincy-va-clinic/",
+      "lat": 42.272541,
+      "lng": -71.030808,
+      "website": "https://www.va.gov/boston-health-care/locations/quincy-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631by-springfield",
+      "name": "Springfield VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "25 Bond Street",
+      "city": "Springfield",
+      "state": "MA",
+      "zip": "01104-3401",
+      "phoneMain": "413-731-6000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/springfield-va-clinic/",
+      "lat": 42.11021717,
+      "lng": -72.59988122,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/springfield-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0103v-west-springfield",
+      "name": "Springfield, MA Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "95A Ashley Avenue",
+      "city": "West Springfield",
+      "state": "MA",
+      "zip": "01089-1352",
+      "phoneMain": "413-737-5167",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/springfield-ma-vet-center/",
+      "lat": 42.13908173,
+      "lng": -72.62449885,
+      "website": "https://www.va.gov/springfield-ma-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-523a4-west-roxbury",
+      "name": "West Roxbury VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1400 VFW Parkway",
+      "city": "West Roxbury",
+      "state": "MA",
+      "zip": "02132-4927",
+      "phoneMain": "617-323-7700",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/boston-health-care/locations/west-roxbury-va-medical-center/",
+      "lat": 42.274242,
+      "lng": -71.171856,
+      "website": "https://www.va.gov/boston-health-care/locations/west-roxbury-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-631ge-worcester",
+      "name": "Worcester VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "403 Belmont Street",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01604-1020",
+      "phoneMain": "508-856-0104",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-western-massachusetts-health-care/locations/worcester-va-clinic/",
+      "lat": 42.274647,
+      "lng": -71.760798,
+      "website": "https://www.va.gov/central-western-massachusetts-health-care/locations/worcester-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0126v-worcester",
+      "name": "Worcester Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "255 Park Ave",
+      "city": "Worcester",
+      "state": "MA",
+      "zip": "01609",
+      "phoneMain": "508-753-7902",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/worcester-vet-center/",
+      "lat": 42.2649,
+      "lng": -71.818479,
+      "website": "https://www.va.gov/worcester-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

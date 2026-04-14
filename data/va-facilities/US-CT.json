@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "title": "Connecticut — VA health facilities (map & list)",
+    "region": "Connecticut",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Connecticut. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "133 Maple Street",
+      "city": "New Haven",
+      "state": "CT",
+      "zip": "06511-4021",
+      "lat": 41.31580969,
+      "lng": -72.94858262,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Connecticut",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-689ge-danbury",
+      "name": "Danbury VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "7 Germantown Road",
+      "city": "Danbury",
+      "state": "CT",
+      "zip": "06810-5000",
+      "phoneMain": "203-798-8422",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/danbury-va-clinic/",
+      "lat": 41.40889422,
+      "lng": -73.43626847,
+      "website": "https://www.va.gov/connecticut-health-care/locations/danbury-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0140v-danbury",
+      "name": "Danbury Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "457 North Main Street",
+      "city": "Danbury",
+      "state": "CT",
+      "zip": "06811",
+      "phoneMain": "203-790-4000",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/danbury-vet-center/",
+      "lat": 41.405481,
+      "lng": -73.462608,
+      "website": "https://www.va.gov/danbury-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689qa-west-haven",
+      "name": "Errera VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "114 Orange Avenue",
+      "city": "West Haven",
+      "state": "CT",
+      "zip": "06516-2043",
+      "phoneMain": "203-932-5711 x11361",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/errera-va-clinic/",
+      "lat": 41.29676649,
+      "lng": -72.95469763,
+      "website": "https://www.va.gov/connecticut-health-care/locations/errera-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0801mvc-rocky-hill",
+      "name": "Hartford Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "25 Elm Street",
+      "city": "Rocky Hill",
+      "state": "CT",
+      "zip": "06067-2305",
+      "phoneMain": "860-563-8800",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/hartford-vet-center/locations/#hartford-mobile-vet-center",
+      "lat": 41.6648451,
+      "lng": -72.64060465,
+      "website": "https://www.va.gov/hartford-vet-center/locations/#hartford-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0117v-rocky-hill",
+      "name": "Hartford Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "25 Elm Street",
+      "city": "Rocky Hill",
+      "state": "CT",
+      "zip": "06067-2305",
+      "phoneMain": "860-563-8800",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/hartford-vet-center/",
+      "lat": 41.6648451,
+      "lng": -72.64060465,
+      "website": "https://www.va.gov/hartford-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689hc-new-london",
+      "name": "John J. McGuirk Department of Veterans Affairs Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "6 Shaw's Cove",
+      "city": "New London",
+      "state": "CT",
+      "zip": "06320-4969",
+      "phoneMain": "860-437-3611",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/john-j-mcguirk-department-of-veterans-affairs-outpatient-clinic/",
+      "lat": 41.34614153,
+      "lng": -72.10078377,
+      "website": "https://www.va.gov/connecticut-health-care/locations/john-j-mcguirk-department-of-veterans-affairs-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689bw-new-haven",
+      "name": "Maple Street VA Domiciliary",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "133 Maple Street",
+      "city": "New Haven",
+      "state": "CT",
+      "zip": "06511-4021",
+      "phoneMain": "475-238-8672",
+      "hoursSummary": "monday: 24/7 · tuesday: 24/7 · wednesday: 24/7 · thursday: 24/7 · friday: 24/7 · saturday: 24/7 · sunday: 24/7",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_689BW",
+      "lat": 41.31580969,
+      "lng": -72.94858262,
+      "website": "https://www.va.gov/find-locations/facility/vha_689BW",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0116v-orange",
+      "name": "New Haven Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "291 South Lambert Road",
+      "city": "Orange",
+      "state": "CT",
+      "zip": "06477",
+      "phoneMain": "203-795-0148",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/new-haven-vet-center/",
+      "lat": 41.26234612,
+      "lng": -73.00573885,
+      "website": "https://www.va.gov/new-haven-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689a4-newington",
+      "name": "Newington VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "555 Willard Avenue",
+      "city": "Newington",
+      "state": "CT",
+      "zip": "06111-2631",
+      "phoneMain": "860-666-6951",
+      "hoursSummary": "monday: 700AM-430PM · tuesday: 700AM-430PM · wednesday: 700AM-430PM · thursday: 700AM-430PM · friday: 700AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/newington-va-clinic/",
+      "lat": 41.702148,
+      "lng": -72.737856,
+      "website": "https://www.va.gov/connecticut-health-care/locations/newington-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689bx-new-haven",
+      "name": "Norton Street VA Domiciliary",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "84 Norton Street",
+      "city": "New Haven",
+      "state": "CT",
+      "zip": "06511-4233",
+      "phoneMain": "203-689-0862",
+      "hoursSummary": "monday: 24/7 · tuesday: 24/7 · wednesday: 24/7 · thursday: 24/7 · friday: 24/7 · saturday: 24/7 · sunday: 24/7",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_689BX",
+      "lat": 41.31317751,
+      "lng": -72.948192,
+      "website": "https://www.va.gov/find-locations/facility/vha_689BX",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0127v-norwich",
+      "name": "Norwich Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2 Cliff Street",
+      "city": "Norwich",
+      "state": "CT",
+      "zip": "06360-5850",
+      "phoneMain": "860-887-1755",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/norwich-vet-center/",
+      "lat": 41.52463613,
+      "lng": -72.07352795,
+      "website": "https://www.va.gov/norwich-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689gf-orange",
+      "name": "Orange VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "200 Edison Road",
+      "city": "Orange",
+      "state": "CT",
+      "zip": "06477-3602",
+      "phoneMain": "203-508-7700",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/orange-va-clinic/",
+      "lat": 41.25795206,
+      "lng": -73.00023404,
+      "website": "https://www.va.gov/connecticut-health-care/locations/orange-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689gb-stamford",
+      "name": "Stamford VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1275 Summer Street",
+      "city": "Stamford",
+      "state": "CT",
+      "zip": "06905-5315",
+      "phoneMain": "203-325-0649",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/stamford-va-clinic/",
+      "lat": 41.061978,
+      "lng": -73.5415515,
+      "website": "https://www.va.gov/connecticut-health-care/locations/stamford-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689ga-waterbury",
+      "name": "Waterbury VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "95 Scovill Street",
+      "city": "Waterbury",
+      "state": "CT",
+      "zip": "06706-1113",
+      "phoneMain": "203-465-5292",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/waterbury-va-clinic/",
+      "lat": 41.55361819,
+      "lng": -73.03735278,
+      "website": "https://www.va.gov/connecticut-health-care/locations/waterbury-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689-west-haven",
+      "name": "West Haven VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "950 Campbell Avenue",
+      "city": "West Haven",
+      "state": "CT",
+      "zip": "06516-2770",
+      "phoneMain": "203-932-5711",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/west-haven-va-medical-center/",
+      "lat": 41.28432479,
+      "lng": -72.95730126,
+      "website": "https://www.va.gov/connecticut-health-care/locations/west-haven-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689gc-willimantic",
+      "name": "Willimantic VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1320 Main Street",
+      "city": "Willimantic",
+      "state": "CT",
+      "zip": "06226-1940",
+      "phoneMain": "860-450-7583",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/willimantic-va-clinic/",
+      "lat": 41.71521922,
+      "lng": -72.22893143,
+      "website": "https://www.va.gov/connecticut-health-care/locations/willimantic-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-689gd-winsted",
+      "name": "Winsted VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "115 Spencer Street",
+      "city": "Winsted",
+      "state": "CT",
+      "zip": "06098-1140",
+      "phoneMain": "860-738-6985",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/connecticut-health-care/locations/winsted-va-clinic/",
+      "lat": 41.93038034,
+      "lng": -73.0757359,
+      "website": "https://www.va.gov/connecticut-health-care/locations/winsted-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

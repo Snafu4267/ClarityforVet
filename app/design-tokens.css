@@ -1,0 +1,118 @@
+/**
+ * Design system tokens — single source for Tailwind `@theme` + `:root`.
+ * Documented mirror: `lib/design-tokens.ts` (keep values aligned).
+ */
+
+:root {
+  /* Colors */
+  --ds-color-primary: #334155;
+  --ds-color-primary-dark: #1e293b;
+  --ds-color-primary-light: #64748b;
+  --ds-color-background: #f3f4f6;
+  --ds-color-surface: #ffffff;
+  --ds-color-text-primary: #18181b;
+  --ds-color-text-secondary: #52525b;
+  --ds-color-border: #e4e4e7;
+  --ds-color-success: #059669;
+  --ds-color-warning: #d97706;
+  --ds-color-error: #dc2626;
+
+  /* Legacy aliases used by layout / globals */
+  --background: var(--ds-color-background);
+  --foreground: var(--ds-color-text-primary);
+
+  /* Typography scale (rem) */
+  --ds-text-h1: 2.25rem;
+  --ds-text-h1--line-height: 2.5rem;
+  --ds-text-h2: 1.5rem;
+  --ds-text-h2--line-height: 2rem;
+  --ds-text-h3: 1.25rem;
+  --ds-text-h3--line-height: 1.75rem;
+  --ds-text-h4: 1.125rem;
+  --ds-text-h4--line-height: 1.75rem;
+  --ds-text-h5: 1rem;
+  --ds-text-h5--line-height: 1.5rem;
+  --ds-text-h6: 0.875rem;
+  --ds-text-h6--line-height: 1.25rem;
+  --ds-text-body-large: 1.125rem;
+  --ds-text-body-large--line-height: 1.75rem;
+  --ds-text-body: 1rem;
+  --ds-text-body--line-height: 1.625rem;
+  --ds-text-body-small: 0.875rem;
+  --ds-text-body-small--line-height: 1.5rem;
+  --ds-text-button: 0.875rem;
+  --ds-text-button--line-height: 1.25rem;
+
+  /* Spacing scale (for layout — use Tailwind `ds-*` spacing keys) */
+  --ds-spacing-xs: 0.25rem;
+  --ds-spacing-sm: 0.5rem;
+  --ds-spacing-md: 1rem;
+  --ds-spacing-lg: 1.5rem;
+  --ds-spacing-xl: 2rem;
+
+  /* Radius */
+  --ds-radius-sm: 0.375rem;
+  --ds-radius-md: 0.5rem;
+  --ds-radius-lg: 0.75rem;
+
+  /* Shadows */
+  --ds-shadow-none: none;
+  --ds-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ds-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --ds-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.06);
+}
+
+/* Expose tokens to Tailwind v4 utilities: bg-primary, text-text-secondary, rounded-ds-md, shadow-ds-sm, p-ds-md, … */
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-primary: var(--ds-color-primary);
+  --color-primary-dark: var(--ds-color-primary-dark);
+  --color-primary-light: var(--ds-color-primary-light);
+  --color-background: var(--ds-color-background);
+  --color-surface: var(--ds-color-surface);
+  --color-text-primary: var(--ds-color-text-primary);
+  --color-text-secondary: var(--ds-color-text-secondary);
+  --color-border: var(--ds-color-border);
+  --color-success: var(--ds-color-success);
+  --color-warning: var(--ds-color-warning);
+  --color-error: var(--ds-color-error);
+  --color-foreground: var(--ds-color-text-primary);
+
+  --text-h1: var(--ds-text-h1);
+  --text-h1--line-height: var(--ds-text-h1--line-height);
+  --text-h2: var(--ds-text-h2);
+  --text-h2--line-height: var(--ds-text-h2--line-height);
+  --text-h3: var(--ds-text-h3);
+  --text-h3--line-height: var(--ds-text-h3--line-height);
+  --text-h4: var(--ds-text-h4);
+  --text-h4--line-height: var(--ds-text-h4--line-height);
+  --text-h5: var(--ds-text-h5);
+  --text-h5--line-height: var(--ds-text-h5--line-height);
+  --text-h6: var(--ds-text-h6);
+  --text-h6--line-height: var(--ds-text-h6--line-height);
+  --text-body-large: var(--ds-text-body-large);
+  --text-body-large--line-height: var(--ds-text-body-large--line-height);
+  --text-body: var(--ds-text-body);
+  --text-body--line-height: var(--ds-text-body--line-height);
+  --text-body-small: var(--ds-text-body-small);
+  --text-body-small--line-height: var(--ds-text-body-small--line-height);
+  --text-button: var(--ds-text-button);
+  --text-button--line-height: var(--ds-text-button--line-height);
+
+  --spacing-ds-xs: var(--ds-spacing-xs);
+  --spacing-ds-sm: var(--ds-spacing-sm);
+  --spacing-ds-md: var(--ds-spacing-md);
+  --spacing-ds-lg: var(--ds-spacing-lg);
+  --spacing-ds-xl: var(--ds-spacing-xl);
+
+  --radius-ds-sm: var(--ds-radius-sm);
+  --radius-ds-md: var(--ds-radius-md);
+  --radius-ds-lg: var(--ds-radius-lg);
+
+  --shadow-ds-none: var(--ds-shadow-none);
+  --shadow-ds-sm: var(--ds-shadow-sm);
+  --shadow-ds-md: var(--ds-shadow-md);
+  --shadow-ds-lg: var(--ds-shadow-lg);
+}

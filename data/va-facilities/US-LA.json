@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "title": "Louisiana — VA health facilities (map & list)",
+    "region": "Louisiana",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Louisiana. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "7850 Anselmo Lane",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "zip": "70810-1101",
+      "lat": 30.394908,
+      "lng": -91.106712,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Louisiana",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-502-pineville",
+      "name": "Alexandria VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2495 Shreveport Highway",
+      "city": "Pineville",
+      "state": "LA",
+      "zip": "71360-4044",
+      "phoneMain": "318-473-0010",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/alexandria-va-medical-center/",
+      "lat": 31.35522426,
+      "lng": -92.43435778,
+      "website": "https://www.va.gov/alexandria-health-care/locations/alexandria-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0734v-alexandria",
+      "name": "Alexandria, LA Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "5803 Coliseum Boulevard",
+      "city": "Alexandria",
+      "state": "LA",
+      "zip": "71303",
+      "phoneMain": "318-466-4327",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/alexandria-la-vet-center/",
+      "lat": 31.29530455,
+      "lng": -92.50700247,
+      "website": "https://www.va.gov/alexandria-la-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629qa-baton-rouge",
+      "name": "Baton Rouge South VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "7850 Anselmo Lane",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "zip": "70810-1101",
+      "phoneMain": "225-768-6419",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-south-va-clinic/",
+      "lat": 30.394908,
+      "lng": -91.106712,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-south-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629by-baton-rouge",
+      "name": "Baton Rouge VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "7968 Essen Park Avenue",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "zip": "70809-7439",
+      "phoneMain": "225-761-3400",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-va-clinic/",
+      "lat": 30.403908,
+      "lng": -91.1006775,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/baton-rouge-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0725v-baton-rouge",
+      "name": "Baton Rouge Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "7850 Anselmo Lane",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "zip": "70810",
+      "phoneMain": "225-761-3140",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/baton-rouge-vet-center/",
+      "lat": 30.394908,
+      "lng": -91.106712,
+      "website": "https://www.va.gov/baton-rouge-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629gf-bogalusa",
+      "name": "Bogalusa VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "521 Ontario Street",
+      "city": "Bogalusa",
+      "state": "LA",
+      "zip": "70427-3845",
+      "phoneMain": "985-735-9029",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/bogalusa-va-clinic/",
+      "lat": 30.79157652,
+      "lng": -89.8675205,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/bogalusa-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502ge-lake-charles",
+      "name": "Douglas Fournet Department of Veterans Affairs Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3601 Gerstner Memorial Drive, Hwy 14",
+      "city": "Lake Charles",
+      "state": "LA",
+      "zip": "70607-3231",
+      "phoneMain": "337-475-9500",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/douglas-fournet-department-of-veterans-affairs-clinic/",
+      "lat": 30.19183434,
+      "lng": -93.17996927,
+      "website": "https://www.va.gov/alexandria-health-care/locations/douglas-fournet-department-of-veterans-affairs-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502gf-leesville",
+      "name": "Fort Polk VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3353 University Parkway",
+      "city": "Leesville",
+      "state": "LA",
+      "zip": "71446-9041",
+      "phoneMain": "337-392-3800",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/fort-johnson-va-clinic/",
+      "lat": 31.12013137,
+      "lng": -93.24841995,
+      "website": "https://www.va.gov/alexandria-health-care/locations/fort-johnson-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629ge-franklin",
+      "name": "Franklin VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1801 Main Street",
+      "city": "Franklin",
+      "state": "LA",
+      "zip": "70538-3115",
+      "phoneMain": "337-828-9092",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/franklin-va-clinic/",
+      "lat": 29.80599743,
+      "lng": -91.50633933,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/franklin-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629gb-hammond",
+      "name": "Hammond VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1131 South Morrison Boulevard",
+      "city": "Hammond",
+      "state": "LA",
+      "zip": "70403-5409",
+      "phoneMain": "985-902-5100",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/hammond-va-clinic/",
+      "lat": 30.48892917,
+      "lng": -90.4827027,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/hammond-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629ga-houma",
+      "name": "Houma VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "6433 West Park Avenue",
+      "city": "Houma",
+      "state": "LA",
+      "zip": "70364-2238",
+      "phoneMain": "985-851-0188",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/houma-va-clinic/",
+      "lat": 29.62335416,
+      "lng": -90.74740039,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/houma-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502ga-jennings",
+      "name": "Jennings VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1907 Johnson Street",
+      "city": "Jennings",
+      "state": "LA",
+      "zip": "70546-3627",
+      "phoneMain": "337-785-4700",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/jennings-va-clinic/",
+      "lat": 30.23827527,
+      "lng": -92.66139,
+      "website": "https://www.va.gov/alexandria-health-care/locations/jennings-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-667qa-shreveport",
+      "name": "Knight Street VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3000 Knight Street",
+      "city": "Shreveport",
+      "state": "LA",
+      "zip": "71105-2502",
+      "phoneMain": "318-990-4401",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/shreveport-health-care/locations/knight-street-va-clinic/",
+      "lat": 32.48369378,
+      "lng": -93.70735084,
+      "website": "https://www.va.gov/shreveport-health-care/locations/knight-street-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502qb-lafayette",
+      "name": "Lafayette Campus B VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "309 Saint Julien Avenue",
+      "city": "Lafayette",
+      "state": "LA",
+      "zip": "70506-4655",
+      "phoneMain": "337-706-1940",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/lafayette-campus-b-va-clinic/",
+      "lat": 30.21364875,
+      "lng": -92.02858181,
+      "website": "https://www.va.gov/alexandria-health-care/locations/lafayette-campus-b-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502gb-lafayette",
+      "name": "Lafayette VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3149 Ambassador Caffery Parkway",
+      "city": "Lafayette",
+      "state": "LA",
+      "zip": "70506-7209",
+      "phoneMain": "337-706-3415",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/lafayette-va-clinic/",
+      "lat": 30.18732984,
+      "lng": -92.07497259,
+      "website": "https://www.va.gov/alexandria-health-care/locations/lafayette-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-667gb-monroe",
+      "name": "Monroe VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1691 Bienville Drive",
+      "city": "Monroe",
+      "state": "LA",
+      "zip": "71201-3756",
+      "phoneMain": "318-343-6100",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/shreveport-health-care/locations/monroe-va-clinic/",
+      "lat": 32.53050689,
+      "lng": -92.09915604,
+      "website": "https://www.va.gov/shreveport-health-care/locations/monroe-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-502gg-natchitoches",
+      "name": "Natchitoches VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "740 Keyser Avenue",
+      "city": "Natchitoches",
+      "state": "LA",
+      "zip": "71457-6043",
+      "phoneMain": "318-357-3300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/alexandria-health-care/locations/natchitoches-va-clinic/",
+      "lat": 31.75299346,
+      "lng": -93.07140663,
+      "website": "https://www.va.gov/alexandria-health-care/locations/natchitoches-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0847mvc-new-orleans",
+      "name": "New Orleans Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1250 Poydras St",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70113",
+      "phoneMain": "504-565-4977",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/houston-southwest-vet-center/locations/#houston-southwest-mobile-vet-c",
+      "lat": 29.950479,
+      "lng": -90.0769635,
+      "website": "https://www.va.gov/houston-southwest-vet-center/locations/#houston-southwest-mobile-vet-c",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629qb-new-orleans",
+      "name": "New Orleans South VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2400 Canal Street",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70119-6535",
+      "phoneMain": "800-935-8387",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_629QB",
+      "lat": 29.96352778,
+      "lng": -90.08459589,
+      "website": "https://www.va.gov/find-locations/facility/vha_629QB",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629-new-orleans",
+      "name": "New Orleans VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2400 Canal Street",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70119-6535",
+      "phoneMain": "800-935-8387",
+      "hoursSummary": "monday: 24/7 · tuesday: 24/7 · wednesday: 24/7 · thursday: 24/7 · friday: 24/7 · saturday: 24/7 · sunday: 24/7",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/new-orleans-va-medical-center/",
+      "lat": 29.96344462,
+      "lng": -90.08445391,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/new-orleans-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0717v-new-orleans",
+      "name": "New Orleans Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1250 Poydras St.",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70113",
+      "phoneMain": "504-507-4977",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/new-orleans-vet-center/",
+      "lat": 29.950479,
+      "lng": -90.0769635,
+      "website": "https://www.va.gov/new-orleans-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-667-shreveport",
+      "name": "Overton Brooks Veterans' Administration Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "510 East Stoner Avenue",
+      "city": "Shreveport",
+      "state": "LA",
+      "zip": "71101-4243",
+      "phoneMain": "318-221-8411",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/shreveport-health-care/locations/overton-brooks-veterans-administration-medical-center/",
+      "lat": 32.50001146,
+      "lng": -93.72284983,
+      "website": "https://www.va.gov/shreveport-health-care/locations/overton-brooks-veterans-administration-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0704v-shreveport",
+      "name": "Shreveport Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1255 Shreveport Barksdale Highway",
+      "city": "Shreveport",
+      "state": "LA",
+      "zip": "71105",
+      "phoneMain": "318-861-1776",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/shreveport-vet-center/",
+      "lat": 32.48747943,
+      "lng": -93.70527789,
+      "website": "https://www.va.gov/shreveport-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629gc-slidell",
+      "name": "Slidell VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "60491 Doss Drive",
+      "city": "Slidell",
+      "state": "LA",
+      "zip": "70460-4972",
+      "phoneMain": "985-690-2626",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/slidell-va-clinic/",
+      "lat": 30.30960206,
+      "lng": -89.77598186,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/slidell-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-629gd-reserve",
+      "name": "St. John VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4004 West Airline Highway",
+      "city": "Reserve",
+      "state": "LA",
+      "zip": "70084-5712",
+      "phoneMain": "985-479-6770",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/southeast-louisiana-health-care/locations/st-john-va-clinic/",
+      "lat": 30.0768985,
+      "lng": -90.57120869,
+      "website": "https://www.va.gov/southeast-louisiana-health-care/locations/st-john-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

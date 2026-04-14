@@ -1,0 +1,728 @@
+{
+  "meta": {
+    "title": "Iowa — VA health facilities (map & list)",
+    "region": "Iowa",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Iowa. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "101 Iowa Avenue West",
+      "city": "Marshalltown",
+      "state": "IA",
+      "zip": "50158-4768",
+      "lat": 42.0070335,
+      "lng": -92.91499892,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Iowa",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-636gy-burlington",
+      "name": "Burlington VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1000 North Roosevelt Avenue",
+      "city": "Burlington",
+      "state": "IA",
+      "zip": "52601-1988",
+      "phoneMain": "319-752-3722",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/burlington-va-clinic/",
+      "lat": 40.81892358,
+      "lng": -91.14141517,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/burlington-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gm-carroll",
+      "name": "Carroll VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "311 South Clark Street",
+      "city": "Carroll",
+      "state": "IA",
+      "zip": "51401-3086",
+      "phoneMain": "712-794-6780",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/carroll-va-clinic/",
+      "lat": 42.05728146,
+      "lng": -94.86780025,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/carroll-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0854mvc-cedar-rapids",
+      "name": "Cedar Rapids Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "4250 River Center Court, Northeast",
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "zip": "52402-7547",
+      "phoneMain": "319-378-0016",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/cedar-rapids-vet-center/locations/#cedar-rapids-mobile-vet-center",
+      "lat": 42.01951431,
+      "lng": -91.70120323,
+      "website": "https://www.va.gov/cedar-rapids-vet-center/locations/#cedar-rapids-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gn-cedar-rapids",
+      "name": "Cedar Rapids VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3500 Dalton Way",
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "zip": "52404-2564",
+      "phoneMain": "319-369-4340",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/cedar-rapids-va-clinic/",
+      "lat": 41.951889,
+      "lng": -91.719405,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/cedar-rapids-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0431v-cedar-rapids",
+      "name": "Cedar Rapids Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4250 River Center Court, Northeast",
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "zip": "52402-7547",
+      "phoneMain": "319-378-0016",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/cedar-rapids-vet-center/",
+      "lat": 42.01951431,
+      "lng": -91.70120323,
+      "website": "https://www.va.gov/cedar-rapids-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gw-coralville",
+      "name": "Coralville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "520 10th Avenue",
+      "city": "Coralville",
+      "state": "IA",
+      "zip": "52241-1910",
+      "phoneMain": "319-358-2406",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/coralville-va-clinic/",
+      "lat": 41.676327,
+      "lng": -91.5787845,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/coralville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qi-davenport",
+      "name": "Davenport VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "415 North Perry Street",
+      "city": "Davenport",
+      "state": "IA",
+      "zip": "52801-1617",
+      "phoneMain": "563-328-5800",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/davenport-va-clinic/",
+      "lat": 41.52397482,
+      "lng": -90.57261801,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/davenport-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gu-decorah",
+      "name": "Decorah VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "915 Short Street",
+      "city": "Decorah",
+      "state": "IA",
+      "zip": "52101-2412",
+      "phoneMain": "563-387-5840",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/decorah-va-clinic/",
+      "lat": 43.29113804,
+      "lng": -91.79729611,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/decorah-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qb-des-moines",
+      "name": "Des Moines VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1223 Center Street",
+      "city": "Des Moines",
+      "state": "IA",
+      "zip": "50309-1016",
+      "phoneMain": "515-699-5637",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-clinic/",
+      "lat": 41.59175428,
+      "lng": -93.63280824,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636a6-des-moines",
+      "name": "Des Moines VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "3600 30th Street",
+      "city": "Des Moines",
+      "state": "IA",
+      "zip": "50310-5753",
+      "phoneMain": "515-699-5999",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-medical-center/",
+      "lat": 41.62773592,
+      "lng": -93.65878525,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qh-des-moines",
+      "name": "Des Moines VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3600 30th Street",
+      "city": "Des Moines",
+      "state": "IA",
+      "zip": "50310-5753",
+      "phoneMain": "515-699-5999",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-mobile-medical-unit/",
+      "lat": 41.62773592,
+      "lng": -93.65878525,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/des-moines-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0405v-west-des-moines",
+      "name": "Des Moines Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1821 22nd Street",
+      "city": "West Des Moines",
+      "state": "IA",
+      "zip": "50266",
+      "phoneMain": "515-284-4929",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/des-moines-vet-center/",
+      "lat": 41.59926329,
+      "lng": -93.73527115,
+      "website": "https://www.va.gov/des-moines-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gj-dubuque",
+      "name": "Dubuque VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "2600 Dodge Street",
+      "city": "Dubuque",
+      "state": "IA",
+      "zip": "52003-7159",
+      "phoneMain": "563-588-5520",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/dubuque-va-clinic/",
+      "lat": 42.49118662,
+      "lng": -90.70061618,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/dubuque-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gx-fort-dodge",
+      "name": "Fort Dodge North VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "102 North 25th Street",
+      "city": "Fort Dodge",
+      "state": "IA",
+      "zip": "50501-4338",
+      "phoneMain": "515-576-2235",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/",
+      "lat": 42.50759614,
+      "lng": -94.1631963,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gk-fort-dodge",
+      "name": "Fort Dodge VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "530 South 25th Street",
+      "city": "Fort Dodge",
+      "state": "IA",
+      "zip": "50501-3601",
+      "phoneMain": "515-576-2235",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/",
+      "lat": 42.5007613,
+      "lng": -94.16313811,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/fort-dodge-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qj-iowa-city",
+      "name": "Iowa City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "400 South Clinton Street",
+      "city": "Iowa City",
+      "state": "IA",
+      "zip": "52240-4105",
+      "phoneMain": "319-351-1110",
+      "hoursSummary": "monday: 800AM-500PM · tuesday: 800AM-500PM · wednesday: 800AM-500PM · thursday: 800AM-500PM · friday: 800AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-clinic/",
+      "lat": 41.656176,
+      "lng": -91.533924,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636a8-iowa-city",
+      "name": "Iowa City VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "601 Highway 6 West",
+      "city": "Iowa City",
+      "state": "IA",
+      "zip": "52246-2209",
+      "phoneMain": "319-338-0581",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-medical-center/",
+      "lat": 41.66361,
+      "lng": -91.548621,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/iowa-city-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qg-iowa-city",
+      "name": "Iowa City VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "601 Highway 6 West",
+      "city": "Iowa City",
+      "state": "IA",
+      "zip": "52246-2209",
+      "phoneMain": "319-338-0581",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_636QG",
+      "lat": 41.66361,
+      "lng": -91.548621,
+      "website": "https://www.va.gov/find-locations/facility/vha_636QG",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gr-knoxville",
+      "name": "Knoxville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1607 North Lincoln Street",
+      "city": "Knoxville",
+      "state": "IA",
+      "zip": "50138-3399",
+      "phoneMain": "641-828-5019",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/knoxville-va-clinic/",
+      "lat": 41.332536,
+      "lng": -93.10947239,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/knoxville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636qc-cedar-rapids",
+      "name": "Linn County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "3117 First Avenue Southeast",
+      "city": "Cedar Rapids",
+      "state": "IA",
+      "zip": "52402-4403",
+      "phoneMain": "319-365-0898",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/linn-county-va-clinic/",
+      "lat": 42.009048,
+      "lng": -91.634049,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/linn-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gd-marshalltown",
+      "name": "Marshalltown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "101 Iowa Avenue West",
+      "city": "Marshalltown",
+      "state": "IA",
+      "zip": "50158-4768",
+      "phoneMain": "641-754-6700",
+      "hoursSummary": "monday: 730AM-400PM · tuesday: 730AM-400PM · wednesday: 730AM-400PM · thursday: 730AM-400PM · friday: 730AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/marshalltown-va-clinic/",
+      "lat": 42.0070335,
+      "lng": -92.91499892,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/marshalltown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gc-mason-city",
+      "name": "Mason City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "478 Tiffany Drive",
+      "city": "Mason City",
+      "state": "IA",
+      "zip": "50401-1534",
+      "phoneMain": "641-494-5000",
+      "hoursSummary": "monday: 700AM-400PM · tuesday: 700AM-400PM · wednesday: 700AM-400PM · thursday: 700AM-400PM · friday: 700AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/mason-city-va-clinic/",
+      "lat": 43.14710006,
+      "lng": -93.24482378,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/mason-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gs-ottumwa",
+      "name": "Ottumwa VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1020 North Quincy Avenue",
+      "city": "Ottumwa",
+      "state": "IA",
+      "zip": "52501-3821",
+      "phoneMain": "641-683-4300",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/ottumwa-va-clinic/",
+      "lat": 41.01516775,
+      "lng": -92.43838222,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/ottumwa-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gf-davenport",
+      "name": "Quad Cities VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "2826 West Locust Street",
+      "city": "Davenport",
+      "state": "IA",
+      "zip": "52804-3354",
+      "phoneMain": "563-332-8528",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/quad-cities-va-clinic/",
+      "lat": 41.539329,
+      "lng": -90.618921,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/quad-cities-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gp-shenandoah",
+      "name": "Shenandoah VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2043 A Avenue",
+      "city": "Shenandoah",
+      "state": "IA",
+      "zip": "51601-4505",
+      "phoneMain": "712-246-0092",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/nebraska-western-iowa-health-care/locations/shenandoah-va-clinic/",
+      "lat": 40.74951196,
+      "lng": -95.3660553,
+      "website": "https://www.va.gov/nebraska-western-iowa-health-care/locations/shenandoah-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0428v-sioux-city",
+      "name": "Sioux City Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "4280 Sergeant Road",
+      "city": "Sioux City",
+      "state": "IA",
+      "zip": "51106",
+      "phoneMain": "712-255-3808",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/sioux-city-vet-center/",
+      "lat": 42.44978618,
+      "lng": -96.35403543,
+      "website": "https://www.va.gov/sioux-city-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gz-des-moines",
+      "name": "South Des Moines VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1211 East Army Post Road",
+      "city": "Des Moines",
+      "state": "IA",
+      "zip": "50315-5957",
+      "phoneMain": "515-256-9540",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/central-iowa-health-care/locations/south-des-moines-va-clinic/",
+      "lat": 41.52622177,
+      "lng": -93.59963835,
+      "website": "https://www.va.gov/central-iowa-health-care/locations/south-des-moines-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-438ga-spirit-lake",
+      "name": "Spirit Lake VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1850 Royal Avenue",
+      "city": "Spirit Lake",
+      "state": "IA",
+      "zip": "51360-1092",
+      "phoneMain": "712-336-6400",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/sioux-falls-health-care/locations/spirit-lake-va-clinic/",
+      "lat": 43.422528,
+      "lng": -95.118839,
+      "website": "https://www.va.gov/sioux-falls-health-care/locations/spirit-lake-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-636gh-waterloo",
+      "name": "Waterloo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "945 Tower Park Drive",
+      "city": "Waterloo",
+      "state": "IA",
+      "zip": "50701-9098",
+      "phoneMain": "319-235-1230",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/iowa-city-health-care/locations/waterloo-va-clinic/",
+      "lat": 42.45610834,
+      "lng": -92.36144134,
+      "website": "https://www.va.gov/iowa-city-health-care/locations/waterloo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

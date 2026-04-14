@@ -1,0 +1,44 @@
+{
+  "facilities": [
+    {
+      "name": "Sample VA Medical Center (placeholder)",
+      "city": "Example City, ST",
+      "phone": "(555) 555-0100",
+      "notes": "Replace with real facility data. This row is for layout review only."
+    },
+    {
+      "name": "Sample VA Clinic (placeholder)",
+      "city": "Nearby Town, ST",
+      "phone": "(555) 555-0101",
+      "notes": "Hours and services vary by location—confirm with VA."
+    }
+  ],
+  "phoneDirectory": [
+    { "label": "VA Benefits (general)", "phone": "800-827-1000" },
+    { "label": "GI Bill / education", "phone": "888-442-4551" },
+    { "label": "VA Health (general)", "phone": "877-222-8387" }
+  ],
+  "organizations": [
+    {
+      "name": "Sample VSO office (placeholder)",
+      "type": "VSO",
+      "city": "Example City, ST",
+      "phone": "(555) 555-0200"
+    },
+    {
+      "name": "Sample VFW post (placeholder)",
+      "type": "VFW",
+      "city": "Example City, ST",
+      "phone": "(555) 555-0201"
+    }
+  ],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "You can also text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "Numbers shown are common U.S. public resources for general information—confirm current contact options on official VA and 988 sites. This is not a substitute for emergency services or professional crisis care."
+  }
+}

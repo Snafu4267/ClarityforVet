@@ -1,0 +1,30 @@
+# Dependencies & build output
+node_modules
+.next
+out
+
+# Git & IDE
+.git
+.gitignore
+.cursor
+
+# Env & secrets (never bake into image)
+.env
+.env.*
+!.env.example
+
+# Local DB — production DB file must come from a mounted volume at runtime
+prisma/*.db
+prisma/*.db-journal
+
+# Logs & misc
+npm-debug.log*
+*.tsbuildinfo
+.DS_Store
+
+# Docs & planning (not needed in image)
+docs
+**/*.md
+
+# Large / generated (regenerated in container)
+lib/generated

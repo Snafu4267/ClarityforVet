@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1"
+	 xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="504" height="504" viewBox="0 0 504 504">
+	<title>United States Space Force Emblem</title>
+	<style type="text/css">
+		.bg {
+			stroke:none; fill:#d9e1eb;
+			fill-rule: evenodd;
+		}
+	</style>
+	<circle class="bg" r="250" cx="251" cy="252" />
+	<circle style="fill:#072335; stroke:none;" r="191" cx="251" cy="252" />
+	<path class="bg" d="m150,374 l102,-281 102,281 -102,-65 z" />
+	<circle style="fill:none; stroke:#072335; stroke-width:43;" r="220.5" cx="251" cy="252" />
+	<g style="display:none;">
+		<path class="bg" id="E" d="m245,45 v-23 h13 v4 h-9 v5 h8 v 4 h-8 v6 h9 v4 z" />
+		<path class="bg" id="S"
+			d="m244,38 c0,5 2,8 7,8 8,0 11,-9.5 4,-13 -8,-4 -7,-7 -3,-7 2,0 2,1 2,3 h4.3 c0,-5 -2,-8 -7,-8 -7,0 -11,9.5 -4,13 8,4 7,7 3,7 -1,0 -2,-1 -2,-3 z" />
+		<path class="bg" id="A"
+			d="m 242,45 l6,-23 h6.4 l6,23 h-4.4 l-1.3,-5 h-7 l-1.3,5 z m7,-10 l2,-7.5 2,7.5 z" />
+	</g>
+	<path class="bg" transform="rotate(330 251 251)"
+		d="m243,22 v16 c0,4 3,7 7,7 h1 c 4,0 7,-3 7,-7 v-16 h-4.5 v16 c0,2 -1,3 -3,3 -2,0 -3,-1 -3,-3 v-16 z" />
+	<path class="bg" transform="rotate(336.2 251 251)" d="m253,45 l-6,-15 v15 h-5 v-23 h6.5 l6,15 v-15 h5 v23 z" />
+	<path class="bg" transform="rotate(341 251 251)" d="m248.5,45 v-23 h4.5 v23 z" />
+	<path class="bg" id="T1" transform="rotate(345 251 251)" d="m253.3,26 v19 h-4.5 v-19 h -6 v-4 h16 v4 z" />
+	<use xlink:href="#E" transform="rotate(350 251 251)" />
+	<path class="bg" transform="rotate(355.6 251 251)"
+		d="m244,22 h7 c4,0 8,2 8,11 v1 c0,9 -4,11 -8,11 h-7 z m4.5,4 c4,0 5.5,0 5.5,7 v1 c0,7 -1.5,7 -5.5,7 z" />
+	<use xlink:href="#S" transform="rotate(4 251 251)" />
+	<use xlink:href="#T1" transform="rotate(24.4 251 251)" />
+	<use xlink:href="#A" transform="rotate(14.3 251 251)" />
+	<use xlink:href="#T1" transform="rotate(34.4 251 251)" />
+	<use xlink:href="#E" transform="rotate(24.5 251 251)" />
+	<use xlink:href="#S" transform="rotate(29.8 251 251)" />
+	<use xlink:href="#S" transform="rotate(26 251 251) translate(0,440)" />
+	<path class="bg" transform="rotate(20 251 251)"
+		d="m 242.5,462 h8 c4,0 7,3 7,7 0,5 -4,7 -7,7 h-3 v9 h-5 z m5,4 c3,0 5,0 5,3 0,3 -2,3 -5,3 z" />
+	<use xlink:href="#A" transform="rotate(15.2 251 251) translate(0,440)" />
+	<path class="bg" id="C1" transform="rotate(9 251 251)"
+		d="m 258,477 c0,5 -2,8 -7,8 -7,0 -8,-6 -8,-10 v-3 c0,-2 0,-10 8,-10 5,0 7,3 7,8 h-5 c0,-3 -1,-4 -2,-4 -3,0 -3,3 -3,6 v4 c0,3 0,6 3,6 1,0 2,-1 2,-5 z" />
+	<use xlink:href="#E" transform="rotate(3.8 251 251) translate(0,440)" />
+	<path class="bg" transform="rotate(356.5 251 251)" d="m 249.5,465.5 v6 h7 v4 h-7 v9 h-5 v-23 h12 v4 z" />
+	<path class="bg" transform="rotate(351.6 251 251)"
+		d="m 259,474.7 c0,2 0,10 -8,10 -7,0 -8,-6 -8,-10 v-3 c0,-2 0,-10 8,-10 7,0 8,6 8,10 z m-5,0 c0,3 0,6 -3,6 -3,0 -3,-3 -3,-6 v-3 c0,-3 0,-6 3,-6 3,0 3,3 3,6 z" />
+	<path class="bg" transform="rotate(345.5 251 251)"
+		d="m 243,462 h8 c 4,0 7,3 7,7 0,1 0,2 -3,4 3,3 3,4 3,5 v6 h-5 v-4 c0,-2 0,-5 -4,-5 v9 h-5 z m5,4 c3,0 5,0 5,3 0,3 -2,3 -5,3 z" />
+	<use xlink:href="#C1" transform="rotate(331 251 251)" />
+	<use xlink:href="#E" transform="rotate(334.8 251 251) translate(0,440)" />
+	<path class="bg" d="m21,265 l8.5,-27 8.5,27 -8.5,-6 z m441,0 l8.5,-27 8.5,27 -8.5,-6 z" />
+	<path class="bg" style="fill:#94a2ad" d="m173,343 l45,-55 h68 l45,55 -79,-50 z" />
+	<path class="bg" style="fill:#000;" d="m157,365 l95,-263 95,263 -95,-60 z m16,-22 l74,-208 -29,153 l27,9 z m158,0 l-74,-208 29,153 -27,9 z m-79,-60 l4,-14 14,-5 -14,-5 -4,-14 -4,14 -14,5 14,5 z" />
+</svg>

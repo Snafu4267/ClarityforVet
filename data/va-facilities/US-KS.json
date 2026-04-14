@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "title": "Kansas — VA health facilities (map & list)",
+    "region": "Kansas",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Kansas. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "1169 Southwind Drive",
+      "city": "Junction City",
+      "state": "KS",
+      "zip": "66441-2644",
+      "lat": 39.01022006,
+      "lng": -96.86433477,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Kansas",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-589gm-chanute",
+      "name": "Chanute VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "629 South Plummer",
+      "city": "Chanute",
+      "state": "KS",
+      "zip": "66720-1928",
+      "phoneMain": "800-574-8387 x54750",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "lat": 37.67537928,
+      "lng": -95.47093472,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589a5-topeka",
+      "name": "Colmery-O'Neil Veterans' Administration Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2200 Southwest Gage Boulevard",
+      "city": "Topeka",
+      "state": "KS",
+      "zip": "66622-0001",
+      "phoneMain": "785-350-3111",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/colmery-oneil-veterans-administration-medical-center/",
+      "lat": 39.0273447,
+      "lng": -95.7249057,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/colmery-oneil-veterans-administration-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589g2-dodge-city",
+      "name": "Dodge City VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2201 Summerlon Circle",
+      "city": "Dodge City",
+      "state": "KS",
+      "zip": "67801-2985",
+      "phoneMain": "888-878-6881 x57450",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/dodge-city-va-clinic/",
+      "lat": 37.77857097,
+      "lng": -99.99756993,
+      "website": "https://www.va.gov/wichita-health-care/locations/dodge-city-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589a6-leavenworth",
+      "name": "Dwight D. Eisenhower Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "4101 4th Street Trafficway",
+      "city": "Leavenworth",
+      "state": "KS",
+      "zip": "66048-5014",
+      "phoneMain": "913-682-2000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/dwight-d-eisenhower-department-of-veterans-affairs-medical-center/",
+      "lat": 39.277129,
+      "lng": -94.89970647,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/dwight-d-eisenhower-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gv-fort-scott",
+      "name": "Fort Scott VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "902 South Horton Street",
+      "city": "Fort Scott",
+      "state": "KS",
+      "zip": "66701-2438",
+      "phoneMain": "800-574-8387 x54750",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "lat": 37.829988,
+      "lng": -94.71364576,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gp-garnett",
+      "name": "Garnett VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "421 South Maple Street",
+      "city": "Garnett",
+      "state": "KS",
+      "zip": "66032-1334",
+      "phoneMain": "800-574-8387 x54750",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "lat": 38.279907,
+      "lng": -95.24933451,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/iola-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589g4-hays",
+      "name": "Hays VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "207B East 7th Street",
+      "city": "Hays",
+      "state": "KS",
+      "zip": "67601-4152",
+      "phoneMain": "888-878-6881 x41000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/hays-va-clinic/",
+      "lat": 38.8691378,
+      "lng": -99.33024134,
+      "website": "https://www.va.gov/wichita-health-care/locations/hays-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589g7-hutchinson",
+      "name": "Hutchinson VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1625 East 30th Street",
+      "city": "Hutchinson",
+      "state": "KS",
+      "zip": "67502-1226",
+      "phoneMain": "888-878-6881 x41100",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/hutchinson-va-clinic/",
+      "lat": 38.08650553,
+      "lng": -97.89497108,
+      "website": "https://www.va.gov/wichita-health-care/locations/hutchinson-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gj-kansas-city",
+      "name": "Kansas City Kansas VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "9201 Parallel Parkway",
+      "city": "Kansas City",
+      "state": "KS",
+      "zip": "66112-1510",
+      "phoneMain": "913-758-6990",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/captain-elwin-shopteese-va-clinic/",
+      "lat": 39.12856354,
+      "lng": -94.792113,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/captain-elwin-shopteese-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gu-lawrence",
+      "name": "Lawrence VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "4821 Quail Crest Place",
+      "city": "Lawrence",
+      "state": "KS",
+      "zip": "66049-3839",
+      "phoneMain": "800-574-8387 x54650",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/lawrence-va-clinic/",
+      "lat": 38.96012539,
+      "lng": -95.30544352,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/lawrence-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589jg-lenexa",
+      "name": "Lenexa VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "15512 West 113th Street",
+      "city": "Lenexa",
+      "state": "KS",
+      "zip": "66219-5100",
+      "phoneMain": "816-922-2522",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/kansas-city-health-care/locations/lenexa-va-clinic/",
+      "lat": 38.9218135,
+      "lng": -94.76389569,
+      "website": "https://www.va.gov/kansas-city-health-care/locations/lenexa-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gr-junction-city",
+      "name": "Lieutenant General Richard J. Seitz Community-Based Outpatient Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1169 Southwind Drive",
+      "city": "Junction City",
+      "state": "KS",
+      "zip": "66441-2644",
+      "phoneMain": "800-574-8387 x54670",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/eastern-kansas-health-care/locations/lieutenant-general-richard-j-seitz-community-based-outpatient-clinic/",
+      "lat": 39.01022006,
+      "lng": -96.86433477,
+      "website": "https://www.va.gov/eastern-kansas-health-care/locations/lieutenant-general-richard-j-seitz-community-based-outpatient-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0432v-manhattan",
+      "name": "Manhattan, KS Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1133 College Avenue",
+      "city": "Manhattan",
+      "state": "KS",
+      "zip": "66502",
+      "phoneMain": "785-350-4920",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/manhattan-ks-vet-center/",
+      "lat": 39.192381,
+      "lng": -96.5996595,
+      "website": "https://www.va.gov/manhattan-ks-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589qa-overland-park",
+      "name": "Overland Park VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "10500 Mastin Street",
+      "city": "Overland Park",
+      "state": "KS",
+      "zip": "66207-5717",
+      "phoneMain": "816-922-2880",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/kansas-city-health-care/locations/overland-park-va-clinic/",
+      "lat": 38.93817411,
+      "lng": -94.70226451,
+      "website": "https://www.va.gov/kansas-city-health-care/locations/overland-park-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gc-paola",
+      "name": "Paola VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "501 South Hospital Drive",
+      "city": "Paola",
+      "state": "KS",
+      "zip": "66071-1850",
+      "phoneMain": "816-922-2160",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/kansas-city-health-care/locations/paola-va-clinic/",
+      "lat": 38.56664658,
+      "lng": -94.86376683,
+      "website": "https://www.va.gov/kansas-city-health-care/locations/paola-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589g5-parsons",
+      "name": "Parsons VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1907 Harding Drive",
+      "city": "Parsons",
+      "state": "KS",
+      "zip": "67357-8111",
+      "phoneMain": "888-878-6881 x41060",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/parsons-va-clinic/",
+      "lat": 37.3658595,
+      "lng": -95.26499011,
+      "website": "https://www.va.gov/wichita-health-care/locations/parsons-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589a7-wichita",
+      "name": "Robert J. Dole Department of Veterans Affairs Medical and Regional Office Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "5500 East Kellogg Drive",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67218-1607",
+      "phoneMain": "316-685-2221",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/robert-j-dole-department-of-veterans-affairs-medical-and-regional-office-center/",
+      "lat": 37.681686,
+      "lng": -97.2740115,
+      "website": "https://www.va.gov/wichita-health-care/locations/robert-j-dole-department-of-veterans-affairs-medical-and-regional-office-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589gw-salina",
+      "name": "Salina VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1410 East Iron Avenue",
+      "city": "Salina",
+      "state": "KS",
+      "zip": "67401-3285",
+      "phoneMain": "785-826-1580 x57502",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/salina-va-clinic/",
+      "lat": 38.84041952,
+      "lng": -97.58860047,
+      "website": "https://www.va.gov/wichita-health-care/locations/salina-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589qb-wichita",
+      "name": "Sedgwick County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "949 South Parklane",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67218-3210",
+      "phoneMain": "316-685-2221",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/wichita-health-care/locations/sedgwick-county-va-clinic/",
+      "lat": 37.669143,
+      "lng": -97.2788705,
+      "website": "https://www.va.gov/wichita-health-care/locations/sedgwick-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589jc-shawnee",
+      "name": "Shawnee VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "6830 Anderson Street",
+      "city": "Shawnee",
+      "state": "KS",
+      "zip": "66226-0000",
+      "phoneMain": "816-922-2750",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/kansas-city-health-care/locations/shawnee-va-clinic/",
+      "lat": 39.00595582,
+      "lng": -94.8478263,
+      "website": "https://www.va.gov/kansas-city-health-care/locations/shawnee-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0824mvc-wichita",
+      "name": "Wichita Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "5500 E. Kellogg Ave",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67208",
+      "phoneMain": "316-265-0889",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/wichita-vet-center/locations/#wichita-mobile-vet-center",
+      "lat": 37.67884191,
+      "lng": -97.32562086,
+      "website": "https://www.va.gov/wichita-vet-center/locations/#wichita-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-589qd-wichita",
+      "name": "Wichita VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "5500 East Kellogg Drive",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67218-1607",
+      "phoneMain": "316-685-2221",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_589QD",
+      "lat": 37.681686,
+      "lng": -97.2740115,
+      "website": "https://www.va.gov/find-locations/facility/vha_589QD",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0426v-wichita",
+      "name": "Wichita Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "393 N McLean Blvd",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67203",
+      "phoneMain": "316-265-0889",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/wichita-vet-center/",
+      "lat": 37.69055471,
+      "lng": -97.35270304,
+      "website": "https://www.va.gov/wichita-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

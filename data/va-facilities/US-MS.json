@@ -1,0 +1,498 @@
+{
+  "meta": {
+    "title": "Mississippi — VA health facilities (map & list)",
+    "region": "Mississippi",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Mississippi. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "15 River Bend Place",
+      "city": "Flowood",
+      "state": "MS",
+      "zip": "39232",
+      "lat": 32.32730976,
+      "lng": -90.12530661,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Mississippi",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-520-biloxi",
+      "name": "Biloxi VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "400 Veterans Avenue",
+      "city": "Biloxi",
+      "state": "MS",
+      "zip": "39531-2410",
+      "phoneMain": "228-523-5000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/gulf-coast-health-care/locations/biloxi-va-medical-center/",
+      "lat": 30.40904262,
+      "lng": -88.9471823,
+      "website": "https://www.va.gov/gulf-coast-health-care/locations/biloxi-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0737v-biloxi",
+      "name": "Biloxi Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "288 Veterans Avenue",
+      "city": "Biloxi",
+      "state": "MS",
+      "zip": "39531",
+      "phoneMain": "228-388-9938",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/biloxi-vet-center/",
+      "lat": 30.402405,
+      "lng": -88.9467885,
+      "website": "https://www.va.gov/biloxi-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586gf-columbus",
+      "name": "Columbus VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "824 Alabama Street",
+      "city": "Columbus",
+      "state": "MS",
+      "zip": "39702-5436",
+      "phoneMain": "662-244-0391",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/columbus-va-clinic/",
+      "lat": 33.49327447,
+      "lng": -88.36568936,
+      "website": "https://www.va.gov/jackson-health-care/locations/columbus-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586qb-jackson",
+      "name": "Dogwood View Parkway VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "6522 Dogwood View Parkway",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39213-7858",
+      "phoneMain": "601-362-4471 x51294",
+      "hoursSummary": "monday: 700AM-400PM · tuesday: 700AM-400PM · wednesday: 700AM-400PM · thursday: 700AM-400PM · friday: 700AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/dogwood-view-parkway-va-clinic/",
+      "lat": 32.39940987,
+      "lng": -90.19618493,
+      "website": "https://www.va.gov/jackson-health-care/locations/dogwood-view-parkway-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586-jackson",
+      "name": "G.V. (Sonny) Montgomery Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1500 East Woodrow Wilson Avenue",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39216-5116",
+      "phoneMain": "800-949-1009",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/gv-sonny-montgomery-department-of-veterans-affairs-medical-center/",
+      "lat": 32.327541,
+      "lng": -90.16632,
+      "website": "https://www.va.gov/jackson-health-care/locations/gv-sonny-montgomery-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586gc-greenville",
+      "name": "Greenville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1502 South Colorado Street",
+      "city": "Greenville",
+      "state": "MS",
+      "zip": "38703-7219",
+      "phoneMain": "662-599-2007",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/greenville-va-clinic/",
+      "lat": 33.38179119,
+      "lng": -91.03004863,
+      "website": "https://www.va.gov/jackson-health-care/locations/greenville-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-520qb-biloxi",
+      "name": "Gulf Coast West VA Mobile Medical Unit-Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "400 Veterans Avenue",
+      "city": "Biloxi",
+      "state": "MS",
+      "zip": "39531-2410",
+      "phoneMain": "228-523-5000",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_520QB",
+      "lat": 30.40904255,
+      "lng": -88.94717343,
+      "website": "https://www.va.gov/find-locations/facility/vha_520QB",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586gd-hattiesburg",
+      "name": "Hattiesburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "5003 Hardy Street",
+      "city": "Hattiesburg",
+      "state": "MS",
+      "zip": "39402-1331",
+      "phoneMain": "601-296-3530",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/hattiesburg-va-clinic/",
+      "lat": 31.326192,
+      "lng": -89.3679345,
+      "website": "https://www.va.gov/jackson-health-care/locations/hattiesburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-614gc-holly-springs",
+      "name": "Holly Springs VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1700 Crescent Meadows Drive",
+      "city": "Holly Springs",
+      "state": "MS",
+      "zip": "38635-7417",
+      "phoneMain": "662-252-2552",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/memphis-health-care/locations/holly-springs-va-clinic/",
+      "lat": 34.75043518,
+      "lng": -89.45589284,
+      "website": "https://www.va.gov/memphis-health-care/locations/holly-springs-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586qd-jackson",
+      "name": "Jackson 2 VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1500 Woodrow Wilson Avenue",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39216-5116",
+      "phoneMain": "800-949-1009",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_586QD",
+      "lat": 32.32680928,
+      "lng": -90.16779384,
+      "website": "https://www.va.gov/find-locations/facility/vha_586QD",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0863mvc-jackson",
+      "name": "Jackson Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1755 Lelia Drive",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39216",
+      "phoneMain": "601-985-2560",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/jackson-vet-center/locations/#jackson-mobile-vet-center",
+      "lat": 32.332608,
+      "lng": -90.14301,
+      "website": "https://www.va.gov/jackson-vet-center/locations/#jackson-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586bu-jackson",
+      "name": "Jackson VA Domiciliary",
+      "kind": "CBOC",
+      "system": "VHA · DRRTP",
+      "address": "5354 I-55 South Frontage Road East",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39272-9119",
+      "phoneMain": "800-949-1009 x55717",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_586BU",
+      "lat": 32.198652,
+      "lng": -90.24669,
+      "website": "https://www.va.gov/find-locations/facility/vha_586BU",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586qa-jackson",
+      "name": "Jackson VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1500 East Woodrow Wilson Avenue",
+      "city": "Jackson",
+      "state": "MS",
+      "zip": "39216-5116",
+      "phoneMain": "800-949-1009 x51511",
+      "hoursSummary": "monday: Closed · tuesday: Closed · wednesday: Closed · thursday: Closed · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_586QA",
+      "lat": 32.327541,
+      "lng": -90.16632,
+      "website": "https://www.va.gov/find-locations/facility/vha_586QA",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0709v-flowood",
+      "name": "Jackson Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "15 River Bend Place",
+      "city": "Flowood",
+      "state": "MS",
+      "zip": "39232",
+      "phoneMain": "601-985-2560",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/jackson-vet-center/",
+      "lat": 32.32730976,
+      "lng": -90.12530661,
+      "website": "https://www.va.gov/jackson-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586ga-kosciusko",
+      "name": "Kosciusko VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "405 West Adams Street",
+      "city": "Kosciusko",
+      "state": "MS",
+      "zip": "39090-3617",
+      "phoneMain": "662-289-2880",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/kosciusko-va-clinic/",
+      "lat": 33.05943904,
+      "lng": -89.59466149,
+      "website": "https://www.va.gov/jackson-health-care/locations/kosciusko-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586gg-mccomb",
+      "name": "McComb VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1308 Harrison Avenue",
+      "city": "McComb",
+      "state": "MS",
+      "zip": "39648-2830",
+      "phoneMain": "601-250-0965",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/mccomb-va-clinic/",
+      "lat": 31.24942349,
+      "lng": -90.46807994,
+      "website": "https://www.va.gov/jackson-health-care/locations/mccomb-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586gb-meridian",
+      "name": "Meridian VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2103 13th Street",
+      "city": "Meridian",
+      "state": "MS",
+      "zip": "39301-4045",
+      "phoneMain": "601-482-3275",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/meridian-va-clinic/",
+      "lat": 32.36985654,
+      "lng": -88.69958028,
+      "website": "https://www.va.gov/jackson-health-care/locations/meridian-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-586ge-natchez",
+      "name": "Natchez VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "105 Northgate Drive",
+      "city": "Natchez",
+      "state": "MS",
+      "zip": "39120-9162",
+      "phoneMain": "601-442-7141",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/jackson-health-care/locations/natchez-va-clinic/",
+      "lat": 31.5647657,
+      "lng": -91.3516379,
+      "website": "https://www.va.gov/jackson-health-care/locations/natchez-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-614ga-tupelo",
+      "name": "Tupelo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1114 Commonwealth Blvd",
+      "city": "Tupelo",
+      "state": "MS",
+      "zip": "38804-4753",
+      "phoneMain": "662-840-6366",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/memphis-health-care/locations/tupelo-va-clinic/",
+      "lat": 34.29993388,
+      "lng": -88.70278105,
+      "website": "https://www.va.gov/memphis-health-care/locations/tupelo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

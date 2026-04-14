@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "title": "Idaho — VA health facilities (map & list)",
+    "region": "Idaho",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Idaho. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "500 West Fort Street",
+      "city": "Boise",
+      "state": "ID",
+      "zip": "83702-4501",
+      "lat": 43.621065,
+      "lng": -116.1904185,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Idaho",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-0827mvc-boise",
+      "name": "Boise Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "2424 Bank Drive",
+      "city": "Boise",
+      "state": "ID",
+      "zip": "83705",
+      "phoneMain": "208-342-3612",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/boise-vet-center/locations/#boise-mobile-vet-center",
+      "lat": 43.591374,
+      "lng": -116.212113,
+      "website": "https://www.va.gov/boise-vet-center/locations/#boise-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531-boise",
+      "name": "Boise VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "500 West Fort Street",
+      "city": "Boise",
+      "state": "ID",
+      "zip": "83702-4501",
+      "phoneMain": "208-422-1000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/boise-va-medical-center/",
+      "lat": 43.621065,
+      "lng": -116.1904185,
+      "website": "https://www.va.gov/boise-health-care/locations/boise-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0503v-boise",
+      "name": "Boise Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2424 Bank Drive",
+      "city": "Boise",
+      "state": "ID",
+      "zip": "83705",
+      "phoneMain": "208-342-3612",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/boise-vet-center/",
+      "lat": 43.591374,
+      "lng": -116.212113,
+      "website": "https://www.va.gov/boise-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531gg-caldwell",
+      "name": "Caldwell VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "4521 Thomas Jefferson Street",
+      "city": "Caldwell",
+      "state": "ID",
+      "zip": "83605-5100",
+      "phoneMain": "208-454-4820",
+      "hoursSummary": "monday: 730AM-500PM · tuesday: 730AM-500PM · wednesday: 730AM-500PM · thursday: 730AM-500PM · friday: 730AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/caldwell-va-clinic/",
+      "lat": 43.660314,
+      "lng": -116.6422635,
+      "website": "https://www.va.gov/boise-health-care/locations/caldwell-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-668gb-coeur-d-alene",
+      "name": "Coeur d 'Alene VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "915 West Emma Avenue",
+      "city": "Coeur d'Alene",
+      "state": "ID",
+      "zip": "83814-2531",
+      "phoneMain": "208-665-1700",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/spokane-health-care/locations/coeur-d-alene-va-clinic/",
+      "lat": 47.69263845,
+      "lng": -116.79626796,
+      "website": "https://www.va.gov/spokane-health-care/locations/coeur-d-alene-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0531v-idaho-falls",
+      "name": "East Idaho Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1000 Riverwalk Dr. Suite 350",
+      "city": "Idaho Falls",
+      "state": "ID",
+      "zip": "83402",
+      "phoneMain": "208-522-5712",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/east-idaho-vet-center/",
+      "lat": 43.48893548,
+      "lng": -112.04798892,
+      "website": "https://www.va.gov/east-idaho-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-660qa-idaho-falls",
+      "name": "Idaho Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "640 South Woodruff Avenue",
+      "city": "Idaho Falls",
+      "state": "ID",
+      "zip": "83401-5299",
+      "phoneMain": "208-522-2922",
+      "hoursSummary": "monday: 730AM-500PM · tuesday: 730AM-500PM · wednesday: 730AM-500PM · thursday: 730AM-500PM · friday: 730AM-500PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/salt-lake-city-health-care/locations/idaho-falls-va-clinic/",
+      "lat": 43.49181117,
+      "lng": -111.9991083,
+      "website": "https://www.va.gov/salt-lake-city-health-care/locations/idaho-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-687gb-lewiston",
+      "name": "Lewiston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1630 23rd Avenue",
+      "city": "Lewiston",
+      "state": "ID",
+      "zip": "83501-6350",
+      "phoneMain": "208-746-7784",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/walla-walla-health-care/locations/lewiston-va-clinic/",
+      "lat": 46.39729031,
+      "lng": -117.00832927,
+      "website": "https://www.va.gov/walla-walla-health-care/locations/lewiston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531gi-mountain-home",
+      "name": "Mountain Home VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "815 North 6th East",
+      "city": "Mountain Home",
+      "state": "ID",
+      "zip": "83647-2207",
+      "phoneMain": "208-580-2001",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/mountain-home-va-clinic/",
+      "lat": 43.13778295,
+      "lng": -115.69252866,
+      "website": "https://www.va.gov/boise-health-care/locations/mountain-home-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-660ga-pocatello",
+      "name": "Pocatello VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "500 South 11th Avenue",
+      "city": "Pocatello",
+      "state": "ID",
+      "zip": "83201-4835",
+      "phoneMain": "208-232-6214",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/salt-lake-city-health-care/locations/pocatello-va-clinic/",
+      "lat": 42.86702235,
+      "lng": -112.43332863,
+      "website": "https://www.va.gov/salt-lake-city-health-care/locations/pocatello-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531gj-salmon",
+      "name": "Salmon VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "705 Lena Street",
+      "city": "Salmon",
+      "state": "ID",
+      "zip": "83467-4208",
+      "phoneMain": "208-756-8515",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/salmon-va-clinic/",
+      "lat": 45.17309546,
+      "lng": -113.89262879,
+      "website": "https://www.va.gov/boise-health-care/locations/salmon-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-668qd-sandpoint",
+      "name": "Sandpoint VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "420 North Second Avenue",
+      "city": "Sandpoint",
+      "state": "ID",
+      "zip": "83864-1565",
+      "phoneMain": "208-263-0450",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/spokane-health-care/locations/bonner-county-va-clinic/",
+      "lat": 48.27703089,
+      "lng": -116.54876219,
+      "website": "https://www.va.gov/spokane-health-care/locations/bonner-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-531ge-twin-falls",
+      "name": "Twin Falls VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "260 2nd Avenue East",
+      "city": "Twin Falls",
+      "state": "ID",
+      "zip": "83301-6242",
+      "phoneMain": "208-732-0959",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/boise-health-care/locations/twin-falls-va-clinic/",
+      "lat": 42.55486677,
+      "lng": -114.46688751,
+      "website": "https://www.va.gov/boise-health-care/locations/twin-falls-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

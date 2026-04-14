@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "title": "West Virginia — VA health facilities (map & list)",
+    "region": "West Virginia",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in West Virginia. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "40 Reston Place",
+      "city": "Gassaway",
+      "state": "WV",
+      "zip": "26624-7899",
+      "lat": 38.65959485,
+      "lng": -80.74233213,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — West Virginia",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-0812mvc-beckley",
+      "name": "Beckley Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "201 Grey Flatts Rd",
+      "city": "Beckley",
+      "state": "WV",
+      "zip": "25801",
+      "phoneMain": "304-252-8220",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/beckley-vet-center/locations/#beckley-mobile-vet-center",
+      "lat": 37.7776824,
+      "lng": -81.16156097,
+      "website": "https://www.va.gov/beckley-vet-center/locations/#beckley-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-517-beckley",
+      "name": "Beckley VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "200 Veterans Avenue",
+      "city": "Beckley",
+      "state": "WV",
+      "zip": "25801-6444",
+      "phoneMain": "304-255-2121",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/beckley-health-care/locations/beckley-va-medical-center/",
+      "lat": 37.76603684,
+      "lng": -81.19195132,
+      "website": "https://www.va.gov/beckley-health-care/locations/beckley-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-517hk-beckley",
+      "name": "Beckley VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "200 Veterans Avenue",
+      "city": "Beckley",
+      "state": "WV",
+      "zip": "25801-6444",
+      "phoneMain": "304-255-2121",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/beckley-health-care/locations/beckley-va-mobile-medical-unit/",
+      "lat": 37.76511805,
+      "lng": -81.19268916,
+      "website": "https://www.va.gov/beckley-health-care/locations/beckley-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0231v-beckley",
+      "name": "Beckley Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "201 Grey Flatts Rd",
+      "city": "Beckley",
+      "state": "WV",
+      "zip": "25801",
+      "phoneMain": "304-252-8220",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/beckley-vet-center/",
+      "lat": 37.7776824,
+      "lng": -81.16156097,
+      "website": "https://www.va.gov/beckley-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-540gc-gassaway",
+      "name": "Braxton County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "40 Reston Place",
+      "city": "Gassaway",
+      "state": "WV",
+      "zip": "26624-7899",
+      "phoneMain": "304-364-4501",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/clarksburg-health-care/locations/braxton-county-va-clinic/",
+      "lat": 38.65959485,
+      "lng": -80.74233213,
+      "website": "https://www.va.gov/clarksburg-health-care/locations/braxton-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581gb-south-charleston",
+      "name": "Charleston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "700 Technology Drive",
+      "city": "South Charleston",
+      "state": "WV",
+      "zip": "25309-8571",
+      "phoneMain": "304-746-5300",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/charleston-va-clinic/",
+      "lat": 38.29554845,
+      "lng": -81.75168301,
+      "website": "https://www.va.gov/huntington-health-care/locations/charleston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0223v-charleston",
+      "name": "Charleston, WV Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "200 Tracy Way",
+      "city": "Charleston",
+      "state": "WV",
+      "zip": "25311",
+      "phoneMain": "304-343-3825",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/charleston-wv-vet-center/",
+      "lat": 38.35797974,
+      "lng": -81.59938813,
+      "website": "https://www.va.gov/charleston-wv-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613gd-franklin",
+      "name": "Franklin VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "91 Pine Street",
+      "city": "Franklin",
+      "state": "WV",
+      "zip": "26807-0000",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/franklin-va-clinic/",
+      "lat": 38.64349096,
+      "lng": -79.33122481,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/franklin-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-517gb-ronceverte",
+      "name": "Greenbrier County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "228 Shamrock Lane",
+      "city": "Ronceverte",
+      "state": "WV",
+      "zip": "24970-8380",
+      "phoneMain": "304-497-3900",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/beckley-health-care/locations/greenbrier-county-va-clinic/",
+      "lat": 37.76977742,
+      "lng": -80.46300558,
+      "website": "https://www.va.gov/beckley-health-care/locations/greenbrier-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581-huntington",
+      "name": "Hershel \"Woody\" Williams VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1540 Spring Valley Drive",
+      "city": "Huntington",
+      "state": "WV",
+      "zip": "25704-9300",
+      "phoneMain": "304-429-6741",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/hershel-woody-williams-va-medical-center/",
+      "lat": 38.37718073,
+      "lng": -82.51686389,
+      "website": "https://www.va.gov/huntington-health-care/locations/hershel-woody-williams-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0807mvc-huntington",
+      "name": "Huntington Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "3135 16th Street Rd",
+      "city": "Huntington",
+      "state": "WV",
+      "zip": "25701",
+      "phoneMain": "304-523-8387",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/huntington-vet-center/locations/#huntington-mobile-vet-center",
+      "lat": 38.39040752,
+      "lng": -82.39857157,
+      "website": "https://www.va.gov/huntington-vet-center/locations/#huntington-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581qa-huntington",
+      "name": "Huntington Ninth Street VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "624 Ninth Street",
+      "city": "Huntington",
+      "state": "WV",
+      "zip": "25701-2122",
+      "phoneMain": "304-429-6755",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/huntington-ninth-street-va-clinic/",
+      "lat": 38.41709868,
+      "lng": -82.44283566,
+      "website": "https://www.va.gov/huntington-health-care/locations/huntington-ninth-street-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581qb-huntington",
+      "name": "Huntington VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1540 Spring Valley Drive",
+      "city": "Huntington",
+      "state": "WV",
+      "zip": "25704-9300",
+      "phoneMain": "304-429-6755",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/huntington-va-mobile-medical-unit/",
+      "lat": 38.37718073,
+      "lng": -82.51686389,
+      "website": "https://www.va.gov/huntington-health-care/locations/huntington-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0208v-huntington",
+      "name": "Huntington Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3135 16th Street Road",
+      "city": "Huntington",
+      "state": "WV",
+      "zip": "25701",
+      "phoneMain": "304-523-8387",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/huntington-vet-center/",
+      "lat": 38.39040752,
+      "lng": -82.39857157,
+      "website": "https://www.va.gov/huntington-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-581gh-williamson",
+      "name": "Lenore VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2867 Route 65",
+      "city": "Williamson",
+      "state": "WV",
+      "zip": "25661-9199",
+      "phoneMain": "304-475-3000",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: Closed · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/huntington-health-care/locations/lenore-va-clinic/",
+      "lat": 37.78386099,
+      "lng": -82.25243049,
+      "website": "https://www.va.gov/huntington-health-care/locations/lenore-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-540-clarksburg",
+      "name": "Louis A. Johnson Veterans' Administration Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "1 Medical Center Drive",
+      "city": "Clarksburg",
+      "state": "WV",
+      "zip": "26301-4155",
+      "phoneMain": "304-623-3461",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/clarksburg-health-care/locations/louis-a-johnson-veterans-administration-medical-center/",
+      "lat": 39.27033903,
+      "lng": -80.36142251,
+      "website": "https://www.va.gov/clarksburg-health-care/locations/louis-a-johnson-veterans-administration-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613-martinsburg",
+      "name": "Martinsburg VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "510 Butler Avenue",
+      "city": "Martinsburg",
+      "state": "WV",
+      "zip": "25405-9990",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/martinsburg-va-medical-center/",
+      "lat": 39.41725696,
+      "lng": -77.9109752,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/martinsburg-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0224v-martinsburg",
+      "name": "Martinsburg Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "300 Foxcroft Avenue",
+      "city": "Martinsburg",
+      "state": "WV",
+      "zip": "25401-5341",
+      "phoneMain": "304-263-6776",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/martinsburg-vet-center/",
+      "lat": 39.46098446,
+      "lng": -77.98729354,
+      "website": "https://www.va.gov/martinsburg-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-540gd-westover",
+      "name": "Monongalia County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "40 Commerce Drive",
+      "city": "Westover",
+      "state": "WV",
+      "zip": "26501-3952",
+      "phoneMain": "304-292-7535",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/clarksburg-health-care/locations/monongalia-county-va-clinic/",
+      "lat": 39.62830239,
+      "lng": -79.98628342,
+      "website": "https://www.va.gov/clarksburg-health-care/locations/monongalia-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0216v-morgantown",
+      "name": "Morgantown Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "34 Commerce Drive",
+      "city": "Morgantown",
+      "state": "WV",
+      "zip": "26501",
+      "phoneMain": "304-291-4303",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/morgantown-vet-center/",
+      "lat": 39.62861959,
+      "lng": -79.98611502,
+      "website": "https://www.va.gov/morgantown-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-2081os-parkersburg",
+      "name": "Parkersburg Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2311 Ohio Avenue",
+      "city": "Parkersburg",
+      "state": "WV",
+      "zip": "26101",
+      "phoneMain": "304-485-1599",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/huntington-vet-center/locations/#parkersburg-vet-center-outstat",
+      "lat": 39.28193568,
+      "lng": -81.55006974,
+      "website": "https://www.va.gov/huntington-vet-center/locations/#parkersburg-vet-center-outstat",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-613ge-petersburg",
+      "name": "Petersburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "15 Grant Street",
+      "city": "Petersburg",
+      "state": "WV",
+      "zip": "26847-1613",
+      "phoneMain": "800-817-3807",
+      "hoursSummary": "monday: 730AM-430PM · tuesday: 730AM-430PM · wednesday: 730AM-430PM · thursday: 730AM-430PM · friday: 730AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/martinsburg-health-care/locations/petersburg-va-clinic/",
+      "lat": 38.9947897,
+      "lng": -79.11802422,
+      "website": "https://www.va.gov/martinsburg-health-care/locations/petersburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-517qa-princeton",
+      "name": "Princeton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "150 Courthouse Road",
+      "city": "Princeton",
+      "state": "WV",
+      "zip": "24740-2419",
+      "phoneMain": "304-323-4020",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/beckley-health-care/locations/princeton-va-clinic/",
+      "lat": 37.35941427,
+      "lng": -81.10734934,
+      "website": "https://www.va.gov/beckley-health-care/locations/princeton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0232v-princeton",
+      "name": "Princeton Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1511 North Walker Street",
+      "city": "Princeton",
+      "state": "WV",
+      "zip": "24740",
+      "phoneMain": "304-425-8098",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/princeton-vet-center/",
+      "lat": 37.36787675,
+      "lng": -81.10202769,
+      "website": "https://www.va.gov/princeton-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-540ga-parsons",
+      "name": "Tucker County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "260 Spruce Street",
+      "city": "Parsons",
+      "state": "WV",
+      "zip": "26287-1015",
+      "phoneMain": "304-478-2219",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/clarksburg-health-care/locations/tucker-county-va-clinic/",
+      "lat": 39.09723132,
+      "lng": -79.68392504,
+      "website": "https://www.va.gov/clarksburg-health-care/locations/tucker-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0233v-wheeling",
+      "name": "Wheeling Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1058 East Bethlehem Boulevard",
+      "city": "Wheeling",
+      "state": "WV",
+      "zip": "26003-4961",
+      "phoneMain": "304-232-0587",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/wheeling-vet-center/",
+      "lat": 40.04014399,
+      "lng": -80.67990926,
+      "website": "https://www.va.gov/wheeling-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-540gb-parkersburg",
+      "name": "Wood County VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2311 Ohio Avenue",
+      "city": "Parkersburg",
+      "state": "WV",
+      "zip": "26101-2559",
+      "phoneMain": "304-422-5114",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/clarksburg-health-care/locations/wood-county-va-clinic/",
+      "lat": 39.28193568,
+      "lng": -81.55006974,
+      "website": "https://www.va.gov/clarksburg-health-care/locations/wood-county-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

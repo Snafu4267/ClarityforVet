@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "North Dakota — VA health facilities (map & list)",
+    "region": "North Dakota",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in North Dakota. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "2430 20th Street Southwest",
+      "city": "Jamestown",
+      "state": "ND",
+      "zip": "58401-6201",
+      "lat": 46.88806539,
+      "lng": -98.74955431,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — North Dakota",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-0819mvc-bismarck",
+      "name": "Bismarck Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "619 Riverwood Drive",
+      "city": "Bismarck",
+      "state": "ND",
+      "zip": "58504",
+      "phoneMain": "701-224-9751",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/bismarck-vet-center/locations/#bismarck-mobile-vet-center",
+      "lat": 46.79433,
+      "lng": -100.8003465,
+      "website": "https://www.va.gov/bismarck-vet-center/locations/#bismarck-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gb-bismarck",
+      "name": "Bismarck VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2700 State Street",
+      "city": "Bismarck",
+      "state": "ND",
+      "zip": "58503-0669",
+      "phoneMain": "701-221-9152",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/bismarck-va-clinic/",
+      "lat": 46.835343,
+      "lng": -100.776357,
+      "website": "https://www.va.gov/fargo-health-care/locations/bismarck-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0446v-bismarck",
+      "name": "Bismarck Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "619 Riverwood Drive",
+      "city": "Bismarck",
+      "state": "ND",
+      "zip": "58504",
+      "phoneMain": "701-224-9751",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/bismarck-vet-center/",
+      "lat": 46.79433,
+      "lng": -100.8003465,
+      "website": "https://www.va.gov/bismarck-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gl-devils-lake",
+      "name": "Devils Lake VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1031 7th Street Northeast",
+      "city": "Devils Lake",
+      "state": "ND",
+      "zip": "58301-2719",
+      "phoneMain": "701-662-5801",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/devils-lake-va-clinic/",
+      "lat": 48.1148749,
+      "lng": -98.85028199,
+      "website": "https://www.va.gov/fargo-health-care/locations/devils-lake-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gj-dickinson",
+      "name": "Dickinson VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "766 Elks Drive",
+      "city": "Dickinson",
+      "state": "ND",
+      "zip": "58601-2916",
+      "phoneMain": "701-483-1850",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/dickinson-va-clinic/",
+      "lat": 46.89912043,
+      "lng": -102.79813071,
+      "website": "https://www.va.gov/fargo-health-care/locations/dickinson-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0820mvc-fargo",
+      "name": "Fargo Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "5622 34th Ave S",
+      "city": "Fargo",
+      "state": "ND",
+      "zip": "58104",
+      "phoneMain": "701-237-0942",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/fargo-vet-center/locations/#fargo-mobile-vet-center",
+      "lat": 46.827342,
+      "lng": -96.881031,
+      "website": "https://www.va.gov/fargo-vet-center/locations/#fargo-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437-fargo",
+      "name": "Fargo VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "2101 Elm Street North",
+      "city": "Fargo",
+      "state": "ND",
+      "zip": "58102-2417",
+      "phoneMain": "701-239-3700",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/fargo-va-medical-center/",
+      "lat": 46.906092,
+      "lng": -96.775038,
+      "website": "https://www.va.gov/fargo-health-care/locations/fargo-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0406v-fargo",
+      "name": "Fargo Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "5622 34th Ave S",
+      "city": "Fargo",
+      "state": "ND",
+      "zip": "58104",
+      "phoneMain": "701-237-0942",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/fargo-vet-center/",
+      "lat": 46.827342,
+      "lng": -96.881031,
+      "website": "https://www.va.gov/fargo-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437ga-grafton",
+      "name": "Grafton VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "1319 West 11th Street",
+      "city": "Grafton",
+      "state": "ND",
+      "zip": "58237-2141",
+      "phoneMain": "701-352-4059",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/grafton-va-clinic/",
+      "lat": 48.41349844,
+      "lng": -97.42072496,
+      "website": "https://www.va.gov/fargo-health-care/locations/grafton-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-4061os-grand-forks",
+      "name": "Grand Forks Outstation",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3001 32nd Ave",
+      "city": "Grand Forks",
+      "state": "ND",
+      "zip": "58201",
+      "phoneMain": "701-620-1448",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/fargo-vet-center/locations/#grand-forks-vet-center-outstat",
+      "lat": 47.88943178,
+      "lng": -97.0711449,
+      "website": "https://www.va.gov/fargo-vet-center/locations/#grand-forks-vet-center-outstat",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gi-grand-forks",
+      "name": "Grand Forks VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3221 32nd Avenue South",
+      "city": "Grand Forks",
+      "state": "ND",
+      "zip": "58201-6075",
+      "phoneMain": "701-335-4380",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/grand-forks-va-clinic/",
+      "lat": 47.88943882,
+      "lng": -97.07463282,
+      "website": "https://www.va.gov/fargo-health-care/locations/grand-forks-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gk-jamestown",
+      "name": "Jamestown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2430 20th Street Southwest",
+      "city": "Jamestown",
+      "state": "ND",
+      "zip": "58401-6201",
+      "phoneMain": "701-952-4787",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/jamestown-va-clinic/",
+      "lat": 46.88806539,
+      "lng": -98.74955431,
+      "website": "https://www.va.gov/fargo-health-care/locations/jamestown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gd-minot",
+      "name": "Minot VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "3400 South Broadway Street",
+      "city": "Minot",
+      "state": "ND",
+      "zip": "58701-1700",
+      "phoneMain": "701-418-2600",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/minot-va-clinic/",
+      "lat": 48.1991793,
+      "lng": -101.2961778,
+      "website": "https://www.va.gov/fargo-health-care/locations/minot-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0404v-minot",
+      "name": "Minot Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3300 South Broadway",
+      "city": "Minot",
+      "state": "ND",
+      "zip": "58701",
+      "phoneMain": "701-852-0177",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/minot-vet-center/",
+      "lat": 48.2003427,
+      "lng": -101.2961778,
+      "website": "https://www.va.gov/minot-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437qa-fargo",
+      "name": "North Fargo VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "721 1st Avenue North",
+      "city": "Fargo",
+      "state": "ND",
+      "zip": "58102-4903",
+      "phoneMain": "701-461-7330",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/north-fargo-va-clinic/",
+      "lat": 46.877562,
+      "lng": -96.792354,
+      "website": "https://www.va.gov/fargo-health-care/locations/north-fargo-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-437gf-williston",
+      "name": "Williston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "1542 16th Street West",
+      "city": "Williston",
+      "state": "ND",
+      "zip": "58801-3852",
+      "phoneMain": "701-572-2470",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/fargo-health-care/locations/williston-va-clinic/",
+      "lat": 48.15973636,
+      "lng": -103.64671491,
+      "website": "https://www.va.gov/fargo-health-care/locations/williston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

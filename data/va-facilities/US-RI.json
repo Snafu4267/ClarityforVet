@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Rhode Island — VA health facilities (map & list)",
+    "region": "Rhode Island",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in Rhode Island. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "2038 Warwick Avenue",
+      "city": "Warwick",
+      "state": "RI",
+      "zip": "02889-2433",
+      "lat": 41.72092282,
+      "lng": -71.40380105,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — Rhode Island",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-650qa-providence",
+      "name": "Eagle Square VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "623 Atwells Avenue",
+      "city": "Providence",
+      "state": "RI",
+      "zip": "02909-7403",
+      "phoneMain": "401-273-7100",
+      "hoursSummary": "monday: 800AM-400PM · tuesday: 800AM-400PM · wednesday: 800AM-400PM · thursday: 800AM-400PM · friday: 800AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/eagle-square-va-clinic/",
+      "lat": 41.82454948,
+      "lng": -71.43702518,
+      "website": "https://www.va.gov/providence-health-care/locations/eagle-square-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-650qb-providence",
+      "name": "Eagle Street VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "75 Eagle Street",
+      "city": "Providence",
+      "state": "RI",
+      "zip": "02909-1012",
+      "phoneMain": "401-273-7100",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/eagle-street-va-clinic/",
+      "lat": 41.82565975,
+      "lng": -71.43542253,
+      "website": "https://www.va.gov/providence-health-care/locations/eagle-street-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-650gd-middletown",
+      "name": "Middletown VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "One Corporate Place",
+      "city": "Middletown",
+      "state": "RI",
+      "zip": "02842-6406",
+      "phoneMain": "401-847-6239",
+      "hoursSummary": "monday: 700AM-400PM · tuesday: 700AM-400PM · wednesday: 700AM-400PM · thursday: 700AM-400PM · friday: 700AM-400PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/middletown-va-clinic/",
+      "lat": 41.53034355,
+      "lng": -71.29726332,
+      "website": "https://www.va.gov/providence-health-care/locations/middletown-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-650-providence",
+      "name": "Providence VA Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "830 Chalkstone Avenue",
+      "city": "Providence",
+      "state": "RI",
+      "zip": "02908-4738",
+      "phoneMain": "401-273-7100",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/providence-health-care/locations/providence-va-medical-center/",
+      "lat": 41.831253,
+      "lng": -71.431794,
+      "website": "https://www.va.gov/providence-health-care/locations/providence-va-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0113v-warwick",
+      "name": "Providence Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "2038 Warwick Avenue",
+      "city": "Warwick",
+      "state": "RI",
+      "zip": "02889-2433",
+      "phoneMain": "401-739-0167",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/providence-vet-center/",
+      "lat": 41.72092282,
+      "lng": -71.40380105,
+      "website": "https://www.va.gov/providence-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}

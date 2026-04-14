@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "title": "South Carolina — VA health facilities (map & list)",
+    "region": "South Carolina",
+    "lastReviewed": "2026-04-12",
+    "disclaimer": "This page lists Veterans Health Administration (VHA) sites in South Carolina. Locations and labels come from the public ArcGIS VHA medical facilities layer; each row’s phone, website, and hours text are merged from the VA Facilities API (sandbox) using official facility ids and coordinates. Educational information only—not legal or medical advice. Clarity4Vets does not represent anyone before VA.\n\nAlways confirm addresses, phone numbers, and hours on VA.gov or with the facility before you travel. Distances on this site are straight-line approximations (not drive time). Map links use third-party services for convenience—verify every detail with official sources.",
+    "sources": [
+      {
+        "label": "VHA medical facilities — ArcGIS FeatureServer (coordinates & street context)",
+        "url": "https://services2.arcgis.com/VFLAJVozK0rtzQmT/ArcGIS/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer"
+      },
+      {
+        "label": "VA Facilities API — phones, websites, hours (Lighthouse)",
+        "url": "https://developer.va.gov/explore/api/facilities/docs"
+      },
+      {
+        "label": "Find any VA location (official VA.gov)",
+        "url": "https://www.va.gov/find-locations"
+      }
+    ],
+    "startingPoint": {
+      "label": "Default starting point",
+      "addressLine": "407 North Salem Avenue",
+      "city": "Sumter",
+      "state": "SC",
+      "zip": "29150-4115",
+      "lat": 33.92946654,
+      "lng": -80.35067878,
+      "privacyNote": "Default point is one listed facility near the geographic middle of this state’s mapped sites (not your home). Use “Your ZIP” to center the map on your postal area—only an approximate ZIP center is used."
+    }
+  },
+  "scheduling": [
+    {
+      "label": "VA health information (national)",
+      "phone": "877-222-8387",
+      "note": "MyVA411 — general VA health information; not a substitute for a facility’s direct line."
+    },
+    {
+      "label": "Veterans Crisis Line",
+      "phone": "988 then press 1",
+      "note": "If you are in crisis, you can also text 838255."
+    },
+    {
+      "label": "Official locator — South Carolina",
+      "phone": "www.va.gov/find-locations",
+      "note": "Filter by services and open each facility’s official page for the latest hours."
+    }
+  ],
+  "facilities": [
+    {
+      "id": "vha-509gb-aiken",
+      "name": "Aiken VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "951 Millbrook Avenue",
+      "city": "Aiken",
+      "state": "SC",
+      "zip": "29803-6526",
+      "phoneMain": "706-733-0188 x45611",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/augusta-health-care/locations/aiken-va-clinic/",
+      "lat": 33.52106695,
+      "lng": -81.72036516,
+      "website": "https://www.va.gov/augusta-health-care/locations/aiken-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544gd-anderson",
+      "name": "Anderson VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "3030 North Highway 81",
+      "city": "Anderson",
+      "state": "SC",
+      "zip": "29621-2009",
+      "phoneMain": "864-224-5450",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/anderson-va-clinic/",
+      "lat": 34.57269907,
+      "lng": -82.62396889,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/anderson-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534gc-beaufort",
+      "name": "Beaufort VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1 Pinckney Boulevard",
+      "city": "Beaufort",
+      "state": "SC",
+      "zip": "29902-6122",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/beaufort-va-clinic/",
+      "lat": 32.3919543,
+      "lng": -80.68559184,
+      "website": "https://www.va.gov/charleston-health-care/locations/beaufort-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534qc-north-charleston",
+      "name": "Charleston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "2424 City Hall Lane",
+      "city": "North Charleston",
+      "state": "SC",
+      "zip": "29406-6538",
+      "phoneMain": "843-789-6804",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/charleston-va-clinic/",
+      "lat": 32.875362,
+      "lng": -80.0118495,
+      "website": "https://www.va.gov/charleston-health-care/locations/charleston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0303v-north-charleston",
+      "name": "Charleston, SC Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3625 West Montague Avenue",
+      "city": "North Charleston",
+      "state": "SC",
+      "zip": "29418",
+      "phoneMain": "843-789-7000",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/charleston-sc-vet-center/",
+      "lat": 32.860836,
+      "lng": -80.027316,
+      "website": "https://www.va.gov/charleston-sc-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0817mvc-columbia",
+      "name": "Columbia Mobile Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Mobile Vet Center",
+      "address": "1710 Richland Street",
+      "city": "Columbia",
+      "state": "SC",
+      "zip": "29201",
+      "phoneMain": "803-765-9944",
+      "hoursSummary": "Vet Center hours are dependent upon outreach assignments. Please call our main phone number for details.",
+      "sourceUrl": "https://www.va.gov/columbia-sc-vet-center/locations/#columbia-mobile-vet-center",
+      "lat": 34.01310862,
+      "lng": -81.0294622,
+      "website": "https://www.va.gov/columbia-sc-vet-center/locations/#columbia-mobile-vet-center",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544hk-columbia",
+      "name": "Columbia VA Mobile Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "6439 Garners Ferry Road",
+      "city": "Columbia",
+      "state": "SC",
+      "zip": "29209-1638",
+      "phoneMain": "803-776-4000",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/columbia-va-mobile-medical-unit/",
+      "lat": 33.976395,
+      "lng": -80.960958,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/columbia-va-mobile-medical-unit/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0324v-columbia",
+      "name": "Columbia, SC Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1710 Richland Street",
+      "city": "Columbia",
+      "state": "SC",
+      "zip": "29201",
+      "phoneMain": "803-765-9944",
+      "hoursSummary": "If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/columbia-sc-vet-center/",
+      "lat": 34.01310862,
+      "lng": -81.0294622,
+      "website": "https://www.va.gov/columbia-sc-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544gb-florence",
+      "name": "Florence VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1822 Sally Hill Farms Boulevard",
+      "city": "Florence",
+      "state": "SC",
+      "zip": "29501-6987",
+      "phoneMain": "843-292-8383",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/florence-va-clinic/",
+      "lat": 34.22019616,
+      "lng": -79.80093432,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/florence-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534gd-goose-creek",
+      "name": "Goose Creek VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "2418 NNPTC Circle",
+      "city": "Goose Creek",
+      "state": "SC",
+      "zip": "29445-6314",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/goose-creek-va-clinic/",
+      "lat": 32.96639857,
+      "lng": -79.96437579,
+      "website": "https://www.va.gov/charleston-health-care/locations/goose-creek-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544bz-greenville",
+      "name": "Greenville VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "41 Park Creek Drive",
+      "city": "Greenville",
+      "state": "SC",
+      "zip": "29605-4270",
+      "phoneMain": "864-299-1600",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/lance-corporal-dana-cornell-darnell-va-clinic/",
+      "lat": 34.814934,
+      "lng": -82.41606,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/lance-corporal-dana-cornell-darnell-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0316v-greenville",
+      "name": "Greenville, SC Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "3 Caledon Court",
+      "city": "Greenville",
+      "state": "SC",
+      "zip": "29615",
+      "phoneMain": "864-271-2711",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/greenville-sc-vet-center/",
+      "lat": 34.862823,
+      "lng": -82.3408695,
+      "website": "https://www.va.gov/greenville-sc-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534qa-myrtle-beach",
+      "name": "Market Commons VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1101 Johnson Avenue",
+      "city": "Myrtle Beach",
+      "state": "SC",
+      "zip": "29577-1893",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/myrtle-beach-va-clinic/",
+      "lat": 33.668136,
+      "lng": -78.938361,
+      "website": "https://www.va.gov/charleston-health-care/locations/myrtle-beach-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534gb-myrtle-beach",
+      "name": "Myrtle Beach VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · MSCBOC",
+      "address": "1800 Airpark Drive",
+      "city": "Myrtle Beach",
+      "state": "SC",
+      "zip": "29577-1412",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/myrtle-beach-va-clinic/",
+      "lat": 33.67741419,
+      "lng": -78.94529931,
+      "website": "https://www.va.gov/charleston-health-care/locations/myrtle-beach-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-0347v-myrtle-beach",
+      "name": "Myrtle Beach Vet Center",
+      "kind": "CBOC",
+      "system": "VHA · Vet Center",
+      "address": "1101 Johnson Ave",
+      "city": "Myrtle Beach",
+      "state": "SC",
+      "zip": "29577",
+      "phoneMain": "843-232-2441",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number. If you need to talk to someone or get advice right away, call the Vet Center anytime at 1-877-WAR-VETS (1-877-927-8387).",
+      "sourceUrl": "https://www.va.gov/myrtle-beach-vet-center/",
+      "lat": 33.66841961,
+      "lng": -78.93739906,
+      "website": "https://www.va.gov/myrtle-beach-vet-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534gf-north-charleston",
+      "name": "North Charleston VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "6450 Rivers Avenue",
+      "city": "North Charleston",
+      "state": "SC",
+      "zip": "29406-4882",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/north-charleston-va-clinic/",
+      "lat": 32.913891,
+      "lng": -80.025102,
+      "website": "https://www.va.gov/charleston-health-care/locations/north-charleston-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544ge-orangeburg",
+      "name": "Orangeburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "151 Magnolia Village Parkway",
+      "city": "Orangeburg",
+      "state": "SC",
+      "zip": "29118-0000",
+      "phoneMain": "803-533-1335",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/orangeburg-va-clinic/",
+      "lat": 33.47477744,
+      "lng": -80.85250367,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/orangeburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534-charleston",
+      "name": "Ralph H. Johnson Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "109 Bee Street",
+      "city": "Charleston",
+      "state": "SC",
+      "zip": "29401-5799",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/charleston-health-care/locations/ralph-h-johnson-department-of-veterans-affairs-medical-center/",
+      "lat": 32.784471,
+      "lng": -79.954146,
+      "website": "https://www.va.gov/charleston-health-care/locations/ralph-h-johnson-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544gc-rock-hill",
+      "name": "Rock Hill VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "2670 Mills Park Drive",
+      "city": "Rock Hill",
+      "state": "SC",
+      "zip": "29732-1836",
+      "phoneMain": "803-366-4848",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/rock-hill-va-clinic/",
+      "lat": 34.97720057,
+      "lng": -81.02445796,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/rock-hill-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544gg-spartanburg",
+      "name": "Spartanburg VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "279 North Grove Medical Park Drive",
+      "city": "Spartanburg",
+      "state": "SC",
+      "zip": "29303-4222",
+      "phoneMain": "864-582-7025",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/spartanburg-va-clinic/",
+      "lat": 34.99248044,
+      "lng": -81.94296537,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/spartanburg-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544gf-sumter",
+      "name": "Sumter VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · PCCBOC",
+      "address": "407 North Salem Avenue",
+      "city": "Sumter",
+      "state": "SC",
+      "zip": "29150-4115",
+      "phoneMain": "803-938-9901",
+      "hoursSummary": "More hours are available for some services. To learn more, call our main phone number.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/sumter-va-clinic/",
+      "lat": 33.92946654,
+      "lng": -80.35067878,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/sumter-va-clinic/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-534qb-north-charleston",
+      "name": "Trident 2 VA Clinic",
+      "kind": "CBOC",
+      "system": "VHA · OOS",
+      "address": "9229 University Boulevard",
+      "city": "North Charleston",
+      "state": "SC",
+      "zip": "29406-9150",
+      "phoneMain": "843-577-5011",
+      "hoursSummary": "monday: 800AM-430PM · tuesday: 800AM-430PM · wednesday: 800AM-430PM · thursday: 800AM-430PM · friday: 800AM-430PM · saturday: Closed · sunday: Closed Phone is from the nearest VA facility in the same Lighthouse group as this site; confirm hours for this address on VA.gov.",
+      "sourceUrl": "https://www.va.gov/find-locations/facility/vha_534QE",
+      "lat": 32.977242,
+      "lng": -80.0721405,
+      "website": "https://www.va.gov/find-locations/facility/vha_534QE",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    },
+    {
+      "id": "vha-544-columbia",
+      "name": "Wm. Jennings Bryan Dorn Department of Veterans Affairs Medical Center",
+      "kind": "VAMC",
+      "system": "VHA · VA medical center",
+      "address": "6439 Garners Ferry Road",
+      "city": "Columbia",
+      "state": "SC",
+      "zip": "29209-1638",
+      "phoneMain": "803-776-4000",
+      "hoursSummary": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "sourceUrl": "https://www.va.gov/columbia-south-carolina-health-care/locations/wm-jennings-bryan-dorn-department-of-veterans-affairs-medical-center/",
+      "lat": 33.976395,
+      "lng": -80.960958,
+      "website": "https://www.va.gov/columbia-south-carolina-health-care/locations/wm-jennings-bryan-dorn-department-of-veterans-affairs-medical-center/",
+      "patientAdvocate": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "officeLocation": "",
+        "notes": ""
+      }
+    }
+  ],
+  "organizations": [],
+  "emergencyCopy": {
+    "title": "If you are in crisis",
+    "lines": [
+      "Dial 988, then press 1 for the Veterans Crisis Line.",
+      "Text 838255.",
+      "If this is a life-threatening emergency, call 911."
+    ],
+    "disclaimer": "If you are in immediate danger, call 911. Crisis numbers here are general public information—confirm current contact options on official VA and 988 sites. This list is not a substitute for emergency services or professional crisis care."
+  }
+}
