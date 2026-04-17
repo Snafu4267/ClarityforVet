@@ -5,6 +5,8 @@ import {
   CFR_4_119_ENDOCRINE,
   CFR_4_124A_NEUROLOGICAL,
   CFR_4_130_MENTAL,
+  CFR_4_114_DIGESTIVE,
+  CFR_4_118_SKIN,
   CFR_4_71A_MSK,
   CFR_4_85_HEARING,
   CFR_4_86_HEARING_PATTERNS,
@@ -26,6 +28,7 @@ export type CfrConditionHint = {
   title: string;
   lines: string[];
   links: CfrHintLink[];
+  relatedQuestionLinks?: CfrHintLink[];
 };
 
 const DISPLAY_MAX = 140;
@@ -45,12 +48,72 @@ function dedupeLinksByHref(links: CfrHintLink[]): CfrHintLink[] {
   });
 }
 
+function relatedGoogleQueryLink(label: string, query: string): CfrHintLink {
+  return {
+    kind: "external",
+    label,
+    href: `https://www.google.com/search?q=${encodeURIComponent(query)}`,
+  };
+}
+
+/** Optional “how might these connect” routes — prompts for clinician questions, not diagnosis claims. */
+function getRelatedSecondaryQuestionPaths(t: string): CfrHintLink[] {
+  if (/\btinitus\b|\btinnitus\b|\bring(ing)?\b/.test(t)) {
+    return [
+      { kind: "external", label: "Path: sleep apnea / breathing questions (§ 4.97)", href: CFR_4_97_RESPIRATORY },
+      { kind: "external", label: "Path: headaches / neuro questions (§ 4.124a)", href: CFR_4_124A_NEUROLOGICAL },
+      { kind: "external", label: "Path: anxiety / depression / PTSD questions (§ 4.130)", href: CFR_4_130_MENTAL },
+      { kind: "external", label: "Secondary rule doorway (§ 3.310)", href: CFR_3_310_SECONDARY },
+      relatedGoogleQueryLink(
+        "Search: eCFR tinnitus + sleep apnea",
+        "site:ecfr.gov tinnitus sleep apnea 3.310 4.97",
+      ),
+      relatedGoogleQueryLink(
+        "Search: eCFR tinnitus + headaches",
+        "site:ecfr.gov tinnitus headaches migraine 3.310 4.124a",
+      ),
+      relatedGoogleQueryLink(
+        "Search: eCFR tinnitus + PTSD/depression",
+        "site:ecfr.gov tinnitus PTSD depression anxiety 3.310 4.130",
+      ),
+    ];
+  }
+
+  if (/\bptsd\b|\bpost[- ]?traumatic\b|\btraumatic stress\b|\banxiety\b|\bdepression\b|\bmental health\b/i.test(t)) {
+    return [
+      { kind: "external", label: "Mental criteria (§ 4.130)", href: CFR_4_130_MENTAL },
+      { kind: "external", label: "Secondary rule doorway (§ 3.310)", href: CFR_3_310_SECONDARY },
+      relatedGoogleQueryLink(
+        "Search: eCFR mental + sleep apnea",
+        "site:ecfr.gov PTSD depression anxiety sleep apnea 3.310 4.97",
+      ),
+      relatedGoogleQueryLink(
+        "Search: eCFR mental + headaches",
+        "site:ecfr.gov PTSD depression anxiety headaches migraine 3.310 4.124a",
+      ),
+    ];
+  }
+
+  if (/\bgerd\b|\breflux\b|\bgastroesophageal\b|\besophagitis\b|\bhiatal\b/i.test(t)) {
+    return [
+      { kind: "external", label: "Digestive criteria (§ 4.114)", href: CFR_4_114_DIGESTIVE },
+      { kind: "external", label: "Secondary rule doorway (§ 3.310)", href: CFR_3_310_SECONDARY },
+      relatedGoogleQueryLink(
+        "Search: eCFR GERD + sleep issues",
+        "site:ecfr.gov GERD reflux sleep 3.310 4.114",
+      ),
+    ];
+  }
+
+  return [];
+}
+
 /** Optional extra lines + § links when common words match—always layered on top of universal help. */
 function getKeywordSuggestion(t: string): { lines: string[]; links: CfrHintLink[] } | null {
   if (/\btinitus\b|\btinnitus\b|\bring(ing)?\b/.test(t)) {
     return {
       lines: [
-        "Your wording points toward ear / tinnitus: § 4.87 is the usual schedule block—on that page use Find for 6260 or “tinnitus.”",
+        "This can connect to ear/tinnitus rules. Open § 4.87 and use Find for 6260 or “tinnitus.”",
       ],
       links: [
         { kind: "external", label: "§ 4.87 — ear schedule", href: CFR_4_87_EAR },
@@ -61,7 +124,7 @@ function getKeywordSuggestion(t: string): { lines: string[]; links: CfrHintLink[
 
   if (/\bhearing\b|\baudiolog|\bdeaf\b|\bdeafness\b|\bpuretone\b|\bword recognition\b|\bcnc\b/.test(t)) {
     return {
-      lines: ["Your wording points toward hearing: § 4.85–§ 4.86; ear ratings often include § 4.87."],
+      lines: ["This can connect to hearing rules: § 4.85–§ 4.86, and often § 4.87."],
       links: [
         { kind: "external", label: "§ 4.85 — hearing impairment", href: CFR_4_85_HEARING },
         { kind: "external", label: "§ 4.86 — exceptional hearing patterns", href: CFR_4_86_HEARING_PATTERNS },
@@ -76,7 +139,7 @@ function getKeywordSuggestion(t: string): { lines: string[]; links: CfrHintLink[
     )
   ) {
     return {
-      lines: ["Your wording points toward mental health: rating criteria are usually in § 4.130; Part 3 also uses § 3.304."],
+      lines: ["This can connect to mental-health rules: usually § 4.130, and also § 3.304 in Part 3."],
       links: [
         { kind: "external", label: "§ 4.130 — mental disorders", href: CFR_4_130_MENTAL },
         { kind: "external", label: "§ 3.304 — mental disorders (Part 3)", href: CFR_3_304_MENTAL },
@@ -91,16 +154,33 @@ function getKeywordSuggestion(t: string): { lines: string[]; links: CfrHintLink[
   ) {
     return {
       lines: [
-        "Your wording points toward musculoskeletal / joints / spine: § 4.71a is the usual schedule block—use Find for your diagnosis or code.",
+        "This can connect to joints/spine/musculoskeletal rules: § 4.71a. Use Find for your condition words.",
       ],
       links: [{ kind: "external", label: "§ 4.71a — musculoskeletal", href: CFR_4_71A_MSK }],
     };
   }
 
-  if (/\bsleep apnea\b|\bapnea\b|\bosa\b|\basthma\b|\bcopd\b|\brespiratory\b|\blung\b|\bpulmonary\b|\bcpap\b/i.test(t)) {
+  if (/\binsomnia\b/.test(t)) {
     return {
-      lines: ["Your wording points toward respiratory: § 4.97 is the usual schedule block."],
+      lines: ["This can connect to sleep/mental-health questions: start with § 4.130 and compare with breathing rules in § 4.97 when relevant."],
+      links: [
+        { kind: "external", label: "§ 4.130 — mental disorders", href: CFR_4_130_MENTAL },
+        { kind: "external", label: "§ 4.97 — respiratory", href: CFR_4_97_RESPIRATORY },
+      ],
+    };
+  }
+
+  if (/\bsleep apnea\b|\bapnea\b|\bosa\b|\basthma\b|\bcopd\b|\brespiratory\b|\blung\b|\bpulmonary\b|\bcpap\b|\bsinusitis\b|\brhinitis\b/i.test(t)) {
+    return {
+      lines: ["This can connect to breathing/lung rules: § 4.97."],
       links: [{ kind: "external", label: "§ 4.97 — respiratory", href: CFR_4_97_RESPIRATORY }],
+    };
+  }
+
+  if (/\bgerd\b|\breflux\b|\bgastroesophageal\b|\besophagitis\b|\bhiatal\b|\bibs\b|\bcolitis\b|\bulcer\b|\bgastritis\b/i.test(t)) {
+    return {
+      lines: ["This can connect to digestive rules: § 4.114."],
+      links: [{ kind: "external", label: "§ 4.114 — digestive system", href: CFR_4_114_DIGESTIVE }],
     };
   }
 
@@ -110,26 +190,53 @@ function getKeywordSuggestion(t: string): { lines: string[]; links: CfrHintLink[
     )
   ) {
     return {
-      lines: ["Your wording points toward cardiovascular: § 4.104 is the usual schedule block."],
+      lines: ["This can connect to heart/blood-pressure rules: § 4.104."],
       links: [{ kind: "external", label: "§ 4.104 — cardiovascular", href: CFR_4_104_CARDIOVASCULAR }],
     };
   }
 
   if (/\bdiabetes\b|\bdiabetic\b|\bthyroid\b|\bendocrine\b|\binsulin\b/i.test(t)) {
     return {
-      lines: ["Your wording points toward endocrine: § 4.119 is the usual schedule block."],
+      lines: ["This can connect to endocrine rules (diabetes/thyroid): § 4.119."],
       links: [{ kind: "external", label: "§ 4.119 — endocrine", href: CFR_4_119_ENDOCRINE }],
     };
   }
 
+  if (/\bobesity\b/.test(t)) {
+    return {
+      lines: ["This can connect to endocrine/metabolic questions and often secondary-connection questions under § 3.310."],
+      links: [
+        { kind: "external", label: "§ 4.119 — endocrine", href: CFR_4_119_ENDOCRINE },
+        { kind: "external", label: "§ 3.310 — secondary (caused or aggravated by)", href: CFR_3_310_SECONDARY },
+      ],
+    };
+  }
+
+  if (/\bvertigo\b/.test(t)) {
+    return {
+      lines: ["This can connect to ear/vestibular and neuro questions: start with § 4.87, then compare with § 4.124a."],
+      links: [
+        { kind: "external", label: "§ 4.87 — ear schedule", href: CFR_4_87_EAR },
+        { kind: "external", label: "§ 4.124a — neurological", href: CFR_4_124A_NEUROLOGICAL },
+      ],
+    };
+  }
+
   if (
-    /\bmigraine\b|\bheadache\b|\bheadaches\b|\bseizure\b|\bneuro\b|\btbi\b|\bneuropathy\b|\bparkinson\b|\bmultiple sclerosis\b|\bstroke\b/i.test(
+    /\bmigraines?\b|\bheadache\b|\bheadaches\b|\bseizure\b|\bneuro\b|\btbi\b|\bneuropathy\b|\bparkinson\b|\bmultiple sclerosis\b|\bstroke\b/i.test(
       t,
     )
   ) {
     return {
-      lines: ["Your wording points toward neurological: § 4.124a is a common schedule block for many neurological conditions."],
+      lines: ["This can connect to neuro/headache/TBI rules: § 4.124a."],
       links: [{ kind: "external", label: "§ 4.124a — neurological", href: CFR_4_124A_NEUROLOGICAL }],
+    };
+  }
+
+  if (/\beczema\b|\bdermatitis\b|\bskin\b|\bpsoriasis\b/.test(t)) {
+    return {
+      lines: ["This can connect to skin-condition rules: § 4.118."],
+      links: [{ kind: "external", label: "§ 4.118 — skin conditions", href: CFR_4_118_SKIN }],
     };
   }
 
@@ -152,26 +259,25 @@ export function getCfrHintForConditionText(raw: string): CfrConditionHint | null
   const ecfrSearchHref = `https://www.google.com/search?q=${encodeURIComponent(`site:ecfr.gov ${trimmed}`)}`;
 
   const lines: string[] = [
-    `You entered: “${display}.” VA does not publish one magic link per diagnosis—pick an official § below, press Find (Ctrl+F or ⌘F), and search for these words, a shorter name, or a diagnostic code from your paperwork.`,
+    `You typed: “${display}.” There is no one perfect VA link for any single condition.`,
+    "We are NOT diagnosing anything here. This is only a question-builder for your doctor or accredited rep.",
   ];
   if (suggestion) {
     lines.push(...suggestion.lines);
   } else {
     lines.push(
-      "We don’t know your diagnosis from a short phrase—use Find on Part 4 or the search link below with your exact words.",
+      "If we do not match your words yet, use Part 4 and search with the exact words from your paperwork.",
     );
   }
-  lines.push(
-    "Secondary service connection (what may be caused or aggravated by what) is framed in § 3.310—read it with your clinician or accredited rep, not as a medical verdict.",
-  );
+  lines.push("Quick order: 1) click the condition link, 2) use Find on that page, 3) use Part 4 as backup.");
+  lines.push("This is the part VA will not ask for you: if you do not ask about possible connections, they may never get reviewed.");
+  lines.push("§ 3.310 is the secondary-connection rule (what may be caused or worsened by another condition).");
 
   const links: CfrHintLink[] = [
     { kind: "internal", label: "Guide: Part 4 doorways (all body systems)", href: LEARN_FIND_ANY },
     { kind: "internal", label: "CFR map — Part 3 & Part 4", href: LEARN_CFR_MAP },
-    { kind: "internal", label: "Example: tinnitus (how one code maps to a §)", href: LEARN_TINNITUS },
     ...(suggestion?.links ?? []),
     { kind: "external", label: "§ 3.310 — secondary (caused or aggravated by)", href: CFR_3_310_SECONDARY },
-    { kind: "external", label: "§ 4.71a — musculoskeletal (common schedule)", href: CFR_4_71A_MSK },
     { kind: "external", label: "Part 4 — full schedule (Find anything)", href: CFR_PART_4_ROOT },
     {
       kind: "external",
@@ -180,9 +286,15 @@ export function getCfrHintForConditionText(raw: string): CfrConditionHint | null
     },
   ];
 
+  const relatedQuestionLinks = dedupeLinksByHref(getRelatedSecondaryQuestionPaths(lower));
+
   return {
     title: "38 CFR — your words + Find",
     lines,
-    links: dedupeLinksByHref(links),
+    links: dedupeLinksByHref([
+      ...links,
+      { kind: "internal", label: "Example: tinnitus (how one code maps to a §)", href: LEARN_TINNITUS },
+    ]),
+    relatedQuestionLinks,
   };
 }

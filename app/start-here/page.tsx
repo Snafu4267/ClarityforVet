@@ -70,6 +70,15 @@ export default function StartHerePage() {
               you&apos;ve been pushing through for years. <Punch>You need to say these things out loud.</Punch> If you
               don&apos;t bring it up, they won&apos;t know to help.
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">30-day focus plan</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li><Punch>Week 1:</Punch> get enrolled, confirm contact info, book first appointment.</li>
+                <li><Punch>Week 2:</Punch> start symptom notes and list your top 3 health concerns.</li>
+                <li><Punch>Week 3:</Punch> follow up on referrals, labs, meds, and next appointment dates.</li>
+                <li><Punch>Week 4:</Punch> verify what is still pending and who owns each next step.</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -80,6 +89,15 @@ export default function StartHerePage() {
               surgeries you&apos;ve had. Bring your medication list, your doctor info, and any records you have.{" "}
               <Punch>Even a simple list on your phone is enough to get started.</Punch>
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">Bring this starter packet</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Current meds (name, dose, how often, and what side effects you notice).</li>
+                <li>Civilian doctors/clinics you used in the last 2-3 years.</li>
+                <li>Major diagnoses, surgeries, ER visits, and recent test results if you have them.</li>
+                <li>Emergency contact and the best phone/email to reach you.</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -91,6 +109,15 @@ export default function StartHerePage() {
               the anxiety you hide, the memories you avoid. <Punch>You&apos;re not complaining.</Punch> You&apos;re
               giving them the information they need to help you.
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">Simple script you can use</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>&quot;My top 3 issues right now are ____ , ____ , and ____ .&quot;</li>
+                <li>&quot;This is affecting sleep/work/relationships in these ways: ____ .&quot;</li>
+                <li>&quot;What is our plan after this visit, and when should I follow up?&quot;</li>
+                <li>&quot;Who do I call if this gets worse before my next appointment?&quot;</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -100,15 +127,36 @@ export default function StartHerePage() {
               <Punch>You don&apos;t need to diagnose yourself.</Punch> You just need to describe what you&apos;re dealing
               with in your own words. The VA will route you to the right place.
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">How to describe symptoms clearly</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li><Punch>When:</Punch> how often it happens and when it started.</li>
+                <li><Punch>Severity:</Punch> how bad it gets on your worst days.</li>
+                <li><Punch>Impact:</Punch> what it stops you from doing in daily life.</li>
+                <li><Punch>Pattern:</Punch> what makes it better or worse.</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3">
             <h2 className={h2}>The reality of VA timing</h2>
             <p className={prose}>
               <Punch>The VA moves slowly. That&apos;s not your fault.</Punch> Phone calls take forever. Appointments take
-              weeks. Referrals take time. <Punch>Staying organized is how you protect yourself.</Punch>{" "}
-              <Punch>If you miss appointments or forget follow-ups, the system assumes you don&apos;t need care.</Punch>
+              weeks. Referrals take time. The rulebook itself is huge: Title 38 CFR is roughly{" "}
+              <Punch>2,194 pages</Punch> and about <Punch>1.38 million words</Punch>. That is exactly why we built this
+              site to make the search for answers easier, clearer, and faster for veterans and families.{" "}
+              <Punch>Staying organized is how you protect yourself.</Punch> <Punch>If you miss appointments or forget
+              follow-ups, the system assumes you don&apos;t need care.</Punch>
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">Protect yourself from delays</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>After every call, write down date, time, person, and what was promised.</li>
+                <li>Set reminders 48 hours before appointments and again the morning of.</li>
+                <li>If you do not hear back, call again and ask for the status by name.</li>
+                <li>Keep one running list: pending referrals, pending labs, pending callbacks.</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -118,6 +166,14 @@ export default function StartHerePage() {
               running symptom log keep you from losing the thread. <Punch>Track the bad days and the good days</Punch> —
               good days count too. That pattern helps you and your team see what&apos;s really going on.
             </p>
+            <div className={`${prose} rounded-lg border border-stone-200 bg-white/80 px-4 py-3`}>
+              <p className="font-medium text-stone-800">Minimum reminder system</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Calendar for appointments and deadlines.</li>
+                <li>Daily note for symptoms, sleep, and side effects.</li>
+                <li>One checklist for open tasks and follow-ups.</li>
+              </ul>
+            </div>
           </section>
 
           <section className="flex flex-col gap-3 rounded-xl border border-stone-200 bg-red-50/40 px-4 py-4">

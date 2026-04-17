@@ -24,10 +24,10 @@
   ],
   "primaryActions": [
     {
-      "title": "Find a VA location",
-      "description": "Search VA facilities and in-network community providers using VA’s official locator.",
-      "url": "https://www.va.gov/find-locations",
-      "cta": "Open VA facility locator"
+      "title": "Browse VA facilities on this site",
+      "description": "Use the built-in state selector to open your state VA facilities page and map.",
+      "url": "/#national-va",
+      "cta": "Open facilities by state"
     },
     {
       "title": "VA.gov hub",

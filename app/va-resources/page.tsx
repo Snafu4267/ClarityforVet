@@ -5,6 +5,7 @@ import { PageAccent } from "@/components/PageAccent";
 import { ServiceSubpageFrame } from "@/components/ServiceSubpageFrame";
 import national from "@/data/va-national-resources.json";
 import { bigNavLinkCardClass, bigSurfaceRowClass } from "@/lib/big-nav-card";
+import Link from "next/link";
 
 export default function VaResourcesPage() {
   return (
@@ -29,16 +30,24 @@ export default function VaResourcesPage() {
         <ul className="flex list-none flex-col gap-3 p-0">
           {national.primaryActions.map((a) => (
             <li key={a.url}>
-              <a
-                href={a.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${bigNavLinkCardClass} no-underline`}
-              >
-                <span className="block font-semibold text-zinc-900">{a.title}</span>
-                <span className="mt-2 block text-sm leading-relaxed text-zinc-600">{a.description}</span>
-                <span className="mt-3 block text-sm font-medium text-blue-800">{a.cta} →</span>
-              </a>
+              {a.url.startsWith("/") ? (
+                <Link href={a.url} className={`${bigNavLinkCardClass} no-underline`}>
+                  <span className="block font-semibold text-zinc-900">{a.title}</span>
+                  <span className="mt-2 block text-sm leading-relaxed text-zinc-600">{a.description}</span>
+                  <span className="mt-3 block text-sm font-medium text-blue-800">{a.cta} →</span>
+                </Link>
+              ) : (
+                <a
+                  href={a.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${bigNavLinkCardClass} no-underline`}
+                >
+                  <span className="block font-semibold text-zinc-900">{a.title}</span>
+                  <span className="mt-2 block text-sm leading-relaxed text-zinc-600">{a.description}</span>
+                  <span className="mt-3 block text-sm font-medium text-blue-800">{a.cta} →</span>
+                </a>
+              )}
             </li>
           ))}
         </ul>

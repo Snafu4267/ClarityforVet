@@ -50,3 +50,7 @@ export const CFR_4_104_CARDIOVASCULAR = `${ECFR}/title-38/section-4.104` as cons
 export const CFR_4_119_ENDOCRINE = `${ECFR}/title-38/section-4.119` as const;
 
 export const CFR_4_124A_NEUROLOGICAL = `${ECFR}/title-38/section-4.124a` as const;
+
+export const CFR_4_114_DIGESTIVE = `${ECFR}/title-38/section-4.114` as const;
+
+export const CFR_4_118_SKIN = `${ECFR}/title-38/section-4.118` as const;

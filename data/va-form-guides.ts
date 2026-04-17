@@ -1,5 +1,5 @@
 /**
- * Educational PDF worksheets only — not official VA forms.
+ * Official form quick-open map used by /api/va-form-guide.
  * Form numbers and titles align with public VA “Find a VA Form” listings; confirm current versions on VA.gov.
  */
 
@@ -19,6 +19,8 @@ export type VaFormGuideDefinition = {
   id: VaFormGuideId;
   formNumber: string;
   shortTitle: string;
+  /** Direct official PDF when available */
+  officialPdfUrl?: string;
   officialFindFormUrl: string;
   /** Shown under the title — plain orientation, not legal advice */
   whatThisIs: string;
@@ -31,6 +33,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "disability-claim-526ez",
     formNumber: "VA Form 21-526EZ",
     shortTitle: "Application for Disability Compensation and Related Compensation Benefits",
+    officialPdfUrl: "https://www.vba.va.gov/pubs/forms/vba-21-526ez-are.pdf",
     officialFindFormUrl: "https://www.va.gov/find-forms/about-form-21-526ez/",
     whatThisIs:
       "Official filing is usually online at VA.gov or with the current PDF from VA. Yellow blocks below list typical parts veterans complete—your form version may differ slightly.",
@@ -71,6 +74,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "supplemental-claim-0995",
     formNumber: "VA Form 20-0995",
     shortTitle: "Decision Review Request: Supplemental Claim",
+    officialPdfUrl: "https://www.vba.va.gov/pubs/forms/vba-20-0995-are.pdf",
     officialFindFormUrl: "https://www.va.gov/find-forms/about-form-20-0995/",
     whatThisIs:
       "Used when you have new and relevant evidence after a decision. Use the current VA form and instructions.",
@@ -96,6 +100,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "higher-level-review-0996",
     formNumber: "VA Form 20-0996",
     shortTitle: "Decision Review Request: Higher-Level Review",
+    officialPdfUrl: "https://www.vba.va.gov/pubs/forms/vba-20-0996-are.pdf",
     officialFindFormUrl: "https://www.va.gov/find-forms/about-form-20-0996/",
     whatThisIs:
       "A different reviewer looks at the same evidence already in the file (no new evidence on this lane—follow VA’s current rules).",
@@ -121,7 +126,8 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "board-appeal-10182",
     formNumber: "VA Form 21-10182",
     shortTitle: "Decision Review Request: Board Appeal (Notice of Disagreement)",
-    officialFindFormUrl: "https://www.va.gov/find-forms/about-form-21-10182/",
+    officialPdfUrl: "https://www.va.gov/vaforms/va/pdf/VA10182.pdf",
+    officialFindFormUrl: "https://www.va.gov/forms/10182/",
     whatThisIs:
       "Board lane with options (e.g., evidence submission, hearing) per VA’s published form and instructions.",
     sections: [
@@ -146,6 +152,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "lay-statement-10210",
     formNumber: "VA Form 21-10210",
     shortTitle: "Lay/Witness Statement",
+    officialPdfUrl: "https://www.vba.va.gov/pubs/forms/vba-21-10210-are.pdf",
     officialFindFormUrl: "https://www.va.gov/find-forms/about-form-21-10210/",
     whatThisIs:
       "A structured way to submit lay evidence VA may consider—follow VA’s rules for who can sign and what belongs in a statement.",
@@ -170,6 +177,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "records-release-4142",
     formNumber: "VA Forms 21-4142 & 21-4142a",
     shortTitle: "Authorization for VA to obtain private (non-VA) treatment records",
+    officialPdfUrl: "https://www.vba.va.gov/pubs/forms/vba-21-4142-are.pdf",
     officialFindFormUrl: "https://www.va.gov/find-forms/about-form-21-4142/",
     whatThisIs:
       "21-4142 authorizes release to VA; 21-4142a is often used with providers. Use current VA versions.",
@@ -195,6 +203,7 @@ export const vaFormGuides: Record<VaFormGuideId, VaFormGuideDefinition> = {
     id: "service-records-sf180",
     formNumber: "SF 180",
     shortTitle: "Request Pertaining to Military Records",
+    officialPdfUrl: "https://www.gsa.gov/system/files/2024-10/SF180-24a.pdf",
     officialFindFormUrl: "https://www.gsa.gov/system/files/2024-10/SF180-24a.pdf",
     whatThisIs:
       "Standard form used with the National Archives / NPRC for certain military personnel records—not a VA form, but often discussed with claims.",

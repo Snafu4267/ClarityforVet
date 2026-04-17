@@ -54,7 +54,7 @@ function FormGuideBlock({ actions }: { actions: NonNullable<AwarenessSection["fo
   return (
     <div className="mt-5 rounded-xl border border-amber-200/80 bg-amber-50/50 px-4 py-4 no-print">
       <p className="text-xs font-semibold uppercase tracking-[0.12em] text-amber-900/70">
-        Form worksheets (PDF)
+        Official form quick-open
       </p>
       <VaFormGuideButtons actions={actions} />
     </div>

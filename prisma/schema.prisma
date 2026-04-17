@@ -12,6 +12,12 @@ model User {
   email        String   @unique
   passwordHash String
   name         String?
+  /// Stripe Customer id (cus_…), set after first checkout or webhook
+  stripeCustomerId     String?
+  /// Active subscription id (sub_…)
+  stripeSubscriptionId String?
+  /// Stripe subscription.status (active, canceled, past_due, …), or none before checkout
+  subscriptionStatus   String   @default("none")
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 

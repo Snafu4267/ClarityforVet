@@ -1,7 +1,7 @@
-import { SITE_NAME } from "@/lib/site";
 import { vaFormsHubCatchAll, vaFormsHubGroups } from "@/data/va-forms-hub";
 import type { VaFormGuideId } from "@/data/va-form-guides";
 import { VaFormGuideButtons } from "@/components/VaFormGuideButtons";
+import { VaFormSearchBox } from "@/components/VaFormSearchBox";
 
 const linkBtn =
   "inline-flex items-center rounded-md border border-blue-200 bg-white px-3 py-1.5 text-xs font-semibold text-blue-900 shadow-sm transition hover:border-blue-300 hover:bg-blue-50/80 sm:text-sm";
@@ -39,11 +39,9 @@ export function VaFormsHub({ worksheetActions }: { worksheetActions?: WorksheetA
 
       {worksheetActions && worksheetActions.length > 0 ? (
         <div className="mt-6 rounded-xl border border-stone-200/90 bg-white/80 px-4 py-4 shadow-sm">
-          <h3 className="text-sm font-semibold text-stone-900">{SITE_NAME} practice worksheets (optional)</h3>
+          <h3 className="text-sm font-semibold text-stone-900">Quick-open official forms</h3>
           <p className="mt-2 text-sm leading-relaxed text-stone-600">
-            These buttons are <span className="font-medium text-stone-800">not</span> government forms. Each one
-            opens <span className="font-medium text-stone-800">our</span> PDF: your name on the line at the top
-            (when you are signed in), and light yellow boxes that show which parts of the <span className="font-medium text-stone-800">real</span> form are for you to fill—nothing is filled in for you. Use them after you grab the official PDF from the list below.
+            These buttons open the official form source directly (PDF when available, otherwise the official form page).
           </p>
           <VaFormGuideButtons actions={worksheetActions} />
         </div>
@@ -104,6 +102,7 @@ export function VaFormsHub({ worksheetActions }: { worksheetActions?: WorksheetA
         <p className="mt-1 text-sm text-stone-600">
           Search, main hubs, and help—so you are not stuck guessing where to go next.
         </p>
+        <VaFormSearchBox />
         <ul className="mt-3 flex flex-col gap-2.5 text-sm">
           {vaFormsHubCatchAll.map((x) => (
             <li key={x.url}>

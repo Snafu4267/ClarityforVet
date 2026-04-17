@@ -26,6 +26,7 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "vet-to-vet-veteran-sheet-v2";
 const LEGACY_KEY = "vet-to-vet-veteran-sheet-v1";
+const MAP_HOME_KEY = "vet-to-vet-map-home-v1";
 
 type VetSheetFields = {
   branch: BranchId;
@@ -33,6 +34,10 @@ type VetSheetFields = {
   dateOfBirth: string;
   email: string;
   zipCode: string;
+  homeAddressLine: string;
+  homeCity: string;
+  homeState: string;
+  homeZip: string;
   ratingRows: VetSheetRatingRow[];
 };
 
@@ -181,6 +186,10 @@ const empty: VetSheetFields = {
   dateOfBirth: "",
   email: "",
   zipCode: "",
+  homeAddressLine: "",
+  homeCity: "",
+  homeState: "",
+  homeZip: "",
   ratingRows: defaultRatingRows(),
 };
 
@@ -196,6 +205,10 @@ function loadSheet(): VetSheetFields {
         dateOfBirth: typeof parsed.dateOfBirth === "string" ? parsed.dateOfBirth : "",
         email: typeof parsed.email === "string" ? parsed.email : "",
         zipCode: typeof parsed.zipCode === "string" ? parsed.zipCode : "",
+        homeAddressLine: typeof parsed.homeAddressLine === "string" ? parsed.homeAddressLine : "",
+        homeCity: typeof parsed.homeCity === "string" ? parsed.homeCity : "",
+        homeState: typeof parsed.homeState === "string" ? parsed.homeState : "",
+        homeZip: typeof parsed.homeZip === "string" ? parsed.homeZip : "",
         ratingRows: normalizeRatingRows(parsed.ratingRows),
       };
     }
@@ -208,6 +221,10 @@ function loadSheet(): VetSheetFields {
         dateOfBirth: typeof parsed.dateOfBirth === "string" ? parsed.dateOfBirth : "",
         email: typeof parsed.email === "string" ? parsed.email : "",
         zipCode: typeof parsed.zipCode === "string" ? parsed.zipCode : "",
+        homeAddressLine: "",
+        homeCity: "",
+        homeState: "",
+        homeZip: "",
         ratingRows: defaultRatingRows(),
       };
       try {
@@ -256,6 +273,8 @@ function normalizeRatingRows(raw: unknown): VetSheetRatingRow[] {
 export default function VeteranSheetPage() {
   const [fields, setFields] = useState<VetSheetFields>(empty);
   const [hydrated, setHydrated] = useState(false);
+  const [mapHomePending, setMapHomePending] = useState(false);
+  const [mapHomeMessage, setMapHomeMessage] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -280,6 +299,50 @@ export default function VeteranSheetPage() {
 
   function setRatingRows(rows: VetSheetRatingRow[]) {
     setFields((prev) => ({ ...prev, ratingRows: rows }));
+  }
+
+  async function setMapHomeFromVetSheet() {
+    const query = [fields.homeAddressLine, fields.homeCity, fields.homeState, fields.homeZip]
+      .map((v) => v.trim())
+      .filter(Boolean)
+      .join(", ");
+    if (query.length < 8) {
+      setMapHomeMessage("Enter full home address details first.");
+      return;
+    }
+    setMapHomePending(true);
+    setMapHomeMessage(null);
+    try {
+      const res = await fetch("/api/geocode-address", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query }),
+      });
+      const payload = (await res.json()) as { error?: string; lat?: number; lng?: number; displayName?: string };
+      if (!res.ok || payload.lat === undefined || payload.lng === undefined) {
+        setMapHomeMessage(payload.error ?? "Could not set map home address.");
+        return;
+      }
+      localStorage.setItem(
+        MAP_HOME_KEY,
+        JSON.stringify({
+          label: "My home",
+          addressLine: fields.homeAddressLine.trim(),
+          city: fields.homeCity.trim(),
+          state: fields.homeState.trim().toUpperCase(),
+          zip: fields.homeZip.trim(),
+          lat: payload.lat,
+          lng: payload.lng,
+          privacyNote: "Home address is saved locally on this device for map centering and directions.",
+          displayName: payload.displayName ?? query,
+        }),
+      );
+      setMapHomeMessage("Home address saved for facility map centering.");
+    } catch {
+      setMapHomeMessage("Network error while setting map home address.");
+    } finally {
+      setMapHomePending(false);
+    }
   }
 
   const activeBranch = isBranchChosen(fields.branch) ? fields.branch : null;
@@ -423,6 +486,68 @@ export default function VeteranSheetPage() {
                 onChange={(e) => update("zipCode", e.target.value)}
               />
             </label>
+
+            <div className="rounded-lg border border-stone-200 bg-stone-50/70 px-4 py-4">
+              <p className="text-sm font-semibold text-stone-900">Home address for map centering</p>
+              <p className="mt-1 text-xs leading-relaxed text-stone-600">
+                Save your home address once so VA facility maps can center on your location automatically.
+              </p>
+              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                <label className="flex flex-col gap-1.5 sm:col-span-2">
+                  <span className="text-sm font-medium text-slate-800">Street address</span>
+                  <input
+                    type="text"
+                    autoComplete="street-address"
+                    className={inputClass}
+                    placeholder="123 Main St"
+                    value={fields.homeAddressLine}
+                    onChange={(e) => update("homeAddressLine", e.target.value)}
+                  />
+                </label>
+                <label className="flex flex-col gap-1.5">
+                  <span className="text-sm font-medium text-slate-800">City</span>
+                  <input
+                    type="text"
+                    autoComplete="address-level2"
+                    className={inputClass}
+                    value={fields.homeCity}
+                    onChange={(e) => update("homeCity", e.target.value)}
+                  />
+                </label>
+                <label className="flex flex-col gap-1.5">
+                  <span className="text-sm font-medium text-slate-800">State</span>
+                  <input
+                    type="text"
+                    autoComplete="address-level1"
+                    maxLength={2}
+                    className={inputClass}
+                    placeholder="TX"
+                    value={fields.homeState}
+                    onChange={(e) => update("homeState", e.target.value)}
+                  />
+                </label>
+                <label className="flex flex-col gap-1.5">
+                  <span className="text-sm font-medium text-slate-800">ZIP</span>
+                  <input
+                    type="text"
+                    autoComplete="postal-code"
+                    maxLength={10}
+                    className={inputClass}
+                    value={fields.homeZip}
+                    onChange={(e) => update("homeZip", e.target.value)}
+                  />
+                </label>
+              </div>
+              <button
+                type="button"
+                onClick={() => void setMapHomeFromVetSheet()}
+                disabled={mapHomePending}
+                className="mt-3 rounded-md bg-stone-800 px-4 py-2 text-sm font-medium text-white hover:bg-stone-900 disabled:opacity-60"
+              >
+                {mapHomePending ? "Saving..." : "Save as map home"}
+              </button>
+              {mapHomeMessage ? <p className="mt-2 text-xs text-stone-600">{mapHomeMessage}</p> : null}
+            </div>
           </div>
         </div>
 

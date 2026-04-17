@@ -27,7 +27,7 @@ export type AwarenessSection = {
   sectionLayout?: "personal-note" | "topic-card";
   /** Small line above the heading (personal-note sections only). */
   eyebrow?: string;
-  /** Educational PDF worksheets (name in header; yellow blocks show what to complete on the real VA form). */
+  /** Quick-open official form actions for this section. */
   formGuideActions?: { guideId: VaFormGuideId; label: string }[];
   /**
    * Optional rally line directly under the section heading (before body). Uses **bold** and [label](https://...) like other awareness text.
@@ -101,25 +101,25 @@ export const awarenessModules: AwarenessModule[] = [
           "[VA Form 21-526EZ](https://www.vba.va.gov/pubs/forms/vba-21-526ez-are.pdf) — **File** a disability compensation claim (PDF; you can also file online at VA.gov).",
           "[VA Form 20-0995](https://www.vba.va.gov/pubs/forms/vba-20-0995-are.pdf) — **Supplemental Claim** after a decision (new and relevant evidence).",
           "[VA Form 20-0996](https://www.vba.va.gov/pubs/forms/vba-20-0996-are.pdf) — **Higher-Level Review** after a decision (same evidence, new look).",
-          "[VA Form 21-10182](https://www.va.gov/find-forms/about-form-21-10182/) — **Board Appeal** after a decision.",
+          "[VA Form 21-10182](https://www.va.gov/vaforms/va/pdf/VA10182.pdf) — **Board Appeal** after a decision.",
           "Which review fits your situation — [Decision reviews and appeals](https://www.va.gov/decision-reviews/).",
         ],
         formGuideActions: [
           {
             guideId: "disability-claim-526ez",
-            label: "Worksheet: File a disability claim (21-526EZ)",
+            label: "Official form: File a disability claim (21-526EZ)",
           },
           {
             guideId: "supplemental-claim-0995",
-            label: "Worksheet: Supplemental Claim (20-0995)",
+            label: "Official form: Supplemental Claim (20-0995)",
           },
           {
             guideId: "higher-level-review-0996",
-            label: "Worksheet: Higher-Level Review (20-0996)",
+            label: "Official form: Higher-Level Review (20-0996)",
           },
           {
             guideId: "board-appeal-10182",
-            label: "Worksheet: Board appeal (21-10182)",
+            label: "Official form: Board appeal (21-10182)",
           },
         ],
         links: [
@@ -163,11 +163,11 @@ export const awarenessModules: AwarenessModule[] = [
           { label: "Post-9/11 GI Bill (Chapter 33)", url: "https://www.va.gov/education/about-gi-bill-benefits/post-9-11/" },
           {
             label: "Montgomery GI Bill — Active Duty (MGIB-AD, Chapter 30)",
-            url: "https://www.va.gov/education/about-gi-bill-benefits/montgomery-gi-bill-active-duty/",
+            url: "https://www.va.gov/education/about-gi-bill-benefits/montgomery-active-duty/",
           },
           {
             label: "Montgomery GI Bill — Selected Reserve (MGIB-SR, Chapter 1606)",
-            url: "https://www.va.gov/education/about-gi-bill-benefits/montgomery-gi-bill-selected-reserve/",
+            url: "https://www.va.gov/education/about-gi-bill-benefits/montgomery-selected-reserve/",
           },
           { label: "GI Bill® comparison tool (schools and programs)", url: "https://www.va.gov/education/gi-bill-comparison-tool/" },
           { label: "Apply for education benefits (how to apply)", url: "https://www.va.gov/education/how-to-apply/" },
@@ -194,8 +194,14 @@ export const awarenessModules: AwarenessModule[] = [
         ],
         links: [
           { label: "The PACT Act and your VA benefits (VA resource)", url: "https://www.va.gov/resources/the-pact-act-and-your-va-benefits/" },
-          { label: "Toxic exposure benefits (hub)", url: "https://www.va.gov/toxic-exposure/" },
-          { label: "Illnesses within one year after discharge (VA)", url: "https://www.va.gov/disability/illnesses-within-one-year-of-discharge/" },
+          {
+            label: "Toxic exposure benefits (hub)",
+            url: "https://www.va.gov/disability/eligibility/hazardous-materials-exposure/",
+          },
+          {
+            label: "Illnesses within one year after discharge (VA)",
+            url: "https://www.va.gov/disability/eligibility/illnesses-within-one-year-of-discharge/",
+          },
         ],
       },
       {
@@ -232,7 +238,7 @@ export const awarenessModules: AwarenessModule[] = [
     slug: "evidence",
     title: "Evidence awareness (categories, not strategy)",
     summary:
-      `The first block on this page has instructions, optional ${SITE_NAME} worksheets, and every official form link in one place. Not legal advice—not a strategy for any specific claim.`,
+      `The first block on this page has quick-open official forms and every official form link in one place. Not legal advice—not a strategy for any specific claim.`,
     sections: [
       {
         heading: "What we do not provide",

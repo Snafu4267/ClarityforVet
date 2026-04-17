@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: `Welcome — ${SITE_NAME}`,
   description:
-    "Create a free account for the private family log. Trial and membership details for when paid plans launch.",
+    "Create your account, start a 10-day free trial, and continue for $1.99/month if you choose.",
 };
 
 export default function WelcomeLayout({ children }: { children: ReactNode }) {

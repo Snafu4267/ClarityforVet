@@ -17,6 +17,15 @@ type Entry = {
   user?: { email: string | null; name: string | null };
 };
 
+function formatDateTime(value: string) {
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return value;
+  return d.toLocaleString(undefined, {
+    dateStyle: "medium",
+    timeStyle: "short",
+  });
+}
+
 export default function SpouseLogPage() {
   const { data: session, status } = useSession();
   const [own, setOwn] = useState<Entry[]>([]);
@@ -177,9 +186,10 @@ export default function SpouseLogPage() {
             {own.map((en) => (
               <li key={en.id} className="rounded-lg border border-stone-200 bg-stone-50/80 px-4 py-4">
                 <p className="whitespace-pre-wrap text-sm text-stone-800">{en.body}</p>
-                <p className="mt-2 text-xs text-stone-500">
-                  {new Date(en.createdAt).toLocaleString()}
-                </p>
+                <p className="mt-2 text-xs text-stone-500">Created: {formatDateTime(en.createdAt)}</p>
+                {en.updatedAt !== en.createdAt ? (
+                  <p className="mt-1 text-xs text-stone-500">Updated: {formatDateTime(en.updatedAt)}</p>
+                ) : null}
                 <div className="mt-4 flex flex-col gap-2 border-t border-stone-200 pt-4">
                   <p className="text-xs font-medium text-stone-600">Share with email (entry-by-entry)</p>
                   <div className="flex flex-wrap gap-2">
@@ -231,9 +241,7 @@ export default function SpouseLogPage() {
                   From {en.user?.name || en.user?.email || "another account"}
                 </p>
                 <p className="mt-2 whitespace-pre-wrap text-sm text-stone-800">{en.body}</p>
-                <p className="mt-2 text-xs text-stone-500">
-                  {new Date(en.createdAt).toLocaleString()}
-                </p>
+                <p className="mt-2 text-xs text-stone-500">Created: {formatDateTime(en.createdAt)}</p>
               </li>
             ))}
           </ul>

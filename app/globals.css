@@ -114,7 +114,16 @@ body {
       transparent 14px,
       transparent 28px
     ),
-    linear-gradient(168deg, #ebe7df 0%, #e0dbd2 42%, #d8d3c9 100%);
+    /* Keep center readable while leaving side gutters lighter so the faded photos show through. */
+    linear-gradient(
+      90deg,
+      rgba(235, 231, 223, 0.62) 0%,
+      rgba(232, 227, 218, 0.78) 18%,
+      rgba(224, 219, 210, 0.95) 38%,
+      rgba(224, 219, 210, 0.95) 62%,
+      rgba(232, 227, 218, 0.78) 82%,
+      rgba(216, 211, 201, 0.62) 100%
+    );
 }
 
 .service-subpage-bg-dust {

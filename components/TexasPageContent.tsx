@@ -4,10 +4,12 @@ import { EducationalFooter } from "@/components/EducationalFooter";
 import { PageAccent } from "@/components/PageAccent";
 import { SITE_NAME } from "@/lib/site";
 import { ServiceSubpageFrame } from "@/components/ServiceSubpageFrame";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import TexasMapLoader from "@/components/TexasMapLoader";
 import { haversineMiles } from "@/lib/geo";
 import type { TexasFacility, TexasStartingPoint, TexasVaData } from "@/types/texas-va";
+
+const MAP_HOME_KEY = "vet-to-vet-map-home-v1";
 
 function fullStartingAddress(sp: TexasStartingPoint): string {
   return `${sp.addressLine}, ${sp.city}, ${sp.state} ${sp.zip}`;
@@ -80,6 +82,11 @@ export default function TexasPageContent({
   const [zipInput, setZipInput] = useState("");
   const [zipLoading, setZipLoading] = useState(false);
   const [zipError, setZipError] = useState<string | null>(null);
+  const [addressInput, setAddressInput] = useState("");
+  const [addressLoading, setAddressLoading] = useState(false);
+  const [addressError, setAddressError] = useState<string | null>(null);
+  const [doctorAddress, setDoctorAddress] = useState("");
+  const [doctorError, setDoctorError] = useState<string | null>(null);
 
   const home = userOrigin ?? defaultHome;
 
@@ -108,6 +115,7 @@ export default function TexasPageContent({
 
   const applyZip = useCallback(async () => {
     setZipError(null);
+    setAddressError(null);
     const digits = zipInput.replace(/\D/g, "").slice(0, 5);
     if (digits.length !== 5) {
       setZipError(`Enter a 5-digit ZIP code in ${stateName}.`);
@@ -161,9 +169,65 @@ export default function TexasPageContent({
     }
   }, [zipInput, stateUpper, stateName]);
 
+  const applyAddress = useCallback(async () => {
+    setAddressError(null);
+    const query = addressInput.trim();
+    if (query.length < 6) {
+      setAddressError("Enter a full street address.");
+      return;
+    }
+    setAddressLoading(true);
+    try {
+      const res = await fetch("/api/geocode-address", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query }),
+      });
+      const payload = (await res.json()) as { error?: string; lat?: number; lng?: number; displayName?: string };
+      if (!res.ok || payload.lat === undefined || payload.lng === undefined) {
+        setAddressError(payload.error ?? "Could not find that address.");
+        return;
+      }
+      setUserOrigin({
+        label: "Your address",
+        addressLine: payload.displayName ?? query,
+        city: "",
+        state: "",
+        zip: "",
+        lat: payload.lat,
+        lng: payload.lng,
+        privacyNote: "Address lookup is approximate. This is used only for map centering and directions links.",
+      });
+    } catch {
+      setAddressError("Network error. Try again.");
+    } finally {
+      setAddressLoading(false);
+    }
+  }, [addressInput]);
+
+  useEffect(() => {
+    if (userOrigin !== null || typeof window === "undefined") return;
+    try {
+      const raw = localStorage.getItem(MAP_HOME_KEY);
+      if (!raw) return;
+      const saved = JSON.parse(raw) as TexasStartingPoint;
+      if (
+        saved &&
+        typeof saved.addressLine === "string" &&
+        typeof saved.lat === "number" &&
+        typeof saved.lng === "number"
+      ) {
+        setUserOrigin(saved);
+      }
+    } catch {
+      /* ignore */
+    }
+  }, [userOrigin]);
+
   const resetOrigin = useCallback(() => {
     setUserOrigin(null);
     setZipError(null);
+    setAddressError(null);
     setZipInput("");
   }, []);
 
@@ -175,25 +239,6 @@ export default function TexasPageContent({
         <h1 className="text-2xl font-semibold tracking-tight text-stone-900">{data.meta.title}</h1>
         <p className="whitespace-pre-line text-sm leading-relaxed text-stone-600">{data.meta.disclaimer}</p>
         <p className="text-xs text-stone-500">Last reviewed for this build: {data.meta.lastReviewed}</p>
-        {home ? (
-          <div className="rounded-lg border border-stone-200 bg-emerald-50/70 px-4 py-3 text-sm text-stone-700">
-            <p className="font-medium text-stone-800">Starting point for distances &amp; “from home” directions</p>
-            <p className="mt-1 text-stone-700">{fullStartingAddress(home)}</p>
-            <p className="mt-2 text-xs leading-relaxed text-stone-600">
-              Facilities below are sorted by approximate straight-line miles (not drive time).{" "}
-              {userOrigin ? userOrigin.privacyNote : home.privacyNote}
-            </p>
-            {userOrigin && defaultHome ? (
-              <button
-                type="button"
-                onClick={resetOrigin}
-                className="mt-3 text-left text-sm font-medium text-emerald-900 underline decoration-emerald-400 underline-offset-2 hover:text-emerald-950"
-              >
-                Reset to default starting point
-              </button>
-            ) : null}
-          </div>
-        ) : null}
       </header>
 
       <section className="flex flex-col gap-3">
@@ -234,8 +279,8 @@ export default function TexasPageContent({
         <h2 className="text-lg font-medium text-stone-800">Map — where you&apos;re headed</h2>
         <p className="text-sm leading-relaxed text-stone-600">
           Enter your <strong className="font-medium text-stone-700">{stateName} ZIP code</strong> to center the map and
-          sort facilities by distance from that ZIP (approximate postal center). Or keep the default starting point
-          above.
+          sort facilities by distance from that ZIP (approximate postal center). You can also enter a full street
+          address.
         </p>
         <div className="flex flex-col gap-3 rounded-lg border border-stone-200 bg-white px-4 py-4">
           <label htmlFor="state-va-zip" className="text-sm font-medium text-stone-800">
@@ -264,8 +309,44 @@ export default function TexasPageContent({
             >
               {zipLoading ? "Updating…" : "Update map"}
             </button>
+            {userOrigin && defaultHome ? (
+              <button
+                type="button"
+                onClick={resetOrigin}
+                className="rounded-md border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-800 hover:bg-stone-50"
+              >
+                Reset default
+              </button>
+            ) : null}
           </div>
           {zipError ? <p className="text-sm text-red-700">{zipError}</p> : null}
+
+          <label htmlFor="state-va-address" className="mt-2 text-sm font-medium text-stone-800">
+            Home address (full street)
+          </label>
+          <div className="flex flex-wrap items-end gap-2">
+            <input
+              id="state-va-address"
+              type="text"
+              autoComplete="street-address"
+              placeholder="123 Main St, Magnolia, TX 77355"
+              value={addressInput}
+              onChange={(e) => setAddressInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") void applyAddress();
+              }}
+              className="min-w-[220px] flex-1 rounded-md border border-stone-300 px-3 py-2 text-sm text-stone-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600"
+            />
+            <button
+              type="button"
+              onClick={() => void applyAddress()}
+              disabled={addressLoading}
+              className="rounded-md bg-emerald-800 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-900 disabled:opacity-60"
+            >
+              {addressLoading ? "Centering…" : "Center map to address"}
+            </button>
+          </div>
+          {addressError ? <p className="text-sm text-red-700">{addressError}</p> : null}
         </div>
         <p className="text-sm leading-relaxed text-stone-600">
           Blue pins are VA locations on this list; the green dot is your starting point (ZIP center or default). Popups
@@ -278,6 +359,63 @@ export default function TexasPageContent({
           defaultMapCenter={defaultMapCenter}
           mapAriaLabel={mapAriaLabel}
         />
+      </section>
+
+      <section className="flex flex-col gap-3 rounded-lg border border-stone-200 bg-white px-4 py-4">
+        <h2 className="text-sm font-semibold text-stone-900">Out-of-network doctor address search</h2>
+        <p className="text-sm leading-relaxed text-stone-600">
+          Going to a community provider? Enter the address and open directions quickly.
+        </p>
+        <div className="flex flex-wrap items-end gap-2">
+          <input
+            type="text"
+            autoComplete="street-address"
+            placeholder="Doctor or clinic address"
+            value={doctorAddress}
+            onChange={(e) => setDoctorAddress(e.target.value)}
+            className="min-w-[220px] flex-1 rounded-md border border-stone-300 px-3 py-2 text-sm text-stone-900 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600"
+          />
+          <button
+            type="button"
+            onClick={() => {
+              setDoctorError(null);
+              const dest = doctorAddress.trim();
+              if (dest.length < 6) {
+                setDoctorError("Enter a full doctor/clinic address.");
+                return;
+              }
+              if (home) {
+                window.open(directionsFromHome(home, {
+                  id: "doctor",
+                  name: "Doctor destination",
+                  kind: "CBOC",
+                  system: "Community provider",
+                  address: dest,
+                  city: "",
+                  state: "",
+                  zip: "",
+                  phoneMain: "",
+                  hoursSummary: "",
+                  lat: 0,
+                  lng: 0,
+                  sourceUrl: "",
+                  website: "",
+                  patientAdvocate: { name: "", phone: "", email: "", officeLocation: "", notes: "" },
+                }), "_blank", "noopener,noreferrer");
+                return;
+              }
+              window.open(
+                `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`,
+                "_blank",
+                "noopener,noreferrer",
+              );
+            }}
+            className="rounded-md bg-stone-800 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-stone-900"
+          >
+            Open directions
+          </button>
+        </div>
+        {doctorError ? <p className="text-sm text-red-700">{doctorError}</p> : null}
       </section>
 
       <section className="flex flex-col gap-4">
@@ -406,8 +544,8 @@ export default function TexasPageContent({
       <section className="flex flex-col gap-3 rounded-lg border border-stone-200 bg-stone-50/80 px-4 py-5">
         <h2 className="text-sm font-medium text-stone-800">Official sources (bookmark these)</h2>
         <ul className="list-inside list-disc space-y-3 text-sm text-stone-700">
-          {data.meta.sources.map((s) => (
-            <li key={s.url}>
+          {data.meta.sources.map((s, idx) => (
+            <li key={`${s.url}-${idx}`}>
               <p className="text-stone-600">{s.label}</p>
               <a className="text-blue-800 underline" href={s.url} target="_blank" rel="noopener noreferrer">
                 Source page

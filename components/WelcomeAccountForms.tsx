@@ -68,7 +68,7 @@ export function WelcomeAccountForms() {
         setRegError("Account created but sign-in failed—try signing in below.");
         return;
       }
-      router.push("/tools/spouse-log");
+      router.push("/");
       router.refresh();
     },
     [email, name, password, router],
@@ -89,7 +89,7 @@ export function WelcomeAccountForms() {
         setInError("Email or password did not match.");
         return;
       }
-      router.push("/tools/spouse-log");
+      router.push("/");
       router.refresh();
     },
     [inEmail, inPassword, router],
@@ -130,25 +130,14 @@ export function WelcomeAccountForms() {
           </h1>
           <div className="space-y-4 text-sm leading-relaxed text-stone-700 sm:text-[0.9375rem]">
             <p>
-              Before you get started, here&apos;s what you need to know. Your first 7 days on this site are
-              completely free. No credit card. No tricks. No surprise charges. Just full access so you can see if
-              this helps you.
+              Before you get started, here&apos;s what you need to know. Your first <strong className="font-semibold text-stone-900">10 days</strong>{" "}
+              on this site are completely free, so you can review the full package and decide if it helps.
             </p>
             <p>
-              On day 7, you&apos;ll get a message letting you know your trial is ending. After that, you&apos;ll still
-              have access to all the free tools on the site, but the full features will lock until you choose to
-              subscribe.
+              After day 10, membership is <strong className="font-semibold text-stone-900">$1.99/month</strong>. No hidden fees.
+              You&apos;ll get clear reminders before trial end so you can choose what to do next.
             </p>
           </div>
-          <aside
-            className="rounded-xl border border-amber-200/90 bg-amber-50/80 px-4 py-3 text-xs leading-relaxed text-amber-950/90"
-            role="note"
-          >
-            <strong className="font-semibold">Today on this site:</strong> we are{" "}
-            <strong className="font-semibold">not</strong> collecting cards or running paid plans yet. Accounts and
-            tools are free right now. The trial and subscription wording above is how we plan to run things when billing
-            is turned on—we&apos;ll tell you clearly before anything charges.
-          </aside>
         </header>
 
         <section id="create-account" className={cardClass} aria-labelledby="create-account-heading">
@@ -156,7 +145,7 @@ export function WelcomeAccountForms() {
             Create your account
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-stone-600">
-            All you need is your email and a password. No payment info required.
+            All you need is your email and a password to start your free 10-day trial.
           </p>
           <form className="mt-5 flex flex-col gap-4" onSubmit={onRegister} noValidate>
             <div className="flex flex-col gap-1.5 text-sm">
@@ -271,8 +260,7 @@ export function WelcomeAccountForms() {
             </div>
           ) : null}
           <p className="referral-note mt-4 text-xs leading-relaxed text-stone-500">
-            For every veteran who signs up for a paid account using your code, you get 1 month free—up to 12 months
-            total. <span className="text-stone-600">Paid plans and reward tracking are not live yet; we&apos;ll honor this policy when they are.</span>
+            Referral rewards are being finalized. We&apos;ll post the exact referral terms clearly before rewards go live.
           </p>
         </section>
       </div>

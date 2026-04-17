@@ -10,6 +10,7 @@ const YELLOW_BORDER = rgb(0.85, 0.72, 0.2);
 const TEXT = rgb(0.12, 0.1, 0.09);
 const MUTED = rgb(0.35, 0.32, 0.28);
 const FOOTER = rgb(0.45, 0.42, 0.38);
+const WHITE_BOX = rgb(0.99, 0.99, 0.99);
 
 function wrapLine(text: string, font: import("pdf-lib").PDFFont, size: number, maxWidth: number): string[] {
   const words = text.split(/\s+/);
@@ -96,59 +97,126 @@ export async function buildVaFormGuidePdf(def: VaFormGuideDefinition, veteranNam
   drawTextLine(def.whatThisIs, 9, false, MUTED);
   cursorTop += 10;
 
-  drawTextLine("Yellow boxes = parts you typically complete yourself on the real form.", 10, true, TEXT);
-  drawTextLine("We do not fill in claim details for you.", 9, false, MUTED);
+  drawTextLine("Left side = fill-in worksheet. Right side (yellow) = guidance for that section.", 10, true, TEXT);
+  drawTextLine("Use this as practice and prep. File only on official VA forms/VA.gov.", 9, false, MUTED);
   cursorTop += 12;
 
+  const COL_GAP = 14;
+  const COL_W = (maxTextW - COL_GAP) / 2;
+
   for (const block of def.sections) {
-    const titleSize = 11;
-    const bulletSize = 10;
-    const bullets = block.youComplete.map((b) => `• ${b}`);
-    const titleLines = wrapLine(block.heading, fontBold, titleSize, maxTextW - 16);
-    const bulletLines = bullets.flatMap((b) => wrapLine(b, font, bulletSize, maxTextW - 24));
-    const innerH =
-      titleLines.length * (titleSize + 4) +
-      8 +
-      bulletLines.length * (bulletSize + 3) +
-      20;
+    const fillTitleSize = 10;
+    const guideTitleSize = 11;
+    const textSize = 9;
     const boxPad = 10;
-    const totalH = innerH + boxPad * 2;
+    const promptBottomGap = 8;
+    const writingLineGap = 10;
+
+    const fillTitleLines = wrapLine(`${block.heading} — fill this side`, fontBold, fillTitleSize, COL_W - 2 * boxPad);
+    const guideTitleLines = wrapLine(block.heading, fontBold, guideTitleSize, COL_W - 2 * boxPad);
+    const promptLines = block.youComplete.map((item) => {
+      const lines = wrapLine(item, font, textSize, COL_W - 2 * boxPad);
+      return lines.length > 2 ? [...lines.slice(0, 2), "…"] : lines;
+    });
+
+    const fillInnerH =
+      fillTitleLines.length * (fillTitleSize + 4) +
+      8 +
+      promptLines.reduce((acc, lines) => acc + lines.length * (textSize + 2) + promptBottomGap + writingLineGap, 0) +
+      8;
+
+    const guideBullets = block.youComplete.map((item) => `• ${item}`);
+    const guideBulletLines = guideBullets.flatMap((line) => wrapLine(line, font, textSize, COL_W - 2 * boxPad - 4));
+    const guideInnerH =
+      guideTitleLines.length * (guideTitleSize + 4) +
+      8 +
+      guideBulletLines.length * (textSize + 3) +
+      12;
+
+    const totalH = Math.max(fillInnerH, guideInnerH) + boxPad * 2;
 
     needSpace(totalH + 8);
 
     const boxTop = cursorTop;
     page.drawRectangle({
-      x: M - 2,
+      x: M,
       y: PAGE_H - boxTop - totalH,
-      width: maxTextW + 4,
+      width: COL_W,
+      height: totalH,
+      color: WHITE_BOX,
+      borderColor: YELLOW_BORDER,
+      borderWidth: 0.6,
+    });
+
+    page.drawRectangle({
+      x: M + COL_W + COL_GAP,
+      y: PAGE_H - boxTop - totalH,
+      width: COL_W,
       height: totalH,
       color: YELLOW,
       borderColor: YELLOW_BORDER,
-      borderWidth: 0.5,
+      borderWidth: 0.6,
     });
 
-    let inner = boxTop + boxPad;
-    for (const tl of titleLines) {
+    let fillCursor = boxTop + boxPad;
+    for (const tl of fillTitleLines) {
       page.drawText(tl, {
         x: M + boxPad,
-        y: PAGE_H - inner - titleSize,
-        size: titleSize,
+        y: PAGE_H - fillCursor - fillTitleSize,
+        size: fillTitleSize,
         font: fontBold,
         color: TEXT,
       });
-      inner += titleSize + 4;
+      fillCursor += fillTitleSize + 4;
     }
-    inner += 4;
-    for (const bl of bulletLines) {
+
+    fillCursor += 4;
+    for (const lines of promptLines) {
+      for (const ln of lines) {
+        page.drawText(ln, {
+          x: M + boxPad,
+          y: PAGE_H - fillCursor - textSize,
+          size: textSize,
+          font,
+          color: TEXT,
+        });
+        fillCursor += textSize + 2;
+      }
+      fillCursor += 2;
+      const lineY = PAGE_H - fillCursor;
+      page.drawLine({
+        start: { x: M + boxPad, y: lineY },
+        end: { x: M + COL_W - boxPad, y: lineY },
+        thickness: 0.9,
+        color: rgb(0.2, 0.2, 0.2),
+      });
+      fillCursor += promptBottomGap + writingLineGap;
+    }
+
+    let guideCursor = boxTop + boxPad;
+    for (const tl of guideTitleLines) {
+      page.drawText(tl, {
+        x: M + COL_W + COL_GAP + boxPad,
+        y: PAGE_H - guideCursor - guideTitleSize,
+        size: guideTitleSize,
+        font: fontBold,
+        color: TEXT,
+      });
+      guideCursor += guideTitleSize + 4;
+    }
+
+    guideCursor += 4;
+    for (const bl of guideBulletLines) {
       page.drawText(bl, {
-        x: M + boxPad + 6,
-        y: PAGE_H - inner - bulletSize,
-        size: bulletSize,
+        x: M + COL_W + COL_GAP + boxPad + 4,
+        y: PAGE_H - guideCursor - textSize,
+        size: textSize,
         font,
         color: TEXT,
       });
-      inner += bulletSize + 3;
+      guideCursor += textSize + 3;
     }
+
     cursorTop = boxTop + totalH + 10;
   }
 

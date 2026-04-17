@@ -19,10 +19,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = normalizePath(usePathname() || "");
   const showLearnNav = !hideLearnSidebar(pathname);
 
+  if (!showLearnNav) {
+    return (
+      <div className="relative z-10 mx-auto flex w-full max-w-3xl flex-1 flex-col px-5 py-8 sm:px-6 lg:py-12">
+        <main className="min-w-0 flex-1">{children}</main>
+      </div>
+    );
+  }
+
   return (
-    <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-5 py-8 sm:px-6 lg:flex-row lg:gap-12 lg:py-12">
-      {showLearnNav ? <LearnSidebarNav /> : null}
-      <main className="min-w-0 flex-1">{children}</main>
+    <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-5 py-8 sm:px-6 lg:py-12 xl:flex-row xl:items-start xl:justify-center xl:gap-12">
+      <div className="hidden xl:block xl:w-72 xl:shrink-0">
+        <LearnSidebarNav />
+      </div>
+      <main className="mx-auto min-w-0 w-full max-w-3xl flex-1">{children}</main>
     </div>
   );
 }

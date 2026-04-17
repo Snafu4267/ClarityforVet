@@ -98,7 +98,8 @@ export const vaFormsHubGroups: VaFormHubGroup[] = [
       {
         form: "VA Form 21-10182",
         name: "Decision Review Request: Board Appeal (Notice of Disagreement)",
-        pageUrl: "https://www.va.gov/find-forms/about-form-21-10182/",
+        pdfUrl: "https://www.va.gov/vaforms/va/pdf/VA10182.pdf",
+        pageUrl: "https://www.va.gov/forms/10182/",
       },
     ],
   },
@@ -242,11 +243,11 @@ export const vaFormsHubGroups: VaFormHubGroup[] = [
   },
 ];
 
-/** Clarity4Vets practice worksheets for the Evidence page (same IDs as /api/va-form-guide). */
+/** Quick-open official forms for the Evidence page (same IDs as /api/va-form-guide). */
 export const evidenceWorksheetActions: { guideId: VaFormGuideId; label: string }[] = [
-  { guideId: "lay-statement-10210", label: "21-10210 — lay / witness worksheet" },
-  { guideId: "records-release-4142", label: "21-4142 / 4142a — private records worksheet" },
-  { guideId: "service-records-sf180", label: "SF 180 — service records worksheet" },
+  { guideId: "lay-statement-10210", label: "Official form: 21-10210 — lay / witness statement" },
+  { guideId: "records-release-4142", label: "Official form: 21-4142 / 4142a — private records release" },
+  { guideId: "service-records-sf180", label: "Official form: SF 180 — request military records" },
 ];
 
 export const vaFormsHubCatchAll: { label: string; url: string; note?: string }[] = [
