@@ -385,23 +385,7 @@ export default function TexasPageContent({
                 return;
               }
               if (home) {
-                window.open(directionsFromHome(home, {
-                  id: "doctor",
-                  name: "Doctor destination",
-                  kind: "CBOC",
-                  system: "Community provider",
-                  address: dest,
-                  city: "",
-                  state: "",
-                  zip: "",
-                  phoneMain: "",
-                  hoursSummary: "",
-                  lat: 0,
-                  lng: 0,
-                  sourceUrl: "",
-                  website: "",
-                  patientAdvocate: { name: "", phone: "", email: "", officeLocation: "", notes: "" },
-                }), "_blank", "noopener,noreferrer");
+                window.open(directionsFromHome(home, dest), "_blank", "noopener,noreferrer");
                 return;
               }
               window.open(
