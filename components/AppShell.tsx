@@ -11,7 +11,14 @@ function normalizePath(path: string) {
 /** Full-width content: no Learn TOC on home or auth screens. */
 function hideLearnSidebar(pathname: string) {
   const p = normalizePath(pathname);
-  return p === "/" || p === "/register" || p === "/login" || p === "/welcome";
+  if (p.startsWith("/admin")) return true;
+  return (
+    p === "/" ||
+    p === "/register" ||
+    p === "/login" ||
+    p === "/welcome" ||
+    p === "/invite-vet"
+  );
 }
 
 /** Global content row: Learn sidebar + page main (same on most routes). */

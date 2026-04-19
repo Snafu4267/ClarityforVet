@@ -3,14 +3,53 @@ import type { VaFormGuideId } from "@/data/va-form-guides";
 import { VaFormGuideButtons } from "@/components/VaFormGuideButtons";
 import { VaFormSearchBox } from "@/components/VaFormSearchBox";
 
+type WorksheetAction = { guideId: VaFormGuideId; label: string };
+
+type VaFormsHubProps = {
+  worksheetActions?: WorksheetAction[];
+  /** Minimal VA.gov pointers — skip long on-site form lists (public free site mode). */
+  publicOnlySite?: boolean;
+};
+
 const linkBtn =
   "inline-flex items-center rounded-md border border-blue-200 bg-white px-3 py-1.5 text-xs font-semibold text-blue-900 shadow-sm transition hover:border-blue-300 hover:bg-blue-50/80 sm:text-sm";
 const linkSecondary =
   "inline-flex items-center rounded-md border border-stone-200 bg-stone-50/90 px-3 py-1.5 text-xs font-medium text-stone-800 shadow-sm transition hover:border-stone-300 hover:bg-stone-100/90 sm:text-sm";
 
-type WorksheetAction = { guideId: VaFormGuideId; label: string };
+export function VaFormsHub({ worksheetActions, publicOnlySite }: VaFormsHubProps) {
+  if (publicOnlySite) {
+    return (
+      <section
+        className="rounded-2xl border border-amber-200/90 bg-gradient-to-b from-amber-50/40 via-white to-stone-50/95 p-5 shadow-md ring-1 ring-amber-100/70 sm:p-6"
+        aria-labelledby="va-forms-hub-heading"
+      >
+        <h2 id="va-forms-hub-heading" className="text-lg font-semibold tracking-tight text-stone-900 sm:text-xl">
+          Official forms on VA.gov
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-stone-600">
+          Use VA’s official find-a-form search and hubs. Forms and titles change — always confirm the current version on
+          VA.gov.
+        </p>
+        <VaFormSearchBox outboundLinks={publicOnlySite} />
+        <ul className="mt-4 flex flex-col gap-2.5 text-sm">
+          {vaFormsHubCatchAll.map((x) => (
+            <li key={x.url}>
+              <a
+                className="font-medium text-blue-800 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-600"
+                href={x.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {x.label}
+              </a>
+              {x.note ? <span className="text-stone-500"> — {x.note}</span> : null}
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
 
-export function VaFormsHub({ worksheetActions }: { worksheetActions?: WorksheetAction[] }) {
   return (
     <section
       className="rounded-2xl border border-amber-200/90 bg-gradient-to-b from-amber-50/40 via-white to-stone-50/95 p-5 shadow-md ring-1 ring-amber-100/70 sm:p-6"
@@ -102,7 +141,7 @@ export function VaFormsHub({ worksheetActions }: { worksheetActions?: WorksheetA
         <p className="mt-1 text-sm text-stone-600">
           Search, main hubs, and help—so you are not stuck guessing where to go next.
         </p>
-        <VaFormSearchBox />
+        <VaFormSearchBox outboundLinks={publicOnlySite} />
         <ul className="mt-3 flex flex-col gap-2.5 text-sm">
           {vaFormsHubCatchAll.map((x) => (
             <li key={x.url}>

@@ -8,7 +8,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: `Start here — first steps with VA care — ${SITE_NAME}`,
+  title: `Your journey begins — first steps with VA care — ${SITE_NAME}`,
   description:
     "How to start with the VA: what to say, what to bring, timing, housing and work, crisis numbers, and a week-by-week checklist until you are in the system.",
 };
@@ -59,6 +59,11 @@ export default function StartHerePage() {
               People say &quot;Go to the VA,&quot; but nobody explains how. <Punch>This is your starting point.</Punch>{" "}
               Whether you&apos;re dealing with physical pain, mental health struggles, old injuries, or new symptoms,{" "}
               <Punch>this is where you take your first real step.</Punch>
+            </p>
+            <p className={prose}>
+              Your first step is going to a VA facility — <Punch>it doesn&apos;t matter which one.</Punch> Walk in. Tell one
+              of the helpful folks behind the counter that this is your first time and you need to see someone about{" "}
+              <Punch>getting enrolled in the VA.</Punch>
             </p>
           </section>
 

@@ -1,11 +1,17 @@
 import { AwarenessBodyText } from "@/components/AwarenessBodyText";
 import { EducationalFooter } from "@/components/EducationalFooter";
+import { HomeInviteVetNavCard } from "@/components/HomeInviteVetNavCard";
 import { MilitarySealsStrip } from "@/components/MilitarySealsStrip";
 import { StatePerksPicker } from "@/components/StatePerksPicker";
 import { StateVaFacilitiesPicker } from "@/components/StateVaFacilitiesPicker";
 import { bigNavLinkCardClass, bigNavLinkCardMutedClass } from "@/lib/big-nav-card";
-import { SITE_HOOK, SITE_NAME } from "@/lib/site";
+import { authOptions } from "@/lib/auth";
+import { PUBLIC_ONLY_SITE, SITE_HOOK, SITE_NAME } from "@/lib/site";
+import { showPublicOnlyExperience } from "@/lib/site-access";
 import Link from "next/link";
+import { getServerSession } from "next-auth/next";
+
+export const dynamic = "force-dynamic";
 
 /** Public domain — U.S. Air Force / DVIDS: flag at Joint Base Charleston (flag and sky; moon in frame). */
 const HOME_HERO_FLAG_BG =
@@ -35,7 +41,15 @@ function LaneSection({
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+  const publicShell = showPublicOnlyExperience({
+    publicOnlyEnv: PUBLIC_ONLY_SITE,
+    siteAccess: session?.user?.siteAccess,
+  });
+  const trialEndedNoPay =
+    !PUBLIC_ONLY_SITE && session?.user?.siteAccess === "restricted";
+
   return (
     <div className="relative min-h-screen w-full">
       {/* Full viewport bleed — `fixed` avoids a narrow parent (flex/embed) clipping `absolute` layers */}
@@ -86,7 +100,7 @@ export default function Home() {
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-zinc-700 sm:text-[0.9375rem]">
             <p>
               <AwarenessBodyText
-                text={`You already know how to read orders, deadlines, and taskings. VA and benefits information is spread across many official sites. **${SITE_NAME}** gathers **public** links and phone numbers—locators, topics in plain language—into **one organized place** so you can find what you need without hunting every portal.`}
+                text={`You already know how to read orders, deadlines, and taskings. VA and benefits information is spread across many official sites. **${SITE_NAME}** gathers **public** links and phone numbers—locators, topics in plain language—into **one organized place** so you can find what you need without hunting every portal. Take the time to use the tools on this page. They will **definitely** help you on this journey through the VA system.`}
               />
             </p>
             <p>
@@ -100,13 +114,38 @@ export default function Home() {
             <MilitarySealsStrip embedded />
           </div>
 
-          <div className="mt-8 grid gap-3 sm:grid-cols-2">
-            <Link
-              href="/start-here"
-              className="inline-flex min-h-[3.25rem] items-center justify-center rounded-lg border-2 border-amber-600/85 bg-gradient-to-b from-amber-100 to-amber-200/90 px-5 py-3.5 text-center text-base font-bold uppercase tracking-[0.1em] text-amber-950 shadow-md ring-2 ring-amber-400/35 transition hover:from-amber-200 hover:to-amber-300/90 sm:col-span-2"
+          {trialEndedNoPay ? (
+            <div
+              className="rounded-xl border border-amber-400/90 bg-gradient-to-br from-amber-100/90 to-amber-50/95 px-4 py-4 text-sm text-amber-950 shadow-sm ring-1 ring-amber-300/40 sm:col-span-2"
+              role="status"
             >
-              Start here
-            </Link>
+              <p className="font-semibold text-amber-950">Your free trial period has ended.</p>
+              <p className="mt-2 leading-relaxed text-amber-950/95">
+                Subscribe to bring back full access — private family log, invite-a-vet, and the full Learn library.
+                You can still use this site in a lighter, VA.gov-focused mode until you subscribe.
+              </p>
+              <Link
+                href="/stripe"
+                className="mt-3 inline-flex min-h-11 items-center justify-center rounded-lg bg-amber-900 px-4 py-2.5 text-sm font-semibold text-amber-50 shadow-sm transition hover:bg-amber-950"
+              >
+                View subscription
+              </Link>
+            </div>
+          ) : null}
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <div className="flex flex-col items-center gap-2 sm:col-span-2">
+              <Link
+                href="/start-here"
+                className="inline-flex min-h-[3.25rem] w-full items-center justify-center rounded-lg border-2 border-amber-600/85 bg-gradient-to-b from-amber-100 to-amber-200/90 px-5 py-3.5 text-center text-base font-bold leading-snug tracking-tight text-amber-950 shadow-md ring-2 ring-amber-400/35 transition hover:from-amber-200 hover:to-amber-300/90 sm:text-[1.05rem]"
+              >
+                Your Journey Begins Now
+              </Link>
+              <p className="max-w-prose text-center text-sm leading-relaxed text-zinc-600">
+                Inside: plain-language guidance to help you <span className="font-semibold text-zinc-800">get into the VA system</span>
+                —what to say, what to bring, and how to stay on track.
+              </p>
+            </div>
             <Link
               href="/learn"
               className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
@@ -123,13 +162,17 @@ export default function Home() {
                 One secure spot for the details you keep repeating everywhere.
               </span>
             </Link>
-            <Link
-              href="/tools/spouse-log/instructions"
-              className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center leading-snug text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
-            >
-              <span className="text-sm font-semibold">Spouse, partner, or family</span>
-              <span className="mt-0.5 text-xs text-zinc-600">This is your thought space - you are not carrying this alone.</span>
-            </Link>
+            {publicShell ? null : (
+              <Link
+                href="/tools/spouse-log/instructions"
+                className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center leading-snug text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
+              >
+                <span className="text-sm font-semibold">Spouse, partner, or family</span>
+                <span className="mt-0.5 text-xs text-zinc-600">
+                  This is your thought space - you are not carrying this alone.
+                </span>
+              </Link>
+            )}
             <Link
               href="/va-resources"
               className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
@@ -196,6 +239,7 @@ export default function Home() {
                 travel, or home organization.
               </span>
             </Link>
+            <HomeInviteVetNavCard />
             <div className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-sm text-zinc-700 shadow-sm ring-1 ring-zinc-100/80">
               <p className="font-semibold text-zinc-900">Why These Exist Together</p>
               <p className="mt-1">
@@ -205,20 +249,22 @@ export default function Home() {
             </div>
           </LaneSection>
 
-          <LaneSection id="spouse-family" label="Spouse topics">
-            <Link href="/tools/spouse-log/instructions" className={bigNavLinkCardClass}>
-              <span className="font-semibold text-zinc-900">Why this space exists</span>
-              <span className="mt-1 block text-sm text-zinc-600">
-                Short read for partners and family before using the log
-              </span>
-            </Link>
-            <Link href="/tools/spouse-log" className={bigNavLinkCardClass}>
-              <span className="font-semibold text-zinc-900">Private family log</span>
-              <span className="mt-1 block text-sm text-zinc-600">
-                Sign in · entries private unless you share by email
-              </span>
-            </Link>
-          </LaneSection>
+          {publicShell ? null : (
+            <LaneSection id="spouse-family" label="Spouse topics">
+              <Link href="/tools/spouse-log/instructions" className={bigNavLinkCardClass}>
+                <span className="font-semibold text-zinc-900">Why this space exists</span>
+                <span className="mt-1 block text-sm text-zinc-600">
+                  Short read for partners and family before using the log
+                </span>
+              </Link>
+              <Link href="/tools/spouse-log" className={bigNavLinkCardClass}>
+                <span className="font-semibold text-zinc-900">Private family log</span>
+                <span className="mt-1 block text-sm text-zinc-600">
+                  Sign in · entries private unless you share by email
+                </span>
+              </Link>
+            </LaneSection>
+          )}
 
           <LaneSection id="national-va" label="VA Facilities Local &amp; Nationwide">
             <StateVaFacilitiesPicker />
@@ -238,43 +284,30 @@ export default function Home() {
             </Link>
           </LaneSection>
 
-          {/* Sentence-case title (not the LaneSection eyebrow) so this block reads like a person, not a filing label */}
-          <section className="rounded-2xl border border-zinc-200/90 bg-gradient-to-b from-white to-zinc-50/95 p-5 shadow-sm ring-1 ring-zinc-100/80">
-            <h2 className="text-lg font-semibold leading-snug text-zinc-900 sm:text-xl">
-              Account sign-in
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-              Some tools use a simple email and password: one account for the family log and any other sign-in features.
-              Open <strong className="font-semibold text-zinc-800">Welcome</strong> for trial details, create account,
-              sign in, and invite-a-vet—or use Sign in here if you only need to log in.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-6 text-sm">
-              <Link
-                className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
-                href="/login"
-              >
-                Sign in
-              </Link>
-              <Link
-                className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
-                href="/welcome"
-              >
-                Welcome &amp; register
-              </Link>
-              <Link
-                className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
-                href="/stripe"
-              >
-                Supporter subscribe
-              </Link>
-              <Link
-                className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
-                href="/unenroll"
-              >
-                Unenroll / billing
-              </Link>
-            </div>
-          </section>
+          {publicShell ? null : (
+            <section className="rounded-2xl border border-zinc-200/90 bg-gradient-to-b from-white to-zinc-50/95 p-5 shadow-sm ring-1 ring-zinc-100/80">
+              <h2 className="text-lg font-semibold leading-snug text-zinc-900 sm:text-xl">Account sign-in</h2>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+                Some tools use a simple email and password: one account for the family log and any other sign-in features.
+                Open <strong className="font-semibold text-zinc-800">Welcome</strong> for trial details, create account,
+                sign in, and invite-a-vet—or use Sign in here if you only need to log in.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-6 text-sm">
+                <Link
+                  className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
+                  href="/login"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
+                  href="/welcome"
+                >
+                  Welcome &amp; register
+                </Link>
+              </div>
+            </section>
+          )}
         </nav>
 
         <EducationalFooter variant="full" />

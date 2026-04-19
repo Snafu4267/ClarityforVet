@@ -1,8 +1,53 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { PUBLIC_ONLY_SITE } from "@/lib/site";
 
-export function VaFormSearchBox() {
+const staticLinkClass =
+  "text-blue-800 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-600";
+
+function VaFormOutboundLinks() {
+  return (
+    <div
+      className="mt-3 rounded-lg border border-stone-200/90 bg-white/90 p-3 shadow-sm"
+      aria-label="Official VA form links"
+    >
+      <p className="text-sm font-medium text-stone-900">Find and open forms on VA.gov</p>
+      <p className="mt-1 text-xs leading-relaxed text-stone-600">
+        VA hosts the official search and downloads. Common starting points:
+      </p>
+      <ul className="mt-3 flex flex-col gap-2 text-sm text-stone-700">
+        <li>
+          <a className={staticLinkClass} href="https://www.va.gov/find-forms/" target="_blank" rel="noopener noreferrer">
+            VA find a form (search any number or title)
+          </a>
+        </li>
+        <li>
+          <a
+            className={staticLinkClass}
+            href="https://www.va.gov/health-care/how-to-apply/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Health care enrollment (10-10EZ) — how to apply on VA.gov
+          </a>
+        </li>
+        <li>
+          <a
+            className={staticLinkClass}
+            href="https://www.va.gov/disability/how-to-file-claim/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            File for disability compensation — VA’s overview (includes 526EZ lane)
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function VaFormGoogleSearchBox() {
   const [query, setQuery] = useState("");
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -43,4 +88,15 @@ export function VaFormSearchBox() {
       </div>
     </form>
   );
+}
+
+type VaFormSearchBoxProps = {
+  /** When true, show VA.gov links only (no Google form search). Overrides env when passed. */
+  outboundLinks?: boolean;
+};
+
+/** VA form discovery: outbound links in brochure/restricted mode; optional Google-assisted search otherwise. */
+export function VaFormSearchBox({ outboundLinks }: VaFormSearchBoxProps) {
+  const useOutbound = outboundLinks ?? PUBLIC_ONLY_SITE;
+  return useOutbound ? <VaFormOutboundLinks /> : <VaFormGoogleSearchBox />;
 }

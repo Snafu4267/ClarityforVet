@@ -2,6 +2,18 @@ import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
+import { computeSiteAccess } from "@/lib/site-access";
+
+async function attachSiteAccessToToken(token: { id?: string; siteAccess?: unknown }) {
+  const id = typeof token.id === "string" ? token.id : undefined;
+  if (!id) return;
+  const row = await prisma.user.findUnique({
+    where: { id },
+    select: { createdAt: true, subscriptionStatus: true },
+  });
+  if (!row) return;
+  token.siteAccess = computeSiteAccess(row);
+}
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -26,10 +38,17 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.id = user.id;
+      await attachSiteAccessToToken(token);
       return token;
     },
     async session({ session, token }) {
-      if (session.user && token.id) session.user.id = token.id as string;
+      if (session.user && token.id) {
+        session.user.id = token.id as string;
+        session.user.siteAccess =
+          token.siteAccess === "full" || token.siteAccess === "restricted"
+            ? token.siteAccess
+            : "restricted";
+      }
       return session;
     },
   },

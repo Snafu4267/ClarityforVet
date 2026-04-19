@@ -111,6 +111,29 @@ export default function SpouseLogPage() {
     );
   }
 
+  if (status === "authenticated" && session?.user?.siteAccess === "restricted") {
+    return (
+      <ServiceSubpageFrame>
+        <PageAccent className="page-accent-spouse-log" />
+        <div className="relative z-10 mx-auto flex max-w-xl flex-col gap-6 px-6 py-16">
+          <p className="text-sm font-semibold text-stone-900">Trial ended — subscribe for full access</p>
+          <p className="text-sm leading-relaxed text-stone-600">
+            Your free trial period has ended. Subscribe to keep using the private family log and other subscriber tools.
+          </p>
+          <Link
+            href="/stripe"
+            className="rounded-md bg-stone-900 px-4 py-3 text-center text-sm font-medium text-white"
+          >
+            View subscription
+          </Link>
+          <Link href="/" className="text-center text-sm text-blue-800 underline">
+            Back to home
+          </Link>
+        </div>
+      </ServiceSubpageFrame>
+    );
+  }
+
   if (status === "unauthenticated") {
     return (
       <ServiceSubpageFrame>

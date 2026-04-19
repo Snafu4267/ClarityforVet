@@ -18,10 +18,37 @@ model User {
   stripeSubscriptionId String?
   /// Stripe subscription.status (active, canceled, past_due, …), or none before checkout
   subscriptionStatus   String   @default("none")
+  /// When true, may open /admin/feedback (private feedback log).
+  isAdmin      Boolean  @default(false)
+  /// Friend invite code entered at signup (optional), matches another user's `inviteCode`.
+  referredByCode String?
+  /// Account that referred this user (set when `referredByCode` matched at registration).
+  referrerId     String?
+  referrer       User?    @relation("Referrals", fields: [referrerId], references: [id], onDelete: SetNull)
+  referrals      User[]   @relation("Referrals")
+  /// This user's own shareable code (assigned server-side after sign-in).
+  inviteCode     String?  @unique
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
   journalEntries JournalEntry[]
+  siteFeedbacks  SiteFeedback[]
+
+  @@index([referredByCode])
+  @@index([referrerId])
+}
+
+model SiteFeedback {
+  id        String   @id @default(cuid())
+  rating    Int
+  comment   String
+  pagePath  String?
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([userId])
 }
 
 model JournalEntry {

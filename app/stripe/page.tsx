@@ -1,5 +1,6 @@
-import { SITE_NAME } from "@/lib/site";
+import { PUBLIC_ONLY_SITE, SITE_NAME } from "@/lib/site";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import { StripeSubscribeClient } from "./StripeSubscribeClient";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function StripePage() {
+  if (PUBLIC_ONLY_SITE) redirect("/");
+
   return (
     <Suspense
       fallback={

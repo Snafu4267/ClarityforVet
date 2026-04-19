@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
+import { requireFullSiteAccessResponse } from "@/lib/api-full-site-access";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 
@@ -7,6 +8,8 @@ type Ctx = { params: Promise<{ id: string }> };
 
 export async function POST(req: Request, ctx: Ctx) {
   const session = await getServerSession(authOptions);
+  const denied = requireFullSiteAccessResponse(session);
+  if (denied) return denied;
   if (!session?.user?.id || !session.user.email) {
     return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   }
@@ -48,6 +51,8 @@ export async function POST(req: Request, ctx: Ctx) {
 
 export async function DELETE(req: Request, ctx: Ctx) {
   const session = await getServerSession(authOptions);
+  const denied = requireFullSiteAccessResponse(session);
+  if (denied) return denied;
   if (!session?.user?.id) {
     return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   }

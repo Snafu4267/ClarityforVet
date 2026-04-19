@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { AppShell } from "@/components/AppShell";
 import { Providers } from "@/components/Providers";
+import { SiteFeedbackButton } from "@/components/SiteFeedbackButton";
 import { SiteHomeBar } from "@/components/SiteHomeBar";
 import { SITE_HOOK, SITE_NAME } from "@/lib/site";
 import "./globals.css";
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Providers>
           <SiteHomeBar />
           <AppShell>{children}</AppShell>
+          <SiteFeedbackButton />
         </Providers>
       </body>
     </html>

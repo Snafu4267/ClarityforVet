@@ -27,16 +27,16 @@ export function ServiceSubpageFrame({ children }: { children: React.ReactNode })
         }}
       />
       <div
-        className="pointer-events-none fixed inset-0 z-[1] opacity-[0.22] max-[47.999rem]:hidden print:hidden"
+        className="pointer-events-none fixed inset-0 z-[1] opacity-[0.42] max-[47.999rem]:hidden print:hidden"
         aria-hidden
         style={{
           backgroundImage: `url(${SERVICE_BG_FLAG})`,
           backgroundSize: "cover",
-          backgroundPosition: "right 38%",
+          backgroundPosition: "right 42%",
           WebkitMaskImage:
-            "linear-gradient(to left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.55) 24%, rgba(0,0,0,0) 58%)",
+            "linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.72) 22%, rgba(0,0,0,0.38) 42%, rgba(0,0,0,0) 72%)",
           maskImage:
-            "linear-gradient(to left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.55) 24%, rgba(0,0,0,0) 58%)",
+            "linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.72) 22%, rgba(0,0,0,0.38) 42%, rgba(0,0,0,0) 72%)",
         }}
       />
       <div className="relative z-10 flex flex-1 flex-col">{children}</div>

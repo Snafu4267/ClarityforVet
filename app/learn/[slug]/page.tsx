@@ -7,9 +7,15 @@ import { VaFormsHub } from "@/components/VaFormsHub";
 import { evidenceWorksheetActions } from "@/data/va-forms-hub";
 import type { AwarenessSection } from "@/data/awareness-modules";
 import { awarenessModules, getModule } from "@/data/awareness-modules";
-import { SITE_NAME } from "@/lib/site";
+import { authOptions } from "@/lib/auth";
+import { awarenessModuleForPublicSite } from "@/lib/module-for-public-site";
+import { PUBLIC_ONLY_SITE, SITE_NAME } from "@/lib/site";
+import { showPublicOnlyExperience } from "@/lib/site-access";
 import Link from "next/link";
+import { getServerSession } from "next-auth/next";
 import { notFound } from "next/navigation";
+
+export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
   return awarenessModules.map((m) => ({ slug: m.slug }));
@@ -100,8 +106,15 @@ function LinkList({
 
 export default async function LearnModulePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const mod = getModule(slug);
-  if (!mod) notFound();
+  const raw = getModule(slug);
+  if (!raw) notFound();
+
+  const session = await getServerSession(authOptions);
+  const useBrochureLearn = showPublicOnlyExperience({
+    publicOnlyEnv: PUBLIC_ONLY_SITE,
+    siteAccess: session?.user?.siteAccess,
+  });
+  const mod = useBrochureLearn ? awarenessModuleForPublicSite(raw) : raw;
 
   return (
     <article className="relative print:max-w-none">
@@ -126,7 +139,9 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
       </header>
 
       <div className="flex flex-col gap-8">
-        {slug === "evidence" ? <VaFormsHub worksheetActions={evidenceWorksheetActions} /> : null}
+        {slug === "evidence" ? (
+          <VaFormsHub worksheetActions={evidenceWorksheetActions} publicOnlySite={useBrochureLearn} />
+        ) : null}
         {mod.sections.map((s, idx) => {
           const key = `${s.heading}-${idx}`;
           const hasLinks = s.links && s.links.length > 0;

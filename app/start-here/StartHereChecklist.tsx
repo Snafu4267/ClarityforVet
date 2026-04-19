@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { PUBLIC_ONLY_SITE } from "@/lib/site";
+import { useSession } from "next-auth/react";
+import { useEffect, useMemo, useState } from "react";
 
 const STORAGE_KEY = "start-here-checklist-v1";
 
@@ -14,7 +16,7 @@ type Step = {
   doneWhen: string;
 };
 
-const STEPS: Step[] = [
+const STEPS_ALL: Step[] = [
   {
     id: "learn",
     label: "Learn key VA topics",
@@ -59,14 +61,19 @@ const STEPS: Step[] = [
 
 type ChecklistState = Record<string, boolean>;
 
-function initialState(): ChecklistState {
-  const state: ChecklistState = {};
-  for (const step of STEPS) state[step.id] = false;
-  return state;
-}
-
 export function StartHereChecklist() {
-  const [checked, setChecked] = useState<ChecklistState>(() => initialState());
+  const { data: session } = useSession();
+  const hideSpouseStep = PUBLIC_ONLY_SITE || session?.user?.siteAccess === "restricted";
+  const steps = useMemo(
+    () => (hideSpouseStep ? STEPS_ALL.filter((s) => s.id !== "spouse-log") : STEPS_ALL),
+    [hideSpouseStep],
+  );
+
+  const [checked, setChecked] = useState<ChecklistState>(() => {
+    const state: ChecklistState = {};
+    for (const step of STEPS_ALL) state[step.id] = false;
+    return state;
+  });
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
@@ -77,13 +84,15 @@ export function StartHereChecklist() {
         return;
       }
       const parsed = JSON.parse(raw) as Partial<ChecklistState>;
-      const next = initialState();
-      for (const step of STEPS) {
+      const next: ChecklistState = {};
+      for (const step of STEPS_ALL) {
         next[step.id] = Boolean(parsed[step.id]);
       }
       setChecked(next);
     } catch {
-      setChecked(initialState());
+      const fallback: ChecklistState = {};
+      for (const step of STEPS_ALL) fallback[step.id] = false;
+      setChecked(fallback);
     } finally {
       setIsReady(true);
     }
@@ -96,7 +105,7 @@ export function StartHereChecklist() {
 
   return (
     <ul className="flex flex-col gap-3 text-sm text-stone-800">
-      {STEPS.map((step) => (
+      {steps.map((step) => (
         <li key={step.id} className="rounded-lg border border-amber-100/80 bg-white/80 px-3 py-3">
           <label htmlFor={step.id} className="flex items-start gap-3">
             <input
