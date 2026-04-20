@@ -152,6 +152,12 @@ export function VetSheetMyRatings({ branch, rows, onRowsChange, inputClass, sele
       >
         Add another rating row
       </button>
+      <Link
+        href="/stripe"
+        className="no-print inline-flex min-h-11 items-center justify-center self-start rounded-lg bg-stone-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-stone-800"
+      >
+        Sign in / Upgrade
+      </Link>
 
       {genericOnly ? (
         <div className="border-t border-stone-200/90 pt-4">

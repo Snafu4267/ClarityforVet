@@ -81,11 +81,8 @@ export function SiteHomeBar() {
                 <Link href="/welcome" className={btnOutline}>
                   Welcome
                 </Link>
-                <Link href="/welcome#create-account" className={btnOutline}>
-                  Register
-                </Link>
                 <Link href="/login" className={btnOutline}>
-                  Sign in
+                  Sign in / Upgrade
                 </Link>
                 <button type="button" onClick={() => signOut({ callbackUrl: "/" })} className={btnSolid}>
                   Sign out
@@ -96,11 +93,8 @@ export function SiteHomeBar() {
                 <Link href="/welcome" className={btnOutline}>
                   Welcome
                 </Link>
-                <Link href="/welcome#create-account" className={btnOutline}>
-                  Register
-                </Link>
                 <Link href="/login" className={btnSolid}>
-                  Sign in
+                  Sign in / Upgrade
                 </Link>
               </>
             ) : null}

@@ -89,14 +89,14 @@ export default function InviteVetPage() {
         ) : status === "unauthenticated" ? (
           <div className="rounded-2xl border border-stone-200/90 bg-white px-5 py-6 shadow-sm ring-1 ring-stone-100/80">
             <p className="text-sm text-stone-700">
-              Sign in first—then your personal invite code appears here. New accounts can enter a friend&apos;s code on
+              Sign in / Upgrade first—then your personal invite code appears here. New accounts can enter a friend&apos;s code on
               the Welcome page when they register.
             </p>
             <Link
               href="/login?callbackUrl=/invite-vet"
               className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-stone-900 px-4 text-sm font-medium text-white transition hover:bg-stone-800"
             >
-              Sign in
+              Sign in / Upgrade
             </Link>
           </div>
         ) : loadError ? (

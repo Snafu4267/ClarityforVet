@@ -93,7 +93,7 @@ export default function SpouseFamilyInstructionsPage() {
           href="/login?callbackUrl=/tools/spouse-log"
           className="text-center text-sm text-slate-800 underline decoration-slate-300 underline-offset-2 sm:text-left"
         >
-          Sign in
+          Sign in / Upgrade
         </Link>
       </div>
 

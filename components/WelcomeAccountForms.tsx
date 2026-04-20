@@ -226,7 +226,7 @@ export function WelcomeAccountForms() {
 
         <section id="sign-in" className={cardClass} aria-labelledby="sign-in-heading">
           <h2 id="sign-in-heading" className="text-xl font-semibold text-stone-900">
-            Sign in
+            Sign in / Upgrade
           </h2>
           <p className="mt-2 text-sm text-stone-600">Same email and password if you already registered.</p>
           <form className="mt-5 flex flex-col gap-4" onSubmit={onSignIn} noValidate>
@@ -260,7 +260,7 @@ export function WelcomeAccountForms() {
             </div>
             {inError ? <p className="text-sm text-red-700">{inError}</p> : null}
             <button type="submit" disabled={inPending} className={primaryBtn}>
-              {inPending ? "Signing in…" : "Sign in"}
+              {inPending ? "Signing in…" : "Sign in / Upgrade"}
             </button>
           </form>
         </section>
@@ -276,7 +276,7 @@ export function WelcomeAccountForms() {
             <Link href="/unenroll" className="font-semibold text-slate-800 underline decoration-stone-300 underline-offset-2">
               Unenroll / billing
             </Link>
-            . Sign in first if you use an account.
+            . Sign in / Upgrade first if you use an account.
           </section>
         )}
 

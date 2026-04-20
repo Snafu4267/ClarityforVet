@@ -64,7 +64,7 @@ export function LoginForm() {
       <div className="relative z-10 mx-auto flex w-full max-w-md flex-col gap-8 px-6 py-16">
         <div className="rounded-xl border border-stone-200 bg-white/90 px-5 py-5 shadow-sm">
         <header className="flex flex-col gap-2">
-          <h1 className="text-2xl font-semibold text-stone-900">Sign in</h1>
+          <h1 className="text-2xl font-semibold text-stone-900">Sign in / Upgrade</h1>
           <p className="text-sm text-stone-600">{blurb}</p>
           <p className="text-sm text-stone-700">
             We only use your sign-in to unlock your account features; this site remains educational and is not VA.
@@ -100,7 +100,7 @@ export function LoginForm() {
             disabled={pending}
             className="rounded-md bg-stone-900 px-4 py-3 text-sm font-medium text-white hover:bg-stone-800 disabled:opacity-60"
           >
-            {pending ? "Signing in…" : "Sign in"}
+            {pending ? "Signing in…" : "Sign in / Upgrade"}
           </button>
         </form>
 
@@ -108,6 +108,12 @@ export function LoginForm() {
           No account?{" "}
           <Link href="/welcome" className="font-medium text-blue-800 underline">
             Register
+          </Link>
+        </p>
+        <p className="text-center text-sm text-stone-600">
+          Ready to upgrade?{" "}
+          <Link href="/stripe" className="font-medium text-blue-800 underline">
+            Upgrade now
           </Link>
         </p>
         </div>

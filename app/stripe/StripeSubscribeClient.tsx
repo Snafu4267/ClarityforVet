@@ -174,12 +174,12 @@ export function StripeSubscribeClient() {
             </div>
           ) : (
             <div className="mt-6 flex flex-col gap-3">
-              <p className="text-sm text-stone-600">Sign in first so we can attach the subscription to your account.</p>
+              <p className="text-sm text-stone-600">Sign in / Upgrade first so we can attach the subscription to your account.</p>
               <Link
                 href="/login?callbackUrl=/stripe"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-stone-300 bg-white px-4 py-3 text-sm font-medium text-stone-900 hover:bg-stone-50"
               >
-                Sign in
+                Sign in / Upgrade
               </Link>
               <Link
                 href="/welcome"

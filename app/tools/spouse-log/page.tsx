@@ -139,12 +139,12 @@ export default function SpouseLogPage() {
       <ServiceSubpageFrame>
         <PageAccent className="page-accent-spouse-log" />
         <div className="relative z-10 mx-auto flex max-w-xl flex-col gap-6 px-6 py-16">
-        <p className="text-sm text-stone-600">Sign in to use the private log.</p>
+        <p className="text-sm text-stone-600">Sign in / Upgrade to use the private log.</p>
         <Link
           href="/login?callbackUrl=/tools/spouse-log"
           className="rounded-md bg-stone-900 px-4 py-3 text-center text-sm font-medium text-white"
         >
-          Sign in
+          Sign in / Upgrade
         </Link>
         <Link href="/welcome" className="text-center text-sm text-blue-800 underline">
           Create an account

@@ -156,12 +156,12 @@ export function UnenrollClient() {
             </>
           ) : (
             <div className="flex flex-col gap-3">
-              <p className="text-sm text-stone-600">Sign in to open your billing portal.</p>
+              <p className="text-sm text-stone-600">Sign in / Upgrade to open your billing portal.</p>
               <Link
                 href="/login?callbackUrl=/unenroll"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-stone-300 bg-white px-4 py-3 text-sm font-medium text-stone-900 hover:bg-stone-50"
               >
-                Sign in
+                Sign in / Upgrade
               </Link>
             </div>
           )}

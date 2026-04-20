@@ -134,6 +134,16 @@ export default async function Home() {
           ) : null}
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {PUBLIC_ONLY_SITE ? null : (
+              <div className="sm:col-span-2">
+                <Link
+                  href="/stripe"
+                  className="inline-flex min-h-[2.9rem] w-full items-center justify-center rounded-lg bg-stone-900 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-stone-800"
+                >
+                  Sign in / Upgrade
+                </Link>
+              </div>
+            )}
             <div className="flex flex-col items-center gap-2 sm:col-span-2">
               <Link
                 href="/start-here"
@@ -260,7 +270,7 @@ export default async function Home() {
               <Link href="/tools/spouse-log" className={bigNavLinkCardClass}>
                 <span className="font-semibold text-zinc-900">Private family log</span>
                 <span className="mt-1 block text-sm text-zinc-600">
-                  Sign in · entries private unless you share by email
+                  Sign in / Upgrade · entries private unless you share by email
                 </span>
               </Link>
             </LaneSection>
@@ -290,14 +300,14 @@ export default async function Home() {
               <p className="mt-2 text-sm leading-relaxed text-zinc-600">
                 Some tools use a simple email and password: one account for the family log and any other sign-in features.
                 Open <strong className="font-semibold text-zinc-800">Welcome</strong> for trial details, create account,
-                sign in, and invite-a-vet—or use Sign in here if you only need to log in.
+                sign in, and invite-a-vet—or use Sign in / Upgrade here if you only need to log in.
               </p>
               <div className="mt-4 flex flex-wrap gap-6 text-sm">
                 <Link
                   className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
                   href="/login"
                 >
-                  Sign in
+                  Sign in / Upgrade
                 </Link>
                 <Link
                   className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2"
