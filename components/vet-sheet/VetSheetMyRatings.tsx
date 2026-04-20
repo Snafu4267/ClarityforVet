@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { PUBLIC_ONLY_SITE } from "@/lib/site";
 import { LEARN_FIND_ANY, LEARN_TINNITUS } from "@/data/cfr-condition-hints";
 import { CFR_3_310_SECONDARY, CFR_4_87_EAR, CFR_PART_4_ROOT } from "@/data/cfr-links";
 import { VetSheetRatingRowHints } from "@/components/vet-sheet/VetSheetRatingRowHints";
@@ -38,7 +40,9 @@ function newRow(): VetSheetRatingRow {
 }
 
 export function VetSheetMyRatings({ branch, rows, onRowsChange, inputClass, selectClass }: Props) {
+  const { data: session } = useSession();
   const cardShell = isBranchChosen(branch) ? BRANCH_FORM_STRIP[branch] : NEUTRAL_RATING_CARD;
+  const genericOnly = PUBLIC_ONLY_SITE || session?.user?.siteAccess === "restricted";
   const branchEyebrow = isBranchChosen(branch)
     ? branchLabel(branch)
     : "Pick your branch above to match this card to your service (optional)";
@@ -136,7 +140,7 @@ export function VetSheetMyRatings({ branch, rows, onRowsChange, inputClass, sele
                 </button>
               </div>
             </div>
-            <VetSheetRatingRowHints condition={row.condition} />
+            <VetSheetRatingRowHints condition={row.condition} genericOnly={genericOnly} />
           </div>
         ))}
       </div>
@@ -149,7 +153,13 @@ export function VetSheetMyRatings({ branch, rows, onRowsChange, inputClass, sele
         Add another rating row
       </button>
 
-      <div className="border-t border-stone-200/90 pt-4">
+      {genericOnly ? (
+        <div className="border-t border-stone-200/90 pt-4">
+          <p className="text-sm text-slate-700">
+            Secondary-condition search is available for full membership vets.
+          </p>
+        </div>
+      ) : <div className="border-t border-stone-200/90 pt-4">
         <p className="text-sm font-medium text-slate-800">38 CFR — official rules (for questions, not a verdict)</p>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
           The Code of Federal Regulations is what VA points to for <span className="font-medium text-slate-800">how</span>{" "}
@@ -196,7 +206,7 @@ export function VetSheetMyRatings({ branch, rows, onRowsChange, inputClass, sele
             <span className="sr-only"> (opens in a new tab)</span>
           </a>
         </div>
-      </div>
+      </div>}
     </section>
   );
 }
