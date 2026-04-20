@@ -133,7 +133,8 @@ export function StripeSubscribeClient() {
           <p className="text-sm font-medium text-stone-900">What you get</p>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-stone-600">
             <li>Helps keep {SITE_NAME} online and improving.</li>
-            <li>Same site features—this is support, not a paywall on core education links.</li>
+            <li>The core educational VA links stay available; your support keeps this project sustainable.</li>
+            <li>Your feedback directly shapes what we build next.</li>
           </ul>
           <p className="mt-4 text-xs text-stone-500">
             Amount and renewal are set in your Stripe product. We do not store card numbers on this site.

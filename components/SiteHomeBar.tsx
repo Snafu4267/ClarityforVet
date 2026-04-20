@@ -79,10 +79,7 @@ export function SiteHomeBar() {
                   Invite a vet
                 </Link>
                 <Link href="/welcome" className={btnOutline}>
-                  Welcome
-                </Link>
-                <Link href="/login" className={btnOutline}>
-                  Sign in / Upgrade
+                  Sign in/Register
                 </Link>
                 <button type="button" onClick={() => signOut({ callbackUrl: "/" })} className={btnSolid}>
                   Sign out
@@ -91,10 +88,7 @@ export function SiteHomeBar() {
             ) : status === "unauthenticated" ? (
               <>
                 <Link href="/welcome" className={btnOutline}>
-                  Welcome
-                </Link>
-                <Link href="/login" className={btnSolid}>
-                  Sign in / Upgrade
+                  Sign in/Register
                 </Link>
               </>
             ) : null}

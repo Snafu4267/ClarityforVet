@@ -17,7 +17,9 @@ function hideLearnSidebar(pathname: string) {
     p === "/register" ||
     p === "/login" ||
     p === "/welcome" ||
-    p === "/invite-vet"
+    p === "/invite-vet" ||
+    p === "/stripe" ||
+    p === "/unenroll"
   );
 }
 

@@ -134,16 +134,6 @@ export default async function Home() {
           ) : null}
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
-            {PUBLIC_ONLY_SITE ? null : (
-              <div className="sm:col-span-2">
-                <Link
-                  href="/stripe"
-                  className="inline-flex min-h-[2.9rem] w-full items-center justify-center rounded-lg bg-stone-900 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-stone-800"
-                >
-                  Sign in / Upgrade
-                </Link>
-              </div>
-            )}
             <div className="flex flex-col items-center gap-2 sm:col-span-2">
               <Link
                 href="/start-here"

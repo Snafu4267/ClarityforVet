@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Registration lives on the full welcome page (trial copy, sign-in, invite). */
+/** Registration actions start on the welcome page. */
 export default function RegisterRedirectPage() {
-  redirect("/welcome#create-account");
+  redirect("/welcome");
 }
