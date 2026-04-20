@@ -25,7 +25,10 @@ export default function PrintablesPage() {
         </p>
       </header>
 
-      <section className="print:break-inside-avoid rounded-lg border border-stone-200 bg-white px-5 py-6">
+      <section
+        id="printables-appointment-prep"
+        className="scroll-mt-24 print:break-inside-avoid rounded-lg border border-stone-200 bg-white px-5 py-6"
+      >
         <h2 className="text-lg font-medium text-stone-900">Appointment prep</h2>
         <p className="mt-2 text-sm text-stone-600">
           Write what you want to cover—this is your space, not medical advice from {SITE_NAME}.
@@ -40,7 +43,10 @@ export default function PrintablesPage() {
         </div>
       </section>
 
-      <section className="print:break-inside-avoid rounded-lg border border-stone-200 bg-white px-5 py-6">
+      <section
+        id="printables-contact-scratch"
+        className="scroll-mt-24 print:break-inside-avoid rounded-lg border border-stone-200 bg-white px-5 py-6"
+      >
         <h2 className="text-lg font-medium text-stone-900">Contact scratch space</h2>
         <p className="mt-2 text-sm text-stone-600">Numbers and names you are trying to keep straight.</p>
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -24,7 +24,7 @@ export default function StartHerePage() {
   return (
     <ServiceSubpageFrame>
       <PageAccent className="page-accent-learn-overview" />
-      <div className="relative z-10 mx-auto flex w-full max-w-xl flex-col gap-10 px-6 py-12 pb-20">
+      <div className="relative z-10 mx-auto flex w-full max-w-none flex-col gap-10 px-6 py-12 pb-20">
         <header className="flex flex-col gap-4 no-print">
           <p className="text-sm text-stone-500">
             <Link href="/" className="font-medium text-slate-800 underline decoration-stone-300 underline-offset-2">
@@ -47,8 +47,8 @@ export default function StartHerePage() {
           </p>
         </header>
 
-        <div id="va-doorway" className="scroll-mt-24 flex flex-col gap-8">
-          <section className="flex flex-col gap-3">
+        <div className="flex flex-col gap-8">
+          <section id="va-doorway" className="scroll-mt-24 flex flex-col gap-3">
             <h1 className={h2}>VA doorway</h1>
             <p className={prose}>
               Hey. You made it. If you&apos;re here, it means you&apos;re finally stepping toward the VA — maybe for the
@@ -67,7 +67,7 @@ export default function StartHerePage() {
             </p>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="first-30-days" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>Your first 30 days at the VA</h2>
             <p className={prose}>
               Your first month is about getting into the system and being seen. <Punch>The VA only knows what you tell them.</Punch>{" "}
@@ -86,7 +86,7 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="what-to-gather" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>What you need to gather</h2>
             <p className={prose}>
               <Punch>The VA doesn&apos;t automatically have your civilian medical history.</Punch> They don&apos;t know
@@ -105,7 +105,7 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="first-appointments" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>Your first appointments — what to expect</h2>
             <p className={prose}>
               Your first appointment is usually Primary Care or Mental Health Intake. They&apos;ll ask questions about
@@ -125,7 +125,7 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="mental-or-physical" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>Mental health or physical health — either path starts here</h2>
             <p className={prose}>
               Whether your struggle is physical, mental, or both, <Punch>the starting point is the same: tell them what&apos;s happening.</Punch>{" "}
@@ -143,7 +143,7 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="va-timing" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>The reality of VA timing</h2>
             <p className={prose}>
               <Punch>The VA moves slowly. That&apos;s not your fault.</Punch> Phone calls take forever. Appointments take
@@ -164,7 +164,7 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3">
+          <section id="reminders" className="scroll-mt-24 flex flex-col gap-3">
             <h2 className={h2}>Why reminders matter</h2>
             <p className={prose}>
               <Punch>Memory fails when you&apos;re stressed.</Punch> A calendar, a short note after each call, and a
@@ -181,7 +181,10 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-3 rounded-xl border border-stone-200 bg-red-50/40 px-4 py-4">
+          <section
+            id="crisis"
+            className="scroll-mt-24 flex flex-col gap-3 rounded-xl border border-stone-200 bg-red-50/40 px-4 py-4"
+          >
             <h2 className={h2}>If you&apos;re in crisis</h2>
             <p className={prose}>
               <Punch>If you might hurt yourself or someone else, call 911.</Punch> You can also call{" "}
@@ -189,7 +192,10 @@ export default function StartHerePage() {
             </p>
           </section>
 
-          <section className="flex flex-col gap-3 rounded-xl border border-stone-200 bg-stone-50/90 px-4 py-4">
+          <section
+            id="housing-work"
+            className="scroll-mt-24 flex flex-col gap-3 rounded-xl border border-stone-200 bg-stone-50/90 px-4 py-4"
+          >
             <h2 className={h2}>If you don&apos;t have stable housing or a steady income</h2>
             <p className={prose}>
               <Punch>Not having an address or a job does not disqualify you from care.</Punch> VA and community partners
@@ -229,7 +235,10 @@ export default function StartHerePage() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-4 rounded-2xl border-2 border-amber-200/90 bg-gradient-to-b from-amber-50/90 to-white px-5 py-6 shadow-sm ring-1 ring-amber-100/80">
+          <section
+            id="start-here-checklist"
+            className="scroll-mt-24 flex flex-col gap-4 rounded-2xl border-2 border-amber-200/90 bg-gradient-to-b from-amber-50/90 to-white px-5 py-6 shadow-sm ring-1 ring-amber-100/80"
+          >
             <h2 className={`${h2} text-amber-950`}>Start Here checklist</h2>
             <p className="text-sm leading-relaxed text-stone-600">
               Keep this simple: complete these five steps and your progress stays saved on this device.

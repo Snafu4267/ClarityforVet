@@ -35,11 +35,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-5 py-8 sm:px-6 lg:py-12 xl:flex-row xl:items-start xl:justify-center xl:gap-12">
+    <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-5 py-8 sm:px-6 lg:py-12 xl:flex-row xl:items-start xl:justify-center xl:gap-12">
       <div className="hidden xl:block xl:w-72 xl:shrink-0">
-        <LearnSidebarNav />
+        <div className="sticky top-28 max-h-[calc(100vh-7rem)] overflow-y-auto overscroll-contain rounded-xl border border-stone-300 bg-white px-4 py-5 text-stone-950 shadow-md">
+          <LearnSidebarNav />
+        </div>
       </div>
-      <main className="mx-auto min-w-0 w-full max-w-3xl flex-1">{children}</main>
+      <main className="mx-auto min-w-0 w-full max-w-4xl flex-1">{children}</main>
     </div>
   );
 }

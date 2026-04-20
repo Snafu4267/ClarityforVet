@@ -10,6 +10,7 @@ import { awarenessModules, getModule } from "@/data/awareness-modules";
 import { authOptions } from "@/lib/auth";
 import { awarenessModuleForPublicSite } from "@/lib/module-for-public-site";
 import { PUBLIC_ONLY_SITE, SITE_NAME } from "@/lib/site";
+import { learnSectionDomId } from "@/lib/learn-section-id";
 import { showPublicOnlyExperience } from "@/lib/site-access";
 import Link from "next/link";
 import { getServerSession } from "next-auth/next";
@@ -140,18 +141,21 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
 
       <div className="flex flex-col gap-8">
         {slug === "evidence" ? (
-          <VaFormsHub worksheetActions={evidenceWorksheetActions} publicOnlySite={useBrochureLearn} />
+          <div id="learn-evidence-forms-hub" className="scroll-mt-24">
+            <VaFormsHub worksheetActions={evidenceWorksheetActions} publicOnlySite={useBrochureLearn} />
+          </div>
         ) : null}
         {mod.sections.map((s, idx) => {
           const key = `${s.heading}-${idx}`;
           const hasLinks = s.links && s.links.length > 0;
+          const sectionDomId = learnSectionDomId(slug, idx, s.anchorId);
 
           if (s.sectionLayout === "personal-note") {
             return (
               <section
                 key={key}
-                id={s.anchorId}
-                className="rounded-2xl border border-amber-200/90 bg-gradient-to-br from-amber-50/95 via-white to-stone-50 p-6 shadow-md ring-1 ring-amber-100/60"
+                id={sectionDomId}
+                className="scroll-mt-24 rounded-2xl border border-amber-200/90 bg-gradient-to-br from-amber-50/95 via-white to-stone-50 p-6 shadow-md ring-1 ring-amber-100/60"
               >
                 <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-900/65">
                   {s.eyebrow ?? SITE_NAME}
@@ -166,8 +170,8 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
             return (
               <section
                 key={key}
-                id={s.anchorId}
-                className="rounded-2xl border border-stone-200/90 bg-gradient-to-b from-white to-stone-50/95 p-5 shadow-sm ring-1 ring-stone-100/80"
+                id={sectionDomId}
+                className="scroll-mt-24 rounded-2xl border border-stone-200/90 bg-gradient-to-b from-white to-stone-50/95 p-5 shadow-sm ring-1 ring-stone-100/80"
               >
                 <h2 className="text-base font-semibold leading-snug text-stone-900">{s.heading}</h2>
                 {s.highlightAfterHeading ? <HeadingCallout text={s.highlightAfterHeading} /> : null}
@@ -189,7 +193,7 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
           }
 
           return (
-            <section key={key} id={s.anchorId}>
+            <section key={key} id={sectionDomId} className="scroll-mt-24">
               <h2 className="text-lg font-medium text-stone-800">{s.heading}</h2>
               {s.highlightAfterHeading ? <HeadingCallout text={s.highlightAfterHeading} /> : null}
               <div className={s.highlightAfterHeading ? "mt-5" : "mt-3"}>
@@ -203,7 +207,7 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
         })}
       </div>
 
-      <section className="rounded-lg border border-stone-200 bg-stone-50/80 px-4 py-4">
+      <section id={`learn-${slug}-official-links`} className="scroll-mt-24 rounded-lg border border-stone-200 bg-stone-50/80 px-4 py-4">
         <h2 className="text-sm font-medium text-stone-800">More official links</h2>
         <p className="mt-1 text-xs text-stone-500">
           Straight from VA when you want the main site, sign-in, or a human-facing hub—not a substitute for your own letters and decisions.

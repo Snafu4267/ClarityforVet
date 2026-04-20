@@ -138,7 +138,7 @@ export default async function PerksByStatePage({ params }: Props) {
 
         {quick.length === 0 ? (
           <section id="perks-state-quick" className="scroll-mt-24 rounded-xl border border-stone-200 bg-stone-50/80 px-5 py-5">
-            <h2 className="text-sm font-semibold text-stone-900">Quick list</h2>
+            <h2 className="text-sm font-semibold text-stone-900">Quick reference by group</h2>
             <p className="mt-2 text-sm leading-relaxed text-stone-600">
               We don&apos;t have extra broken-out rows for this state yet beyond the portal. Use the official site above for
               programs, forms, and eligibility.
