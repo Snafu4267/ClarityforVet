@@ -1,0 +1,40 @@
+Step 2 — What Python is for in this project (Clarity4Vets / vet-to-vet-mvp)
+================================================================================
+
+KEEP ON NODE.JS (already how the live site works)
+-------------------------------------------------
+- The public website: Next.js, React, pages, API routes, auth, Stripe, Prisma.
+- Building and deploying: npm install, npm run build, Dokploy Docker image — all Node.
+- Existing helper scripts in this repo that use .mjs, .ts, or npx — leave them unless you
+  choose to rewrite one in Python for a good reason.
+
+USE PYTHON FOR (optional “workbench” on your computer)
+-------------------------------------------------------
+- One-off or repeat helpers: cleaning spreadsheets, turning CSV/Excel into JSON, checking files,
+  generating reports, comparing two exports, bulk renames, etc.
+- Experiments that are easier in Python (text processing, quick stats) without touching the
+  running app.
+- Anything you run locally and commit only the *output* (e.g. new JSON under data/) if the app
+  needs it — not the raw private data.
+
+DO NOT assume unless you decide it explicitly
+----------------------------------------------
+- Python is not required on the VPS for the main Clarity4Vets app to run.
+- If you ever want a Python microservice in production, that would be a separate Dokploy app
+  or container — a later decision, not the default.
+
+Summary: Node = the product. Python = optional tools on your PC to support data and chores
+around the product.
+
+Step 3 — Virtual environment (done in repo)
+------------------------------------------
+- A folder named `.venv` lives at the project root (same level as package.json). It is listed in
+  `.gitignore` so it is never pushed to GitHub.
+- Each new terminal session, turn the venv ON before pip or python:
+    .venv\Scripts\activate
+  You should see (.venv) at the start of the prompt. Turn OFF:  deactivate
+- Install a library:  pip install name-here
+  Then save the list for others:  pip freeze > scripts/python/requirements.txt
+- Recreate on another machine:  py -3 -m venv .venv
+    .venv\Scripts\activate
+    pip install -r scripts/python/requirements.txt

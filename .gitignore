@@ -49,3 +49,6 @@ next-env.d.ts
 
 
 /lib/generated/prisma
+
+# Python (local helpers — see scripts/python/SCOPE.txt)
+.venv/
