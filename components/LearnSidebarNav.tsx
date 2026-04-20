@@ -11,11 +11,16 @@ import { toolsPagePrimaryTitle } from "@/lib/tools-page-title";
 import { TOOLS_PRINTABLES_TOC } from "@/lib/tools-printables-toc";
 import { VA_RESOURCES_TOC } from "@/lib/va-resources-toc";
 
+/** High-contrast active link (sidebar) — easier for low vision / progressive lenses. */
 const linkActive =
-  "font-medium text-blue-800 underline decoration-blue-200 underline-offset-2";
-/** Darker base text so links stay readable on light “service” page backgrounds. */
-const linkIdle = "text-stone-900 hover:text-stone-950 hover:underline decoration-stone-400/80 underline-offset-2";
-const navSectionHeading = "text-xs font-semibold uppercase tracking-wide text-stone-700";
+  "font-semibold text-blue-950 underline decoration-blue-600 decoration-2 underline-offset-[3px]";
+/** Near-black link text; medium weight improves legibility at small sizes. */
+const linkIdle =
+  "font-medium text-neutral-950 hover:text-black hover:underline decoration-neutral-700 decoration-2 underline-offset-[3px]";
+/** Section labels: bold, near-black, slightly wider letter-spacing for scanning. */
+const navSectionHeading =
+  "text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-950";
+const navLinkList = "flex flex-col gap-2.5 text-[15px] leading-snug";
 
 function normalizePath(path: string) {
   if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
@@ -32,7 +37,7 @@ function VeteransPersonalDataNav({
   return (
     <>
       <p className={headingClassName}>Veterans personal data</p>
-      <ul className="mt-3 flex flex-col gap-2 text-sm">
+      <ul className={`mt-3 ${navLinkList}`}>
         <li>
           <Link href="/#veterans-personal-data" className={linkIdle}>
             Home · tools &amp; vet sheet
@@ -103,8 +108,8 @@ function perksDetailStateSegment(pathname: string): string | null {
 function LearnTopicsOnlyNav() {
   return (
     <>
-      <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-stone-700">Learn</p>
-      <ul className="mt-2 flex flex-col gap-2 text-sm">
+      <p className={`mt-6 ${navSectionHeading}`}>Learn</p>
+      <ul className={`mt-2 ${navLinkList}`}>
         <li>
           <Link href="/learn" className={linkIdle}>
             Topics A–Z
@@ -119,8 +124,8 @@ function LearnTopicsOnlyNav() {
 function PersonalToolsOnHomeNav() {
   return (
     <>
-      <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-stone-700">Personal tools</p>
-      <ul className="mt-3 flex flex-col gap-2 text-sm">
+      <p className={`mt-6 ${navSectionHeading}`}>Personal tools</p>
+      <ul className={`mt-3 ${navLinkList}`}>
         <li>
           <Link href="/#veterans-personal-data" className={linkIdle}>
             All tools on home (vet sheet, notes, calendar…)
@@ -142,8 +147,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">Perks &amp; programs</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>Perks &amp; programs</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           {PERKS_HUB_TOC.map((item) => (
             <li key={item.id}>
               <a href={`#${item.id}`} className={linkIdle}>
@@ -165,8 +170,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">Perks &amp; programs</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>Perks &amp; programs</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           <li>
             <Link href="/perks" className={linkIdle}>
               Veteran perks hub
@@ -193,8 +198,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">This program</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>This program</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           <li>
             <a href="#perk-detail" className={linkIdle}>
               Program details
@@ -216,8 +221,8 @@ export function LearnSidebarNav() {
             </a>
           </li>
         </ul>
-        <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-stone-700">Perks navigation</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={`mt-6 ${navSectionHeading}`}>Perks navigation</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           <li>
             <Link href="/perks" className={linkIdle}>
               Veteran perks hub
@@ -246,8 +251,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">This page</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>This page</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           {TOOLS_PRINTABLES_TOC.map((item) => (
             <li key={item.id}>
               <a href={`#${item.id}`} className={linkIdle}>
@@ -269,8 +274,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">This page</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>This page</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           <li>
             <span className={linkActive} aria-current="page">
               {toolsPrimaryTitle}
@@ -289,8 +294,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">Starting with the VA</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>Starting with the VA</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           {START_HERE_TOC.map((item) => (
             <li key={item.id}>
               <a href={`#${item.id}`} className={linkIdle}>
@@ -299,8 +304,8 @@ export function LearnSidebarNav() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-stone-700">More on this site</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={`mt-6 ${navSectionHeading}`}>More on this site</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           <li>
             <Link href="/learn" className={linkIdle}>
               Topics A–Z
@@ -327,8 +332,8 @@ export function LearnSidebarNav() {
         className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
         aria-label="On this page"
       >
-        <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">VA access &amp; resources</p>
-        <ul className="mt-3 flex flex-col gap-2 text-sm">
+        <p className={navSectionHeading}>VA access &amp; resources</p>
+        <ul className={`mt-3 ${navLinkList}`}>
           {VA_RESOURCES_TOC.map((item) => (
             <li key={item.id}>
               <a href={`/va-resources#${item.id}`} className={linkIdle}>
@@ -366,8 +371,8 @@ export function LearnSidebarNav() {
           className="no-print w-full shrink-0 border-b border-stone-200/80 pb-6 lg:w-56 lg:border-b-0 lg:pb-0"
           aria-label="On this page"
         >
-          <p className="text-xs font-semibold uppercase tracking-wide text-stone-700">This topic</p>
-          <ul className="mt-3 flex flex-col gap-2 text-sm">
+          <p className={navSectionHeading}>This topic</p>
+          <ul className={`mt-3 ${navLinkList}`}>
             {onPageToc.map((item) => (
               <li key={item.id}>
                 <a href={`#${item.id}`} className={linkIdle}>
@@ -376,8 +381,8 @@ export function LearnSidebarNav() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-stone-700">Learn</p>
-          <ul className="mt-3 flex flex-col gap-2 text-sm">
+          <p className={`mt-6 ${navSectionHeading}`}>Learn</p>
+          <ul className={`mt-3 ${navLinkList}`}>
             <li>
               <Link href="/learn" className={linkIdle}>
                 Topics A–Z (all topics)
@@ -403,11 +408,11 @@ export function LearnSidebarNav() {
       {!overviewActive ? <VeteransPersonalDataNav pathname={pathname} /> : null}
 
       <p
-        className={`text-xs font-semibold uppercase tracking-wide text-stone-700 ${overviewActive ? "pt-1" : "mt-6"}`}
+        className={`${navSectionHeading} ${overviewActive ? "pt-1" : "mt-6"}`}
       >
         Learn
       </p>
-      <ul className="mt-3 flex flex-col gap-2 text-sm">
+      <ul className={`mt-3 ${navLinkList}`}>
         {overviewActive ? (
           <li>
             <a href="#topic-summaries-heading" className={linkIdle}>
