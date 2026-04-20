@@ -6,7 +6,7 @@ import { SITE_NAME } from "@/lib/site";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "next-auth/react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export function StripeSubscribeClient() {
   const router = useRouter();
@@ -18,11 +18,14 @@ export function StripeSubscribeClient() {
   const [pending, setPending] = useState(false);
   const [syncError, setSyncError] = useState<string | null>(null);
   const [syncingReturn, setSyncingReturn] = useState(false);
+  const attemptedSyncSessionIdsRef = useRef(new Set<string>());
 
   useEffect(() => {
     if (checkout !== "success" || !checkoutSessionId || status !== "authenticated") return;
+    if (attemptedSyncSessionIdsRef.current.has(checkoutSessionId)) return;
 
     let cancelled = false;
+    attemptedSyncSessionIdsRef.current.add(checkoutSessionId);
     setSyncingReturn(true);
     setSyncError(null);
 
@@ -37,11 +40,12 @@ export function StripeSubscribeClient() {
         if (cancelled) return;
         if (res.ok) {
           router.replace("/stripe?checkout=success");
-          router.refresh();
         } else {
+          attemptedSyncSessionIdsRef.current.delete(checkoutSessionId);
           setSyncError(data.error ?? "Could not link this checkout to your account.");
         }
       } catch {
+        attemptedSyncSessionIdsRef.current.delete(checkoutSessionId);
         if (!cancelled) setSyncError("Network error. Refresh and try again.");
       } finally {
         if (!cancelled) setSyncingReturn(false);
