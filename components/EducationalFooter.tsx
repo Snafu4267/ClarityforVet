@@ -6,8 +6,8 @@ import { SITE_NAME } from "@/lib/site";
 export function EducationalFooter({ variant = "full" }: { variant?: "full" | "compact" }) {
   if (variant === "compact") {
     return (
-      <p className="mt-10 border-t border-stone-200/90 pt-6 text-xs leading-relaxed text-stone-500">
-        <span className="font-medium text-stone-600">Educational use only.</span> {SITE_NAME} is independent—not VA, DoD,
+      <p className="mt-10 border-t border-stone-200/90 pt-6 text-sm leading-relaxed text-stone-700">
+        <span className="font-semibold text-stone-900">Educational use only.</span> {SITE_NAME} is independent—not VA, DoD,
         or any government agency. It is not a law firm, does not give legal or medical advice, and does not represent
         anyone before VA or any agency. Listings are not
         endorsements. Information may be incomplete or outdated—confirm with official sources. Using this site does not
@@ -24,13 +24,13 @@ export function EducationalFooter({ variant = "full" }: { variant?: "full" | "co
       <h2 id="educational-use-heading" className="text-sm font-medium text-stone-800">
         Educational use only
       </h2>
-      <ul className="mt-3 list-inside list-disc space-y-2 text-xs leading-relaxed text-stone-600 marker:text-stone-400">
+      <ul className="mt-3 list-inside list-disc space-y-2 text-sm leading-relaxed text-stone-700 marker:text-stone-500">
         <li>
           {SITE_NAME} is an independent education and organization project. It is{" "}
-          <strong className="font-medium text-stone-700">not</strong> the U.S. Department of Veterans Affairs, the
-          Department of Defense, or any government agency. It is <strong className="font-medium text-stone-700">not</strong>{" "}
-          a law firm, does <strong className="font-medium text-stone-700">not</strong> provide legal advice, and does{" "}
-          <strong className="font-medium text-stone-700">not</strong> represent veterans before VA or any other agency
+          <strong className="font-semibold text-stone-900">not</strong> the U.S. Department of Veterans Affairs, the
+          Department of Defense, or any government agency. It is <strong className="font-semibold text-stone-900">not</strong>{" "}
+          a law firm, does <strong className="font-semibold text-stone-900">not</strong> provide legal advice, and does{" "}
+          <strong className="font-semibold text-stone-900">not</strong> represent veterans before VA or any other agency
           (including claims or appeals assistance).
         </li>
         <li>

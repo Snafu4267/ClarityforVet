@@ -10,8 +10,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 1. Copy `.env.example` to `.env`.
 2. Set `NEXTAUTH_SECRET` to a long random string (e.g. `openssl rand -base64 32`).
-3. Keep `DATABASE_URL="file:./prisma/dev.db"` for local SQLite.
-4. Run `npx prisma db push` after cloning (creates `prisma/dev.db`).
+3. Keep `DATABASE_URL="file:./dev.db"` for local SQLite (resolved relative to `prisma/schema.prisma`, so it creates `prisma/dev.db`).
+4. Run `npm run db:push` after cloning (creates/syncs local SQLite schema).
 
 The **spouse / family log** and **register/login** require these variables. Other pages work without a database.
 
@@ -44,8 +44,13 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy notes (Dokploy / Docker)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Normal container startup should run the app only (no schema mutation on boot).
+- Run schema sync as an explicit one-off deploy step when needed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run db:push
+```
+
+Use Dokploy runbooks under `docs/runbooks/` for backup/restore, deploy/rollback, and secret rotation.

@@ -17,7 +17,7 @@ Also complete your **master plan §14** gate (“full review before any live/pro
 - [ ] **`NEXTAUTH_URL`** equals the real public URL users open (including `https://`, no typo).
 - [ ] **`NEXTAUTH_SECRET`** is a long random secret (never committed); set only in hosting env.
 - [ ] **`DATABASE_URL`** points at **persistent** storage on the server (mounted volume / stable path). Not a disposable container path that resets on redeploy.
-- [ ] **`npx prisma db push`** (or your migration strategy) run **once** against production `DATABASE_URL` before traffic.
+- [ ] **`npm run db:push`** (or your migration strategy) run explicitly as a one-off step against production `DATABASE_URL` before traffic.
 - [ ] Production **build passes** (`npm run build` or Docker build — same pipeline you deploy).
 
 ---

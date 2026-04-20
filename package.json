@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start",
+    "db:push": "prisma db push --skip-generate",
     "docker:build": "docker build -t clarity4vets .",
     "postinstall": "prisma generate",
     "lint": "eslint",

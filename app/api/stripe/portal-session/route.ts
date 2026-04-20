@@ -1,4 +1,5 @@
 import { authOptions } from "@/lib/auth";
+import { requireSignedInResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
 import { appBaseUrl, getStripe } from "@/lib/stripe";
 import { getServerSession } from "next-auth/next";
@@ -10,7 +11,8 @@ export async function POST() {
     return Response.json({ error: "Stripe is not configured (missing STRIPE_SECRET_KEY)." }, { status: 503 });
   }
   const session = await getServerSession(authOptions);
-  if (!session?.user?.id) {
+  const unauthorized = requireSignedInResponse(session);
+  if (unauthorized) {
     return Response.json({ error: "Sign in to continue." }, { status: 401 });
   }
 

@@ -1,4 +1,5 @@
 import { authOptions } from "@/lib/auth";
+import { requireSignedInResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
 import { getStripe } from "@/lib/stripe";
 import { getServerSession } from "next-auth/next";
@@ -12,7 +13,8 @@ export async function POST(request: Request) {
   }
 
   const session = await getServerSession(authOptions);
-  if (!session?.user?.id) {
+  const unauthorized = requireSignedInResponse(session);
+  if (unauthorized) {
     return Response.json({ error: "Sign in to continue." }, { status: 401 });
   }
 

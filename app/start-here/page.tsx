@@ -18,6 +18,7 @@ function Punch({ children }: { children: React.ReactNode }) {
 }
 
 const prose = "text-sm leading-relaxed text-stone-700";
+const h1 = "text-2xl font-semibold tracking-tight text-stone-900 sm:text-[1.75rem]";
 const h2 = "text-xl font-semibold tracking-tight text-stone-900";
 
 export default function StartHerePage() {
@@ -49,7 +50,7 @@ export default function StartHerePage() {
 
         <div className="flex flex-col gap-8">
           <section id="va-doorway" className="scroll-mt-24 flex flex-col gap-3">
-            <h1 className={h2}>VA doorway</h1>
+            <h1 className={h1}>VA doorway</h1>
             <p className={prose}>
               Hey. You made it. If you&apos;re here, it means you&apos;re finally stepping toward the VA — maybe for the
               first time, maybe after years of putting it off. <Punch>Every one of us started right where you are:</Punch>{" "}

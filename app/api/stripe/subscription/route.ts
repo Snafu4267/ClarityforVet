@@ -1,4 +1,5 @@
 import { authOptions } from "@/lib/auth";
+import { requireSignedInResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 
@@ -6,7 +7,8 @@ export const runtime = "nodejs";
 
 export async function GET() {
   const session = await getServerSession(authOptions);
-  if (!session?.user?.id) {
+  const unauthorized = requireSignedInResponse(session);
+  if (unauthorized) {
     return Response.json({ error: "Unauthorized" }, { status: 401 });
   }
 

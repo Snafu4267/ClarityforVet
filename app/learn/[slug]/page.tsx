@@ -132,6 +132,9 @@ export default async function LearnModulePage({ params }: { params: Promise<{ sl
           <PrintPageButton />
         </div>
         <p className="text-sm leading-relaxed text-stone-600">{mod.summary}</p>
+        <p className="rounded-lg border border-stone-200/90 bg-white/80 px-3 py-2 text-sm leading-relaxed text-stone-700">
+          Educational guidance only. {SITE_NAME} is independent—not VA—and this page is not legal or medical advice.
+        </p>
       </header>
 
       <header className="hidden flex-col gap-2 print:flex">

@@ -59,6 +59,9 @@ export function LoginForm() {
         <header className="flex flex-col gap-2">
           <h1 className="text-2xl font-semibold text-stone-900">Sign in</h1>
           <p className="text-sm text-stone-600">{blurb}</p>
+          <p className="text-sm text-stone-700">
+            We only use your sign-in to unlock your account features; this site remains educational and is not VA.
+          </p>
         </header>
 
         <form className="flex flex-col gap-4" onSubmit={onSubmit}>

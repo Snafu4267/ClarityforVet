@@ -1,4 +1,4 @@
-import { requireFullSiteAccessResponse } from "@/lib/api-full-site-access";
+import { requireFullSiteAccessResponse, requireSignedInResponse } from "@/lib/api-full-site-access";
 import { authOptions } from "@/lib/auth";
 import { generateInviteCodeCandidate } from "@/lib/invite-code";
 import { prisma } from "@/lib/prisma";
@@ -9,11 +9,10 @@ const MAX_ATTEMPTS = 30;
 
 export async function GET() {
   const session = await getServerSession(authOptions);
+  const unauthorized = requireSignedInResponse(session);
+  if (unauthorized) return unauthorized;
   const denied = requireFullSiteAccessResponse(session);
   if (denied) return denied;
-  if (!session?.user?.id) {
-    return Response.json({ error: "Sign in required." }, { status: 401 });
-  }
 
   const userId = session.user.id;
 

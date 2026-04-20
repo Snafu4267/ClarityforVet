@@ -70,7 +70,7 @@ These files support **build from GitHub** and **run in a container** on your VPS
 - **In Docker**, use an **absolute** path on a **mounted volume**, e.g.  
   `DATABASE_URL="file:/data/prisma/prod.db"`  
   Mount host (or Dokploy) storage at **`/data/prisma`** so the file **survives** image rebuilds and container restarts.
-- **First time** the production DB is empty: run **`npx prisma db push`** against that `DATABASE_URL` once (Dokploy one-off exec, local machine with tunnel, or a short-lived container using the same image + env + volume). Do **not** commit `prod.db` to GitHub.
+- **First time** the production DB is empty (or when schema changes): run **`npm run db:push`** as an explicit one-off deploy step (Dokploy one-off exec, local machine with tunnel, or short-lived container using same image + env + volume). Do **not** commit `prod.db` to GitHub.
 - **Serverless / ephemeral-only** hosts: SQLite is a bad fit—**your** VPS + volume avoids that **if** you configure the volume correctly.
 - For **growth** or **multiple app instances**, plan **PostgreSQL** (or similar) and a matching **`DATABASE_URL`** + Prisma migrations.
 - Tooling pages that **do not** use the server database can still work without DB configuration; **auth and the private log** need a **working, persistent** production database strategy.
