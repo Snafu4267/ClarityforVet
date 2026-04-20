@@ -1,3 +1,0 @@
-# Local Python helpers only. After `pip install some-package`, run:
-#   pip freeze > scripts/python/requirements.txt
-# (from the project root with `.venv` activated.)
