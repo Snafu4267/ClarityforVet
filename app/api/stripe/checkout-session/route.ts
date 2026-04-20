@@ -1,6 +1,7 @@
 import { authOptions } from "@/lib/auth";
 import { requireSignedInEmailResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
+import { logSecurityEvent } from "@/lib/security-log";
 import { appBaseUrl, getStripe } from "@/lib/stripe";
 import { getServerSession } from "next-auth/next";
 
@@ -20,12 +21,10 @@ export async function POST() {
 
   const session = await getServerSession(authOptions);
   const unauthorized = requireSignedInEmailResponse(session);
-  if (unauthorized) {
-    return Response.json({ error: "Sign in to continue." }, { status: 401 });
-  }
+  if (unauthorized) return unauthorized;
 
   const user = await prisma.user.findUnique({
-    where: { id: session.user.id },
+    where: { id: session!.user!.id },
     select: { id: true, email: true, stripeCustomerId: true },
   });
   if (!user) {
@@ -55,6 +54,7 @@ export async function POST() {
 
     return Response.json({ url: checkoutSession.url });
   } catch (e) {
+    logSecurityEvent("stripe.failure", { area: "checkout-session", reason: "exception" }, "error");
     const message =
       typeof e === "object" && e !== null && "message" in e && typeof (e as { message: unknown }).message === "string"
         ? (e as { message: string }).message

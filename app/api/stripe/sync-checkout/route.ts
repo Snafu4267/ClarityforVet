@@ -1,6 +1,7 @@
 import { authOptions } from "@/lib/auth";
 import { requireSignedInResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
+import { logSecurityEvent } from "@/lib/security-log";
 import { getStripe } from "@/lib/stripe";
 import { getServerSession } from "next-auth/next";
 
@@ -14,9 +15,7 @@ export async function POST(request: Request) {
 
   const session = await getServerSession(authOptions);
   const unauthorized = requireSignedInResponse(session);
-  if (unauthorized) {
-    return Response.json({ error: "Sign in to continue." }, { status: 401 });
-  }
+  if (unauthorized) return unauthorized;
 
   let body: unknown;
   try {
@@ -37,49 +36,54 @@ export async function POST(request: Request) {
     return Response.json({ error: "Missing or invalid checkout session id." }, { status: 400 });
   }
 
-  const stripe = getStripe();
-  const checkoutSession = await stripe.checkout.sessions.retrieve(sessionId, {
-    expand: ["subscription"],
-  });
+  try {
+    const stripe = getStripe();
+    const checkoutSession = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["subscription"],
+    });
 
-  if (checkoutSession.metadata?.userId !== session.user.id) {
-    return Response.json({ error: "This checkout belongs to a different account." }, { status: 403 });
+    if (checkoutSession.metadata?.userId !== session!.user!.id) {
+      return Response.json({ error: "This checkout belongs to a different account." }, { status: 403 });
+    }
+
+    if (checkoutSession.status !== "complete") {
+      return Response.json({ error: "Checkout is not complete yet." }, { status: 409 });
+    }
+
+    const customerId =
+      typeof checkoutSession.customer === "string"
+        ? checkoutSession.customer
+        : checkoutSession.customer?.id ?? null;
+
+    if (!customerId) {
+      return Response.json({ error: "No customer on this checkout session." }, { status: 422 });
+    }
+
+    const subField = checkoutSession.subscription;
+    const subId =
+      typeof subField === "string"
+        ? subField
+        : subField && typeof subField === "object" && "id" in subField
+          ? (subField as { id: string }).id
+          : null;
+
+    let subscriptionStatus = "active";
+    if (subId) {
+      const sub = await stripe.subscriptions.retrieve(subId);
+      subscriptionStatus = sub.status;
+    }
+
+    await prisma.user.update({
+      where: { id: session!.user!.id },
+      data: {
+        stripeCustomerId: customerId,
+        ...(subId ? { stripeSubscriptionId: subId, subscriptionStatus } : {}),
+      },
+    });
+
+    return Response.json({ ok: true });
+  } catch {
+    logSecurityEvent("stripe.failure", { area: "sync-checkout", reason: "exception" }, "error");
+    return Response.json({ error: "Could not sync checkout." }, { status: 500 });
   }
-
-  if (checkoutSession.status !== "complete") {
-    return Response.json({ error: "Checkout is not complete yet." }, { status: 409 });
-  }
-
-  const customerId =
-    typeof checkoutSession.customer === "string"
-      ? checkoutSession.customer
-      : checkoutSession.customer?.id ?? null;
-
-  if (!customerId) {
-    return Response.json({ error: "No customer on this checkout session." }, { status: 422 });
-  }
-
-  const subField = checkoutSession.subscription;
-  const subId =
-    typeof subField === "string"
-      ? subField
-      : subField && typeof subField === "object" && "id" in subField
-        ? (subField as { id: string }).id
-        : null;
-
-  let subscriptionStatus = "active";
-  if (subId) {
-    const sub = await stripe.subscriptions.retrieve(subId);
-    subscriptionStatus = sub.status;
-  }
-
-  await prisma.user.update({
-    where: { id: session.user.id },
-    data: {
-      stripeCustomerId: customerId,
-      ...(subId ? { stripeSubscriptionId: subId, subscriptionStatus } : {}),
-    },
-  });
-
-  return Response.json({ ok: true });
 }

@@ -2,11 +2,12 @@
 
 import { PageAccent } from "@/components/PageAccent";
 import { ServiceSubpageFrame } from "@/components/ServiceSubpageFrame";
+import { isValidEmailFormat, normalizeEmail } from "@/lib/email-format";
 import { PUBLIC_ONLY_SITE, SITE_NAME } from "@/lib/site";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useId, useState } from "react";
+import { useCallback, useId, useState } from "react";
 
 const cardClass =
   "rounded-2xl border border-stone-200/90 bg-white px-5 py-6 shadow-sm ring-1 ring-stone-100/80 sm:px-7 sm:py-7";
@@ -26,7 +27,11 @@ export function WelcomeAccountForms() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [friendInviteCode, setFriendInviteCode] = useState("");
+  const [friendInviteCode, setFriendInviteCode] = useState(() => {
+    if (typeof window === "undefined") return "";
+    const c = new URLSearchParams(window.location.search).get("code");
+    return c?.trim() || "";
+  });
   const [regError, setRegError] = useState<string | null>(null);
   const [regPending, setRegPending] = useState(false);
 
@@ -35,23 +40,22 @@ export function WelcomeAccountForms() {
   const [inError, setInError] = useState<string | null>(null);
   const [inPending, setInPending] = useState(false);
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const c = params.get("code");
-    if (c?.trim()) setFriendInviteCode(c.trim());
-  }, []);
-
   const onRegister = useCallback(
     async (e: React.FormEvent) => {
       e.preventDefault();
       setRegError(null);
+      const normalizedEmail = normalizeEmail(email);
+      if (!isValidEmailFormat(normalizedEmail)) {
+        setRegError("Enter a valid email address.");
+        return;
+      }
       setRegPending(true);
       const res = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: name.trim() || undefined,
-          email: email.trim().toLowerCase(),
+          email: normalizedEmail,
           password,
           inviteCode: friendInviteCode.trim() || undefined,
         }),
@@ -73,7 +77,7 @@ export function WelcomeAccountForms() {
         return;
       }
       const sign = await signIn("credentials", {
-        email: email.trim().toLowerCase(),
+        email: normalizedEmail,
         password,
         redirect: false,
       });
@@ -92,9 +96,14 @@ export function WelcomeAccountForms() {
     async (e: React.FormEvent) => {
       e.preventDefault();
       setInError(null);
+      const normalizedEmail = normalizeEmail(inEmail);
+      if (!isValidEmailFormat(normalizedEmail)) {
+        setInError("Enter a valid email address.");
+        return;
+      }
       setInPending(true);
       const res = await signIn("credentials", {
-        email: inEmail.trim().toLowerCase(),
+        email: normalizedEmail,
         password: inPassword,
         redirect: false,
       });

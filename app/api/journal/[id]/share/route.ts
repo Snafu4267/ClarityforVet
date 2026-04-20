@@ -28,12 +28,12 @@ export async function POST(req: Request, ctx: Ctx) {
     return NextResponse.json({ error: "Valid recipient email required." }, { status: 400 });
   }
 
-  if (recipientEmail === session.user.email.toLowerCase()) {
+  if (recipientEmail === session!.user!.email!.toLowerCase()) {
     return NextResponse.json({ error: "Use a different email than your own." }, { status: 400 });
   }
 
   const entry = await prisma.journalEntry.findUnique({ where: { id } });
-  if (!entry || entry.userId !== session.user.id) {
+  if (!entry || entry.userId !== session!.user!.id) {
     return NextResponse.json({ error: "Not found." }, { status: 404 });
   }
 
@@ -58,13 +58,13 @@ export async function DELETE(req: Request, ctx: Ctx) {
   const { id } = await ctx.params;
 
   const url = new URL(req.url);
-  const recipientEmail = url.searchParams.get("email")?.toLowerCase().trim();
-  if (!recipientEmail) {
-    return NextResponse.json({ error: "email query param required." }, { status: 400 });
+  const recipientEmail = (url.searchParams.get("email") ?? "").toLowerCase().trim();
+  if (!recipientEmail || !recipientEmail.includes("@")) {
+    return NextResponse.json({ error: "Valid email query param required." }, { status: 400 });
   }
 
   const entry = await prisma.journalEntry.findUnique({ where: { id } });
-  if (!entry || entry.userId !== session.user.id) {
+  if (!entry || entry.userId !== session!.user!.id) {
     return NextResponse.json({ error: "Not found." }, { status: 404 });
   }
 

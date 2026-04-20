@@ -14,7 +14,7 @@ export async function GET() {
   const denied = requireFullSiteAccessResponse(session);
   if (denied) return denied;
 
-  const userId = session.user.id;
+  const userId = session!.user!.id;
 
   const existing = await prisma.user.findUnique({
     where: { id: userId },

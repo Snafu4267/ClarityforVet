@@ -37,7 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-5 py-8 sm:px-6 lg:py-12 xl:flex-row xl:items-start xl:justify-center xl:gap-12">
       <div className="hidden xl:block xl:w-72 xl:shrink-0">
-        <div className="sticky top-28 max-h-[calc(100vh-7rem)] overflow-y-auto overscroll-contain rounded-xl border-2 border-neutral-500 bg-white/95 px-4 py-5 text-neutral-950 shadow-lg ring-1 ring-white/80 antialiased [text-rendering:optimizeLegibility]">
+        <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto overscroll-contain rounded-xl border-2 border-neutral-600 bg-white/98 px-4 py-5 text-neutral-950 shadow-lg ring-1 ring-white antialiased [text-rendering:optimizeLegibility]">
           <LearnSidebarNav />
         </div>
       </div>

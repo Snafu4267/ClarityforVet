@@ -31,3 +31,16 @@ Run after local build or pre-deploy review. Record pass/fail and notes.
 ## UX trust checks
 - [ ] Disclaimers remain visible on key pages (learn/start-here/footer).
 - [ ] Sidebar text and contrast are legible on desktop.
+
+## Run metadata (fill each run)
+- Date: 2026-04-20
+- Environment (local/staging/prod): local
+- Base URL: `http://localhost:3000`
+- Commit SHA: local working tree (uncommitted)
+- Tester: local automated checks (`npm.cmd run checks:manual`)
+- Result (Pass/Fail): Pass (5/5 automated checks passed)
+
+### Notes / failures
+- Blocking issues: none
+- Non-blocking issues: none in automated local checks
+- Follow-up tickets/owners: Manual-only validation remains for real Stripe checkout/portal/webhook flow with valid Stripe keys.

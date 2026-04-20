@@ -1,6 +1,7 @@
 import { authOptions } from "@/lib/auth";
 import { requireSignedInResponse } from "@/lib/api-full-site-access";
 import { prisma } from "@/lib/prisma";
+import { logSecurityEvent } from "@/lib/security-log";
 import { appBaseUrl, getStripe } from "@/lib/stripe";
 import { getServerSession } from "next-auth/next";
 
@@ -12,12 +13,10 @@ export async function POST() {
   }
   const session = await getServerSession(authOptions);
   const unauthorized = requireSignedInResponse(session);
-  if (unauthorized) {
-    return Response.json({ error: "Sign in to continue." }, { status: 401 });
-  }
+  if (unauthorized) return unauthorized;
 
   const user = await prisma.user.findUnique({
-    where: { id: session.user.id },
+    where: { id: session!.user!.id },
     select: { stripeCustomerId: true },
   });
 
@@ -28,17 +27,22 @@ export async function POST() {
     );
   }
 
-  const stripe = getStripe();
-  const base = appBaseUrl();
+  try {
+    const stripe = getStripe();
+    const base = appBaseUrl();
 
-  const portal = await stripe.billingPortal.sessions.create({
-    customer: user.stripeCustomerId,
-    return_url: `${base}/unenroll`,
-  });
+    const portal = await stripe.billingPortal.sessions.create({
+      customer: user.stripeCustomerId,
+      return_url: `${base}/unenroll`,
+    });
 
-  if (!portal.url) {
+    if (!portal.url) {
+      return Response.json({ error: "Could not open billing portal." }, { status: 500 });
+    }
+
+    return Response.json({ url: portal.url });
+  } catch {
+    logSecurityEvent("stripe.failure", { area: "portal-session", reason: "exception" }, "error");
     return Response.json({ error: "Could not open billing portal." }, { status: 500 });
   }
-
-  return Response.json({ url: portal.url });
 }

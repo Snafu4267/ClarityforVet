@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { rateLimitResponse } from "@/lib/rate-limit";
 
 type NominatimRow = {
   lat?: string;
@@ -7,6 +8,9 @@ type NominatimRow = {
 };
 
 export async function POST(req: Request) {
+  const limited = rateLimitResponse(req, { key: "geocode-address", limit: 20, windowMs: 60_000 });
+  if (limited) return limited;
+
   let body: unknown;
   try {
     body = await req.json();

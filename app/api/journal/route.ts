@@ -4,6 +4,8 @@ import { requireFullSiteAccessResponse, requireSignedInEmailResponse, requireSig
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 
+// GET requires signed-in email because sharedWithMe is matched by recipientEmail;
+// write/update/delete paths only need session.user.id for ownership checks.
 export async function GET() {
   const session = await getServerSession(authOptions);
   const unauthorized = requireSignedInEmailResponse(session);
@@ -11,10 +13,10 @@ export async function GET() {
   const denied = requireFullSiteAccessResponse(session);
   if (denied) return denied;
 
-  const email = session.user.email.toLowerCase();
+  const email = session!.user!.email!.toLowerCase();
 
   const own = await prisma.journalEntry.findMany({
-    where: { userId: session.user.id },
+    where: { userId: session!.user!.id },
     orderBy: { createdAt: "desc" },
     include: {
       shares: true,
@@ -24,7 +26,7 @@ export async function GET() {
   const sharedWithMe = await prisma.journalEntry.findMany({
     where: {
       shares: { some: { recipientEmail: email } },
-      NOT: { userId: session.user.id },
+      NOT: { userId: session!.user!.id },
     },
     orderBy: { createdAt: "desc" },
     include: {
@@ -55,7 +57,7 @@ export async function POST(req: Request) {
   }
 
   const entry = await prisma.journalEntry.create({
-    data: { userId: session.user.id, body: text },
+    data: { userId: session!.user!.id, body: text },
   });
 
   return NextResponse.json(entry);

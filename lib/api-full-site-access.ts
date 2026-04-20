@@ -1,9 +1,11 @@
 import type { Session } from "next-auth";
 import { NextResponse } from "next/server";
+import { logSecurityEvent } from "@/lib/security-log";
 
 /** Returns JSON 401 when there is no signed-in user id on the session. */
 export function requireSignedInResponse(session: Session | null): NextResponse | null {
   if (!session?.user?.id) {
+    logSecurityEvent("access.denied", { reason: "missing_session_user_id" });
     return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   }
   return null;
@@ -12,6 +14,7 @@ export function requireSignedInResponse(session: Session | null): NextResponse |
 /** Returns JSON 401 when signed-in routes also require a known user email. */
 export function requireSignedInEmailResponse(session: Session | null): NextResponse | null {
   if (!session?.user?.id || !session.user.email) {
+    logSecurityEvent("access.denied", { reason: "missing_session_email_or_user_id" });
     return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   }
   return null;
@@ -21,7 +24,13 @@ export function requireSignedInEmailResponse(session: Session | null): NextRespo
 export function requireFullSiteAccessResponse(session: Session | null): NextResponse | null {
   const unauthorized = requireSignedInResponse(session);
   if (unauthorized) return unauthorized;
-  if (session.user.siteAccess !== "full") {
+  const user = session?.user;
+  if (!user || user.siteAccess !== "full") {
+    logSecurityEvent("access.denied", {
+      reason: "site_access_restricted",
+      userId: user?.id ?? "unknown",
+      siteAccess: user?.siteAccess ?? "unknown",
+    });
     return NextResponse.json(
       {
         error: "Full site access requires an active subscription or free trial.",

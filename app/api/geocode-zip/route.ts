@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
+import { rateLimitResponse } from "@/lib/rate-limit";
 
 /** Approximate ZIP center via Zippopotam (no API key). Optional `state` = expected USPS code (e.g. TX, CA); defaults to TX for older clients. */
 export async function POST(req: Request) {
+  const limited = rateLimitResponse(req, { key: "geocode-zip", limit: 30, windowMs: 60_000 });
+  if (limited) return limited;
+
   let body: unknown;
   try {
     body = await req.json();

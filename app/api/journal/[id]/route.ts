@@ -28,7 +28,7 @@ export async function PATCH(req: Request, ctx: Ctx) {
   }
 
   const entry = await prisma.journalEntry.findUnique({ where: { id } });
-  if (!entry || entry.userId !== session.user.id) {
+  if (!entry || entry.userId !== session!.user!.id) {
     return NextResponse.json({ error: "Not found." }, { status: 404 });
   }
 
@@ -50,7 +50,7 @@ export async function DELETE(_req: Request, ctx: Ctx) {
   const { id } = await ctx.params;
 
   const entry = await prisma.journalEntry.findUnique({ where: { id } });
-  if (!entry || entry.userId !== session.user.id) {
+  if (!entry || entry.userId !== session!.user!.id) {
     return NextResponse.json({ error: "Not found." }, { status: 404 });
   }
 

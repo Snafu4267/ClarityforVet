@@ -2,7 +2,7 @@ import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "Feedback log",
@@ -12,7 +12,7 @@ export const metadata = {
 export default async function AdminFeedbackPage() {
   const session = await getServerSession(authOptions);
   if (!session?.user?.id) {
-    redirect("/login?callbackUrl=/admin/feedback");
+    notFound();
   }
 
   const user = await prisma.user.findUnique({

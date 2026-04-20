@@ -1,10 +1,14 @@
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { rateLimitResponse } from "@/lib/rate-limit";
 import { getServerSession } from "next-auth/next";
 
 const MAX_COMMENT = 2000;
 
 export async function POST(req: Request) {
+  const limited = rateLimitResponse(req, { key: "site-feedback", limit: 20, windowMs: 10 * 60_000 });
+  if (limited) return limited;
+
   let body: unknown;
   try {
     body = await req.json();

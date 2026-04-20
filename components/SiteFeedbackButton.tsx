@@ -69,7 +69,7 @@ export function SiteFeedbackButton() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="no-print fixed bottom-5 right-5 z-[90] inline-flex min-h-12 items-center justify-center rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-900 shadow-lg ring-1 ring-stone-200/80 transition hover:bg-stone-50"
+        className="no-print fixed bottom-4 right-4 z-[90] inline-flex min-h-10 items-center justify-center rounded-full border border-stone-300 bg-white/92 px-3.5 py-1.5 text-sm font-medium text-stone-800 shadow-md ring-1 ring-stone-200/70 transition hover:bg-stone-50"
       >
         Feedback
       </button>

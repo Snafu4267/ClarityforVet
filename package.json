@@ -10,6 +10,8 @@
     "docker:build": "docker build -t clarity4vets .",
     "postinstall": "prisma generate",
     "lint": "eslint",
+    "checks:manual:setup-users": "node scripts/setup-manual-check-users.mjs",
+    "checks:manual": "node scripts/run-manual-checks.mjs",
     "validate:advocates": "tsx scripts/validate-patient-advocates.ts",
     "va:sandbox": "node scripts/fetch-va-facilities-sandbox.mjs",
     "build:va-state-data": "node scripts/build-vha-state-json.mjs",
@@ -17,7 +19,7 @@
     "ingest:veteran-discounts": "tsx scripts/ingest-veteran-discounts-ndjson.ts"
   },
   "dependencies": {
-    "@prisma/client": "5.22.0",
+    "@prisma/client": "^5.22.0",
     "bcryptjs": "^3.0.3",
     "leaflet": "^1.9.4",
     "next": "16.2.3",

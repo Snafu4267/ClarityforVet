@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
+import { rateLimitResponse } from "@/lib/rate-limit";
+import { logSecurityEvent } from "@/lib/security-log";
+import { isValidEmailFormat, normalizeEmail } from "@/lib/email-format";
 
 const INVITE_CODE_MAX = 32;
 
@@ -19,6 +22,9 @@ function parseInviteCode(raw: unknown): { ok: true; value: string | null } | { o
 }
 
 export async function POST(req: Request) {
+  const limited = rateLimitResponse(req, { key: "register", limit: 10, windowMs: 60_000 });
+  if (limited) return limited;
+
   try {
     let body: { email?: string; password?: string; name?: string; inviteCode?: string };
     try {
@@ -27,7 +33,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid JSON." }, { status: 400 });
     }
 
-    const email = typeof body.email === "string" ? body.email.toLowerCase().trim() : "";
+    const email = normalizeEmail(body.email);
     const password = typeof body.password === "string" ? body.password : "";
     const name = typeof body.name === "string" ? body.name.trim() : undefined;
 
@@ -37,8 +43,8 @@ export async function POST(req: Request) {
     }
     const referredByCode = inviteParsed.value;
 
-    if (!email || !email.includes("@")) {
-      return NextResponse.json({ error: "Valid email required." }, { status: 400 });
+    if (!isValidEmailFormat(email)) {
+      return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 });
     }
     if (password.length < 8) {
       return NextResponse.json({ error: "Password must be at least 8 characters." }, { status: 400 });
@@ -80,6 +86,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (e) {
+    logSecurityEvent("register.failure", { reason: "exception" }, "error");
     console.error("register error", e);
     return NextResponse.json(
       {

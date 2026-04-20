@@ -20,10 +20,7 @@ export function UnenrollClient() {
   const [pending, setPending] = useState(false);
 
   const loadSub = useCallback(async () => {
-    if (!session) {
-      setSub(null);
-      return;
-    }
+    if (!session) return;
     try {
       const res = await fetch("/api/stripe/subscription");
       if (!res.ok) {
@@ -38,8 +35,26 @@ export function UnenrollClient() {
   }, [session]);
 
   useEffect(() => {
-    void loadSub();
-  }, [loadSub]);
+    if (!session) return;
+    let alive = true;
+    void (async () => {
+      try {
+        const res = await fetch("/api/stripe/subscription");
+        if (!alive) return;
+        if (!res.ok) {
+          setSub(null);
+          return;
+        }
+        const data = (await res.json()) as SubPayload;
+        if (alive) setSub(data);
+      } catch {
+        if (alive) setSub(null);
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [session]);
 
   const openPortal = useCallback(async () => {
     setError(null);

@@ -129,13 +129,6 @@ function loadDotEnvFiles() {
   }
 }
 
-function vaGovFindLocationsUrl(stateName) {
-  const q = new URLSearchParams();
-  q.set("address", stateName);
-  q.set("facilityType[0]", "health");
-  return `https://www.va.gov/find-locations/?${q.toString()}`;
-}
-
 function facilityPageUrl(id) {
   return `https://www.va.gov/find-locations/facility/${id}`;
 }
@@ -490,7 +483,7 @@ function isExactStaApiId(arc, apiRow) {
   return sta !== "" && (apiRow.id === `vha_${sta}` || apiRow.id === `vc_${sta}`);
 }
 
-function mapFacility(arc, apiRow, locatorUrl) {
+function mapFacility(arc, apiRow) {
   const lat = Number(arc.LAT);
   const lng = Number(arc.LON);
   const abbr = String(arc.S_ABBR || "").toUpperCase();
@@ -554,8 +547,7 @@ function nearestTo(mapped, c) {
 }
 
 function buildPayload(stateCode, stateName, pairs, apiBaseLabel) {
-  const locatorUrl = vaGovFindLocationsUrl(stateName);
-  const mapped = pairs.map(({ arc, api }) => mapFacility(arc, api, locatorUrl));
+  const mapped = pairs.map(({ arc, api }) => mapFacility(arc, api));
   mapped.sort((x, y) => x.name.localeCompare(y.name, "en", { sensitivity: "base" }));
 
   const today = new Date().toISOString().slice(0, 10);

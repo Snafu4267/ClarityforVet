@@ -2,6 +2,7 @@
 
 import { PageAccent } from "@/components/PageAccent";
 import { ServiceSubpageFrame } from "@/components/ServiceSubpageFrame";
+import { isValidEmailFormat, normalizeEmail } from "@/lib/email-format";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -28,9 +29,14 @@ export function LoginForm() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
+    const normalizedEmail = normalizeEmail(email);
+    if (!isValidEmailFormat(normalizedEmail)) {
+      setError("Enter a valid email address.");
+      return;
+    }
     setPending(true);
     const res = await signIn("credentials", {
-      email: email.trim().toLowerCase(),
+      email: normalizedEmail,
       password,
       redirect: false,
     });
@@ -56,6 +62,7 @@ export function LoginForm() {
     <ServiceSubpageFrame>
       <PageAccent className="page-accent-auth-login" />
       <div className="relative z-10 mx-auto flex w-full max-w-md flex-col gap-8 px-6 py-16">
+        <div className="rounded-xl border border-stone-200 bg-white/90 px-5 py-5 shadow-sm">
         <header className="flex flex-col gap-2">
           <h1 className="text-2xl font-semibold text-stone-900">Sign in</h1>
           <p className="text-sm text-stone-600">{blurb}</p>
@@ -64,7 +71,7 @@ export function LoginForm() {
           </p>
         </header>
 
-        <form className="flex flex-col gap-4" onSubmit={onSubmit}>
+        <form className="mt-5 flex flex-col gap-4" onSubmit={onSubmit}>
           <label className="flex flex-col gap-1 text-sm">
             <span className="text-stone-700">Email</span>
             <input
@@ -103,6 +110,7 @@ export function LoginForm() {
             Register
           </Link>
         </p>
+        </div>
       </div>
     </ServiceSubpageFrame>
   );
