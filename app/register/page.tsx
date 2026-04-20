@@ -1,6 +1,5 @@
-import { redirect } from "next/navigation";
+import { RegisterForm } from "./RegisterForm";
 
-/** Registration actions start on the welcome page. */
-export default function RegisterRedirectPage() {
-  redirect("/welcome");
+export default function RegisterPage() {
+  return <RegisterForm />;
 }

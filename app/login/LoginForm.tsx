@@ -106,7 +106,7 @@ export function LoginForm() {
 
         <p className="text-center text-sm text-stone-600">
           No account?{" "}
-          <Link href="/welcome" className="font-medium text-blue-800 underline">
+          <Link href="/register" className="font-medium text-blue-800 underline">
             Register
           </Link>
         </p>
