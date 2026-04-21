@@ -3,9 +3,11 @@ import { PageAccent } from "@/components/PageAccent";
 import { PrintPageButton } from "@/components/PrintPageButton";
 import { ServiceSubpageFrame } from "@/components/ServiceSubpageFrame";
 import { StartHereChecklist } from "@/app/start-here/StartHereChecklist";
+import { authOptions } from "@/lib/auth";
 import { SITE_NAME } from "@/lib/site";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getServerSession } from "next-auth/next";
 
 export const metadata: Metadata = {
   title: `Your journey begins — first steps with VA care — ${SITE_NAME}`,
@@ -21,7 +23,10 @@ const prose = "text-sm leading-relaxed text-stone-700";
 const h1 = "text-2xl font-semibold tracking-tight text-stone-900 sm:text-[1.75rem]";
 const h2 = "text-xl font-semibold tracking-tight text-stone-900";
 
-export default function StartHerePage() {
+export default async function StartHerePage() {
+  const session = await getServerSession(authOptions);
+  const isSignedIn = Boolean(session?.user?.id);
+
   return (
     <ServiceSubpageFrame>
       <PageAccent className="page-accent-learn-overview" />
@@ -47,6 +52,27 @@ export default function StartHerePage() {
             Care-start guidance only. {SITE_NAME} is not VA. Not legal or medical advice.
           </p>
         </header>
+
+        {!isSignedIn ? (
+          <section className="rounded-xl border-2 border-amber-300/90 bg-gradient-to-b from-amber-100/90 to-amber-50 px-5 py-4 shadow-sm ring-1 ring-amber-200/80">
+            <p className="text-sm font-semibold text-amber-950">Ready to open the full app?</p>
+            <p className="mt-1 text-sm leading-relaxed text-amber-900">
+              Registration matters because it unlocks the full Clarity4Vets experience and lets us keep your progress
+              organized in one place. We do not want you adding a credit card (Nothing annoys me more than this) if you
+              do not believe this will help your
+              journey. Register first and open the full site with a 10-day trial. Give it 10 days, explore the tools,
+              and use the knowledge the Clarity4Vets team has put together in one place for veterans, then decide.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-3">
+              <Link
+                href="/register"
+                className="inline-flex min-h-11 items-center justify-center rounded-lg bg-amber-900 px-4 py-2.5 text-sm font-semibold text-amber-50 shadow-sm transition hover:bg-amber-950"
+              >
+                Register here - open full app
+              </Link>
+            </div>
+          </section>
+        ) : null}
 
         <div className="flex flex-col gap-8">
           <section id="va-doorway" className="scroll-mt-24 flex flex-col gap-3">

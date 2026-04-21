@@ -43,6 +43,8 @@ function LaneSection({
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
+  const isSignedIn = Boolean(session?.user?.id);
+  const startHereOnly = !isSignedIn;
   const publicShell = showPublicOnlyExperience({
     publicOnlyEnv: PUBLIC_ONLY_SITE,
     siteAccess: session?.user?.siteAccess,
@@ -146,55 +148,63 @@ export default async function Home() {
                 —what to say, what to bring, and how to stay on track.
               </p>
             </div>
-            <Link
-              href="/learn"
-              className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
-            >
-              <span className="text-sm font-semibold">Learn topics (A-Z)</span>
-              <span className="mt-0.5 text-xs text-zinc-600">Clear answers in plain English, one step at a time.</span>
-            </Link>
-            <Link
-              href="/tools/vet-sheet"
-              className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
-            >
-              <span className="text-sm font-semibold">Veterans Personal Data</span>
-              <span className="mt-0.5 text-xs text-zinc-600">
-                One secure spot for the details you keep repeating everywhere.
-              </span>
-            </Link>
-            {publicShell ? null : (
-              <Link
-                href="/tools/spouse-log/instructions"
-                className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center leading-snug text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
-              >
-                <span className="text-sm font-semibold">Spouse, partner, or family</span>
-                <span className="mt-0.5 text-xs text-zinc-600">
-                  This is your thought space - you are not carrying this alone.
-                </span>
-              </Link>
+            {startHereOnly ? (
+              <p className="rounded-lg border border-amber-200/90 bg-amber-50/80 px-4 py-3 text-center text-sm text-amber-950 sm:col-span-2">
+                Start with <span className="font-semibold">Your Journey Begins Now</span>. The rest of the site unlocks after you register.
+              </p>
+            ) : (
+              <>
+                <Link
+                  href="/learn"
+                  className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
+                >
+                  <span className="text-sm font-semibold">Learn topics (A-Z)</span>
+                  <span className="mt-0.5 text-xs text-zinc-600">Clear answers in plain English, one step at a time.</span>
+                </Link>
+                <Link
+                  href="/tools/vet-sheet"
+                  className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
+                >
+                  <span className="text-sm font-semibold">Veterans Personal Data</span>
+                  <span className="mt-0.5 text-xs text-zinc-600">
+                    One secure spot for the details you keep repeating everywhere.
+                  </span>
+                </Link>
+                {publicShell ? null : (
+                  <Link
+                    href="/tools/spouse-log/instructions"
+                    className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center leading-snug text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
+                  >
+                    <span className="text-sm font-semibold">Spouse, partner, or family</span>
+                    <span className="mt-0.5 text-xs text-zinc-600">
+                      This is your thought space - you are not carrying this alone.
+                    </span>
+                  </Link>
+                )}
+                <Link
+                  href="/va-resources"
+                  className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
+                >
+                  <span className="text-sm font-semibold">VA contacts &amp; tools</span>
+                  <span className="mt-0.5 text-xs text-zinc-600">
+                    Find the right number, office, or resource without the runaround.
+                  </span>
+                </Link>
+                <div className="flex justify-center sm:col-span-2">
+                  <Link
+                    href="/perks"
+                    className="inline-flex min-h-[2.75rem] w-full flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50 sm:w-1/2 sm:max-w-none"
+                  >
+                    <span className="text-sm font-semibold">Perks</span>
+                    <span className="mt-0.5 text-xs text-zinc-600">Because you served, and your service matters.</span>
+                  </Link>
+                </div>
+              </>
             )}
-            <Link
-              href="/va-resources"
-              className="inline-flex min-h-[2.75rem] flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50"
-            >
-              <span className="text-sm font-semibold">VA contacts &amp; tools</span>
-              <span className="mt-0.5 text-xs text-zinc-600">
-                Find the right number, office, or resource without the runaround.
-              </span>
-            </Link>
-            <div className="flex justify-center sm:col-span-2">
-              <Link
-                href="/perks"
-                className="inline-flex min-h-[2.75rem] w-full flex-col items-center justify-center rounded-lg border border-zinc-200/95 bg-white px-4 py-2.5 text-center text-zinc-800 shadow-sm ring-1 ring-zinc-100/90 transition hover:border-zinc-300 hover:bg-zinc-50 sm:w-1/2 sm:max-w-none"
-              >
-                <span className="text-sm font-semibold">Perks</span>
-                <span className="mt-0.5 text-xs text-zinc-600">Because you served, and your service matters.</span>
-              </Link>
-            </div>
           </div>
         </header>
 
-        <nav className="flex flex-col gap-6" aria-label="Main sections">
+        {startHereOnly ? null : <nav className="flex flex-col gap-6" aria-label="Main sections">
           <LaneSection id="awareness" label="Learn">
             <Link href="/learn" className={bigNavLinkCardClass}>
               <span className="font-semibold text-zinc-900">Topics A–Z</span>
@@ -308,7 +318,7 @@ export default async function Home() {
               </div>
             </section>
           )}
-        </nav>
+        </nav>}
 
         <EducationalFooter variant="full" />
 
