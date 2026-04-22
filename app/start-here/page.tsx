@@ -214,6 +214,11 @@ export default async function StartHerePage() {
           >
             <h2 className={h2}>If you&apos;re in crisis</h2>
             <p className={prose}>
+              If you need care fast, VA offers urgent care at VA facilities and <Punch>in-network</Punch> community
+              urgent care clinics for minor, non-emergency issues. Ask your local VA office what options are available
+              to you in your area.
+            </p>
+            <p className={prose}>
               <Punch>If you might hurt yourself or someone else, call 911.</Punch> You can also call{" "}
               <Punch>988</Punch> and press <Punch>1</Punch> (Veterans Crisis Line), or text <Punch>838255</Punch>.
             </p>
