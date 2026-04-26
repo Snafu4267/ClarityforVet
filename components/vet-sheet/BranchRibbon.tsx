@@ -1,13 +1,7 @@
+import { MILITARY_SEAL_URL } from "@/lib/militarySealUrls";
 import { branchLabel, type BranchId } from "./branchData";
 
-const SEAL_SRC: Record<Exclude<BranchId, "">, string> = {
-  army: "/seals/army.svg",
-  marines: "/seals/marine-corps.svg",
-  navy: "/seals/navy.svg",
-  "air-force": "/seals/air-force.svg",
-  "coast-guard": "/seals/coast-guard.svg",
-  "space-force": "/seals/space-force.svg",
-};
+const SEAL_SRC: Record<Exclude<BranchId, "">, string> = { ...MILITARY_SEAL_URL };
 
 type Props = { branch: Exclude<BranchId, ""> };
 

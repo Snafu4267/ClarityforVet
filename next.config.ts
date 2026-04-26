@@ -1,5 +1,13 @@
 import type { NextConfig } from "next";
 
+/** Optional: set in production to `clarity4vets.com` (no `www.`) so `www.*` 301s to the same app as your NEXTAUTH_URL. */
+const CANONICAL_HOST = process.env.CANONICAL_HOST?.trim();
+const isSafeHostToken =
+  typeof CANONICAL_HOST === "string" &&
+  CANONICAL_HOST.length > 0 &&
+  !/[#/?\s]/.test(CANONICAL_HOST) &&
+  /^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i.test(CANONICAL_HOST);
+
 const nextConfig: NextConfig = {
   // Required for the Docker/Dokploy image (`Dockerfile`) — emits `.next/standalone` for `node server.js`.
   output: "standalone",
@@ -7,6 +15,18 @@ const nextConfig: NextConfig = {
   // Default allowlist is mostly "localhost"; without this, the page can look "broken" or fail to load.
   allowedDevOrigins: ["127.0.0.1", "::1"],
   poweredByHeader: false,
+  async redirects() {
+    if (!isSafeHostToken || !CANONICAL_HOST) return [];
+    const host = CANONICAL_HOST;
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host" as const, value: `www.${host}` }],
+        destination: `https://${host}/:path*`,
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     const csp = [
       "default-src 'self'",

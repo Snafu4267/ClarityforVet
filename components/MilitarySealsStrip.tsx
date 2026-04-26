@@ -1,45 +1,46 @@
+import { MILITARY_SEAL_URL } from "@/lib/militarySealUrls";
 import { SITE_NAME } from "@/lib/site";
 
 /**
- * U.S. military department emblems (public-domain U.S. government works; vendored from Wikimedia Commons
- * under `public/seals/` so paths stay stable—Commons URLs/hash paths change and break hotlinks).
+ * U.S. military department emblems (public-domain U.S. government works; files under `public/seals/`,
+ * imported in `militarySealUrls` so the build emits them under `/_next/static/…`).
  * Displayed as a tribute strip—not an endorsement by DoD.
  */
 const SEALS: { label: string; title: string; src?: string; fallbackMark: string }[] = [
   {
     label: "Army",
     title: "U.S. Department of the Army seal",
-    src: "/seals/army.svg",
+    src: MILITARY_SEAL_URL.army,
     fallbackMark: "USA",
   },
   {
     label: "Marine Corps",
     title: "U.S. Marine Corps emblem",
-    src: "/seals/marine-corps.svg",
+    src: MILITARY_SEAL_URL.marines,
     fallbackMark: "USMC",
   },
   {
     label: "Navy",
     title: "U.S. Department of the Navy seal",
-    src: "/seals/navy.svg",
+    src: MILITARY_SEAL_URL.navy,
     fallbackMark: "USN",
   },
   {
     label: "Air Force",
     title: "U.S. Department of the Air Force seal",
-    src: "/seals/air-force.svg",
+    src: MILITARY_SEAL_URL["air-force"],
     fallbackMark: "USAF",
   },
   {
     label: "Space Force",
     title: "U.S. Space Force emblem",
-    src: "/seals/space-force.svg",
+    src: MILITARY_SEAL_URL["space-force"],
     fallbackMark: "USSF",
   },
   {
     label: "Coast Guard",
     title: "U.S. Coast Guard seal",
-    src: "/seals/coast-guard.svg",
+    src: MILITARY_SEAL_URL["coast-guard"],
     fallbackMark: "USCG",
   },
 ];
